@@ -1,0 +1,75 @@
+{
+  "section": {
+    "name": "TESTIMONI",
+    "nodeId": "43:448",
+    "width": 1440,
+    "height": 706,
+    "paddingTop": 100,
+    "paddingBottom": 100,
+    "paddingLeft": 100,
+    "paddingRight": 100,
+    "bgImage": "testimonials-bg.png",
+    "layout": "single-centered-testimonial",
+    "mainGap": 100
+  },
+  "header": {
+    "nodeId": "158:1092",
+    "gap": 40,
+    "align": "center",
+    "icon": {
+      "nodeId": "519:3284",
+      "width": 64,
+      "height": 55,
+      "imageUrl": "testimonials-icon.png"
+    },
+    "title": {
+      "nodeId": "519:3286",
+      "text": "Voices of Wellness",
+      "fontSize": 48,
+      "fontWeight": 500,
+      "lineHeight": 1.2,
+      "color": "#ffffff",
+      "fontFamily": "Bricolage Grotesque",
+      "align": "center"
+    }
+  },
+  "testimonialContent": {
+    "nodeId": "43:471",
+    "gap": 40,
+    "align": "center",
+    "maxWidth": 1000,
+    "quote": {
+      "nodeId": "519:3304",
+      "text": "\"I had a facial at Rediscover Beauty Clinic and it was a great experience. The staff was very knowledgeable about their skincare products, very friendly and professional. The massage portion that was included was a good amount of time and I felt very relaxed. Highly recommended to go try their service at least once.\"",
+      "fontSize": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.6,
+      "color": "#ffffff",
+      "fontFamily": "Schibsted Grotesk"
+    },
+    "customer": {
+      "nodeId": "519:3570",
+      "text": "Sally Cheng, Long-time Client",
+      "fontSize": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "color": "#ffffff",
+      "fontFamily": "Schibsted Grotesk"
+    }
+  },
+  "colors": {
+    "background": "Deep brown with image overlay",
+    "textColor": "#ffffff (text-inverse token)",
+    "overlayOpacity": "Optional dark overlay for text contrast"
+  },
+  "implementationNotes": [
+    "Single testimonial display, not a carousel",
+    "Full-width background image with overlay",
+    "All text white (text-inverse)",
+    "Centered layout with max-width constraint on quote",
+    "Icon + Title in header with 40px gap",
+    "Quote + Customer name with 40px gap",
+    "Header to Content: 100px gap",
+    "Section padding: 100px all sides on desktop"
+  ]
+}

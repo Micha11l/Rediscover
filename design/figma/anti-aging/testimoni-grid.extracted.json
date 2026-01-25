@@ -1,0 +1,155 @@
+{
+  "nodeId": "227:6005",
+  "name": "TESTIMONI (Recommended For Grid)",
+  "page": "Anti-Aging Service Detail",
+  "note": "Reusable 4-card grid for 'Recommended For' audience targeting. Same layout repeats for each treatment (Sofwave, Thermage, Morpheus8, Forma).",
+
+  "dimensions": {
+    "width": 1440,
+    "height": 445,
+    "note": "Full-width section"
+  },
+
+  "background": {
+    "color": "#735B4B",
+    "token": "bg-brand-secondary"
+  },
+
+  "layout": {
+    "type": "flex column, centered",
+    "container": {
+      "maxWidth": 1440,
+      "paddingX": 100,
+      "paddingTop": 63,
+      "paddingBottom": 49
+    }
+  },
+
+  "headline": {
+    "nodeId": "447:3221",
+    "text": "Recommended For",
+    "typography": {
+      "fontFamily": "Bricolage Grotesque",
+      "fontSize": 32,
+      "fontWeight": 700,
+      "lineHeight": 1.1,
+      "token": "font-heading text-heading-lg font-bold leading-tight"
+    },
+    "color": "#F4EFE7",
+    "colorToken": "text-surface-elevated",
+    "alignment": "center",
+    "width": 547,
+    "marginBottom": 99
+  },
+
+  "cardGrid": {
+    "layout": "4-column grid",
+    "gap": {
+      "figma": 49,
+      "normalized": "gap-12 (48px)"
+    },
+    "justifyContent": "center"
+  },
+
+  "card": {
+    "dimensions": {
+      "width": 270,
+      "height": 234,
+      "note": "First card is 271px wide, others 270px - normalize to 270"
+    },
+    "background": {
+      "color": "#F4EFE7",
+      "token": "bg-surface-elevated"
+    },
+    "borderRadius": {
+      "figma": 45,
+      "token": "rounded-[45px]",
+      "note": "Custom large radius, between rounded-3xl (24px) and rounded-full"
+    },
+    "padding": {
+      "figma": {
+        "top": 42,
+        "left": 31,
+        "right": 25,
+        "bottom": 42
+      },
+      "normalized": "px-8 py-10 (32px horizontal, 40px vertical)"
+    },
+    "shadow": "none",
+    "border": "none"
+  },
+
+  "cardText": {
+    "typography": {
+      "fontFamily": "Schibsted Grotesk",
+      "fontSize": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "token": "font-body text-xl leading-relaxed"
+    },
+    "color": "#80736A",
+    "colorToken": "text-text-muted",
+    "maxWidth": 215,
+    "note": "Text describes target audience for the treatment"
+  },
+
+  "tokenMapping": {
+    "colors": {
+      "#735B4B": "bg-brand-secondary",
+      "#F4EFE7": "bg-surface-elevated / text-surface-elevated",
+      "#80736A": "text-text-muted"
+    },
+    "typography": {
+      "Bricolage Grotesque Bold 32px/1.1": "font-heading text-heading-lg font-bold leading-tight",
+      "Schibsted Grotesk Regular 20px/1.4": "font-body text-xl leading-relaxed"
+    },
+    "spacing": {
+      "63px": "pt-16 (64px)",
+      "49px": "gap-12 / pb-12 (48px)",
+      "99px": "mb-[100px] or space-y-[100px]"
+    },
+    "borderRadius": {
+      "45px": "rounded-[45px]"
+    }
+  },
+
+  "responsiveNotes": {
+    "desktop_gte_lg": {
+      "layout": "4 columns",
+      "cardWidth": "270px fixed or flex-1"
+    },
+    "tablet_md": {
+      "layout": "2×2 grid",
+      "gap": "gap-6"
+    },
+    "mobile_lt_md": {
+      "layout": "Single column stack or 2-column",
+      "gap": "gap-4"
+    }
+  },
+
+  "treatmentVariants": [
+    {
+      "id": "sofwave",
+      "sectionId": "sofwave-recommended",
+      "figmaNode": "227:6005",
+      "items": [
+        "Those who want lifting improvement without worrying about cheek hollowing or depression",
+        "Those who want direct targeted care of the dermal layer, the source of wrinkles",
+        "Those in their 30s to 50s and beyond who want age-appropriate collagen regeneration lifting",
+        "Those who need care for smile lines, eye wrinkles, nasolabial folds, and marionette lines"
+      ]
+    },
+    {
+      "id": "thermage",
+      "sectionId": "thermage-recommended",
+      "figmaNode": "460:3382",
+      "items": [
+        "Those with thin, weak skin who have postponed lifting treatment",
+        "Those concerned about fine lines and enlarged pores",
+        "Those who want elasticity care for rough skin texture",
+        "Those who want subtle anti-aging and overall facial elasticity improvement"
+      ]
+    }
+  ]
+}

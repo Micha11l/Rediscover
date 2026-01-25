@@ -1,0 +1,213 @@
+:root {
+  /* ==========================================================================
+     BEAUVA DESIGN TOKENS
+     Generated from Figma variables
+     ========================================================================== */
+
+  /* ==========================================================================
+     COLOR PALETTE (Raw values from Figma)
+     ========================================================================== */
+
+  /* Primary Dark scale */
+  --palette-primary-dark: #413832;
+  --palette-primary-dark-20: #80736a;
+  --palette-primary-dark-30: #bcaea5;
+
+  /* Secondary scale */
+  --palette-secondary: #735b4b;
+  --palette-secondary-light: #eedbce;
+
+  /* Primary Light scale */
+  --palette-primary-light: #fffcfa;
+  --palette-primary-light-10: #f5f1ed;
+  --palette-primary-light-20: #f4efe7;
+
+  /* Neutrals */
+  --palette-white: #ffffff;
+
+  /* Overlay */
+  --palette-overlay: rgba(52, 41, 36, 0.4);
+
+  /* ==========================================================================
+     SEMANTIC COLOR TOKENS
+     ========================================================================== */
+
+  /* Brand colors */
+  --color-brand-primary: var(--palette-primary-dark);
+  --color-brand-primary-muted: var(--palette-primary-dark-20);
+  --color-brand-secondary: var(--palette-secondary);
+  --color-brand-secondary-light: var(--palette-secondary-light);
+
+  /* Surface colors (backgrounds) */
+  --color-surface-base: var(--palette-primary-light);
+  --color-surface-elevated: var(--palette-primary-light-10);
+  --color-surface-muted: var(--palette-primary-light-20);
+  --color-surface-accent: var(--palette-secondary-light);
+
+  /* Text colors */
+  --color-text-primary: var(--palette-primary-dark);
+  --color-text-muted: var(--palette-primary-dark-20);
+  --color-text-subtle: var(--palette-primary-dark-30);
+  --color-text-inverse: var(--palette-white);
+
+  /* Border colors */
+  --color-border-default: var(--palette-primary-dark-30);
+  --color-border-muted: var(--palette-primary-light-20);
+
+  /* Interactive colors */
+  --color-interactive-primary: var(--palette-secondary);
+  --color-interactive-hover: var(--palette-primary-dark);
+
+  /* Utility colors */
+  --color-white: var(--palette-white);
+  --color-overlay: var(--palette-overlay);
+
+  /* Legacy aliases (backward compatibility) */
+  --color-bg: var(--color-surface-base);
+  --color-surface: var(--color-surface-muted);
+  --color-surface-2: var(--color-surface-elevated);
+  --color-text: var(--color-text-primary);
+  --color-accent: var(--color-brand-secondary);
+  --color-accent-hover: var(--color-interactive-hover);
+  --color-accent-soft: var(--color-brand-secondary-light);
+  --color-primary: var(--color-brand-primary);
+  --color-primary-20: var(--color-brand-primary-muted);
+  --color-secondary: var(--color-brand-secondary);
+  --color-border: var(--color-border-default);
+
+  /* ==========================================================================
+     TYPOGRAPHY - FONT FAMILIES
+     (Variables injected by Next.js font loader)
+     ========================================================================== */
+
+  --font-heading: var(--font-bricolage), "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: var(--font-schibsted), "Schibsted Grotesk", system-ui, sans-serif;
+
+  /* Legacy aliases */
+  --font-sans: var(--font-heading);
+  --font-display: var(--font-heading);
+
+  /* ==========================================================================
+     TYPOGRAPHY - FONT SIZES & LINE HEIGHTS
+     Based on Figma variables, rounded to 4px grid
+     ========================================================================== */
+
+  /* Display - Extra large headlines */
+  --text-display-size: 60px;
+  --text-display-line: 72px;
+  --text-display-weight: 700;
+
+  /* Heading XL - Large section titles */
+  --text-heading-xl-size: 56px;
+  --text-heading-xl-line: 64px;
+  --text-heading-xl-weight: 500;
+
+  /* Heading LG - Section titles */
+  --text-heading-lg-size: 32px;
+  --text-heading-lg-line: 40px;
+  --text-heading-lg-weight: 500;
+
+  /* Heading MD - Subsection titles */
+  --text-heading-md-size: 24px;
+  --text-heading-md-line: 32px;
+  --text-heading-md-weight: 500;
+
+  /* Heading SM - Small headings */
+  --text-heading-sm-size: 16px;
+  --text-heading-sm-line: 20px;
+  --text-heading-sm-weight: 300;
+
+  /* Body LG - Lead paragraphs */
+  --text-body-lg-size: 20px;
+  --text-body-lg-line: 28px;
+  --text-body-lg-weight: 400;
+
+  /* Body Base - Regular paragraphs */
+  --text-body-size: 16px;
+  --text-body-line: 26px;
+  --text-body-weight: 400;
+
+  /* Button text */
+  --text-button-size: 16px;
+  --text-button-line: 16px;
+  --text-button-weight: 600;
+
+  /* Caption / Small text */
+  --text-caption-size: 14px;
+  --text-caption-line: 20px;
+  --text-caption-weight: 400;
+
+  /* ==========================================================================
+     SPACING SCALE
+     Based on 4px / 8px grid
+     ========================================================================== */
+
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-18: 72px;
+  --space-20: 80px;
+  --space-22: 88px;
+  --space-24: 96px;
+  --space-25: 100px;
+
+  /* ==========================================================================
+     BORDER RADIUS
+     ========================================================================== */
+
+  --radius-none: 0px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-3xl: 40px;
+  --radius-4xl: 56px;
+  --radius-full: 9999px;
+
+  /* ==========================================================================
+     SHADOWS
+     ========================================================================== */
+
+  --shadow-sm: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-base: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0px 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* ==========================================================================
+     LAYOUT TOKENS
+     ========================================================================== */
+
+  /* Container */
+  --container-max: 1312px;
+  --container-padding: 64px;
+
+  /* Section spacing */
+  --section-padding-x: 100px;
+  --section-padding-y: 80px;
+  --section-padding-y-lg: 100px;
+
+  /* Common gaps */
+  --gap-xs: 8px;
+  --gap-sm: 16px;
+  --gap-md: 24px;
+  --gap-lg: 40px;
+  --gap-xl: 64px;
+
+  /* ==========================================================================
+     TRANSITIONS
+     ========================================================================== */
+
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+}

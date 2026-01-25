@@ -1,0 +1,88 @@
+{
+  "nodeId": "449:3331",
+  "name": "Decorative Divider",
+  "page": "Anti-Aging Service Detail",
+  "note": "Horizontal divider with centered logo/monogram. Appears 3 times on the page, between major sections.",
+
+  "dimensions": {
+    "width": "100% (full container width)",
+    "height": 48,
+    "note": "Height determined by logo size + vertical alignment"
+  },
+
+  "layout": {
+    "type": "flex row",
+    "alignItems": "center",
+    "gap": {
+      "figma": 24,
+      "token": "gap-6"
+    }
+  },
+
+  "line": {
+    "nodeId": "449:3332",
+    "style": "flex-1 (takes remaining space)",
+    "height": {
+      "figma": "0 with 1px stroke",
+      "implementation": "h-px (1px)"
+    },
+    "color": {
+      "figma": "from SVG, appears light tan/beige",
+      "token": "bg-border or bg-primary-subtle"
+    },
+    "asset": {
+      "figmaUrl": "http://localhost:3845/assets/fad9ae8400f62b21479b01afbfcfb8e5d73f28f8.svg",
+      "localPath": "/images/decorative/divider-line.svg",
+      "note": "Can use simple CSS border instead of SVG for flexibility"
+    }
+  },
+
+  "logo": {
+    "nodeId": "449:3333",
+    "dimensions": {
+      "width": 68,
+      "height": 60
+    },
+    "opacity": {
+      "figma": 0.3,
+      "token": "opacity-30"
+    },
+    "asset": {
+      "figmaUrl": "http://localhost:3845/assets/80da360174a0cc5f52621b861d80acd558cd0700.png",
+      "localPath": "/images/decorative/beauva-monogram.png",
+      "alt": "Beauva monogram"
+    },
+    "note": "Script monogram logo, rendered at 30% opacity"
+  },
+
+  "tokenMapping": {
+    "spacing": {
+      "24px": "gap-6"
+    },
+    "opacity": {
+      "0.3": "opacity-30"
+    }
+  },
+
+  "usageLocations": [
+    {
+      "position": "After Sofwave FAQ/Before-After block",
+      "figmaNode": "449:3331"
+    },
+    {
+      "position": "After Thermage FAQ/Before-After block",
+      "figmaNode": "TBD"
+    },
+    {
+      "position": "After Morpheus8 FAQ/Before-After block",
+      "figmaNode": "TBD"
+    }
+  ],
+
+  "propsInterface": {
+    "className": "Optional additional classes for margin/padding",
+    "logoSrc": "Optional custom logo source (defaults to Beauva monogram)",
+    "logoAlt": "Optional alt text for logo",
+    "lineColor": "Optional line color override"
+  }
+}

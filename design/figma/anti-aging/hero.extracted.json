@@ -1,0 +1,205 @@
+{
+  "nodeId": "212:3701",
+  "name": "HERO Section",
+  "page": "Anti-Aging Service Detail",
+
+  "dimensions": {
+    "width": 1440,
+    "height": 1097
+  },
+
+  "layout": {
+    "type": "flex",
+    "direction": "column",
+    "alignItems": "center"
+  },
+
+  "children": {
+    "navbar": {
+      "nodeId": "386:3367",
+      "height": 136,
+      "background": "#F5F1ED",
+      "backgroundToken": "bg-surface-elevated",
+      "reuse": "Navbar component with variant='light'"
+    },
+
+    "heroContent": {
+      "nodeId": "212:3703",
+      "height": 901,
+      "padding": {
+        "top": 48,
+        "horizontal": 100
+      },
+      "children": {
+        "heroText": {
+          "nodeId": "213:3753",
+          "width": 1240,
+          "layout": {
+            "type": "flex",
+            "direction": "column",
+            "alignItems": "center",
+            "gap": 40
+          }
+        }
+      }
+    }
+  },
+
+  "content": {
+    "breadcrumb": {
+      "nodeId": "213:3771",
+      "items": [
+        { "text": "Home", "href": "/", "color": "#735B4B", "colorToken": "text-brand-secondary" },
+        { "separator": "/", "color": "#413832", "colorToken": "text-text-primary" },
+        { "text": "Services", "href": "/services", "color": "#735B4B", "colorToken": "text-brand-secondary" },
+        { "separator": "/", "color": "#413832", "colorToken": "text-text-primary" },
+        { "text": "Anti-Aging", "current": true, "color": "#413832", "colorToken": "text-text-primary" }
+      ],
+      "typography": {
+        "fontFamily": "Bricolage Grotesque",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "lineHeight": 1,
+        "token": "font-heading text-button font-normal leading-none"
+      },
+      "layout": {
+        "gap": 8,
+        "padding": "py-2.5"
+      }
+    },
+
+    "headline": {
+      "nodeId": "213:3791",
+      "layout": {
+        "type": "flex",
+        "direction": "column",
+        "gap": 16,
+        "alignItems": "start",
+        "textAlign": "center",
+        "width": "full"
+      },
+      "title": {
+        "nodeId": "213:3764",
+        "text": "Anti-Aging",
+        "typography": {
+          "fontFamily": "Bricolage Grotesque",
+          "fontSize": 60,
+          "fontWeight": 500,
+          "lineHeight": 1.2,
+          "token": "font-heading text-display font-medium leading-tight"
+        },
+        "color": "#413832",
+        "colorToken": "text-text-primary"
+      },
+      "subtitle": {
+        "nodeId": "213:3778",
+        "text": "Advanced technologies designed to lift, tighten, and support skin at a deeper structural level.",
+        "typography": {
+          "fontFamily": "Schibsted Grotesk",
+          "fontSize": 16,
+          "fontWeight": 400,
+          "lineHeight": 1.6,
+          "token": "font-body text-body leading-relaxed"
+        },
+        "color": "#735B4B",
+        "colorToken": "text-brand-secondary"
+      }
+    },
+
+    "processNav": {
+      "nodeId": "503:2660",
+      "width": 1200,
+      "height": 90,
+      "layout": {
+        "type": "flex",
+        "justifyContent": "space-between",
+        "alignItems": "start"
+      },
+      "items": [
+        { "id": "sofwave", "text": "Sofwave", "href": "#sofwave" },
+        { "id": "thermage", "text": "Thermage FLX", "href": "#thermage" },
+        { "id": "morpheus8", "text": "Morphues8", "href": "#morpheus8" },
+        { "id": "forma", "text": "Forma", "href": "#forma" }
+      ],
+      "itemTypography": {
+        "fontFamily": "Bricolage Grotesque",
+        "fontSize": 32,
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "token": "font-heading text-heading-lg font-medium leading-tight"
+      },
+      "itemColor": "#816857",
+      "itemColorToken": "text-text-muted",
+      "divider": {
+        "type": "vertical line",
+        "height": 45,
+        "color": "border-default"
+      }
+    },
+
+    "heroImage": {
+      "nodeId": "458:3350",
+      "dimensions": {
+        "width": 1228,
+        "height": 571
+      },
+      "position": {
+        "left": 100,
+        "top": 368
+      },
+      "borderRadius": 25,
+      "borderRadiusToken": "rounded-3xl",
+      "src": "/images/anti-aging/hero.jpg",
+      "figmaUrl": "http://localhost:3845/assets/52137ce298db84299d36b98b25e37beae55c0ef7.png",
+      "objectFit": "cover"
+    }
+  },
+
+  "tokenMapping": {
+    "colors": {
+      "#F5F1ED": "bg-surface-elevated",
+      "#413832": "text-text-primary",
+      "#735B4B": "text-brand-secondary",
+      "#816857": "text-text-muted"
+    },
+    "typography": {
+      "Bricolage Grotesque Regular 16px/1": "font-heading text-button font-normal leading-none",
+      "Bricolage Grotesque Medium 60px/1.2": "font-heading text-display font-medium leading-tight",
+      "Schibsted Grotesk Regular 16px/1.6": "font-body text-body leading-relaxed",
+      "Bricolage Grotesque Medium 32px/1.1": "font-heading text-heading-lg font-medium leading-tight"
+    },
+    "spacing": {
+      "48px": "pt-12",
+      "40px": "gap-10",
+      "16px": "gap-4",
+      "8px": "gap-2",
+      "100px": "px-[100px] (use global container)"
+    },
+    "borderRadius": {
+      "25px": "rounded-3xl (24px token, close enough)"
+    }
+  },
+
+  "assets": [
+    {
+      "name": "hero.jpg",
+      "path": "/images/anti-aging/hero.jpg",
+      "figmaUrl": "http://localhost:3845/assets/52137ce298db84299d36b98b25e37beae55c0ef7.png",
+      "dimensions": { "width": 1228, "height": 571 },
+      "note": "Main hero image showing facial treatment visualization"
+    }
+  ],
+
+  "responsiveNotes": {
+    "desktop_gte_lg": {
+      "navbar": "Full nav, variant='light'",
+      "processNav": "4 items horizontal with dividers",
+      "heroImage": "Full width within container"
+    },
+    "mobile_lt_lg": {
+      "navbar": "Mobile hamburger menu",
+      "processNav": "Could stack or scroll horizontally",
+      "heroImage": "Full width, maintain aspect ratio"
+    }
+  }
+}

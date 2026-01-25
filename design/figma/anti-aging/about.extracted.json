@@ -1,0 +1,189 @@
+{
+  "nodeId": "212:3539",
+  "name": "ABOUT (Sofwave Block)",
+  "page": "Anti-Aging Service Detail",
+  "sectionId": "sofwave",
+
+  "dimensions": {
+    "width": 1440,
+    "height": 600
+  },
+
+  "layout": {
+    "type": "relative/absolute",
+    "note": "Asymmetric 3-column layout: left image bleeds, center text, right image"
+  },
+
+  "background": {
+    "color": "transparent/inherited",
+    "token": "bg-surface-base"
+  },
+
+  "columns": {
+    "leftImage": {
+      "nodeId": "449:3337",
+      "position": { "x": 0, "y": 35 },
+      "dimensions": { "width": 367, "height": 550 },
+      "note": "Bleeds to left edge, no horizontal padding"
+    },
+    "centerContent": {
+      "position": { "x": 369, "y": 99 },
+      "width": 553,
+      "note": "Text column starts at x=369 (367 image + 2px gap or overlapping logic)"
+    },
+    "rightImage": {
+      "nodeId": "449:3336",
+      "position": { "x": 922, "y": 54 },
+      "dimensions": { "width": 453, "height": 679 },
+      "note": "Extends beyond section height (679 > 600), creates overlap effect"
+    }
+  },
+
+  "gaps": {
+    "leftImageToContent": {
+      "figma": 2,
+      "normalized": "gap-0 (images positioned absolutely)"
+    },
+    "contentToRightImage": {
+      "calculated": "922 - (369 + 553) = 0",
+      "note": "Content ends at x=922, right image starts at x=922"
+    }
+  },
+
+  "content": {
+    "title": {
+      "nodeId": "447:3159",
+      "text": "Sofwave®",
+      "position": { "x": 369, "y": 99 },
+      "width": 486,
+      "typography": {
+        "fontFamily": "Bricolage Grotesque",
+        "fontSize": 56,
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "token": "font-heading text-heading-xl font-medium leading-tight"
+      },
+      "color": "#735B4B",
+      "colorToken": "text-brand-secondary"
+    },
+    "mainText": {
+      "nodeId": "447:3164",
+      "position": { "x": 369, "y": 189 },
+      "width": 553,
+      "maxWidthToken": "max-w-[553px]",
+      "paragraphs": [
+        {
+          "type": "subtitle",
+          "text": "Non-invasive ultrasound technology for skin tightening and natural lifting.",
+          "typography": {
+            "fontFamily": "Schibsted Grotesk",
+            "fontSize": 16,
+            "fontWeight": 600,
+            "lineHeight": 1.6,
+            "token": "font-body text-body font-semibold leading-relaxed"
+          }
+        },
+        {
+          "type": "body",
+          "content": [
+            { "text": "Sofwave® is a non-invasive aesthetic treatment that uses advanced ", "bold": false },
+            { "text": "SUPERB™ (Synchronous Ultrasound Parallel Beam)", "bold": true },
+            { "text": " technology to improve skin firmness, reduce fine lines, and restore a naturally lifted appearance.", "bold": false }
+          ],
+          "typography": {
+            "fontFamily": "Schibsted Grotesk",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "lineHeight": 1.6,
+            "token": "font-body text-body leading-relaxed"
+          }
+        },
+        {
+          "type": "body",
+          "text": "By delivering controlled ultrasound energy into the mid-dermis, Sofwave stimulates the body's natural production of collagen and elastin—resulting in gradual, natural-looking rejuvenation with minimal downtime.",
+          "typography": {
+            "fontFamily": "Schibsted Grotesk",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "lineHeight": 1.6,
+            "token": "font-body text-body leading-relaxed"
+          }
+        }
+      ],
+      "paragraphSpacing": {
+        "figma": "1 empty line ≈ 26px",
+        "normalized": "space-y-6 (24px)"
+      },
+      "color": "#735B4B",
+      "colorToken": "text-brand-secondary"
+    }
+  },
+
+  "tokenMapping": {
+    "colors": {
+      "#735B4B": "text-brand-secondary"
+    },
+    "typography": {
+      "Bricolage Grotesque Medium 56px/1.1": "font-heading text-heading-xl font-medium leading-tight",
+      "Schibsted Grotesk SemiBold 16px/1.6": "font-body text-body font-semibold leading-relaxed",
+      "Schibsted Grotesk Regular 16px/1.6": "font-body text-body leading-relaxed"
+    },
+    "spacing": {
+      "35px": "mt-8 (32px, close)",
+      "54px": "mt-14 (56px, close)",
+      "99px": "pt-[100px]",
+      "189px": "~mt-[90px] from title"
+    }
+  },
+
+  "assets": [
+    {
+      "name": "sofwave-device-left.png",
+      "path": "/images/anti-aging/sofwave-device-left.png",
+      "figmaUrl": "http://localhost:3845/assets/863743b6126931f82973439a093523195633cbfd.png",
+      "dimensions": { "width": 367, "height": 550 },
+      "position": "left edge bleed"
+    },
+    {
+      "name": "sofwave-device-right.png",
+      "path": "/images/anti-aging/sofwave-device-right.png",
+      "figmaUrl": "http://localhost:3845/assets/08a5791292936d6a8b3f0803627acf2a2c137583.png",
+      "dimensions": { "width": 453, "height": 679 },
+      "position": "right side, extends beyond section"
+    }
+  ],
+
+  "implementationStrategy": {
+    "approach": "CSS Grid with 12 columns or relative positioning",
+    "desktop": {
+      "grid": "grid-cols-12",
+      "leftImage": "col-span-3, positioned to bleed left",
+      "content": "col-span-5, centered text",
+      "rightImage": "col-span-4, extends right"
+    },
+    "mobile": {
+      "layout": "Stack vertically",
+      "order": "Title → Text → Images (side by side or stacked)"
+    },
+    "notes": [
+      "Images use absolute positioning for bleed effect",
+      "Consider using overflow-visible on container",
+      "Right image extends beyond 600px height - may need overflow handling"
+    ]
+  },
+
+  "responsiveNotes": {
+    "desktop_gte_lg": {
+      "layout": "3-column asymmetric",
+      "images": "Full size, positioned absolutely"
+    },
+    "tablet_md": {
+      "layout": "2-column (text + one image) or stack",
+      "images": "Scale down proportionally"
+    },
+    "mobile_lt_md": {
+      "layout": "Single column stack",
+      "images": "Full width or side-by-side at smaller scale"
+    }
+  }
+}

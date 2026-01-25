@@ -1,0 +1,165 @@
+{
+  "section": {
+    "name": "VALUES (Explore Our Devices)",
+    "nodeId": "40:211",
+    "width": 1440,
+    "height": 933,
+    "paddingTop": 100,
+    "paddingBottom": 100,
+    "paddingLeft": 100,
+    "paddingRight": 100,
+    "bgColor": "transparent",
+    "mainGap": 80
+  },
+  "header": {
+    "nodeId": "40:356",
+    "gap": 16,
+    "align": "center",
+    "maxWidth": null,
+    "eyebrow": {
+      "nodeId": "519:3021",
+      "text": "Explore Our Devices",
+      "width": 146.208,
+      "height": 13.776,
+      "fontSize": 12,
+      "lineHeight": 1.2,
+      "border": "#eedbce",
+      "borderRadius": 40,
+      "paddingX": 18,
+      "paddingY": 10,
+      "imageUrl": "http://localhost:3845/assets/f1fbbbc5c11e176973532a7cbb3368809de33f9c.svg"
+    },
+    "title": {
+      "nodeId": "519:3040",
+      "text": "Powered by InMode Technology",
+      "width": 843.033,
+      "height": 49.448,
+      "fontSize": 48,
+      "fontWeight": 500,
+      "lineHeight": 1.2,
+      "color": "#413832",
+      "fontFamily": "Bricolage Grotesque",
+      "imageUrl": "http://localhost:3845/assets/f1a7a3f1d578354d8fac1b806e850294476f26a2.svg"
+    },
+    "subtitle": {
+      "nodeId": "519:3067",
+      "text": "Advanced, clinically proven energy-based technology delivering precise, safe, and visible aesthetic results.",
+      "width": 789.477,
+      "height": 15.273,
+      "fontSize": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.6,
+      "color": "#413832",
+      "fontFamily": "Schibsted Grotesk",
+      "imageUrl": "http://localhost:3845/assets/97e0a4de92bbfe8a7a9dfbeafd55a6abe2f6e02c.svg"
+    }
+  },
+  "contentArea": {
+    "nodeId": "106:8553",
+    "layout": "three-column",
+    "gap": 32,
+    "leftColumn": {
+      "nodeId": "95:434",
+      "width": "flex-1",
+      "gap": 32,
+      "cards": [
+        {
+          "nodeId": "43:357",
+          "title": "Lumecca IPL",
+          "description": "Gentle photofacial treatment to restore clarity and natural radiance",
+          "iconNodeId": "I43:357;100:537",
+          "iconSize": 32,
+          "iconColor": "#80736a",
+          "iconImageUrl": "http://localhost:3845/assets/2c04a9eea403448450a33d03903eba1678158fd8.svg"
+        },
+        {
+          "nodeId": "43:358",
+          "title": "BodyFX",
+          "description": "Personalized body shaping for smoother, firmer-looking skin",
+          "iconNodeId": "I43:358;100:537",
+          "iconSize": 32,
+          "iconColor": "#80736a",
+          "iconImageUrl": "http://localhost:3845/assets/4a3a43b269668dc6d65fb19e95e41732e2a5287a.svg"
+        },
+        {
+          "nodeId": "100:493",
+          "title": "Forma",
+          "description": "Comfortable skin tightening to sculpt facial contours",
+          "iconNodeId": "I100:493;100:537",
+          "iconSize": 32,
+          "iconColor": "#80736a",
+          "iconImageUrl": "http://localhost:3845/assets/82dcff4aef9c75aba2226c004a63ffecf5ecdeeb.svg"
+        }
+      ]
+    },
+    "centerImage": {
+      "nodeId": "519:3165",
+      "width": 380,
+      "height": 523,
+      "imageUrl": "http://localhost:3845/assets/9356324585e4573143a4efaadf621f5240b0d99f.png",
+      "objectFit": "cover",
+      "borderRadius": 0
+    },
+    "rightColumn": {
+      "nodeId": "100:492",
+      "width": "flex-1",
+      "gap": 32,
+      "cards": [
+        {
+          "nodeId": "100:494",
+          "title": "Pigmentation Removal",
+          "description": "Targeted IPL treatment for sun spots and pigmentation concerns",
+          "iconNodeId": "I100:494;263:6895",
+          "iconSize": 32,
+          "iconColor": "#80736a",
+          "iconImageUrl": "http://localhost:3845/assets/a682c6bd64b002cd439a93c306b08112191e9ac7.svg"
+        },
+        {
+          "nodeId": "156:1074",
+          "title": "Morpheus8",
+          "description": "Advanced RF microneedling to tighten, smooth, and remodel skin",
+          "iconNodeId": "I156:1074;263:6895",
+          "iconSize": 32,
+          "iconColor": "#80736a",
+          "iconImageUrl": "http://localhost:3845/assets/57822ed5d24d4094a8734784c097a81ae7adf28e.svg"
+        },
+        {
+          "nodeId": "100:495",
+          "title": "Advanced Treatments",
+          "description": "Expandable InMode solutions for future face and body treatments",
+          "iconNodeId": "I100:495;263:6895",
+          "iconSize": 32,
+          "iconColor": "#80736a",
+          "iconImageUrl": "http://localhost:3845/assets/18420ca6c685c7de232cff990c08fff7ecea098e.svg"
+        }
+      ]
+    }
+  },
+  "card": {
+    "bgColor": "#f4efe7",
+    "padding": 32,
+    "borderRadius": 16,
+    "gap": 32,
+    "shadow": "none",
+    "textAlign": {
+      "leftColumn": "right",
+      "rightColumn": "left"
+    },
+    "iconToTextGap": 32,
+    "titleStyle": {
+      "fontSize": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "color": "#413832",
+      "fontFamily": "Bricolage Grotesque"
+    },
+    "descriptionStyle": {
+      "fontSize": 16,
+      "fontWeight": 400,
+      "lineHeight": 1.6,
+      "color": "#735b4b",
+      "fontFamily": "Schibsted Grotesk"
+    },
+    "infoGap": 8
+  }
+}

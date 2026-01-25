@@ -1,0 +1,196 @@
+{
+  "nodeId": "231:6445",
+  "name": "FAQ Section",
+  "page": "Anti-Aging Service Detail",
+  "note": "FAQ accordion section with headline and expandable question cards.",
+
+  "dimensions": {
+    "width": "100% (full container)",
+    "minHeight": 724
+  },
+
+  "layout": {
+    "type": "flex column",
+    "alignItems": "center",
+    "gap": {
+      "headlineToList": {
+        "figma": 80,
+        "token": "gap-20"
+      }
+    },
+    "padding": {
+      "figma": 100,
+      "token": "p-[100px] or py-[100px] px-[100px]"
+    }
+  },
+
+  "headline": {
+    "nodeId": "231:6446",
+    "title": {
+      "text": "Need More Information?",
+      "segments": [
+        { "text": "Need More ", "color": "#735B4B", "colorToken": "text-brand-secondary" },
+        { "text": "Information", "color": "#413832", "colorToken": "text-text-primary" },
+        { "text": "?", "color": "#735B4B", "colorToken": "text-brand-secondary" }
+      ],
+      "typography": {
+        "fontFamily": "Bricolage Grotesque",
+        "fontSize": 56,
+        "fontWeight": 500,
+        "lineHeight": 1.1,
+        "token": "font-heading text-heading-xl font-medium leading-tight"
+      }
+    },
+    "subtitle": {
+      "text": "Clear answers to help you prepare for your treatment with confidence.",
+      "color": "#735B4B",
+      "colorToken": "text-brand-secondary",
+      "typography": {
+        "fontFamily": "Schibsted Grotesk",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "lineHeight": 1.6,
+        "token": "font-body text-body leading-relaxed"
+      }
+    },
+    "gap": {
+      "figma": 16,
+      "token": "gap-4"
+    },
+    "alignment": "center"
+  },
+
+  "accordionList": {
+    "nodeId": "231:6450",
+    "layout": "flex column",
+    "gap": {
+      "figma": 24,
+      "token": "gap-6"
+    },
+    "width": "full"
+  },
+
+  "accordionCard": {
+    "collapsed": {
+      "nodeId": "234:10909",
+      "layout": "flex row",
+      "alignItems": "center",
+      "gap": {
+        "figma": 32,
+        "token": "gap-8"
+      }
+    },
+    "expanded": {
+      "nodeId": "234:10910",
+      "layout": "flex row",
+      "alignItems": "start",
+      "gap": {
+        "figma": 32,
+        "token": "gap-8"
+      }
+    },
+    "background": {
+      "color": "#F4EFE7",
+      "token": "bg-surface-elevated"
+    },
+    "borderRadius": {
+      "figma": 24,
+      "token": "rounded-3xl"
+    },
+    "padding": {
+      "figma": 32,
+      "token": "p-8"
+    },
+    "border": "none",
+    "shadow": "none"
+  },
+
+  "questionText": {
+    "typography": {
+      "fontFamily": "Bricolage Grotesque",
+      "fontSize": 24,
+      "fontWeight": 400,
+      "lineHeight": 1.2,
+      "token": "font-heading text-2xl leading-tight"
+    },
+    "color": "#413832",
+    "colorToken": "text-text-primary"
+  },
+
+  "answerText": {
+    "typography": {
+      "fontFamily": "Schibsted Grotesk",
+      "fontSize": 20,
+      "fontWeight": 400,
+      "lineHeight": 1.4,
+      "token": "font-body text-xl leading-relaxed"
+    },
+    "color": "#735B4B",
+    "colorToken": "text-brand-secondary",
+    "marginTop": {
+      "figma": 16,
+      "token": "mt-4"
+    }
+  },
+
+  "icons": {
+    "size": {
+      "figma": 32,
+      "token": "size-8"
+    },
+    "color": "#735B4B",
+    "colorToken": "text-brand-secondary",
+    "plus": {
+      "figmaUrl": "http://localhost:3845/assets/53fe89707c3da9a67109a5bfbdf2744fbdd54873.svg",
+      "note": "Used when accordion is collapsed"
+    },
+    "minus": {
+      "figmaUrl": "http://localhost:3845/assets/98ad8ef2f36df5960512b031d1a7ca0dbc886247.svg",
+      "note": "Used when accordion is expanded"
+    }
+  },
+
+  "faqItems": [
+    {
+      "id": "faq-1",
+      "question": "Are these treatments suitable for everyone?",
+      "answer": "Most of our treatments are suitable for a wide range of clients. However, certain conditions or medications may require special consideration. During your consultation, our specialists will review your medical history and recommend the most appropriate options for you."
+    },
+    {
+      "id": "faq-2",
+      "question": "Do I need to prepare before my appointment?",
+      "answer": "Minimal preparation is usually required. We may advise avoiding active skincare ingredients, sun exposure, or injectable treatments prior to certain procedures. Specific instructions will be provided during your consultation."
+    },
+    {
+      "id": "faq-3",
+      "question": "Is there any downtime after treatment?",
+      "answer": "Most of our non-invasive treatments have minimal to no downtime. You may experience temporary redness or mild swelling, but these typically resolve within hours to a few days depending on the treatment."
+    }
+  ],
+
+  "tokenMapping": {
+    "colors": {
+      "#735B4B": "text-brand-secondary",
+      "#413832": "text-text-primary",
+      "#F4EFE7": "bg-surface-elevated"
+    },
+    "typography": {
+      "Bricolage Grotesque Medium 56px/1.1": "font-heading text-heading-xl font-medium leading-tight",
+      "Bricolage Grotesque Regular 24px/1.2": "font-heading text-2xl leading-tight",
+      "Schibsted Grotesk Regular 20px/1.4": "font-body text-xl leading-relaxed",
+      "Schibsted Grotesk Regular 16px/1.6": "font-body text-body leading-relaxed"
+    },
+    "spacing": {
+      "80px": "gap-20",
+      "32px": "p-8 / gap-8",
+      "24px": "gap-6 / rounded-3xl",
+      "16px": "gap-4 / mt-4"
+    }
+  },
+
+  "accessibility": {
+    "role": "region with aria-labelledby for section",
+    "accordionPattern": "Use button with aria-expanded, aria-controls",
+    "panelPattern": "Use region with aria-labelledby"
+  }
+}

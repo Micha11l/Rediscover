@@ -1,0 +1,511 @@
+- 01. Home - Desktop | FRAME | 13:1321
+  - HERO Section | FRAME | 19:144
+    - Navbar | FRAME | 346:3089
+      - 1160367D-AABA-485C-BEFE-16018508A130 1 | RECTANGLE | 346:3090
+      - Menu Nav | FRAME | 346:3091
+        - Btn Nav Link | INSTANCE | 346:3092
+          - Home | TEXT | I346:3092;15:114
+        - Btn Nav Link | INSTANCE | 346:3093
+          - Home | TEXT | I346:3093;15:114
+        - Btn Nav Link | INSTANCE | 346:3094
+          - Home | TEXT | I346:3094;155:1028
+        - Btn Nav Link | INSTANCE | 346:3095
+          - Home | TEXT | I346:3095;15:114
+      - Navbar | INSTANCE | 346:3109
+        - Vector | VECTOR | I346:3109;346:3081
+    - Hero Content | FRAME | 265:6962
+      - Hero Text | FRAME | 19:143
+        - Heading | TEXT | 15:127
+        - Subheading | TEXT | 16:128
+      - Hero Action | FRAME | 19:142
+        - Button | FRAME | 17:136
+          - Explore Services | TEXT | 17:137
+  - SECTION ABOUT | FRAME | 266:7001
+    - Body | FRAME | 266:7009
+      - Image | RECTANGLE | 266:7010
+      - ABOUT | FRAME | 266:7011
+        - Main | FRAME | 266:7012
+          - Symbol | FRAME | 266:7013
+            - Rectangle 1 | RECTANGLE | 266:7014
+            - Rectangle 10 | RECTANGLE | 266:7015
+            - Rectangle 8 | RECTANGLE | 266:7016
+            - Rectangle 11 | RECTANGLE | 266:7017
+            - Rectangle 2 | RECTANGLE | 266:7018
+            - Rectangle 12 | RECTANGLE | 266:7019
+            - Rectangle 9 | RECTANGLE | 266:7020
+            - Rectangle 13 | RECTANGLE | 266:7021
+            - Ellipse 1 | ELLIPSE | 266:7022
+          - Main Text | FRAME | 266:7023
+            - Title | TEXT | 266:7024
+            - Paragraph | TEXT | 266:7025
+        - Button | FRAME | 266:7026
+          - Get to Know More | TEXT | 266:7027
+  - SERVICES | FRAME | 29:192
+    - Heading | FRAME | 24:163
+      - Tag Section | FRAME | 24:164
+        - Tag | TEXT | 24:165
+      - Headline | FRAME | 100:535
+        - Title | TEXT | 24:166
+        - Paragraph | TEXT | 24:167
+    - List Services | FRAME | 29:191
+      - Card Service | INSTANCE | 202:3351
+        - Image | FRAME | I202:3351;30:215
+          - Image | RECTANGLE | I202:3351;30:228
+        - Info | FRAME | I202:3351;234:11399
+          - Category | TEXT | I202:3351;27:169
+          - Title | TEXT | I202:3351;27:168
+      - Card Service | INSTANCE | 27:172
+        - Image | FRAME | I27:172;30:215
+          - Image | RECTANGLE | I27:172;30:228
+        - Info | FRAME | I27:172;234:11399
+          - Category | TEXT | I27:172;27:169
+          - Title | TEXT | I27:172;27:168
+      - Card Service | INSTANCE | 27:175
+        - Image | FRAME | I27:175;30:215
+          - Image | RECTANGLE | I27:175;30:228
+        - Info | FRAME | I27:175;234:11399
+          - Category | TEXT | I27:175;27:169
+          - Title | TEXT | I27:175;27:168
+      - Card Service | INSTANCE | 27:178
+        - Image | FRAME | I27:178;30:215
+          - Image | RECTANGLE | I27:178;30:228
+        - Info | FRAME | I27:178;234:11399
+          - Category | TEXT | I27:178;27:169
+          - Title | TEXT | I27:178;27:168
+  - VALUES | FRAME | 40:211
+    - Headline | FRAME | 40:356
+      - Tag Section | FRAME | 347:2837
+        - Tag | TEXT | 347:2838
+      - Title | TEXT | 40:215
+      - Paragraph | TEXT | 347:2843
+    - List Values | FRAME | 106:8553
+      - Column Left | FRAME | 95:434
+        - Card Values | INSTANCE | 43:357
+          - Icon/FlowerLotus | INSTANCE | I43:357;100:537
+            - Vector | VECTOR | I43:357;100:537;103:3672
+          - Info | FRAME | I43:357;40:251
+            - Title | TEXT | I43:357;40:247
+            - Subtitle | TEXT | I43:357;40:248
+        - Card Values | INSTANCE | 43:358
+          - Icon/PersonSimpleCircle | INSTANCE | I43:358;100:537
+            - Vector | VECTOR | I43:358;100:537;102:2322
+          - Info | FRAME | I43:358;40:251
+            - Title | TEXT | I43:358;40:247
+            - Subtitle | TEXT | I43:358;40:248
+        - Card Values | INSTANCE | 100:493
+          - Icon/FlowerTulip | INSTANCE | I100:493;100:537
+            - Vector | VECTOR | I100:493;100:537;103:3676
+          - Info | FRAME | I100:493;40:251
+            - Title | TEXT | I100:493;40:247
+            - Subtitle | TEXT | I100:493;40:248
+      - Image | RECTANGLE | 263:6840
+      - Column Right | FRAME | 100:492
+        - Card Values | INSTANCE | 100:494
+          - Info | FRAME | I100:494;263:6896
+            - Title | TEXT | I100:494;263:6897
+            - Subtitle | TEXT | I100:494;263:6898
+          - Icon/SealCheck | INSTANCE | I100:494;263:6895
+            - Vector | VECTOR | I100:494;263:6895;104:2745
+        - Card Values | INSTANCE | 156:1074
+          - Info | FRAME | I156:1074;263:6896
+            - Title | TEXT | I156:1074;263:6897
+            - Subtitle | TEXT | I156:1074;263:6898
+          - Icon/LightbulbFilament | INSTANCE | I156:1074;263:6895
+            - Vector | VECTOR | I156:1074;263:6895;106:8284
+        - Card Values | INSTANCE | 100:495
+          - Info | FRAME | I100:495;263:6896
+            - Title | TEXT | I100:495;263:6897
+            - Subtitle | TEXT | I100:495;263:6898
+          - Icon/UsersFour | INSTANCE | I100:495;263:6895
+            - Vector | VECTOR | I100:495;263:6895;102:2332
+  - ACHIEVEMENT NUMBERS | FRAME | 271:7649
+    - Heading | FRAME | 271:7694
+      - Title | TEXT | 271:7692
+      - Paragraph | TEXT | 271:7650
+    - Numbers | FRAME | 271:7651
+      - Row | FRAME | 271:7682
+        - Item List Achievement | INSTANCE | 271:7652
+          - Main Info | FRAME | I271:7652;38:195
+            - Title | TEXT | I271:7652;30:270
+            - Additional Info | TEXT | I271:7652;35:37
+          - Category | TEXT | I271:7652;30:271
+        - Item List Achievement | INSTANCE | 271:7653
+          - Main Info | FRAME | I271:7653;38:195
+            - Title | TEXT | I271:7653;30:270
+            - Additional Info | TEXT | I271:7653;35:37
+          - Category | TEXT | I271:7653;30:271
+      - Row | FRAME | 271:7683
+        - Item List Achievement | INSTANCE | 271:7654
+          - Main Info | FRAME | I271:7654;38:195
+            - Title | TEXT | I271:7654;30:270
+            - Additional Info | TEXT | I271:7654;35:37
+          - Category | TEXT | I271:7654;30:271
+        - Item List Achievement | INSTANCE | 271:7655
+          - Main Info | FRAME | I271:7655;38:195
+            - Title | TEXT | I271:7655;30:270
+            - Additional Info | TEXT | I271:7655;35:37
+          - Category | TEXT | I271:7655;30:271
+  - TESTIMONI | FRAME | 43:448
+    - Header | FRAME | 158:1092
+      - 1160367D-AABA-485C-BEFE-16018508A130 1 | RECTANGLE | 347:2848
+      - Title | TEXT | 48:487
+    - Testimoni | FRAME | 43:471
+      - Testimoni | TEXT | 43:475
+      - Customer | TEXT | 43:473
+    - Pattern | GROUP | 332:4503
+      - Pattern | FRAME | 332:4504
+        - Symbol | FRAME | 332:4505
+          - Rectangle 1 | RECTANGLE | 332:4506
+          - Rectangle 8 | RECTANGLE | 332:4507
+          - Rectangle 2 | RECTANGLE | 332:4508
+          - Rectangle 9 | RECTANGLE | 332:4509
+          - Ellipse 1 | ELLIPSE | 332:4510
+        - Symbol | FRAME | 332:4511
+          - Rectangle 1 | RECTANGLE | 332:4512
+          - Rectangle 8 | RECTANGLE | 332:4513
+          - Rectangle 2 | RECTANGLE | 332:4514
+          - Rectangle 9 | RECTANGLE | 332:4515
+          - Ellipse 1 | ELLIPSE | 332:4516
+        - Symbol | FRAME | 332:4517
+          - Rectangle 1 | RECTANGLE | 332:4518
+          - Rectangle 8 | RECTANGLE | 332:4519
+          - Rectangle 2 | RECTANGLE | 332:4520
+          - Rectangle 9 | RECTANGLE | 332:4521
+          - Ellipse 1 | ELLIPSE | 332:4522
+        - Symbol | FRAME | 332:4523
+          - Rectangle 1 | RECTANGLE | 332:4524
+          - Rectangle 8 | RECTANGLE | 332:4525
+          - Rectangle 2 | RECTANGLE | 332:4526
+          - Rectangle 9 | RECTANGLE | 332:4527
+          - Ellipse 1 | ELLIPSE | 332:4528
+        - Symbol | FRAME | 332:4529
+          - Rectangle 1 | RECTANGLE | 332:4530
+          - Rectangle 8 | RECTANGLE | 332:4531
+          - Rectangle 2 | RECTANGLE | 332:4532
+          - Rectangle 9 | RECTANGLE | 332:4533
+          - Ellipse 1 | ELLIPSE | 332:4534
+        - Symbol | FRAME | 332:4535
+          - Rectangle 1 | RECTANGLE | 332:4536
+          - Rectangle 8 | RECTANGLE | 332:4537
+          - Rectangle 2 | RECTANGLE | 332:4538
+          - Rectangle 9 | RECTANGLE | 332:4539
+          - Ellipse 1 | ELLIPSE | 332:4540
+        - Symbol | FRAME | 332:4541
+          - Rectangle 1 | RECTANGLE | 332:4542
+          - Rectangle 8 | RECTANGLE | 332:4543
+          - Rectangle 2 | RECTANGLE | 332:4544
+          - Rectangle 9 | RECTANGLE | 332:4545
+          - Ellipse 1 | ELLIPSE | 332:4546
+        - Symbol | FRAME | 332:4547
+          - Rectangle 1 | RECTANGLE | 332:4548
+          - Rectangle 8 | RECTANGLE | 332:4549
+          - Rectangle 2 | RECTANGLE | 332:4550
+          - Rectangle 9 | RECTANGLE | 332:4551
+          - Ellipse 1 | ELLIPSE | 332:4552
+        - Symbol | FRAME | 332:4553
+          - Rectangle 1 | RECTANGLE | 332:4554
+          - Rectangle 8 | RECTANGLE | 332:4555
+          - Rectangle 2 | RECTANGLE | 332:4556
+          - Rectangle 9 | RECTANGLE | 332:4557
+          - Ellipse 1 | ELLIPSE | 332:4558
+        - Symbol | FRAME | 332:4559
+          - Rectangle 1 | RECTANGLE | 332:4560
+          - Rectangle 8 | RECTANGLE | 332:4561
+          - Rectangle 2 | RECTANGLE | 332:4562
+          - Rectangle 9 | RECTANGLE | 332:4563
+          - Ellipse 1 | ELLIPSE | 332:4564
+        - Symbol | FRAME | 332:4565
+          - Rectangle 1 | RECTANGLE | 332:4566
+          - Rectangle 8 | RECTANGLE | 332:4567
+          - Rectangle 2 | RECTANGLE | 332:4568
+          - Rectangle 9 | RECTANGLE | 332:4569
+          - Ellipse 1 | ELLIPSE | 332:4570
+      - Pattern | FRAME | 332:4571
+        - Symbol | FRAME | 332:4572
+          - Rectangle 1 | RECTANGLE | 332:4573
+          - Rectangle 8 | RECTANGLE | 332:4574
+          - Rectangle 2 | RECTANGLE | 332:4575
+          - Rectangle 9 | RECTANGLE | 332:4576
+          - Ellipse 1 | ELLIPSE | 332:4577
+        - Symbol | FRAME | 332:4578
+          - Rectangle 1 | RECTANGLE | 332:4579
+          - Rectangle 8 | RECTANGLE | 332:4580
+          - Rectangle 2 | RECTANGLE | 332:4581
+          - Rectangle 9 | RECTANGLE | 332:4582
+          - Ellipse 1 | ELLIPSE | 332:4583
+        - Symbol | FRAME | 332:4584
+          - Rectangle 1 | RECTANGLE | 332:4585
+          - Rectangle 8 | RECTANGLE | 332:4586
+          - Rectangle 2 | RECTANGLE | 332:4587
+          - Rectangle 9 | RECTANGLE | 332:4588
+          - Ellipse 1 | ELLIPSE | 332:4589
+        - Symbol | FRAME | 332:4590
+          - Rectangle 1 | RECTANGLE | 332:4591
+          - Rectangle 8 | RECTANGLE | 332:4592
+          - Rectangle 2 | RECTANGLE | 332:4593
+          - Rectangle 9 | RECTANGLE | 332:4594
+          - Ellipse 1 | ELLIPSE | 332:4595
+        - Symbol | FRAME | 332:4596
+          - Rectangle 1 | RECTANGLE | 332:4597
+          - Rectangle 8 | RECTANGLE | 332:4598
+          - Rectangle 2 | RECTANGLE | 332:4599
+          - Rectangle 9 | RECTANGLE | 332:4600
+          - Ellipse 1 | ELLIPSE | 332:4601
+        - Symbol | FRAME | 332:4602
+          - Rectangle 1 | RECTANGLE | 332:4603
+          - Rectangle 8 | RECTANGLE | 332:4604
+          - Rectangle 2 | RECTANGLE | 332:4605
+          - Rectangle 9 | RECTANGLE | 332:4606
+          - Ellipse 1 | ELLIPSE | 332:4607
+        - Symbol | FRAME | 332:4608
+          - Rectangle 1 | RECTANGLE | 332:4609
+          - Rectangle 8 | RECTANGLE | 332:4610
+          - Rectangle 2 | RECTANGLE | 332:4611
+          - Rectangle 9 | RECTANGLE | 332:4612
+          - Ellipse 1 | ELLIPSE | 332:4613
+        - Symbol | FRAME | 332:4614
+          - Rectangle 1 | RECTANGLE | 332:4615
+          - Rectangle 8 | RECTANGLE | 332:4616
+          - Rectangle 2 | RECTANGLE | 332:4617
+          - Rectangle 9 | RECTANGLE | 332:4618
+          - Ellipse 1 | ELLIPSE | 332:4619
+        - Symbol | FRAME | 332:4620
+          - Rectangle 1 | RECTANGLE | 332:4621
+          - Rectangle 8 | RECTANGLE | 332:4622
+          - Rectangle 2 | RECTANGLE | 332:4623
+          - Rectangle 9 | RECTANGLE | 332:4624
+          - Ellipse 1 | ELLIPSE | 332:4625
+        - Symbol | FRAME | 332:4626
+          - Rectangle 1 | RECTANGLE | 332:4627
+          - Rectangle 8 | RECTANGLE | 332:4628
+          - Rectangle 2 | RECTANGLE | 332:4629
+          - Rectangle 9 | RECTANGLE | 332:4630
+          - Ellipse 1 | ELLIPSE | 332:4631
+        - Symbol | FRAME | 332:4632
+          - Rectangle 1 | RECTANGLE | 332:4633
+          - Rectangle 8 | RECTANGLE | 332:4634
+          - Rectangle 2 | RECTANGLE | 332:4635
+          - Rectangle 9 | RECTANGLE | 332:4636
+          - Ellipse 1 | ELLIPSE | 332:4637
+  - HOW IT WORKS | FRAME | 52:82
+    - Heading | FRAME | 138:253
+      - Title | TEXT | 138:257
+    - Process | FRAME | 143:261
+      - Item List How It Works | INSTANCE | 300:3618
+        - Subtitle | TEXT | I300:3618;52:159
+        - Info | FRAME | I300:3618;52:156
+          - Title | TEXT | I300:3618;52:157
+          - Subtitle | TEXT | I300:3618;52:158
+      - Divider | VECTOR | 135:251
+      - Item List How It Works | INSTANCE | 52:161
+        - Subtitle | TEXT | I52:161;52:159
+        - Info | FRAME | I52:161;52:156
+          - Title | TEXT | I52:161;52:157
+          - Subtitle | TEXT | I52:161;52:158
+      - Divider | VECTOR | 143:260
+      - Item List How It Works | INSTANCE | 52:166
+        - Subtitle | TEXT | I52:166;52:159
+        - Info | FRAME | I52:166;52:156
+          - Title | TEXT | I52:166;52:157
+          - Subtitle | TEXT | I52:166;52:158
+      - Divider | VECTOR | 135:252
+      - Item List How It Works | INSTANCE | 130:245
+        - Subtitle | TEXT | I130:245;52:159
+        - Info | FRAME | I130:245;52:156
+          - Title | TEXT | I130:245;52:157
+          - Subtitle | TEXT | I130:245;52:158
+  - PRICING PACKAGES | FRAME | 53:171
+    - Headline | FRAME | 53:188
+      - Title | TEXT | 53:189
+      - Paragraph | TEXT | 53:190
+    - List Pricelist | FRAME | 86:410
+      - Card Price Package | FRAME | 347:3038
+        - Info | FRAME | 347:3039
+          - Title | TEXT | 347:3040
+          - Main Info | FRAME | 347:3042
+            - Title | TEXT | 347:3043
+            - Additional Info | TEXT | 347:3044
+          - List Includes | FRAME | 347:3045
+            - Item List | INSTANCE | 347:3046
+              - Point | FRAME | I347:3046;54:319
+                - Bullet | FRAME | I347:3046;54:296
+                  - Rectangle 1 | VECTOR | I347:3046;54:316
+                  - Rectangle 8 | VECTOR | I347:3046;54:312
+                  - Rectangle 2 | VECTOR | I347:3046;54:315
+                  - Rectangle 9 | VECTOR | I347:3046;54:314
+                  - Ellipse 1 | VECTOR | I347:3046;54:317
+              - Subtitle | TEXT | I347:3046;53:293
+            - Item List | INSTANCE | 347:3047
+              - Point | FRAME | I347:3047;54:319
+                - Bullet | FRAME | I347:3047;54:296
+                  - Rectangle 1 | VECTOR | I347:3047;54:316
+                  - Rectangle 8 | VECTOR | I347:3047;54:312
+                  - Rectangle 2 | VECTOR | I347:3047;54:315
+                  - Rectangle 9 | VECTOR | I347:3047;54:314
+                  - Ellipse 1 | VECTOR | I347:3047;54:317
+              - Subtitle | TEXT | I347:3047;53:293
+            - Item List | INSTANCE | 347:3048
+              - Point | FRAME | I347:3048;54:319
+                - Bullet | FRAME | I347:3048;54:296
+                  - Rectangle 1 | VECTOR | I347:3048;54:316
+                  - Rectangle 8 | VECTOR | I347:3048;54:312
+                  - Rectangle 2 | VECTOR | I347:3048;54:315
+                  - Rectangle 9 | VECTOR | I347:3048;54:314
+                  - Ellipse 1 | VECTOR | I347:3048;54:317
+              - Subtitle | TEXT | I347:3048;53:293
+            - Item List | INSTANCE | 347:3049
+              - Point | FRAME | I347:3049;54:319
+                - Bullet | FRAME | I347:3049;54:296
+                  - Rectangle 1 | VECTOR | I347:3049;54:316
+                  - Rectangle 8 | VECTOR | I347:3049;54:312
+                  - Rectangle 2 | VECTOR | I347:3049;54:315
+                  - Rectangle 9 | VECTOR | I347:3049;54:314
+                  - Ellipse 1 | VECTOR | I347:3049;54:317
+              - Subtitle | TEXT | I347:3049;53:293
+            - Item List | INSTANCE | 347:3050
+              - Point | FRAME | I347:3050;54:319
+                - Bullet | FRAME | I347:3050;54:296
+                  - Rectangle 1 | VECTOR | I347:3050;54:316
+                  - Rectangle 8 | VECTOR | I347:3050;54:312
+                  - Rectangle 2 | VECTOR | I347:3050;54:315
+                  - Rectangle 9 | VECTOR | I347:3050;54:314
+                  - Ellipse 1 | VECTOR | I347:3050;54:317
+              - Subtitle | TEXT | I347:3050;53:293
+        - Button | FRAME | 347:3051
+          - Book Now | TEXT | 347:3052
+        - Clinic Info | GROUP | 347:3119
+          - 9425 Leslie St Unit14 ,2F, Richmond Hill, ON L4B 3N7 Monday – Sunday 10:00 AM – 8:00 PM By appointment only Free on-site parking available Accessible parking available Cash Debit/Credit cards NFC mobile payments | TEXT | 347:3120
+          - 📍 🕒 🚗 💳 | TEXT | 347:3121
+      - 截屏2025-12-25 下午8.29.54 1 | RECTANGLE | 347:2996
+  - CTA | FRAME | 128:240
+    - Banner | FRAME | 68:492
+      - Headline | FRAME | 68:518
+        - Title | TEXT | 68:519
+        - Paragraph | TEXT | 68:520
+      - Button | FRAME | 68:522
+        - Request a Consultation | TEXT | 68:523
+  - NEWSLETTER SIGN UP | FRAME | 350:3257
+    - Pattern | FRAME | 350:3258
+      - Symbol | FRAME | 350:3259
+        - Rectangle 1 | RECTANGLE | 350:3260
+        - Rectangle 8 | RECTANGLE | 350:3261
+        - Rectangle 2 | RECTANGLE | 350:3262
+        - Rectangle 9 | RECTANGLE | 350:3263
+        - Ellipse 1 | ELLIPSE | 350:3264
+      - Symbol | FRAME | 350:3265
+        - Rectangle 1 | RECTANGLE | 350:3266
+        - Rectangle 8 | RECTANGLE | 350:3267
+        - Rectangle 2 | RECTANGLE | 350:3268
+        - Rectangle 9 | RECTANGLE | 350:3269
+        - Ellipse 1 | ELLIPSE | 350:3270
+      - Symbol | FRAME | 350:3271
+        - Rectangle 1 | RECTANGLE | 350:3272
+        - Rectangle 8 | RECTANGLE | 350:3273
+        - Rectangle 2 | RECTANGLE | 350:3274
+        - Rectangle 9 | RECTANGLE | 350:3275
+        - Ellipse 1 | ELLIPSE | 350:3276
+      - Symbol | FRAME | 350:3277
+        - Rectangle 1 | RECTANGLE | 350:3278
+        - Rectangle 8 | RECTANGLE | 350:3279
+        - Rectangle 2 | RECTANGLE | 350:3280
+        - Rectangle 9 | RECTANGLE | 350:3281
+        - Ellipse 1 | ELLIPSE | 350:3282
+      - Symbol | FRAME | 350:3283
+        - Rectangle 1 | RECTANGLE | 350:3284
+        - Rectangle 8 | RECTANGLE | 350:3285
+        - Rectangle 2 | RECTANGLE | 350:3286
+        - Rectangle 9 | RECTANGLE | 350:3287
+        - Ellipse 1 | ELLIPSE | 350:3288
+      - Symbol | FRAME | 350:3289
+        - Rectangle 1 | RECTANGLE | 350:3290
+        - Rectangle 8 | RECTANGLE | 350:3291
+        - Rectangle 2 | RECTANGLE | 350:3292
+        - Rectangle 9 | RECTANGLE | 350:3293
+        - Ellipse 1 | ELLIPSE | 350:3294
+      - Symbol | FRAME | 350:3295
+        - Rectangle 1 | RECTANGLE | 350:3296
+        - Rectangle 8 | RECTANGLE | 350:3297
+        - Rectangle 2 | RECTANGLE | 350:3298
+        - Rectangle 9 | RECTANGLE | 350:3299
+        - Ellipse 1 | ELLIPSE | 350:3300
+      - Symbol | FRAME | 350:3301
+        - Rectangle 1 | RECTANGLE | 350:3302
+        - Rectangle 8 | RECTANGLE | 350:3303
+        - Rectangle 2 | RECTANGLE | 350:3304
+        - Rectangle 9 | RECTANGLE | 350:3305
+        - Ellipse 1 | ELLIPSE | 350:3306
+      - Symbol | FRAME | 350:3307
+        - Rectangle 1 | RECTANGLE | 350:3308
+        - Rectangle 8 | RECTANGLE | 350:3309
+        - Rectangle 2 | RECTANGLE | 350:3310
+        - Rectangle 9 | RECTANGLE | 350:3311
+        - Ellipse 1 | ELLIPSE | 350:3312
+      - Symbol | FRAME | 350:3313
+        - Rectangle 1 | RECTANGLE | 350:3314
+        - Rectangle 8 | RECTANGLE | 350:3315
+        - Rectangle 2 | RECTANGLE | 350:3316
+        - Rectangle 9 | RECTANGLE | 350:3317
+        - Ellipse 1 | ELLIPSE | 350:3318
+      - Symbol | FRAME | 350:3319
+        - Rectangle 1 | RECTANGLE | 350:3320
+        - Rectangle 8 | RECTANGLE | 350:3321
+        - Rectangle 2 | RECTANGLE | 350:3322
+        - Rectangle 9 | RECTANGLE | 350:3323
+        - Ellipse 1 | ELLIPSE | 350:3324
+    - Title | TEXT | 350:3325
+    - Right Side | FRAME | 350:3326
+      - Subtitle | FRAME | 350:3327
+        - Text | TEXT | 350:3328
+      - Email Form | FRAME | 350:3329
+        - Input Field | FRAME | 350:3330
+          - Placeholder | TEXT | 350:3331
+        - Button | FRAME | 350:3332
+          - Subscribe | TEXT | 350:3333
+  - FOOTER | FRAME | 350:3334
+    - Body | FRAME | 350:3335
+      - Rediscover Beauty | TEXT | 350:3414
+      - Working Ours | FRAME | 350:3338
+        - Working Hours | TEXT | 350:3339
+        - Schedules | FRAME | 350:3340
+          - Schedule | TEXT | 350:3341
+      - Right Side | FRAME | 350:3343
+        - Cuick Links | FRAME | 350:3344
+          - Menu | TEXT | 350:3345
+          - List | FRAME | 350:3346
+            - Btn Nav Link | INSTANCE | 350:3347
+              - Home | TEXT | I350:3347;15:114
+            - Btn Nav Link | INSTANCE | 350:3349
+              - Home | TEXT | I350:3349;15:114
+            - Btn Nav Link | INSTANCE | 350:3350
+              - Home | TEXT | I350:3350;15:114
+            - Btn Nav Link | INSTANCE | 350:3351
+              - Home | TEXT | I350:3351;15:114
+        - Contact | FRAME | 350:3352
+          - Contact Us | TEXT | 350:3353
+          - List | FRAME | 350:3354
+            - Item List Contact | FRAME | 350:3355
+              - Icon/Phone | INSTANCE | 350:3356
+                - Vector | VECTOR | I350:3356;2:301
+              - +1 (647) 523-3988 | TEXT | 350:3357
+            - Item List Contact | FRAME | 350:3358
+              - Icon/EnvelopeOpen | INSTANCE | 350:3359
+                - Vector | VECTOR | I350:3359;2:299
+              - https://rediscoverbeauty.ca | TEXT | 350:3360
+            - Item List Contact | FRAME | 350:3361
+              - Icon | FRAME | 350:3362
+                - Icon/MapPinLine | INSTANCE | 350:3363
+                  - Vector | VECTOR | I350:3363;70:1930
+              - 9425 Leslie St Unit14 ,2F, Richmond Hill, ON L4B 3N7 | TEXT | 350:3364
+          - Socmed | FRAME | 350:3365
+            - Button Icon | FRAME | 350:3366
+              - Icon/InstagramLogo | INSTANCE | 350:3367
+                - Vector | VECTOR | I350:3367;80:1426
+            - Button Icon | FRAME | 350:3368
+              - Icon/FacebookLogo | INSTANCE | 350:3369
+                - Vector | VECTOR | I350:3369;80:1430
+      - 3337A662-FBA6-4DD4-85A9-3DB878612951 1 | RECTANGLE | 359:2519
+    - Copyright | FRAME | 350:3374
+      - Rediscover Beauty © 2025 | TEXT | 350:3375
+      - Buttons | FRAME | 350:3376
+        - Privacy Policy | TEXT | 350:3377
+        - Term and conditions | TEXT | 350:3378

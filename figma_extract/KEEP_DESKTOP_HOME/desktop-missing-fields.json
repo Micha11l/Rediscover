@@ -1,0 +1,5563 @@
+{
+  "imageTransformNodes": [
+    {
+      "id": "19:144",
+      "name": "HERO Section",
+      "fills": [
+        {
+          "imageRef": "6852c99737c6dbad7422c4e882a3c1c6995618d6",
+          "scaleMode": "STRETCH",
+          "imageTransform": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0.7509499788284302,
+              0.037531930953264236
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "346:3090",
+      "name": "1160367D-AABA-485C-BEFE-16018508A130 1",
+      "fills": [
+        {
+          "imageRef": "a87dcc3a96892ddc88fa46f61d0a406be421e400",
+          "scaleMode": "STRETCH",
+          "imageTransform": [
+            [
+              0.3935546875,
+              0,
+              0.2705078125
+            ],
+            [
+              0,
+              0.3427734375,
+              0.2080078125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "266:7013",
+      "name": "Symbol",
+      "fills": [
+        {
+          "imageRef": "80da360174a0cc5f52621b861d80acd558cd0700",
+          "scaleMode": "STRETCH",
+          "imageTransform": [
+            [
+              0.35629066824913025,
+              0,
+              0.2937694191932678
+            ],
+            [
+              0,
+              0.35629066824913025,
+              0.18990592658519745
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "I202:3351;30:228",
+      "name": "Image",
+      "fills": [
+        {
+          "imageRef": "393ee394817f4a44991c97a59342a9990111b709",
+          "scaleMode": "STRETCH",
+          "imageTransform": [
+            [
+              0.6887052059173584,
+              0,
+              0.08422047644853592
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "347:2848",
+      "name": "1160367D-AABA-485C-BEFE-16018508A130 1",
+      "fills": [
+        {
+          "imageRef": "a87dcc3a96892ddc88fa46f61d0a406be421e400",
+          "scaleMode": "STRETCH",
+          "imageTransform": [
+            [
+              0.3935546875,
+              0,
+              0.2705078125
+            ],
+            [
+              0,
+              0.3427734375,
+              0.2080078125
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "68:492",
+      "name": "Banner",
+      "fills": [
+        {
+          "imageRef": "d52ade4eb33a62ca16d270ef88717938a07b96c9",
+          "scaleMode": "STRETCH",
+          "imageTransform": [
+            [
+              1,
+              0,
+              -0.0002389550063526258
+            ],
+            [
+              0,
+              0.41129031777381897,
+              0.03806723654270172
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "350:3257",
+      "name": "NEWSLETTER SIGN UP",
+      "fills": [
+        {
+          "imageRef": "4e563484750090887d13738f6b0946ea625fe70a",
+          "scaleMode": "STRETCH",
+          "imageTransform": [
+            [
+              1,
+              0,
+              0.00009430360660189763
+            ],
+            [
+              0,
+              0.45031166076660156,
+              0.3207509219646454
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "359:2519",
+      "name": "3337A662-FBA6-4DD4-85A9-3DB878612951 1",
+      "fills": [
+        {
+          "imageRef": "80da360174a0cc5f52621b861d80acd558cd0700",
+          "scaleMode": "STRETCH",
+          "imageTransform": [
+            [
+              0.3681640625,
+              0,
+              0.287109375
+            ],
+            [
+              0,
+              0.3251953125,
+              0.1953125
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "opacityNodes": [
+    {
+      "id": "332:4504",
+      "name": "Pattern",
+      "opacity": 0.05999999865889549
+    },
+    {
+      "id": "332:4571",
+      "name": "Pattern",
+      "opacity": 0.05999999865889549
+    },
+    {
+      "id": "I347:3046;54:296",
+      "name": "Bullet",
+      "opacity": 0.5
+    },
+    {
+      "id": "I347:3047;54:296",
+      "name": "Bullet",
+      "opacity": 0.5
+    },
+    {
+      "id": "I347:3048;54:296",
+      "name": "Bullet",
+      "opacity": 0.5
+    },
+    {
+      "id": "I347:3049;54:296",
+      "name": "Bullet",
+      "opacity": 0.5
+    },
+    {
+      "id": "I347:3050;54:296",
+      "name": "Bullet",
+      "opacity": 0.5
+    },
+    {
+      "id": "350:3258",
+      "name": "Pattern",
+      "opacity": 0.05999999865889549
+    }
+  ],
+  "rotationNodes": [
+    {
+      "id": "266:7015",
+      "name": "Rectangle 10",
+      "rotation": -0.7853981633974483
+    },
+    {
+      "id": "266:7017",
+      "name": "Rectangle 11",
+      "rotation": -0.7853981633974483
+    },
+    {
+      "id": "266:7018",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "266:7019",
+      "name": "Rectangle 12",
+      "rotation": 2.356194490192345
+    },
+    {
+      "id": "266:7020",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "266:7021",
+      "name": "Rectangle 13",
+      "rotation": 2.356194490192345
+    },
+    {
+      "id": "332:4508",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4509",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4514",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4515",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4520",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4521",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4526",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4527",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4532",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4533",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4538",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4539",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4544",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4545",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4550",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4551",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4556",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4557",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4562",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4563",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4568",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4569",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4575",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4576",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4581",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4582",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4587",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4588",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4593",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4594",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4599",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4600",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4605",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4606",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4611",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4612",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4617",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4618",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4623",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4624",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4629",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4630",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4635",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "332:4636",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "135:251",
+      "name": "Divider",
+      "rotation": -1.5707962830835083
+    },
+    {
+      "id": "143:260",
+      "name": "Divider",
+      "rotation": -1.5707962830835083
+    },
+    {
+      "id": "135:252",
+      "name": "Divider",
+      "rotation": -1.5707962830835083
+    },
+    {
+      "id": "350:3262",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3263",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3268",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3269",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3274",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3275",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3280",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3281",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3286",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3287",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3292",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3293",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3298",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3299",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3304",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3305",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3310",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3311",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3316",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3317",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3322",
+      "name": "Rectangle 2",
+      "rotation": 3.141592653589793
+    },
+    {
+      "id": "350:3323",
+      "name": "Rectangle 9",
+      "rotation": 3.141592653589793
+    }
+  ],
+  "strokeDetailNodes": [
+    {
+      "id": "13:1321",
+      "name": "01. Home - Desktop",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "19:144",
+      "name": "HERO Section",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "346:3089",
+      "name": "Navbar",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "346:3090",
+      "name": "1160367D-AABA-485C-BEFE-16018508A130 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "346:3091",
+      "name": "Menu Nav",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "346:3092",
+      "name": "Btn Nav Link",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I346:3092;15:114",
+      "name": "Home",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "346:3093",
+      "name": "Btn Nav Link",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I346:3093;15:114",
+      "name": "Home",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "346:3094",
+      "name": "Btn Nav Link",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I346:3094;155:1028",
+      "name": "Home",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "346:3095",
+      "name": "Btn Nav Link",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I346:3095;15:114",
+      "name": "Home",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "346:3109",
+      "name": "Navbar",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I346:3109;346:3081",
+      "name": "Vector",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "265:6962",
+      "name": "Hero Content",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "19:143",
+      "name": "Hero Text",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "15:127",
+      "name": "Heading",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "16:128",
+      "name": "Subheading",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "19:142",
+      "name": "Hero Action",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "17:136",
+      "name": "Button",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "17:137",
+      "name": "Explore Services",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7001",
+      "name": "SECTION ABOUT",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7009",
+      "name": "Body",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7010",
+      "name": "Image",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7011",
+      "name": "ABOUT",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7012",
+      "name": "Main",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7013",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7014",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7015",
+      "name": "Rectangle 10",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7016",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7017",
+      "name": "Rectangle 11",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7018",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7019",
+      "name": "Rectangle 12",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7020",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7021",
+      "name": "Rectangle 13",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7022",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7023",
+      "name": "Main Text",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7024",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7025",
+      "name": "Paragraph",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7026",
+      "name": "Button",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "266:7027",
+      "name": "Get to Know More",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "29:192",
+      "name": "SERVICES",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "24:163",
+      "name": "Heading",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "24:164",
+      "name": "Tag Section",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "24:165",
+      "name": "Tag",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "100:535",
+      "name": "Headline",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "24:166",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "24:167",
+      "name": "Paragraph",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "29:191",
+      "name": "List Services",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "202:3351",
+      "name": "Card Service",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I202:3351;30:215",
+      "name": "Image",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I202:3351;30:228",
+      "name": "Image",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I202:3351;234:11399",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I202:3351;27:169",
+      "name": "Category",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I202:3351;27:168",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "27:172",
+      "name": "Card Service",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:172;30:215",
+      "name": "Image",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:172;30:228",
+      "name": "Image",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:172;234:11399",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:172;27:169",
+      "name": "Category",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:172;27:168",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "27:175",
+      "name": "Card Service",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:175;30:215",
+      "name": "Image",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:175;30:228",
+      "name": "Image",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:175;234:11399",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:175;27:169",
+      "name": "Category",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:175;27:168",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "27:178",
+      "name": "Card Service",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:178;30:215",
+      "name": "Image",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:178;30:228",
+      "name": "Image",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:178;234:11399",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:178;27:169",
+      "name": "Category",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I27:178;27:168",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "40:211",
+      "name": "VALUES",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "40:356",
+      "name": "Headline",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:2837",
+      "name": "Tag Section",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:2838",
+      "name": "Tag",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "40:215",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:2843",
+      "name": "Paragraph",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "106:8553",
+      "name": "List Values",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "95:434",
+      "name": "Column Left",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "43:357",
+      "name": "Card Values",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I43:357;100:537",
+      "name": "Icon/FlowerLotus",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I43:357;100:537;103:3672",
+      "name": "Vector",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I43:357;40:251",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I43:357;40:247",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I43:357;40:248",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "43:358",
+      "name": "Card Values",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I43:358;100:537",
+      "name": "Icon/PersonSimpleCircle",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I43:358;100:537;102:2322",
+      "name": "Vector",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I43:358;40:251",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I43:358;40:247",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I43:358;40:248",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "100:493",
+      "name": "Card Values",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:493;100:537",
+      "name": "Icon/FlowerTulip",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:493;100:537;103:3676",
+      "name": "Vector",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:493;40:251",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:493;40:247",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:493;40:248",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "263:6840",
+      "name": "Image",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "100:492",
+      "name": "Column Right",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "100:494",
+      "name": "Card Values",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:494;263:6896",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:494;263:6897",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:494;263:6898",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:494;263:6895",
+      "name": "Icon/SealCheck",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:494;263:6895;104:2745",
+      "name": "Vector",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "156:1074",
+      "name": "Card Values",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I156:1074;263:6896",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I156:1074;263:6897",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I156:1074;263:6898",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I156:1074;263:6895",
+      "name": "Icon/LightbulbFilament",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I156:1074;263:6895;106:8284",
+      "name": "Vector",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "100:495",
+      "name": "Card Values",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:495;263:6896",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:495;263:6897",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:495;263:6898",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:495;263:6895",
+      "name": "Icon/UsersFour",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I100:495;263:6895;102:2332",
+      "name": "Vector",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "271:7649",
+      "name": "ACHIEVEMENT NUMBERS",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "271:7694",
+      "name": "Heading",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "271:7692",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "271:7650",
+      "name": "Paragraph",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "271:7651",
+      "name": "Numbers",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "271:7682",
+      "name": "Row",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "271:7652",
+      "name": "Item List Achievement",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7652;38:195",
+      "name": "Main Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7652;30:270",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7652;35:37",
+      "name": "Additional Info",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7652;30:271",
+      "name": "Category",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "271:7653",
+      "name": "Item List Achievement",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7653;38:195",
+      "name": "Main Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7653;30:270",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7653;35:37",
+      "name": "Additional Info",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7653;30:271",
+      "name": "Category",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "271:7683",
+      "name": "Row",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "271:7654",
+      "name": "Item List Achievement",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7654;38:195",
+      "name": "Main Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7654;30:270",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7654;35:37",
+      "name": "Additional Info",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7654;30:271",
+      "name": "Category",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "271:7655",
+      "name": "Item List Achievement",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7655;38:195",
+      "name": "Main Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7655;30:270",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7655;35:37",
+      "name": "Additional Info",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I271:7655;30:271",
+      "name": "Category",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "43:448",
+      "name": "TESTIMONI",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "158:1092",
+      "name": "Header",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:2848",
+      "name": "1160367D-AABA-485C-BEFE-16018508A130 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "48:487",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "43:471",
+      "name": "Testimoni",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "43:475",
+      "name": "Testimoni",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "43:473",
+      "name": "Customer",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4503",
+      "name": "Pattern",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4504",
+      "name": "Pattern",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4505",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4506",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4507",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4508",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4509",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4510",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4511",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4512",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4513",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4514",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4515",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4516",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4517",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4518",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4519",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4520",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4521",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4522",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4523",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4524",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4525",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4526",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4527",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4528",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4529",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4530",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4531",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4532",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4533",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4534",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4535",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4536",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4537",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4538",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4539",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4540",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4541",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4542",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4543",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4544",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4545",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4546",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4547",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4548",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4549",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4550",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4551",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4552",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4553",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4554",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4555",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4556",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4557",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4558",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4559",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4560",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4561",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4562",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4563",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4564",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4565",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4566",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4567",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4568",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4569",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4570",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4571",
+      "name": "Pattern",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4572",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4573",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4574",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4575",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4576",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4577",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4578",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4579",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4580",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4581",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4582",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4583",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4584",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4585",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4586",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4587",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4588",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4589",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4590",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4591",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4592",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4593",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4594",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4595",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4596",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4597",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4598",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4599",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4600",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4601",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4602",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4603",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4604",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4605",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4606",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4607",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4608",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4609",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4610",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4611",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4612",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4613",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4614",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4615",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4616",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4617",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4618",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4619",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4620",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4621",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4622",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4623",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4624",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4625",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4626",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4627",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4628",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4629",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4630",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4631",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4632",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4633",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4634",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4635",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4636",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "332:4637",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "52:82",
+      "name": "HOW IT WORKS",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "138:253",
+      "name": "Heading",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "138:257",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "143:261",
+      "name": "Process",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "300:3618",
+      "name": "Item List How It Works",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I300:3618;52:159",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I300:3618;52:156",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I300:3618;52:157",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I300:3618;52:158",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "135:251",
+      "name": "Divider",
+      "strokeAlign": "CENTER",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "52:161",
+      "name": "Item List How It Works",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I52:161;52:159",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I52:161;52:156",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I52:161;52:157",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I52:161;52:158",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "143:260",
+      "name": "Divider",
+      "strokeAlign": "CENTER",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "52:166",
+      "name": "Item List How It Works",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I52:166;52:159",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I52:166;52:156",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I52:166;52:157",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I52:166;52:158",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "135:252",
+      "name": "Divider",
+      "strokeAlign": "CENTER",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "130:245",
+      "name": "Item List How It Works",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I130:245;52:159",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I130:245;52:156",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I130:245;52:157",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I130:245;52:158",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "53:171",
+      "name": "PRICING PACKAGES",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "53:188",
+      "name": "Headline",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "53:189",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "53:190",
+      "name": "Paragraph",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "86:410",
+      "name": "List Pricelist",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3038",
+      "name": "Card Price Package",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3039",
+      "name": "Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3040",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3042",
+      "name": "Main Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3043",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3044",
+      "name": "Additional Info",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3045",
+      "name": "List Includes",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3046",
+      "name": "Item List",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3046;54:319",
+      "name": "Point",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3046;54:296",
+      "name": "Bullet",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3046;54:316",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3046;54:312",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3046;54:315",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3046;54:314",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3046;54:317",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3046;53:293",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3047",
+      "name": "Item List",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3047;54:319",
+      "name": "Point",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3047;54:296",
+      "name": "Bullet",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3047;54:316",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3047;54:312",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3047;54:315",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3047;54:314",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3047;54:317",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3047;53:293",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3048",
+      "name": "Item List",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3048;54:319",
+      "name": "Point",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3048;54:296",
+      "name": "Bullet",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3048;54:316",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3048;54:312",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3048;54:315",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3048;54:314",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3048;54:317",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3048;53:293",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3049",
+      "name": "Item List",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3049;54:319",
+      "name": "Point",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3049;54:296",
+      "name": "Bullet",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3049;54:316",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3049;54:312",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3049;54:315",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3049;54:314",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3049;54:317",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3049;53:293",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3050",
+      "name": "Item List",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3050;54:319",
+      "name": "Point",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3050;54:296",
+      "name": "Bullet",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3050;54:316",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3050;54:312",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3050;54:315",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3050;54:314",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3050;54:317",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I347:3050;53:293",
+      "name": "Subtitle",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3051",
+      "name": "Button",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3052",
+      "name": "Book Now",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3119",
+      "name": "Clinic Info",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3120",
+      "name": "9425 Leslie St Unit14 ,2F, Richmond Hill, ON L4B 3N7 Monday – Sunday 10:00 AM – 8:00 PM By appointment only Free on-site parking available Accessible parking available Cash Debit/Credit cards NFC mobile payments",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:3121",
+      "name": "📍 🕒 🚗 💳",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "347:2996",
+      "name": "截屏2025-12-25 下午8.29.54 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "128:240",
+      "name": "CTA",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "68:492",
+      "name": "Banner",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "68:518",
+      "name": "Headline",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "68:519",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "68:520",
+      "name": "Paragraph",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "68:522",
+      "name": "Button",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "68:523",
+      "name": "Request a Consultation",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3257",
+      "name": "NEWSLETTER SIGN UP",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3258",
+      "name": "Pattern",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3259",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3260",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3261",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3262",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3263",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3264",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3265",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3266",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3267",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3268",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3269",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3270",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3271",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3272",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3273",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3274",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3275",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3276",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3277",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3278",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3279",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3280",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3281",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3282",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3283",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3284",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3285",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3286",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3287",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3288",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3289",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3290",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3291",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3292",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3293",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3294",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3295",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3296",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3297",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3298",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3299",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3300",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3301",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3302",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3303",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3304",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3305",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3306",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3307",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3308",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3309",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3310",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3311",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3312",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3313",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3314",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3315",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3316",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3317",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3318",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3319",
+      "name": "Symbol",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3320",
+      "name": "Rectangle 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3321",
+      "name": "Rectangle 8",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3322",
+      "name": "Rectangle 2",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3323",
+      "name": "Rectangle 9",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3324",
+      "name": "Ellipse 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3325",
+      "name": "Title",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3326",
+      "name": "Right Side",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3327",
+      "name": "Subtitle",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3328",
+      "name": "Text",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3329",
+      "name": "Email Form",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3330",
+      "name": "Input Field",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3331",
+      "name": "Placeholder",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3332",
+      "name": "Button",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3333",
+      "name": "Subscribe",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3334",
+      "name": "FOOTER",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3335",
+      "name": "Body",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3414",
+      "name": "Rediscover Beauty",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3338",
+      "name": "Working Ours",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3339",
+      "name": "Working Hours",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3340",
+      "name": "Schedules",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3341",
+      "name": "Schedule",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3343",
+      "name": "Right Side",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3344",
+      "name": "Cuick Links",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3345",
+      "name": "Menu",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3346",
+      "name": "List",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3347",
+      "name": "Btn Nav Link",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I350:3347;15:114",
+      "name": "Home",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3349",
+      "name": "Btn Nav Link",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I350:3349;15:114",
+      "name": "Home",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3350",
+      "name": "Btn Nav Link",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I350:3350;15:114",
+      "name": "Home",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3351",
+      "name": "Btn Nav Link",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I350:3351;15:114",
+      "name": "Home",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3352",
+      "name": "Contact",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3353",
+      "name": "Contact Us",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3354",
+      "name": "List",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3355",
+      "name": "Item List Contact",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3356",
+      "name": "Icon/Phone",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I350:3356;2:301",
+      "name": "Vector",
+      "strokeAlign": "CENTER",
+      "strokeCap": "ROUND",
+      "strokeJoin": "ROUND",
+      "dashPattern": null
+    },
+    {
+      "id": "350:3357",
+      "name": "+1 (647) 523-3988",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3358",
+      "name": "Item List Contact",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3359",
+      "name": "Icon/EnvelopeOpen",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I350:3359;2:299",
+      "name": "Vector",
+      "strokeAlign": "CENTER",
+      "strokeCap": "ROUND",
+      "strokeJoin": "ROUND",
+      "dashPattern": null
+    },
+    {
+      "id": "350:3360",
+      "name": "https://rediscoverbeauty.ca",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3361",
+      "name": "Item List Contact",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3362",
+      "name": "Icon",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3363",
+      "name": "Icon/MapPinLine",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I350:3363;70:1930",
+      "name": "Vector",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3364",
+      "name": "9425 Leslie St Unit14 ,2F, Richmond Hill, ON L4B 3N7",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3365",
+      "name": "Socmed",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3366",
+      "name": "Button Icon",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3367",
+      "name": "Icon/InstagramLogo",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I350:3367;80:1426",
+      "name": "Vector",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3368",
+      "name": "Button Icon",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3369",
+      "name": "Icon/FacebookLogo",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "I350:3369;80:1430",
+      "name": "Vector",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "359:2519",
+      "name": "3337A662-FBA6-4DD4-85A9-3DB878612951 1",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3374",
+      "name": "Copyright",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3375",
+      "name": "Rediscover Beauty © 2025",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3376",
+      "name": "Buttons",
+      "strokeAlign": "INSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3377",
+      "name": "Privacy Policy",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    },
+    {
+      "id": "350:3378",
+      "name": "Term and conditions",
+      "strokeAlign": "OUTSIDE",
+      "strokeCap": null,
+      "strokeJoin": null,
+      "dashPattern": null
+    }
+  ],
+  "richTextNodes": [
+    {
+      "id": "15:127",
+      "name": "Heading",
+      "characterStyleOverrides": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "styleOverrideTable": {
+        "1": {
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.9333333373069763,
+                "g": 0.8588235378265381,
+                "b": 0.8078431487083435,
+                "a": 1
+              }
+            }
+          ],
+          "inheritFillStyleId": "17:141"
+        }
+      }
+    },
+    {
+      "id": "266:7024",
+      "name": "Title",
+      "characterStyleOverrides": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "styleOverrideTable": {
+        "2": {
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.45098039507865906,
+                "g": 0.35686275362968445,
+                "b": 0.29411765933036804,
+                "a": 1
+              }
+            }
+          ],
+          "inheritFillStyleId": "3:863"
+        },
+        "4": {
+          "fontFamily": "Bricolage Grotesque",
+          "fontPostScriptName": "BricolageGrotesque-Medium",
+          "fontStyle": "Medium",
+          "fontWeight": 500,
+          "fontSize": 36,
+          "letterSpacing": 0,
+          "lineHeightPx": 39.60000228881836,
+          "lineHeightPercent": 91.66666412353516,
+          "lineHeightPercentFontSize": 110,
+          "lineHeightUnit": "FONT_SIZE_%"
+        }
+      }
+    },
+    {
+      "id": "271:7692",
+      "name": "Title",
+      "characterStyleOverrides": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "styleOverrideTable": {
+        "3": {
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.45098039507865906,
+                "g": 0.35686275362968445,
+                "b": 0.29411765933036804,
+                "a": 1
+              }
+            }
+          ],
+          "inheritFillStyleId": "3:863"
+        }
+      }
+    },
+    {
+      "id": "48:487",
+      "name": "Title",
+      "characterStyleOverrides": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "styleOverrideTable": {
+        "4": {
+          "fontFamily": "Bricolage Grotesque",
+          "fontPostScriptName": "BricolageGrotesque-Medium",
+          "fontStyle": "Medium",
+          "fontWeight": 500,
+          "textAutoResize": "WIDTH_AND_HEIGHT",
+          "fontSize": 56,
+          "letterSpacing": 0,
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.9333333373069763,
+                "g": 0.8588235378265381,
+                "b": 0.8078431487083435,
+                "a": 1
+              }
+            }
+          ],
+          "lineHeightPx": 61.60000228881836,
+          "lineHeightPercent": 91.66666412353516,
+          "lineHeightPercentFontSize": 110,
+          "lineHeightUnit": "FONT_SIZE_%",
+          "inheritFillStyleId": "17:141",
+          "inheritTextStyleId": "40:242"
+        }
+      }
+    },
+    {
+      "id": "138:257",
+      "name": "Title",
+      "characterStyleOverrides": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "styleOverrideTable": {
+        "2": {
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.45098039507865906,
+                "g": 0.35686275362968445,
+                "b": 0.29411765933036804,
+                "a": 1
+              }
+            }
+          ],
+          "inheritFillStyleId": "3:863"
+        }
+      }
+    },
+    {
+      "id": "53:189",
+      "name": "Title",
+      "characterStyleOverrides": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "styleOverrideTable": {
+        "1": {
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.45098039507865906,
+                "g": 0.35686275362968445,
+                "b": 0.29411765933036804,
+                "a": 1
+              }
+            }
+          ],
+          "inheritFillStyleId": "3:863"
+        }
+      }
+    },
+    {
+      "id": "347:3120",
+      "name": "9425 Leslie St Unit14 ,2F, Richmond Hill, ON L4B 3N7 Monday – Sunday 10:00 AM – 8:00 PM By appointment only Free on-site parking available Accessible parking available Cash Debit/Credit cards NFC mobile payments",
+      "characterStyleOverrides": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "styleOverrideTable": {
+        "1": {
+          "fontFamily": "Bricolage Grotesque",
+          "fontPostScriptName": "BricolageGrotesque-Light",
+          "fontStyle": "Light",
+          "fontWeight": 300,
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.45098039507865906,
+                "g": 0.35686275362968445,
+                "b": 0.29411765933036804,
+                "a": 1
+              }
+            }
+          ],
+          "lineHeightPx": 19.200000762939453,
+          "lineHeightPercent": 100,
+          "lineHeightPercentFontSize": 120.00000762939453,
+          "lineHeightUnit": "FONT_SIZE_%"
+        },
+        "5": {
+          "fontFamily": "Bricolage Grotesque",
+          "fontPostScriptName": "BricolageGrotesque-SemiBold",
+          "fontStyle": "SemiBold",
+          "fontWeight": 600,
+          "fontSize": 16,
+          "letterSpacing": 0,
+          "lineHeightPx": 19.200000762939453,
+          "lineHeightPercent": 100,
+          "lineHeightPercentFontSize": 120.00000762939453,
+          "lineHeightUnit": "FONT_SIZE_%"
+        }
+      }
+    },
+    {
+      "id": "68:519",
+      "name": "Title",
+      "characterStyleOverrides": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "styleOverrideTable": {
+        "4": {
+          "fontFamily": "Bricolage Grotesque",
+          "fontPostScriptName": "BricolageGrotesque-Medium",
+          "fontStyle": "Medium",
+          "fontWeight": 500,
+          "textAutoResize": "WIDTH_AND_HEIGHT",
+          "fontSize": 56,
+          "letterSpacing": 0,
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.2549019753932953,
+                "g": 0.21960784494876862,
+                "b": 0.19607843458652496,
+                "a": 1
+              }
+            }
+          ],
+          "lineHeightPx": 61.60000228881836,
+          "lineHeightPercent": 91.66666412353516,
+          "lineHeightPercentFontSize": 110,
+          "lineHeightUnit": "FONT_SIZE_%",
+          "inheritFillStyleId": "3:864",
+          "inheritTextStyleId": "40:242"
+        }
+      }
+    },
+    {
+      "id": "350:3325",
+      "name": "Title",
+      "characterStyleOverrides": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "styleOverrideTable": {
+        "1": {
+          "fills": [
+            {
+              "blendMode": "NORMAL",
+              "type": "SOLID",
+              "color": {
+                "r": 0.9333333373069763,
+                "g": 0.8588235378265381,
+                "b": 0.8078431487083435,
+                "a": 1
+              }
+            }
+          ],
+          "inheritFillStyleId": "17:141"
+        }
+      }
+    },
+    {
+      "id": "350:3328",
+      "name": "Text",
+      "characterStyleOverrides": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "styleOverrideTable": {
+        "2": {
+          "fontFamily": "Schibsted Grotesk",
+          "fontPostScriptName": "SchibstedGrotesk-Bold",
+          "fontStyle": "Bold",
+          "fontWeight": 700,
+          "fontSize": 20,
+          "letterSpacing": 0,
+          "lineHeightPx": 28,
+          "lineHeightPercent": 113.417724609375,
+          "lineHeightPercentFontSize": 140,
+          "lineHeightUnit": "FONT_SIZE_%"
+        }
+      }
+    },
+    {
+      "id": "350:3341",
+      "name": "Schedule",
+      "characterStyleOverrides": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "styleOverrideTable": {
+        "3": {
+          "fontFamily": "Schibsted Grotesk",
+          "fontPostScriptName": "SchibstedGrotesk-SemiBold",
+          "fontStyle": "SemiBold",
+          "fontWeight": 600,
+          "textAutoResize": "WIDTH_AND_HEIGHT",
+          "fontSize": 20,
+          "letterSpacing": 0,
+          "lineHeightPx": 28,
+          "lineHeightPercent": 113.417724609375,
+          "lineHeightPercentFontSize": 140,
+          "lineHeightUnit": "FONT_SIZE_%",
+          "inheritTextStyleId": "38:210"
+        }
+      }
+    }
+  ],
+  "blendModeNodes": []
+}

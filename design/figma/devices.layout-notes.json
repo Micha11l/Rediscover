@@ -1,0 +1,108 @@
+{
+  "layoutStrategy": {
+    "desktop": {
+      "breakpoint": "≥1024px",
+      "columns": 3,
+      "layout": "leftCards + centerImage + rightCards",
+      "columnWidths": {
+        "leftColumn": "flex-1 (grow, 约 ~397px 在 1240px 内容宽度下)",
+        "centerImage": "380px (固定)",
+        "rightColumn": "flex-1 (grow, 约 ~397px 在 1240px 内容宽度下)",
+        "calculation": "1240px content = (397px left) + 32px gap + (380px image) + 32px gap + (397px right)"
+      },
+      "gaps": {
+        "betweenColumns": "32px",
+        "betweenCards": "32px",
+        "headerToContent": "80px"
+      }
+    },
+    "tablet": {
+      "breakpoint": "768-1023px",
+      "recommendation": "single-column-stack",
+      "reasoning": "三列在窄屏下会导致卡片过窄，建议改为单列堆叠",
+      "order": [
+        "header",
+        "centerImage (居中展示)",
+        "leftColumn cards (按顺序)",
+        "rightColumn cards (按顺序)"
+      ],
+      "cardLayout": "全宽，保持原始 padding 和 gap"
+    },
+    "mobile": {
+      "breakpoint": "<768px",
+      "recommendation": "single-column-stack",
+      "modifications": [
+        "减少外层 padding 到 16px 或 32px",
+        "卡片 padding 从 32px 减少到 24px",
+        "卡片 gap 从 32px 减少到 24px",
+        "图片容器适应屏幕宽度，保持宽高比"
+      ]
+    }
+  },
+  "cardAlignment": {
+    "leftColumn": {
+      "iconPosition": "left",
+      "textAlign": "right",
+      "flexDirection": "row",
+      "justifyContent": "flex-start",
+      "textJustify": "items-end"
+    },
+    "rightColumn": {
+      "iconPosition": "right",
+      "textAlign": "left",
+      "flexDirection": "row-reverse",
+      "justifyContent": "flex-start",
+      "textJustify": "items-start"
+    }
+  },
+  "dimensions": {
+    "sectionContainer": {
+      "maxWidth": "1440px",
+      "paddingDesktop": "100px",
+      "paddingTablet": "64px (lg:px-16)",
+      "paddingMobile": "32px (md:px-8) / 16px (sm:px-4)"
+    },
+    "contentWidth": {
+      "desktop": "1240px (1440 - 2×100)",
+      "effectiveCardWidth": "~397px (flex-1 grow)"
+    },
+    "centerImage": {
+      "width": "380px",
+      "height": "523px",
+      "aspectRatio": "380:523 ≈ 0.726"
+    },
+    "card": {
+      "minHeight": "auto",
+      "padding": "32px",
+      "borderRadius": "16px",
+      "iconSize": "32×32px"
+    }
+  },
+  "typography": {
+    "header": {
+      "eyebrow": "12px / 1.2 / #eedbce border",
+      "title": "48px / 1.2 / 500 / #413832 / Bricolage Grotesque",
+      "subtitle": "16px / 1.6 / 400 / #413832 / Schibsted Grotesk"
+    },
+    "card": {
+      "title": "24px / 1.2 / 400 / #413832 / Bricolage Grotesque",
+      "description": "16px / 1.6 / 400 / #735b4b / Schibsted Grotesk"
+    }
+  },
+  "colors": {
+    "cardBackground": "#f4efe7 (Primary Light 20)",
+    "iconColor": "#80736a (Primary Dark 20)",
+    "titleColor": "#413832 (Primary Dark)",
+    "descriptionColor": "#735b4b (Secondary)",
+    "borderColor": "#eedbce (Secondary Light)"
+  },
+  "implementationNotes": [
+    "左列卡片使用 text-right + items-end，icon 在左侧",
+    "右列卡片使用 text-left + items-start，icon 在右侧",
+    "中间图片固定宽度 380px，使用 <Image> 组件 width/height 属性（非 fill）",
+    "Desktop 下使用 flex 三列布局：flex-1 + w-[380px] + flex-1",
+    "Tablet/Mobile 建议改为单列堆叠，图片居中展示",
+    "所有间距严格按照 Figma：32px (cards/columns), 80px (header↔content)",
+    "卡片无 shadow，仅背景色和圆角"
+  ]
+}

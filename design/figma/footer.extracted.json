@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "nodeId": "350:3334",
+    "nodeName": "FOOTER",
+    "figmaFrameUrl": "https://figma.com/design/[fileKey]/[fileName]?node-id=350-3334",
+    "qaBaseline": {
+      "width": 1440,
+      "height": 493
+    },
+    "extractedAt": "2026-01-13",
+    "section": "footer"
+  },
+
+  "frame": {
+    "dimensions": {
+      "width": 1440,
+      "height": 493,
+      "heightVariable": true,
+      "minHeight": 493
+    },
+    "background": {
+      "type": "solid",
+      "color": {
+        "hex": "#fffcfa",
+        "token": "surface-base",
+        "cssVar": "var(--color-surface-base)"
+      },
+      "image": null
+    },
+    "padding": {
+      "top": {
+        "figma": 60,
+        "normalized": 60,
+        "token": "space-15"
+      },
+      "bottom": {
+        "figma": 30,
+        "normalized": 32,
+        "token": "space-8",
+        "note": "Normalized from 30px to 32px for 8px grid alignment"
+      },
+      "left": {
+        "figma": 100,
+        "normalized": 100,
+        "token": "space-25"
+      },
+      "right": {
+        "figma": 100,
+        "normalized": 100,
+        "token": "space-25"
+      }
+    },
+    "visual": {
+      "border": null,
+      "borderRadius": 0,
+      "boxShadow": null,
+      "overlay": null
+    }
+  },
+
+  "layout": {
+    "display": "flex",
+    "flexDirection": "column",
+    "gap": {
+      "figma": 80,
+      "normalized": 80,
+      "token": "space-20",
+      "axis": "vertical"
+    },
+    "maxWidth": {
+      "container": 1440,
+      "content": 1240,
+      "note": "1440 - (100px padding × 2) = 1240px inner content width"
+    },
+    "children": [
+      {
+        "id": "body",
+        "nodeId": "350:3335",
+        "height": 284,
+        "layout": "absolute-positioned"
+      },
+      {
+        "id": "copyright",
+        "nodeId": "350:3374",
+        "layout": "flex-horizontal"
+      }
+    ]
+  },
+
+  "sections": {
+    "body": {
+      "nodeId": "350:3335",
+      "height": 284,
+      "layout": "absolute",
+      "children": [
+        {
+          "id": "logo",
+          "nodeId": "519:4390",
+          "position": { "x": 0, "y": 0 },
+          "size": { "width": 68, "height": 60 },
+          "asset": "3337A662-FBA6-4DD4-85A9-3DB878612951.png"
+        },
+        {
+          "id": "brandText",
+          "nodeId": "519:4221",
+          "name": "Rediscover Beauty",
+          "position": { "x": 85.1, "y": 16.4 },
+          "type": "svg-text-logo"
+        },
+        {
+          "id": "workingHours",
+          "nodeId": "350:3338",
+          "position": { "x": 0, "y": 208 },
+          "width": 387,
+          "layout": "flex-col",
+          "gap": {
+            "figma": 24,
+            "normalized": 24,
+            "token": "space-6"
+          }
+        },
+        {
+          "id": "rightSide",
+          "nodeId": "350:3343",
+          "position": { "x": 856, "y": 0 },
+          "layout": "flex-row",
+          "gap": {
+            "figma": 109,
+            "normalized": 108,
+            "token": "space-27",
+            "note": "Normalized from 109px to 108px (27×4)"
+          },
+          "children": [
+            {
+              "id": "quickLinks",
+              "nodeId": "350:3344",
+              "width": "auto",
+              "gap": {
+                "figma": 32,
+                "normalized": 32,
+                "token": "space-8"
+              }
+            },
+            {
+              "id": "contact",
+              "nodeId": "350:3352",
+              "width": 209,
+              "gap": {
+                "figma": 32,
+                "normalized": 32,
+                "token": "space-8"
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    "copyright": {
+      "nodeId": "350:3374",
+      "layout": "flex",
+      "justifyContent": "space-between",
+      "alignItems": "end",
+      "border": {
+        "top": {
+          "width": 0.5,
+          "style": "solid",
+          "color": {
+            "hex": "#eedbce",
+            "token": "brand-secondary-light",
+            "cssVar": "var(--color-brand-secondary-light)"
+          }
+        }
+      },
+      "padding": {
+        "top": {
+          "figma": 24,
+          "normalized": 24,
+          "token": "space-6"
+        }
+      },
+      "children": [
+        {
+          "id": "copyrightText",
+          "nodeId": "519:4392",
+          "content": "Rediscover Beauty © 2025",
+          "color": {
+            "hex": "#413832",
+            "token": "text-primary"
+          }
+        },
+        {
+          "id": "legalLinks",
+          "nodeId": "350:3376",
+          "layout": "flex-row",
+          "gap": {
+            "figma": 42,
+            "normalized": 40,
+            "token": "space-10",
+            "note": "Normalized from 42px to 40px (10×4)"
+          },
+          "links": [
+            {
+              "text": "Privacy Policy",
+              "nodeId": "519:4415"
+            },
+            {
+              "text": "Term and conditions",
+              "nodeId": "519:4430"
+            }
+          ]
+        }
+      ]
+    }
+  },
+
+  "tokens": {
+    "colors": {
+      "background": {
+        "hex": "#fffcfa",
+        "token": "surface-base",
+        "cssClass": "bg-surface-base"
+      },
+      "text": {
+        "primary": {
+          "hex": "#413832",
+          "token": "text-primary",
+          "cssClass": "text-text-primary"
+        },
+        "secondary": {
+          "hex": "#735b4b",
+          "token": "brand-secondary",
+          "cssClass": "text-brand-secondary"
+        }
+      },
+      "border": {
+        "hex": "#eedbce",
+        "token": "brand-secondary-light",
+        "cssClass": "border-brand-secondary-light"
+      },
+      "button": {
+        "background": {
+          "hex": "#f4efe7",
+          "token": "surface-muted",
+          "cssClass": "bg-surface-muted"
+        }
+      }
+    },
+    "spacing": {
+      "sectionPaddingX": {
+        "figma": 100,
+        "normalized": 100,
+        "token": "space-25",
+        "cssClass": "px-[100px] xl:px-[100px]"
+      },
+      "sectionPaddingY": {
+        "top": {
+          "figma": 60,
+          "normalized": 60,
+          "token": "space-15"
+        },
+        "bottom": {
+          "figma": 30,
+          "normalized": 32,
+          "token": "space-8"
+        }
+      },
+      "sectionGap": {
+        "figma": 80,
+        "normalized": 80,
+        "token": "space-20",
+        "cssClass": "gap-20"
+      }
+    },
+    "typography": {
+      "navLink": {
+        "family": "Bricolage Grotesque",
+        "size": 16,
+        "weight": 400,
+        "lineHeight": 1,
+        "cssClass": "font-heading text-[16px] font-normal leading-none"
+      }
+    }
+  },
+
+  "responsiveStrategy": {
+    "desktop": "1440×493 (baseline)",
+    "breakpoints": {
+      "xl": "px-[100px] (1280px+)",
+      "lg": "px-16 (1024px-1279px)",
+      "md": "px-8 (768px-1023px)",
+      "sm": "px-4 (640px-767px)"
+    },
+    "stackingPoint": {
+      "bodySection": "lg:absolute md:flex-col",
+      "copyright": "stays flex-row on all sizes"
+    }
+  },
+
+  "assets": {
+    "logo": {
+      "nodeId": "519:4390",
+      "filename": "3337A662-FBA6-4DD4-85A9-3DB878612951.png",
+      "dimensions": "68×60",
+      "format": "png"
+    },
+    "icons": {
+      "phone": "Icon/Phone (350:3356)",
+      "email": "Icon/EnvelopeOpen (350:3359)",
+      "location": "Icon/MapPinLine (350:3363)",
+      "instagram": "Icon/InstagramLogo (350:3367)",
+      "facebook": "Icon/FacebookLogo (350:3369)"
+    },
+    "textAsImages": {
+      "rediscoverBeautyLogo": "Vector-based logo text (519:4221)",
+      "workingHoursTitle": "Working Hours SVG (519:4239)",
+      "menuTitle": "Menu SVG (519:4283)",
+      "contactTitle": "Contact Us SVG (519:4289)"
+    },
+    "note": "All text rendered as SVG images in Figma extraction. Should be replaced with actual text/fonts in implementation."
+  },
+
+  "implementationNotes": {
+    "padding": "Bottom padding should be normalized from 30px to 32px for 8px grid consistency",
+    "gaps": [
+      "Body-Copyright gap: 80px ✅",
+      "Right side menu-contact gap: 109px → normalize to 108px",
+      "Legal links gap: 42px → normalize to 40px"
+    ],
+    "layout": "Body section uses absolute positioning in Figma but should be implemented with CSS Grid or Flexbox for better responsiveness",
+    "textImages": "Replace all SVG text images with actual <h2>, <p>, <a> elements using project fonts (Bricolage Grotesque + Schibsted Grotesk)",
+    "maxWidth": "Use standard container rule: mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px]",
+    "testId": "data-testid='footer'"
+  }
+}

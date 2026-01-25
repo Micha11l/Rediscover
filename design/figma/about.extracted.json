@@ -1,0 +1,115 @@
+{
+  "sectionAbout": {
+    "nodeId": "266:7001",
+    "name": "SECTION ABOUT",
+    "bounds": { "x": 0, "y": 703.73, "width": 1440, "height": 596 },
+    "layout": {
+      "type": "flex",
+      "direction": "column",
+      "align": "center",
+      "justify": "end",
+      "padding": { "left": 100, "right": 100, "top": 0, "bottom": 100 }
+    },
+    "children": ["266:7009"]
+  },
+  "body": {
+    "nodeId": "266:7009",
+    "name": "Body",
+    "bounds": { "x": 100, "y": -63.95, "width": 1240, "height": 559.95 },
+    "layout": {
+      "type": "flex",
+      "direction": "row",
+      "align": "center",
+      "justify": "between",
+      "gap": 0
+    },
+    "style": {
+      "fill": "#f5f1ed",
+      "cornerRadius": 24,
+      "overflow": "hidden"
+    },
+    "overlap": {
+      "offsetY": -63.95,
+      "description": "Body pulls up 64px into Hero section above"
+    },
+    "children": ["519:2617", "266:7011"]
+  },
+  "imageColumn": {
+    "nodeId": "519:2617",
+    "name": "Image",
+    "bounds": { "x": 0, "y": 0, "width": 553, "height": 559.95 },
+    "layout": { "type": "fixed", "fill": "parent-height" },
+    "image": {
+      "src": "http://localhost:3845/assets/5ee483dcf75534ff06947c44e6530aef4fc98328.png",
+      "fit": "cover",
+      "position": "center"
+    }
+  },
+  "contentColumn": {
+    "nodeId": "266:7011",
+    "name": "ABOUT",
+    "bounds": { "x": 553, "y": 0, "width": 687, "height": 559.95 },
+    "layout": {
+      "type": "flex",
+      "direction": "column",
+      "gap": 56,
+      "padding": { "all": 70 }
+    },
+    "children": ["266:7012", "266:7026"]
+  },
+  "mainContent": {
+    "nodeId": "266:7012",
+    "name": "Main",
+    "bounds": { "x": 70, "y": 70, "width": 547, "height": 312.97 },
+    "layout": {
+      "type": "flex",
+      "direction": "column",
+      "gap": 32
+    },
+    "children": ["266:7013", "266:7023"]
+  },
+  "symbol": {
+    "nodeId": "266:7013",
+    "name": "Symbol",
+    "bounds": { "width": 40, "height": 40 },
+    "image": {
+      "src": "http://localhost:3845/assets/80da360174a0cc5f52621b861d80acd558cd0700.png"
+    }
+  },
+  "textGroup": {
+    "nodeId": "266:7023",
+    "name": "Main Text",
+    "bounds": { "width": 547, "height": 240.97 },
+    "layout": { "gap": 24 },
+    "children": ["519:2619", "519:2661"]
+  },
+  "title": {
+    "nodeId": "519:2619",
+    "name": "Title",
+    "bounds": { "width": 493.25, "height": 97.88 },
+    "typography": {
+      "fontSize": "32-40px",
+      "lineHeight": "tight",
+      "fontWeight": 500
+    }
+  },
+  "paragraph": {
+    "nodeId": "519:2661",
+    "name": "Paragraph",
+    "bounds": { "width": 541.97, "height": 119.09 },
+    "typography": {
+      "fontSize": 16,
+      "lineHeight": 1.6,
+      "fontWeight": 400
+    }
+  },
+  "ctaButton": {
+    "nodeId": "266:7026",
+    "name": "Button",
+    "style": {
+      "fill": "#413832",
+      "cornerRadius": 60,
+      "padding": { "horizontal": 32, "vertical": 20 }
+    }
+  }
+}

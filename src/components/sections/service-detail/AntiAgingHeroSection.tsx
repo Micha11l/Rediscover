@@ -1,0 +1,127 @@
+import Image from "next/image";
+import Link from "next/link";
+import { Navbar } from "@/components/layout";
+
+/**
+ * Anti-Aging Hero Section
+ * Figma node: 212:3701 "HERO Section"
+ * Dimensions: 1440 x 1097px
+ *
+ * Layout:
+ * - Navbar (light variant, solid bg)
+ * - Hero Content: Breadcrumb, Headline, Process Nav, Hero Image
+ */
+
+/** Process navigation items - links to sections within the page */
+const PROCESS_ITEMS = [
+  { id: "sofwave", label: "Sofwave", href: "#sofwave" },
+  { id: "thermage", label: "Thermage FLX", href: "#thermage" },
+  { id: "morpheus8", label: "Morpheus8", href: "#morpheus8" },
+  { id: "forma", label: "Forma", href: "#forma" },
+];
+
+export function AntiAgingHeroSection() {
+  return (
+    <section
+      data-testid="anti-aging-hero"
+      className="w-full bg-surface-base"
+    >
+      {/* Navbar - Light variant for solid background */}
+      <div className="bg-surface-elevated">
+        <div className="mx-auto flex h-[136px] w-full max-w-[1440px] items-center px-4 md:px-8 lg:px-16 xl:px-[100px]">
+          <Navbar variant="light" />
+        </div>
+      </div>
+
+      {/* Hero Content */}
+      <div className="mx-auto w-full max-w-[1440px] px-4 pb-16 pt-[48px] md:px-8 lg:px-16 xl:px-[100px]">
+        {/* Hero Text Container */}
+        <div className="flex flex-col items-center gap-10">
+          {/* Breadcrumb */}
+          <nav
+            aria-label="Breadcrumb"
+            className="flex items-center justify-center gap-2 rounded-[40px] py-[10px]"
+          >
+            <Link
+              href="/"
+              className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
+            >
+              Home
+            </Link>
+            <span
+              aria-hidden="true"
+              className="font-heading text-button font-normal leading-none text-text-primary"
+            >
+              /
+            </span>
+            <Link
+              href="/services"
+              className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
+            >
+              Services
+            </Link>
+            <span
+              aria-hidden="true"
+              className="font-heading text-button font-normal leading-none text-text-primary"
+            >
+              /
+            </span>
+            <span
+              aria-current="page"
+              className="font-heading text-button font-normal leading-none text-text-primary"
+            >
+              Anti-Aging
+            </span>
+          </nav>
+
+          {/* Headline */}
+          <div className="flex w-full flex-col gap-4 text-center">
+            <h1 className="font-heading text-display font-medium leading-[1.2] text-text-primary">
+              Anti-Aging
+            </h1>
+            <p className="mx-auto max-w-none font-body text-body leading-[1.6] text-brand-secondary">
+              Advanced technologies designed to lift, tighten, and support skin
+              at a deeper structural level.
+            </p>
+          </div>
+
+          {/* Process Navigation */}
+          <nav
+            aria-label="Treatment options"
+            className="flex w-full max-w-[1200px] flex-wrap items-start justify-center gap-4 lg:h-[90px] lg:flex-nowrap lg:justify-between lg:gap-0"
+          >
+            {PROCESS_ITEMS.map((item, index) => (
+              <div key={item.id} className="flex items-center justify-center lg:flex-1">
+                <Link
+                  href={item.href}
+                  className="px-0 py-[5px] text-center font-heading text-heading-lg font-medium leading-[1.1] text-text-muted no-underline transition-colors hover:text-brand-secondary lg:flex-1"
+                >
+                  {item.label}
+                </Link>
+                {/* Divider - hide on last item and on mobile */}
+                {index < PROCESS_ITEMS.length - 1 && (
+                  <div
+                    aria-hidden="true"
+                    className="ml-4 hidden h-[45px] w-px bg-border/60 lg:ml-8 lg:block"
+                  />
+                )}
+              </div>
+            ))}
+          </nav>
+        </div>
+
+        {/* Hero Image */}
+        <div className="relative mt-8 h-[400px] w-full overflow-hidden rounded-[25px] lg:mx-auto lg:h-[571px] lg:max-w-[1228px]">
+          <Image
+            src="/images/anti-aging/hero.png"
+            alt="Anti-aging facial treatment visualization showing skin lifting and tightening effects"
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 1228px"
+            className="object-cover object-center"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}

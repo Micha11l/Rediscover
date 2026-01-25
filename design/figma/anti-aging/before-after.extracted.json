@@ -1,0 +1,151 @@
+{
+  "nodeId": "449:3253",
+  "name": "Before/After Grid",
+  "page": "Anti-Aging Service Detail",
+  "note": "Before/After comparison images showing treatment results. Each image frame contains a side-by-side before/after comparison with labels.",
+
+  "layout": {
+    "type": "horizontal grid",
+    "columns": 2,
+    "gap": {
+      "figma": 17,
+      "normalized": "gap-4 (16px)"
+    },
+    "position": {
+      "leftOffset": 100,
+      "topOffset": 1145,
+      "note": "Positioned below the FAQ content within the section"
+    }
+  },
+
+  "imageFrame": {
+    "dimensions": {
+      "width": {
+        "first": 612,
+        "second": 615,
+        "normalized": "flex-1 or w-full within grid"
+      },
+      "height": 291
+    },
+    "borderRadius": {
+      "figma": 30,
+      "token": "rounded-[30px]"
+    },
+    "overflow": "hidden",
+    "objectFit": "cover"
+  },
+
+  "labels": {
+    "before": {
+      "text": "Before",
+      "position": {
+        "horizontal": "left",
+        "vertical": "bottom",
+        "offsetLeft": 27,
+        "offsetBottom": 34
+      }
+    },
+    "after": {
+      "text": "After",
+      "position": {
+        "horizontal": "center-right",
+        "vertical": "bottom",
+        "note": "Positioned at approximately 50% from left (right half of image)"
+      }
+    },
+    "typography": {
+      "fontFamily": "Bricolage Grotesque",
+      "fontSize": 16,
+      "fontWeight": 600,
+      "lineHeight": 1.2,
+      "token": "font-heading text-base font-semibold"
+    },
+    "color": "#F4EFE7",
+    "colorToken": "text-surface-elevated",
+    "width": 94
+  },
+
+  "overlay": {
+    "hasOverlay": false,
+    "note": "Labels are directly on image without additional overlay/gradient"
+  },
+
+  "tokenMapping": {
+    "colors": {
+      "#F4EFE7": "text-surface-elevated"
+    },
+    "typography": {
+      "Bricolage Grotesque SemiBold 16px/1.2": "font-heading text-base font-semibold"
+    },
+    "borderRadius": {
+      "30px": "rounded-[30px]"
+    },
+    "spacing": {
+      "17px": "gap-4 (16px)"
+    }
+  },
+
+  "responsiveNotes": {
+    "desktop_gte_lg": {
+      "layout": "2 columns side by side",
+      "imageHeight": "291px fixed"
+    },
+    "tablet_md": {
+      "layout": "2 columns, smaller images",
+      "imageHeight": "auto, maintain aspect ratio"
+    },
+    "mobile_lt_md": {
+      "layout": "Single column stack",
+      "imageHeight": "auto"
+    }
+  },
+
+  "assets": {
+    "sofwave": [
+      {
+        "id": "sofwave-ba-1",
+        "figmaNode": "458:3343",
+        "figmaUrl": "http://localhost:3845/assets/eb2980c51a390f0522abe3a2106ec7dcceb67a25.png",
+        "localPath": "/images/anti-aging/sofwave-before-after-1.jpg",
+        "alt": "Sofwave treatment results - neck and jawline improvement"
+      },
+      {
+        "id": "sofwave-ba-2",
+        "figmaNode": "458:3344",
+        "figmaUrl": "http://localhost:3845/assets/9eba86fa9d1c7a2f1a5d9882335b3d4c6bd4367c.png",
+        "localPath": "/images/anti-aging/sofwave-before-after-2.jpg",
+        "alt": "Sofwave treatment results - facial skin tightening"
+      }
+    ]
+  },
+
+  "treatmentVariants": [
+    {
+      "id": "sofwave",
+      "sectionId": "sofwave-results",
+      "figmaNode": "449:3253",
+      "images": [
+        "/images/anti-aging/sofwave-before-after-1.jpg",
+        "/images/anti-aging/sofwave-before-after-2.jpg"
+      ]
+    },
+    {
+      "id": "thermage",
+      "sectionId": "thermage-results",
+      "figmaNode": "460:3397",
+      "note": "TODO: Extract images from Figma"
+    },
+    {
+      "id": "morpheus8",
+      "sectionId": "morpheus8-results",
+      "figmaNode": "503:2711",
+      "note": "TODO: Extract images from Figma"
+    },
+    {
+      "id": "forma",
+      "sectionId": "forma-results",
+      "figmaNode": "503:2769",
+      "note": "TODO: Extract images from Figma"
+    }
+  ]
+}

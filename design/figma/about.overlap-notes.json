@@ -1,0 +1,26 @@
+{
+  "overlap": {
+    "layer1": {
+      "nodeId": "266:7009",
+      "name": "Body (card)",
+      "parent": "266:7001 (SECTION ABOUT)"
+    },
+    "layer2": {
+      "nodeId": "19:144",
+      "name": "HERO Section (above)"
+    },
+    "relationship": "Body pulls up into Hero",
+    "offset": {
+      "dx": 0,
+      "dy": -63.95,
+      "description": "Body.y = -63.95px relative to SECTION ABOUT container"
+    },
+    "positioning": "relative with negative margin",
+    "zIndex": "Body should be z-20, Hero content z-10",
+    "implementation": {
+      "desktop": "-mt-[64px]",
+      "tablet": "-mt-[32px]",
+      "mobile": "mt-0"
+    }
+  }
+}

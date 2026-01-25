@@ -1,26 +1,108 @@
-@import "tailwindcss";
+/* Tailwind v4: Reference config file for custom theme */
+@config "../../tailwind.config.ts";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Import design tokens */
+@import "../styles/tokens.css";
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
   }
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+/* ==========================================================================
+   GLOBAL BASE STYLES
+   ========================================================================== */
+
+/* Global box-sizing border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   GLOBAL LINK RESET
+   Force remove default underline from all links site-wide.
+
+   Problem: User Agent stylesheet applies `a:-webkit-any-link { text-decoration: underline; }`
+   which has high specificity and isn't overridden by normal selectors.
+
+   Solution: Use !important to guarantee override of UA styles.
+   Use explicit .link-underline class when underline is needed.
+   ========================================================================== */
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active,
+a:-webkit-any-link {
+  text-decoration: none !important;
+}
+
+/* Opt-in underline class when explicitly needed */
+a.link-underline,
+a.link-underline:hover,
+a.link-underline:link,
+a.link-underline:visited {
+  text-decoration: underline !important;
+}
+
+/* ==========================================================================
+   NAVBAR LINK ACTIVE STATE
+   Using ::after pseudo-element for Figma-style underline:
+   - Thin line (1.5px for visibility)
+   - Visible gap from text (~4px via padding-bottom)
+   - Uses brand-secondary-light color (#eedbce)
+   - Transparent placeholder for inactive to prevent layout shift
+   ========================================================================== */
+
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-bottom: 6px; /* Space for underline + gap */
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5px;
+  background-color: transparent;
+  transition: background-color var(--transition-base, 200ms ease);
+}
+
+.nav-link-active::after {
+  /* Use CSS variable with fallback to raw hex */
+  background-color: var(--color-brand-secondary-light, #eedbce);
 }
