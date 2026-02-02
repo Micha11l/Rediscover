@@ -12,26 +12,33 @@ The production homepage must NOT be replaced during this phase.
 # Current Implementation Route (MUST FOLLOW)
 
 ## Baseline & QA Mode
-- Desktop baseline for pixel QA: **1440 × 900**.
-- QA expectation: prioritize matching the 1440 desktop frame first (spacing/typography/layout).
-- Responsive is “minimal scaffolding” only during this phase: do not redesign mobile yet.
-  - Keep basic stacking rules so the page remains usable when viewport < 1024 (e.g., columns can stack), but do not over-invest in mobile polish.
+- Pixel-perfect 1440 is NOT required. Prioritize production-grade responsiveness (mobile → ultra-wide).
+- Validate at widths: 375, 414, 768, 1024, 1280, 1440, 1536, 1920, and split-view 700–900.
+- Mobile-first layout with progressive enhancement at sm/md/lg/xl/2xl.
+- Ensure no horizontal scroll on mobile.
 
 ## Global Container Rule (统一容器规范)
-Every section must use the same container padding system and max width:
+Every section must use the same responsive container contract:
 
-- max width: max-w-[1440px]
-- padding: px-4 md:px-8 lg:px-16 xl:px-[100px]
-- vertical padding: follow Figma, typically py-[100px] for major sections
+- outer: section.w-full
+- inner: mx-auto w-full max-w-screen-2xl px-4 sm:px-6 lg:px-8 2xl:px-12
+- vertical spacing: responsive scale (e.g., py-12 sm:py-16 lg:py-24), avoid fixed py-[100px]
 
 Example:
-<div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px] py-[100px]">
+<div className="mx-auto w-full max-w-screen-2xl px-4 sm:px-6 lg:px-8 2xl:px-12 py-12 sm:py-16 lg:py-24">
 
 ## Tailwind & Tokens (STRICT)
 - Colors and typography MUST come from the project’s Tailwind tokens / CSS variables.
 - Avoid scattering random hex values. If a specific Figma color is needed, map it to an existing token or extend tokens properly.
 - Avoid arbitrary fractional pixels and odd sizes (e.g., 13.7px). Spacing/size should align to 4px/8px rhythm.
   - Exception: if Figma uses a hard value critical to layout (rare), use the closest 4/8 value and note the deviation.
+- Typography must scale with breakpoints; avoid fixed px sizes that break flow on small screens.
+
+## Responsive Rules (Authoritative)
+- Grid: mobile-first stacking (grid-cols-1) → sm:grid-cols-2 → lg:grid-cols-3/4 as needed.
+- Avoid layout-locking fixed sizes: no max-w-[1440px] or container w-[NNNpx] for layout.
+- If fixed sizes are necessary (decorative or media), provide breakpoint fallbacks (e.g., w-full max-w-* or aspect-*).
+- Media: use responsive containers and `sizes` for next/image; avoid fixed display widths without fallbacks.
 
 ## Layout Constraints
 - Prefer flex/grid. Avoid absolute positioning except for:
@@ -59,9 +66,10 @@ Output format required in every response:
   - component file name matches export name
   - index.ts re-exports the correct symbol
 
-## Desktop-first Behavior (important)
-- Desktop (>= 1024): must match Figma’s desktop layout.
-- Tablet/mobile: allow stacking/fallback layout, but do NOT introduce new design decisions unless explicitly requested.
+## Responsive Behavior (important)
+- Preserve design intent, but prioritize real-world responsiveness over pixel-perfect matching.
+- Use progressive enhancement from mobile to desktop/ultra-wide.
+- Avoid introducing new visual concepts unless requested.
 
 ## Stability / Avoid Breaking Other Sections
 - Do not change tailwind config / globals unless asked.
@@ -71,9 +79,8 @@ Output format required in every response:
 ---
 
 # What We’ve Standardized So Far
-- We are using the shared container padding rule across sections.
-- We are targeting 1440×900 for pixel QA.
-- We keep the preview page at /figma-home as the assembly page.
+- Shared responsive container contract across sections.
+- Preview page remains at /figma-home as the assembly page.
 
 ---
 

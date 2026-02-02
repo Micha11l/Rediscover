@@ -4,6 +4,9 @@
  */
 
 export { AntiAgingHeroSection } from "./AntiAgingHeroSection";
+export { LaserHeroSection } from "./LaserHeroSection";
+export { LaserCtaSection } from "./LaserCtaSection";
+export { LaserCarePromiseSection } from "./LaserCarePromiseSection";
 
 // About Sections (AntiAgingAboutSection.tsx)
 export {
@@ -13,6 +16,7 @@ export {
   Morpheus8AboutSection,
   FormaAboutSection,
 } from "./AntiAgingAboutSection";
+export { LaserAboutSection } from "./LaserAboutSection";
 
 // Recommended For Sections (AntiAgingRecommendedSection.tsx)
 export {
@@ -21,6 +25,7 @@ export {
   Morpheus8RecommendedSection,
   FormaRecommendedSection,
 } from "./AntiAgingRecommendedSection";
+export { LaserRecommendedAndProcessSection } from "./LaserRecommendedAndProcessSection";
 
 // Before/After Sections (AntiAgingBeforeAfterSection.tsx)
 export {
@@ -29,6 +34,11 @@ export {
   Morpheus8BeforeAfterSection,
   FormaBeforeAfterSection,
 } from "./AntiAgingBeforeAfterSection";
+export { LaserBeforeAfterPair } from "./LaserBeforeAfterPair";
+
+export { LaserBenefitsSection } from "./LaserBenefitsSection";
+export { LaserHairRemovalPricingSection } from "./LaserHairRemovalPricingSection";
+export { LaserFaqSection } from "./LaserFaqSection";
 
 export { ServiceFaqBlockSection } from "./ServiceFaqBlockSection";
 

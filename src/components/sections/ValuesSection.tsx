@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Container } from "@/components/layout/Container";
 
 /**
  * Values Section (Explore Our Devices)
@@ -25,7 +26,7 @@ function FeatureCardRow({
   const iconOnLeft = iconSide === "left";
 
   return (
-    <div className="flex items-center gap-8 rounded-2xl bg-[#f4efe7] p-8">
+    <div className="flex items-center gap-6 rounded-2xl bg-[#f4efe7] p-5 sm:p-8">
       {/* Icon left */}
       {iconOnLeft && (
         <div className="relative h-8 w-8 shrink-0">
@@ -46,10 +47,10 @@ function FeatureCardRow({
           isRightText ? "items-end text-right" : "items-start text-left",
         ].join(" ")}
       >
-        <h3 className="m-0 font-heading text-[24px] font-normal leading-[1.2] text-text-primary">
+        <h3 className="m-0 font-heading text-[20px] font-normal leading-[1.2] text-text-primary sm:text-[24px]">
           {title}
         </h3>
-        <p className="m-0 font-body text-[16px] font-normal leading-[1.6] text-[#735b4b]">
+        <p className="m-0 font-body text-[14px] font-normal leading-[1.6] text-[#735b4b] sm:text-[16px]">
           {description}
         </p>
       </div>
@@ -125,8 +126,8 @@ export function ValuesSection() {
 
   return (
     <section className="w-full" data-testid="devices">
-      <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px] py-[100px]">
-        <div className="flex flex-col items-center gap-[80px]">
+      <Container className="py-12 sm:py-16 lg:py-24">
+        <div className="flex flex-col items-center gap-10 sm:gap-14 lg:gap-20">
           {/* Header */}
           <div className="flex flex-col items-center gap-4 text-center">
             <div className="flex items-center justify-center rounded-[40px] border border-[#eedbce] px-[18px] py-[10px]">
@@ -135,48 +136,48 @@ export function ValuesSection() {
               </span>
             </div>
 
-            <h2 className="m-0 font-heading text-[48px] font-medium leading-[1.2] text-text-primary">
+            <h2 className="m-0 font-heading text-[32px] font-medium leading-[1.2] text-text-primary sm:text-[40px] lg:text-[48px]">
               Powered by InMode Technology
             </h2>
 
-            <p className="m-0 font-body text-[16px] font-normal leading-[1.6] text-text-primary max-w-[1000px] xl:max-w-none xl:whitespace-nowrap">
+            <p className="m-0 max-w-prose font-body text-[14px] font-normal leading-[1.6] text-[#735b4b] sm:text-[16px]">
               Advanced, clinically proven energy-based technology delivering
               precise, safe, and visible aesthetic results.
             </p>
           </div>
 
           {/* Three columns */}
-          <div className="flex w-full items-center gap-8">
+          <div className="grid w-full grid-cols-1 gap-10 lg:grid-cols-[1fr_auto_1fr] lg:items-center">
             {/* Left column */}
-            <div className="flex flex-1 flex-col justify-center gap-8">
+            <div className="order-2 flex w-full flex-col justify-center gap-8 lg:order-none">
               {leftColumnCards.map((card) => (
                 <FeatureCardRow key={card.title} {...card} />
               ))}
             </div>
 
             {/* Center image */}
-            <div className="shrink-0 self-center">
-              <div className="relative h-[523px] w-[380px] overflow-hidden rounded-2xl">
+            <div className="order-1 flex w-full justify-center lg:order-none">
+              <div className="relative w-full max-w-[320px] overflow-hidden rounded-2xl sm:max-w-[380px] lg:w-[380px] aspect-[380/523]">
                 <Image
                   src="/images/homepage_device.png"
                   alt="InMode Device"
                   fill
                   className="object-cover"
                   priority
-                  sizes="380px"
+                  sizes="(max-width: 639px) 70vw, (max-width: 1023px) 50vw, 380px"
                 />
               </div>
             </div>
 
             {/* Right column */}
-            <div className="flex flex-1 flex-col justify-center gap-8">
+            <div className="order-3 flex w-full flex-col justify-center gap-8 lg:order-none">
               {rightColumnCards.map((card) => (
                 <FeatureCardRow key={card.title} {...card} />
               ))}
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

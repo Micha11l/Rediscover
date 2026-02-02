@@ -6,9 +6,14 @@ export function ServiceFaqBlockSection({
   treatment: TreatmentId;
 }) {
   const data = antiAgingCopy[treatment].faq;
+  const sectionId = `serviceFaqBlock-${treatment}`;
 
   return (
-    <section data-testid="service-faq" className="w-full bg-surface-base">
+    <section
+      id={sectionId}
+      data-testid="service-faq"
+      className="w-full bg-surface-base scroll-mt-24 sm:scroll-mt-28 lg:scroll-mt-32"
+    >
       <div className="mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         {/* Two stacked rows; each row is (left title + right content) */}
         <div className="flex flex-col">

@@ -11,6 +11,8 @@
  * - Global container padding rule
  */
 
+import { Container } from "@/components/layout/Container";
+
 interface Step {
   number: string;
   title: string;
@@ -48,11 +50,11 @@ export function HowItWorksSection() {
   return (
     <section className="w-full" data-testid="how-it-works">
       {/* Global container rule */}
-      <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px] py-[100px]">
+      <Container className="py-12 sm:py-16 lg:py-24">
         {/* Title + process */}
-        <div className="flex flex-col items-center gap-[100px]">
+        <div className="flex flex-col items-center gap-10 sm:gap-14 lg:gap-20">
           {/* Header */}
-          <h2 className="m-0 text-center font-heading text-[48px] font-medium leading-[1.2] text-text-primary">
+          <h2 className="m-0 text-center font-heading text-3xl font-medium leading-[1.2] text-text-primary sm:text-4xl lg:text-5xl">
             From Booking to Results
           </h2>
 
@@ -64,7 +66,7 @@ export function HowItWorksSection() {
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:hidden">
               {steps.map((step) => (
                 <div key={step.number} className="flex w-full flex-col gap-7">
-                  <p className="m-0 font-heading text-[80px] font-extralight leading-none text-brand-secondary">
+                  <p className="m-0 font-heading text-6xl font-extralight leading-none text-brand-secondary sm:text-[80px]">
                     {step.number}
                   </p>
 
@@ -81,12 +83,12 @@ export function HowItWorksSection() {
             </div>
 
             {/* Desktop exact layout */}
-            <div className="hidden w-full items-start justify-between lg:flex">
+            <div className="hidden w-full items-start lg:flex lg:flex-wrap lg:justify-center lg:gap-12 xl:gap-16 2xl:gap-20">
               {steps.map((step, index) => (
-                <div key={step.number} className="flex items-start">
+                <div key={step.number} className="flex items-start gap-6">
                   {/* Step card */}
-                  <div className="flex w-[226px] flex-col gap-7">
-                    <p className="m-0 font-heading text-[80px] font-extralight leading-none text-brand-secondary">
+                  <div className="flex w-full max-w-[260px] flex-col gap-7">
+                    <p className="m-0 font-heading text-6xl font-extralight leading-none text-brand-secondary sm:text-[80px]">
                       {step.number}
                     </p>
 
@@ -113,7 +115,7 @@ export function HowItWorksSection() {
           </div>
           {/* /Process */}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

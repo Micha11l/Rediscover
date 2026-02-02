@@ -1,4 +1,5 @@
 import type { ComponentType } from "react";
+import { Container } from "@/components/layout/Container";
 /**
  * Location Section (formerly "PRICING PACKAGES")
  * Figma node: 53:171
@@ -114,14 +115,14 @@ export function LocationSection() {
 
   return (
     <section className="w-full" data-testid="location">
-      <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px] py-[100px]">
-        <div className="flex flex-col items-center gap-20">
+      <Container className="py-12 sm:py-16 lg:py-24">
+        <div className="flex flex-col items-center gap-10 sm:gap-14 lg:gap-20">
           {/* Header */}
           <div className="flex flex-col items-center gap-4 text-center">
-            <h2 className="m-0 font-heading text-[48px] font-medium leading-[1.2] text-text-primary">
+            <h2 className="m-0 font-heading text-3xl font-medium leading-tight text-text-primary sm:text-4xl lg:text-5xl">
               Your Visit Starts Here
             </h2>
-            <p className="m-0 font-body text-[16px] font-normal leading-[1.6] text-brand-secondary">
+            <p className="m-0 font-body text-sm font-normal leading-relaxed text-brand-secondary sm:text-base">
               Personalized treatments, advanced technology, and a calm clinical
               environment.
             </p>
@@ -130,8 +131,8 @@ export function LocationSection() {
           {/* Two columns */}
           <div className="flex w-full flex-col items-start gap-10 lg:flex-row">
             {/* Left: Info card */}
-            <div className="flex w-full flex-1 flex-col gap-6 rounded-3xl bg-surface-muted p-8">
-              <h3 className="m-0 font-heading text-[32px] font-medium leading-[1.1] text-text-primary">
+            <div className="flex w-full flex-1 flex-col gap-6 rounded-3xl bg-surface-muted p-6 sm:p-8">
+              <h3 className="m-0 font-heading text-2xl font-medium leading-tight text-text-primary sm:text-3xl">
                 Rediscover Beauty Clinic
               </h3>
 
@@ -143,7 +144,7 @@ export function LocationSection() {
                       {lines.map((line, i) => (
                         <p
                           key={i}
-                          className="m-0 font-body text-[16px] font-normal leading-[1.6] text-brand-secondary"
+                          className="m-0 font-body text-sm font-normal leading-relaxed text-brand-secondary sm:text-base"
                         >
                           {line}
                         </p>
@@ -164,7 +165,7 @@ export function LocationSection() {
             </div>
 
             {/* Right: Map (885×575 on desktop) */}
-            <div className="h-[575px] w-full lg:w-[885px] shrink-0 overflow-hidden rounded-2xl">
+            <div className="w-full shrink-0 overflow-hidden rounded-2xl aspect-[16/10] sm:aspect-[4/3] lg:aspect-[885/575] lg:w-[885px]">
               <iframe
                 src={embedUrl}
                 width="885"
@@ -178,7 +179,7 @@ export function LocationSection() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
