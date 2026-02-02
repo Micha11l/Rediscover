@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 /**
  * Newsletter Section (Care Promise banner)
@@ -10,6 +13,7 @@ import Image from "next/image";
  * - No client interactivity (no onSubmit) to avoid RSC errors
  */
 export function NewsletterSection() {
+  const { t } = useLanguage();
   return (
     <section
       className="relative isolate w-full overflow-hidden"
@@ -34,33 +38,26 @@ export function NewsletterSection() {
       {/* Content container */}
       <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="flex w-full flex-col items-start justify-between gap-12 lg:flex-row lg:items-center lg:gap-20">
-          {/* Left title */}
-          <h2 className="m-0 font-heading text-[48px] font-medium leading-[1.2] text-text-inverse md:text-[56px]">
-            <span>Our Care </span>
-            <span className="text-brand-secondary-light">Promise</span>
-          </h2>
+           {/* Left title */}
+           <h2 className="m-0 font-heading text-[48px] font-medium leading-[1.2] text-text-inverse md:text-[56px]">
+             {t.newsletter.heading}
+           </h2>
 
-          {/* Right copy */}
-          <div className="w-full max-w-[553px]">
-            {/* Paragraph 1: force 3 lines on desktop */}
-            <p className="m-0 font-heading text-[16px]  leading-[1.6] text-brand-secondary-light">
-              We believe in thoughtful, personalized care —
-              <br className="hidden lg:block" />
-              guided by expertise, transparency, and respect for
-              <br className="hidden lg:block" />
-              your natural beauty.
-            </p>
+           {/* Right copy */}
+           <div className="w-full max-w-[553px]">
+             {/* Paragraph 1: force 3 lines on desktop */}
+             <p className="m-0 font-heading text-[16px]  leading-[1.6] text-brand-secondary-light">
+               {t.newsletter.description.split(". ")[0]}.
+             </p>
 
-            {/* Gap = 24px */}
-            <div className="h-6" />
+             {/* Gap = 24px */}
+             <div className="h-6" />
 
-            {/* Paragraph 2: force 2 lines on desktop + bold */}
-            <p className="m-0 font-body text-[16px] font-bold leading-[1.6] text-brand-secondary-light">
-              All treatments are delivered by trained and
-              <br className="hidden lg:block" />
-              certified professionals.
-            </p>
-          </div>
+             {/* Paragraph 2: force 2 lines on desktop + bold */}
+             <p className="m-0 font-body text-[16px] font-bold leading-[1.6] text-brand-secondary-light">
+               {t.newsletter.description.split(". ")[1]}
+             </p>
+           </div>
         </div>
       </div>
     </section>

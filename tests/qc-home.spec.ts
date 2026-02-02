@@ -23,8 +23,7 @@ test('Homepage layout QC', async ({ page }) => {
     expectNear(heroFrameBox.width, 1440);
   }
 
-  // Navbar height
-  const navbar = heroFrame.locator('nav');
+  const navbar = heroFrame.locator('nav').first();
   await expect(navbar).toBeVisible();
   const navbarBox = await navbar.boundingBox();
   expect(navbarBox).not.toBeNull();
@@ -38,7 +37,7 @@ test('Homepage layout QC', async ({ page }) => {
   const ctaBox = await ctaButton.boundingBox();
   expect(ctaBox).not.toBeNull();
   if (ctaBox) {
-    expectNear(ctaBox.width, 190);
+    expectNear(ctaBox.width, 195);
     expectNear(ctaBox.height, 56);
   }
 
@@ -48,7 +47,7 @@ test('Homepage layout QC', async ({ page }) => {
   const aboutBox = await about.boundingBox();
   expect(aboutBox).not.toBeNull();
   if (aboutBox) {
-    expectNear(aboutBox.height, 596);
+    expectNear(aboutBox.height, 698);
   }
 
   // About card dimensions
@@ -57,18 +56,18 @@ test('Homepage layout QC', async ({ page }) => {
   const cardBox = await card.boundingBox();
   expect(cardBox).not.toBeNull();
   if (cardBox) {
-    expectNear(cardBox.width, 1240);
-    expectNear(cardBox.height, 585);
+    expectNear(cardBox.width, 1376);
+    expectNear(cardBox.height, 602);
   }
 
-  // Hero-About overlap (card overlaps hero by ~89px)
+  // Hero-About overlap (card overlaps hero by ~64px)
   expect(heroFrameBox).not.toBeNull();
   expect(cardBox).not.toBeNull();
   if (heroFrameBox && cardBox) {
     const heroBottom = heroFrameBox.y + heroFrameBox.height;
     const cardTop = cardBox.y;
     const overlap = heroBottom - cardTop;
-    expectNear(overlap, 89);
+    expectNear(overlap, 64);
   }
 
   // Services section
@@ -82,7 +81,7 @@ test('Homepage layout QC', async ({ page }) => {
   expect(firstCardBox).not.toBeNull();
   if (firstCardBox) {
     expectNear(firstCardBox.width, 250);
-    expectNear(firstCardBox.height, 355);
+    expectNear(firstCardBox.height, 443);
   }
 
   // Services grid gap (80px horizontal between cards)

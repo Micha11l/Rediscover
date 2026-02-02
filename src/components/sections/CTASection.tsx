@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 /**
  * CTA Section
@@ -8,6 +11,7 @@ import Link from "next/link";
  * Layout: Centered banner with background image + right-side content
  */
 export function CtaSection() {
+  const { t } = useLanguage();
   return (
     <section className="w-full" data-testid="cta">
       {/* Global container rule */}
@@ -37,11 +41,10 @@ export function CtaSection() {
                 {/* Title + subtitle */}
                 <div className="flex w-full flex-col items-end gap-3">
                   <h2 className="m-0 max-w-[520px] font-heading text-[48px] font-medium leading-[1.2]">
-                    <span className="text-brand-secondary">Rediscover Beauty</span>{" "}
-                    <span className="text-text-primary">Begins Here</span>
+                    {t.cta.heading}
                   </h2>
                   <p className="m-0 max-w-[540px] font-body text-[16px] font-normal leading-[1.6] text-brand-secondary">
-                    Thoughtful aesthetic care, tailored to your skin and body.
+                    {t.cta.description}
                   </p>
                 </div>
 
@@ -50,7 +53,7 @@ export function CtaSection() {
                   href="/contact"
                   className="inline-flex items-center justify-center rounded-full bg-brand-primary px-8 py-5 font-heading text-[14px] font-medium leading-none text-text-inverse no-underline transition-colors hover:bg-brand-primary-muted"
                 >
-                  Request a Consultation
+                  {t.cta.button}
                 </Link>
               </div>
             </div>

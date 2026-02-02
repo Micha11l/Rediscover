@@ -56,7 +56,12 @@ export function TestimonialsCarousel({
   testimonials,
 }: TestimonialsCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleCount, setVisibleCount] = useState(1);
+  const [visibleCount, setVisibleCount] = useState(() => {
+    if (typeof window === "undefined") {
+      return 1;
+    }
+    return window.innerWidth >= 1024 ? 2 : 1;
+  });
   const cardRefs = useRef<Array<HTMLDivElement | null>>([]);
 
   const maxIndex = Math.max(0, testimonials.length - visibleCount);
@@ -72,19 +77,16 @@ export function TestimonialsCarousel({
   useEffect(() => {
     const updateVisibleCount = () => {
       const nextCount = window.innerWidth >= 1024 ? 2 : 1;
+      const nextMaxIndex = Math.max(0, testimonials.length - nextCount);
+
       setVisibleCount((prev) => (prev === nextCount ? prev : nextCount));
+      setCurrentIndex((prev) => Math.min(prev, nextMaxIndex));
     };
 
     updateVisibleCount();
     window.addEventListener("resize", updateVisibleCount);
     return () => window.removeEventListener("resize", updateVisibleCount);
-  }, []);
-
-  useEffect(() => {
-    if (currentIndex > maxIndex) {
-      setCurrentIndex(maxIndex);
-    }
-  }, [currentIndex, maxIndex]);
+  }, [testimonials.length]);
 
   useEffect(() => {
     const target = cardRefs.current[currentIndex];

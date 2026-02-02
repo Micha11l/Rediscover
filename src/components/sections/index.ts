@@ -6,6 +6,7 @@
 export { HeroSection } from "./HeroSection";
 export { AboutSection } from "./AboutSection";
 export { ServicesSection } from "./ServicesSection";
+export { FeaturedServicesSection } from "./FeaturedServicesSection";
 export { ValuesSection } from "./ValuesSection";
 export { AchievementSection } from "./AchievementSection";
 export { TestimonialsSection } from "./TestimonialsSection";

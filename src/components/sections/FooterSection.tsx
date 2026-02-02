@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ICON_SIZE = 20; // 20px = size-5
 
@@ -17,6 +20,7 @@ const ICON_SIZE = 20; // 20px = size-5
  * public/images/icon/FacebookLogo.svg
  */
 export function FooterSection() {
+  const { t } = useLanguage();
   return (
     <footer className="w-full bg-surface-base" data-testid="footer">
       {/* Global container */}
@@ -35,15 +39,15 @@ export function FooterSection() {
                 priority
               />
               <h2 className="m-0 font-heading text-[24px] font-medium leading-[1.1] text-text-primary">
-                Rediscover Beauty
+                {t.footer.brandName}
               </h2>
             </div>
 
             {/* Working Hours */}
             <div className="flex flex-col gap-6">
-              <h3 className="m-0 font-heading text-[16px] font-medium leading-none text-brand-secondary">
-                Business Hours
-              </h3>
+               <h3 className="m-0 font-heading text-[16px] font-medium leading-none text-brand-secondary">
+                 {t.footer.sections.businessHours}
+               </h3>
               <p className="m-0 font-body text-[16px] font-normal leading-[1.6] text-brand-secondary">
                 Monday - Sunday: 10.00am - 8.00pm
               </p>
@@ -54,43 +58,43 @@ export function FooterSection() {
           <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-[108px]">
             {/* Menu */}
             <div className="flex flex-col gap-8">
-              <h3 className="m-0 font-heading text-[16px] font-medium leading-none text-brand-secondary">
-                Menu
-              </h3>
+               <h3 className="m-0 font-heading text-[16px] font-medium leading-none text-brand-secondary">
+                 {t.footer.sections.menu}
+               </h3>
 
-              <nav className="flex flex-col gap-5">
-                <Link
-                  href="/"
-                  className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
-                >
-                  Home
-                </Link>
-                <Link
-                  href="/services"
-                  className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
-                >
-                  Services
-                </Link>
-                <Link
-                  href="/devices"
-                  className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
-                >
-                  Devices
-                </Link>
-                <Link
-                  href="/rmt"
-                  className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
-                >
-                  RMT
-                </Link>
-              </nav>
+               <nav className="flex flex-col gap-5">
+                 <Link
+                   href="/"
+                   className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
+                 >
+                   {t.footer.menuLinks[0]}
+                 </Link>
+                 <Link
+                   href="/services"
+                   className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
+                 >
+                   {t.footer.menuLinks[1]}
+                 </Link>
+                 <Link
+                   href="/devices"
+                   className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
+                 >
+                   {t.footer.menuLinks[2]}
+                 </Link>
+                 <Link
+                   href="/rmt"
+                   className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
+                 >
+                   {t.footer.menuLinks[3]}
+                 </Link>
+               </nav>
             </div>
 
             {/* Contact */}
             <div className="flex w-full flex-col gap-8 lg:w-[209px]">
-              <h3 className="m-0 font-heading text-[16px] font-medium leading-none text-brand-secondary">
-                Contact Us
-              </h3>
+               <h3 className="m-0 font-heading text-[16px] font-medium leading-none text-brand-secondary">
+                 {t.footer.sections.contactUs}
+               </h3>
 
               <div className="flex flex-col gap-5">
                 {/* Phone */}
@@ -186,24 +190,24 @@ export function FooterSection() {
           className="flex w-full flex-wrap items-end justify-between gap-6 border-t-[0.5px] border-brand-secondary-light pt-6"
           data-testid="footer-copyright"
         >
-          <p className="m-0 font-body text-[14px] font-normal leading-none text-text-primary">
-            Rediscover Beauty © 2025
-          </p>
+           <p className="m-0 font-body text-[14px] font-normal leading-none text-text-primary">
+             {t.footer.copyright}
+           </p>
 
-          <div className="flex items-center gap-10">
-            <Link
-              href="/privacy-policy"
-              className="font-body text-[14px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="font-body text-[14px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
-            >
-              Term and conditions
-            </Link>
-          </div>
+           <div className="flex items-center gap-10">
+             <Link
+               href="/privacy-policy"
+               className="font-body text-[14px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
+             >
+               {t.footer.legalLinks[0]}
+             </Link>
+             <Link
+               href="/terms"
+               className="font-body text-[14px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
+             >
+               {t.footer.legalLinks[1]}
+             </Link>
+           </div>
         </div>
       </div>
     </footer>

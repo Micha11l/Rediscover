@@ -1,5 +1,8 @@
+"use client";
+
 import type { ComponentType } from "react";
 import { Container } from "@/components/layout/Container";
+import { useLanguage } from "@/contexts/LanguageContext";
 /**
  * Location Section (formerly "PRICING PACKAGES")
  * Figma node: 53:171
@@ -84,26 +87,28 @@ function IconCreditCard({ className = "" }: IconProps) {
 
 type InfoItem = {
   Icon: ComponentType<IconProps>;
-  lines: string[];
+  lines: { text: string; bold?: boolean }[];
 }
 
 export function LocationSection() {
+  const { t } = useLanguage();
+
   const infoItems: InfoItem[] = [
     {
       Icon: IconMapPin,
-      lines: ["9425 Leslie St Unit14 ,2F,", "Richmond Hill, ON L4B 3N7"],
+      lines: t.location.address.map((text) => ({ text })),
     },
     {
       Icon: IconClock,
-      lines: ["Monday – Sunday", "10:00 AM – 8:00 PM", "By appointment only"],
+      lines: t.location.hours,
     },
     {
       Icon: IconCar,
-      lines: ["Free on-site parking available", "Accessible parking available"],
+      lines: t.location.parking,
     },
     {
       Icon: IconCreditCard,
-      lines: ["Cash", "Debit/Credit cards", "NFC mobile payments"],
+      lines: t.location.payment,
     },
   ];
 
@@ -111,32 +116,31 @@ export function LocationSection() {
     "https://www.google.com/maps/dir/?api=1&destination=9425+Leslie+St+Unit14+2F+Richmond+Hill+ON+L4B+3N7";
 
   const embedUrl =
-    "https://maps.google.com/maps?q=9425%20Leslie%20St%20Unit14%202F%20Richmond%20Hill%20ON%20L4B%203N7&t=&z=15&ie=UTF8&iwloc=&output=embed";
+    "https://www.google.com/maps?q=9425+Leslie+St,+Richmond+Hill,+ON+L4B+3N7&z=16&output=embed";
 
   return (
     <section className="w-full" data-testid="location">
       <Container className="py-12 sm:py-16 lg:py-24">
         <div className="flex flex-col items-center gap-10 sm:gap-14 lg:gap-20">
-          {/* Header */}
-          <div className="flex flex-col items-center gap-4 text-center">
-            <h2 className="m-0 font-heading text-3xl font-medium leading-tight text-text-primary sm:text-4xl lg:text-5xl">
-              Your Visit Starts Here
-            </h2>
+           {/* Header */}
+           <div className="flex flex-col items-center gap-4 text-center">
+             <h2 className="m-0 font-heading text-3xl font-medium leading-tight text-text-primary sm:text-4xl lg:text-5xl">
+               {t.location.heading}
+             </h2>
             <p className="m-0 font-body text-sm font-normal leading-relaxed text-brand-secondary sm:text-base">
-              Personalized treatments, advanced technology, and a calm clinical
-              environment.
+              {t.location.subheading}
             </p>
           </div>
 
           {/* Two columns */}
-          <div className="flex w-full flex-col items-start gap-10 lg:flex-row">
+          <div className="flex w-full flex-col items-start gap-10 lg:flex-row lg:items-stretch">
             {/* Left: Info card */}
-            <div className="flex w-full flex-1 flex-col gap-6 rounded-3xl bg-surface-muted p-6 sm:p-8">
+            <div className="flex w-full flex-1 flex-col gap-8 rounded-3xl bg-surface-muted p-8 sm:p-10 lg:p-12">
               <h3 className="m-0 font-heading text-2xl font-medium leading-tight text-text-primary sm:text-3xl">
-                Rediscover Beauty Clinic
+                {t.location.cardTitle}
               </h3>
 
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-8">
                 {infoItems.map(({ Icon, lines }, idx) => (
                   <div key={idx} className="flex items-start gap-4">
                     <Icon className="mt-1 h-4 w-4 shrink-0 text-brand-secondary" />
@@ -144,9 +148,9 @@ export function LocationSection() {
                       {lines.map((line, i) => (
                         <p
                           key={i}
-                          className="m-0 font-body text-sm font-normal leading-relaxed text-brand-secondary sm:text-base"
+                          className={`m-0 font-body text-sm leading-relaxed text-brand-secondary sm:text-base ${line.bold ? "font-semibold" : "font-normal"}`}
                         >
-                          {line}
+                          {line.text}
                         </p>
                       ))}
                     </div>
@@ -154,14 +158,14 @@ export function LocationSection() {
                 ))}
               </div>
 
-              <a
-                href={directionsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-flex items-center justify-center rounded-full bg-brand-primary px-8 py-5 font-heading text-[12px] font-medium leading-none text-text-inverse no-underline transition-colors hover:bg-brand-primary-muted hover:no-underline"
-              >
-                Get Directions
-              </a>
+               <a
+                 href={directionsUrl}
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="mt-auto inline-flex items-center justify-center rounded-full bg-brand-primary px-8 py-5 font-heading text-button font-medium leading-none text-text-inverse no-underline transition-colors hover:bg-brand-primary-muted hover:no-underline"
+               >
+                 {t.location.button}
+               </a>
             </div>
 
             {/* Right: Map (885×575 on desktop) */}
