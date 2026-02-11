@@ -19,6 +19,7 @@ export type PrivacyCopy = {
     title: string;
     effectiveDate: string;
   };
+  introduction: string;
   sections: PrivacySection[];
   carePromise: {
     titleParts: { primary: string; accent: string };
@@ -33,14 +34,10 @@ export const privacyCopy: PrivacyCopy = {
     effectiveDate: "January 25, 2026",
   },
 
+  introduction:
+    "At Rediscover Beauty Clinic, we are committed to protecting your privacy and safeguarding your personal information. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data when you visit and interact with our website or services.",
+
   sections: [
-    {
-      id: "introduction",
-      title: "Introduction",
-      paragraphs: [
-        "At Beauva Clinic, we are committed to protecting your privacy and ensuring that your personal information is handled responsibly. This Privacy Policy outlines how we collect, use, store, and protect your information when you visit our clinic, use our services, or interact with our website.",
-      ],
-    },
     {
       id: "information-we-collect",
       title: "Information We Collect",
@@ -48,28 +45,31 @@ export const privacyCopy: PrivacyCopy = {
         {
           subtitle: "a. Personal Data",
           paragraphs: [
-            "We may collect the following personal information when you book an appointment, inquire about services, or contact us:",
+            "We collect personal information that you voluntarily provide when you:",
           ],
           bullets: [
-            "Full name",
+            "Book an appointment",
+            "Contact us by phone, email, or social medias",
+            "__DIVIDER__This may include:",
+            "Name",
             "Email address",
             "Phone number",
-            "Service preferences and appointment history",
+            "Treatment preferences",
           ],
         },
         {
           subtitle: "b. Usage Data",
           paragraphs: [
-            "When you visit our website, we may automatically collect certain technical data, including:",
+            "We may collect data about how you access and use our website, such as:",
           ],
           bullets: [
             "IP address",
-            "Browser type and version",
-            "Pages viewed and time spent on site",
-            "Date and time of access",
+            "Browser type",
+            "Pages viewed",
+            "Date/time of visit",
           ],
           afterBulletsParagraphs: [
-            "We may use cookies or similar technologies to enhance your browsing experience.",
+            "This information is collected via cookies and analytics tools.\nYou may adjust browser settings to refuse cookies; however, this may affect website functionality.",
           ],
         },
       ],
@@ -77,42 +77,42 @@ export const privacyCopy: PrivacyCopy = {
     {
       id: "how-we-use",
       title: "How We Use Your Information",
-      paragraphs: ["We use the information we collect to:"],
+      paragraphs: ["We use your personal information to:"],
       bullets: [
-        "Confirm, schedule, and manage your appointments",
-        "Communicate with you regarding services, promotions, and updates",
-        "Improve and personalize your experience at our clinic",
-        "Process payments and maintain accurate records",
-        "Comply with legal and regulatory requirements",
+        "Process and manage appointments",
+        "Respond to inquiries and provide customer support",
+        "Send promotions, updates, newsletters (with your consent)",
+        "Improve our website and services",
+        "Comply with legal obligations",
       ],
     },
     {
       id: "disclosure",
       title: "Disclosure of Personal Information",
       paragraphs: [
-        "We do not sell, rent, or share your personal information with third parties for marketing purposes without your explicit consent.",
-        "We may disclose your information in the following situations:",
+        "We do not sell, rent, or trade your personal information under any circumstances.\n\nYour personal information will only be disclosed with your explicit consent, and only in limited situations necessary to provide services or comply with legal obligations.\n\nThese situations may include:",
       ],
       bullets: [
-        "To comply with legal obligations or respond to lawful requests",
-        "To protect the rights, safety, or property of Beauva Clinic or others",
-        "To trusted service providers who assist us in operating our business (subject to confidentiality agreements)",
+        "When you voluntarily provide information through direct contact methods such as phone calls, messages, or in-person communication",
+        "When disclosure is required by law, regulation, court order, or legal process",
+        "When necessary to protect the rights, safety, or property of Rediscover Beauty Clinic, our clients, or others",
+      ],
+      afterBulletsParagraphs: [
+        "We do not use automated booking systems or online scheduling platforms that collect personal data.\n\nAll personal information provided to us is handled directly and kept confidential.",
       ],
     },
     {
       id: "data-retention",
       title: "Data Retention",
       paragraphs: [
-        "We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy, or as required by applicable law.",
-        "Once no longer needed, your data will be securely deleted or anonymized.",
+        "We retain personal information only as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.\n\nWhen personal information is no longer needed, we securely delete or anonymize it.",
       ],
     },
     {
       id: "data-security",
       title: "Data Security",
       paragraphs: [
-        "We implement reasonable administrative, technical, and physical safeguards to protect your personal information from unauthorized access, use, or disclosure.",
-        "However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.",
+        "We take reasonable administrative, technical, and physical measures to protect your personal information against unauthorized access, loss, misuse, disclosure, or alteration.\n\nDespite our efforts, no data transmission over the Internet or electronic storage system can be guaranteed to be completely secure.\n\nTherefore, we cannot guarantee absolute security of your information.",
       ],
     },
     {
@@ -123,61 +123,57 @@ export const privacyCopy: PrivacyCopy = {
       ],
       bullets: [
         "Access the personal information we hold about you",
-        "Request correction of inaccurate data",
-        "Request deletion of your personal data",
-        "Withdraw consent to data processing",
-        "Lodge a complaint with a data protection authority",
+        "Request correction of inaccurate or incomplete information",
+        "Request deletion of your personal information",
+        "Withdraw consent for certain data processing activities",
+        "Request information about how your data is used",
       ],
       afterBulletsParagraphs: [
-        "To exercise any of these rights, please contact us using the information provided below.",
+        "To exercise these rights, please contact us using the details provided below.",
       ],
     },
     {
       id: "appointment-cancellation",
       title: "Appointment & Cancellation Policy",
       paragraphs: [
-        "To ensure smooth operations and availability for all clients, please note:",
+        "Appointments are arranged through direct contact only, including phone calls, messaging platforms, or in-person scheduling.\n\nTo ensure fair scheduling and respect for our service providers' time, we kindly request the following:",
       ],
       bullets: [
-        "We require at least 24 hours' notice for appointment cancellations or rescheduling.",
-        "Late cancellations or no-shows may result in a fee or affect future booking privileges.",
-        "Repeated missed appointments may be subject to prepayment requirements.",
-        "We reserve the right to refuse service to clients who repeatedly fail to honor appointments.",
+        "Appointment changes or cancellations must be made at least 24 hours in advance",
+        "Same-day cancellations, late notice, or no-shows may be subject to a cancellation fee, at the clinic's discretion",
+        "Late arrivals may result in a shortened treatment time to avoid delays for other clients",
+        "Service exchanges or substitutions may be considered only with clinic approval and are subject to availability and individual circumstances",
       ],
       afterBulletsParagraphs: [
-        "By booking an appointment, you acknowledge and agree to these terms.",
+        "By booking an appointment with Rediscover Beauty Clinic, you acknowledge and agree to this appointment and cancellation policy.",
       ],
     },
     {
       id: "children-minors",
       title: "Children & Minors",
       paragraphs: [
-        "Clients under the age of 18 must be accompanied by a parent or legal guardian and must have documented consent to receive any services at Beauva Clinic.",
+        "Rediscover Beauty Clinic does not knowingly collect or solicit personal information from individuals under the age of 18.\n\nClients under the age of 18 may only participate in services or treatments with the presence and consent of a parent or legal guardian.",
       ],
     },
     {
       id: "third-party",
       title: "Third-Party Websites",
       paragraphs: [
-        "Our website may contain links to external websites. We are not responsible for the privacy practices or content of those third-party sites. We encourage you to review their privacy policies before providing any personal information.",
+        "Our website may contain links to third-party websites or services that are not owned or controlled by us.\n\nWe are not responsible for the privacy practices, content, or policies of any third-party websites.\n\nWe encourage you to review their privacy policies before providing any personal information.",
       ],
     },
     {
       id: "changes",
       title: "Changes to this Privacy Policy",
       paragraphs: [
-        "We reserve the right to update this Privacy Policy at any time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically.",
+        "We reserve the right to update or modify this Privacy Policy at any time.\n\nAny changes will be posted on this page, and the updated effective date will be revised accordingly.\n\nContinued use of our website after changes are posted constitutes your acceptance of those changes.",
       ],
     },
     {
       id: "contact",
       title: "Contact Information",
       paragraphs: [
-        "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:",
-      ],
-      bullets: [
-        "Phone: +1 647 523 3988",
-        "Address: 9425 Leslie St, Unit 14, 2F, Richmond Hill, ON L4B 3N7",
+        "If you have any questions or concerns regarding this Privacy Policy or your personal information, please contact us:\n\nRediscover Beauty Clinic\nPhone: +1 647 523 3988\nAddress: 9425 Leslie St, Unit 14, 2F, Richmond Hill, ON L4B 3N7",
       ],
     },
   ],

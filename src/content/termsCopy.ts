@@ -61,24 +61,21 @@ export const termsCopy: TermsCopy = {
       ],
       afterBulletsParagraphs: [
         "All service descriptions provided on this website are for general informational purposes only.",
-        "Actual treatment plans, procedures, and outcomes may vary based on individual conditions, professional assessments, and suitability.",
-        "Rediscover Beauty Clinic reserves the right to modify, update, or discontinue any service at its discretion and in accordance with applicable laws and regulations.",
+        "Actual treatment plans, procedures, and outcomes may vary based on individual conditions, professional assessments, and suitability.\n\nRediscover Beauty Clinic reserves the right to modify, update, or discontinue any service at its discretion and in accordance with applicable laws and regulations.",
       ],
     },
     {
       id: "eligibility",
       title: "Eligibility",
       paragraphs: [
-        "You must be at least 18 years of age, or have the consent and presence of a parent or legal guardian to receive certain services.",
-        "Certain treatments may have specific requirements, and we reserve the right to refuse service based on suitability and safety considerations.",
+        "You must be at least 18 years of age, or have the consent and presence of a parent or legal guardian to receive certain services.\n\nCertain treatments may have specific requirements, and we reserve the right to refuse service based on suitability and safety considerations.",
       ],
     },
     {
       id: "appointment-scheduling",
       title: "Appointment Scheduling",
       paragraphs: [
-        "Appointments are scheduled directly through phone, messaging, email, or in-person. We do not use an automated online booking system that collects personal data.",
-        "Treatment start times are scheduled according to our calendar and availability.",
+        "Appointments are scheduled directly through phone, messaging, email, or in-person. We do not use an automated online booking system that collects personal data.\n\nTreatment start times are scheduled according to our calendar and availability.",
       ],
     },
     {
@@ -117,24 +114,21 @@ export const termsCopy: TermsCopy = {
         "NFC mobile payments",
       ],
       afterBulletsParagraphs: [
-        "Full payment is required at the time of service unless otherwise arranged.",
-        "Payment methods may vary depending on service type or promotion.",
+        "Full payment is required at the time of service unless otherwise arranged.\nPayment methods may vary depending on service type or promotion.",
       ],
     },
     {
       id: "treatment-expectations",
       title: "Treatment Expectations",
       paragraphs: [
-        "Results vary by individual. While we provide information based on clinical understanding and experience, no guarantees of specific outcomes are implied.",
-        "Client responsibilities include following pre- and post-treatment recommendations for safety and best results.",
+        "Results vary by individual. While we provide information based on clinical understanding and experience, no guarantees of specific outcomes are implied.\n\nClient responsibilities include following pre- and post-treatment recommendations for safety and best results.",
       ],
     },
     {
       id: "professional-advice",
       title: "Professional Advice",
       paragraphs: [
-        "Information provided by our clinic, including website content and staff communication, is for informational purposes only and does not replace professional medical advice.",
-        "For medical concerns, consult a qualified healthcare professional.",
+        "Information provided by our clinic, including website content and staff communication, is for informational purposes only and does not replace professional medical advice.\n\nFor medical concerns, consult a qualified healthcare professional.",
       ],
     },
     {

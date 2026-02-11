@@ -15,12 +15,12 @@ function TreatmentCard({ treatment }: { treatment: PromoTreatment }) {
         />
       </div>
       <div className="flex flex-col items-center gap-3 text-center">
-        <h3 className="font-heading text-heading-md font-medium leading-[1.2] text-brand-secondary">
+        <h3 className="m-0 font-heading text-heading-md font-medium leading-[1.2] text-brand-secondary">
           {treatment.title}
         </h3>
-        <div className="font-heading text-[20px] leading-[1.2] text-text-primary">
-          <p className="mb-0">VIP: {treatment.vipPrice}</p>
-          <p>
+        <div className="font-heading text-[20px] leading-none text-text-primary">
+          <p className="m-0">VIP: {treatment.vipPrice}</p>
+          <p className="m-0">
             <s className="text-text-muted">
               <span className="sr-only">Regular price: </span>
               Reg. {treatment.regularPrice}
@@ -37,20 +37,25 @@ export function PromoTreatmentsSection() {
 
   return (
     <section data-testid="promo-treatments" className="w-full">
-      <div className="mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
-        <div className="mb-16 flex flex-col items-center gap-6">
-          <div className="rounded-[40px] border border-surface-accent px-[18px] py-[10px]">
-            <span className="font-heading text-[12px] font-light text-brand-secondary">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-12 px-4 py-16 md:px-8 lg:gap-16 lg:px-16 lg:py-20 xl:px-[100px] 2xl:py-24">
+        <div className="flex flex-col items-center gap-5">
+          <div className="inline-flex items-center justify-center rounded-full border border-surface-accent px-8 py-3 lg:min-h-[52px] lg:px-10 lg:py-4">
+            <span className="m-0 font-heading text-[16px] font-light text-brand-secondary lg:text-[18px]">
               {treatments.tag}
             </span>
           </div>
 
-          <h2 className="text-center font-heading text-[36px] font-medium leading-[1.2] text-text-primary md:text-[48px]">
+          <h2 className="m-0 text-center font-heading text-[36px] font-medium leading-none text-text-primary md:text-[40px]">
             {treatments.title}
           </h2>
 
-          <p className="max-w-[700px] text-center font-body text-body leading-[1.6] text-brand-secondary">
-            {treatments.subtitle}
+          <p className="m-0 max-w-[800px] text-center font-body text-[16px] font-light leading-[1.4] text-brand-secondary">
+            <span className="lg:whitespace-nowrap">
+              Our most requested treatments, specially curated for first-time
+              clients to experience our signature
+            </span>
+            <br className="hidden lg:inline" />
+            <span>care at VIP pricing.</span>
           </p>
         </div>
 

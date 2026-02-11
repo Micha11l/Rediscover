@@ -36,7 +36,7 @@ export const zh: Translations = {
       },
       {
         label1: "护肤疗程",
-        label2: "深层排毒护理",
+        label2: "桃花灸",
       },
       {
         label1: "身体与养生",
@@ -44,7 +44,7 @@ export const zh: Translations = {
       },
       {
         label1: "面部护理",
-        label2: "Morpheus8 射频微针",
+        label2: "Morpheus8 黄金微针",
       },
     ],
   },

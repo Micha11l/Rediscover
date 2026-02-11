@@ -54,12 +54,11 @@ export const promoCopy: PromoCopy = {
 
   welcome: {
     messageParts: {
-      primary:
-        "We believe the first visit should be about understanding your skin and goals",
-      accent: " \u2014 not pressure.",
+      primary: "We believe the first visit should be about ",
+      accent: "understanding your skin and goals \u2014 not pressure.",
     },
     subtitle:
-      "Our VIP introductory pricing is designed to give new clients the opportunity to experience our treatments, approach, and care philosophy with confidence.",
+      "Our VIP introductory pricing is designed to give new clients the opportunity to experience our treatments,\napproach, and care philosophy with confidence.",
   },
 
   treatments: {
