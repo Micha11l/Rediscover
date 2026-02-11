@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 /**
  * Testimonials Section
@@ -7,6 +10,7 @@ import Image from "next/image";
  * Layout: Full-width background + centered single testimonial
  */
 export function TestimonialsSection() {
+  const { t } = useLanguage();
   return (
     <section
       className="relative isolate w-full overflow-hidden"
@@ -43,25 +47,20 @@ export function TestimonialsSection() {
             </div>
 
             <h2 className="m-0 font-heading text-[48px] font-medium leading-[1.2] text-text-inverse md:text-[56px]">
-              Voices of{" "}
-              <span className="text-brand-secondary-light">Wellness</span>
+              {t.testimonials.heading}
             </h2>
           </div>
 
-          {/* Content: quote + customer */}
-          <div className="flex flex-col items-center gap-10">
-            <blockquote className="m-0 max-w-[1000px] font-body text-[20px] font-normal leading-[1.6] text-text-inverse md:text-[24px]">
-              “I had a facial at Rediscover Beauty Clinic and it was a great
-              experience. The staff was very knowledgeable about their skincare
-              products, very friendly and professional. The massage portion that
-              was included was a good amount of time and I felt very relaxed.
-              Highly recommended to go try their service at least once.”
-            </blockquote>
+           {/* Content: quote + customer */}
+           <div className="flex flex-col items-center gap-10">
+             <blockquote className="m-0 max-w-[1000px] font-body text-[20px] font-normal leading-[1.6] text-text-inverse md:text-[24px]">
+               "{t.testimonials.items[0].quote}"
+             </blockquote>
 
-            <p className="m-0 font-body text-[16px] font-normal leading-[1.4] text-brand-secondary-light">
-              Sally Cheng, Long-time Client
-            </p>
-          </div>
+             <p className="m-0 font-body text-[16px] font-normal leading-[1.4] text-brand-secondary-light">
+               {t.testimonials.items[0].author}, {t.testimonials.items[0].title}
+             </p>
+           </div>
         </div>
       </div>
     </section>

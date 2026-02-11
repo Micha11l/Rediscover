@@ -15,7 +15,7 @@ import { Navbar } from "@/components/layout";
 /** Process navigation items - links to sections within the page */
 const PROCESS_ITEMS = [
   { id: "sofwave", label: "Sofwave", href: "#sofwave" },
-  { id: "thermage", label: "Thermage FLX", href: "#thermage" },
+  { id: "thermage-flx", label: "Thermage FLX", href: "#thermage-flx" },
   { id: "morpheus8", label: "Morpheus8", href: "#morpheus8" },
   { id: "forma", label: "Forma", href: "#forma" },
 ];

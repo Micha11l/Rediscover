@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
+import { Container } from "@/components/layout/Container";
 
 export type TestimonialItem = {
   id: string;
@@ -55,9 +56,15 @@ export function TestimonialsCarousel({
   testimonials,
 }: TestimonialsCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [visibleCount, setVisibleCount] = useState(() => {
+    if (typeof window === "undefined") {
+      return 1;
+    }
+    return window.innerWidth >= 1024 ? 2 : 1;
+  });
+  const cardRefs = useRef<Array<HTMLDivElement | null>>([]);
 
-  const maxIndex = Math.max(0, testimonials.length - 2);
+  const maxIndex = Math.max(0, testimonials.length - visibleCount);
 
   const handlePrev = useCallback(() => {
     setCurrentIndex((prev) => Math.max(0, prev - 1));
@@ -68,16 +75,25 @@ export function TestimonialsCarousel({
   }, [maxIndex]);
 
   useEffect(() => {
-    if (scrollContainerRef.current) {
-      const cardWidth = 580;
-      const gap = 20;
-      const scrollPosition = currentIndex * (cardWidth + gap);
-      scrollContainerRef.current.scrollTo({
-        left: scrollPosition,
-        behavior: "smooth",
-      });
+    const updateVisibleCount = () => {
+      const nextCount = window.innerWidth >= 1024 ? 2 : 1;
+      const nextMaxIndex = Math.max(0, testimonials.length - nextCount);
+
+      setVisibleCount((prev) => (prev === nextCount ? prev : nextCount));
+      setCurrentIndex((prev) => Math.min(prev, nextMaxIndex));
+    };
+
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, [testimonials.length]);
+
+  useEffect(() => {
+    const target = cardRefs.current[currentIndex];
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
     }
-  }, [currentIndex]);
+  }, [currentIndex, visibleCount]);
 
   const canGoPrev = currentIndex > 0;
   const canGoNext = currentIndex < maxIndex;
@@ -88,15 +104,13 @@ export function TestimonialsCarousel({
 
   return (
     <section
-      className="relative isolate z-10 w-full bg-brand-secondary py-[100px]"
+      className="relative isolate z-10 w-full bg-brand-secondary py-12 sm:py-16 lg:py-24"
       data-testid="service-testimonials"
     >
-      <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px]">
-        <div className="flex items-end justify-between gap-20">
-          <h2 className="font-heading text-[40px] font-medium leading-[1.1] text-surface-muted md:text-[48px] lg:text-[56px]">
-            <span className="block text-brand-secondary-light">
-              Your Words,
-            </span>
+      <Container>
+        <div className="flex flex-col items-start gap-8 sm:flex-row sm:items-end sm:justify-between sm:gap-12 lg:gap-20">
+          <h2 className="font-heading text-3xl font-medium leading-tight text-surface-muted sm:text-4xl lg:text-5xl">
+            <span className="block text-brand-secondary-light">Your Words,</span>
             <span className="block text-surface-base">Our Pride</span>
           </h2>
 
@@ -131,34 +145,41 @@ export function TestimonialsCarousel({
         </div>
 
         <div
-          ref={scrollContainerRef}
-          className="mt-20 flex gap-5 overflow-x-auto scroll-smooth pb-4"
+          className="mt-10 flex gap-5 overflow-x-auto scroll-smooth pb-4 pr-2 sm:mt-14 lg:mt-20"
           style={{
             scrollbarWidth: "none",
             msOverflowStyle: "none",
           }}
         >
-          {testimonials.map((testimonial) => (
-            <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={testimonial.id}
+              ref={(el) => {
+                cardRefs.current[index] = el;
+              }}
+              className="w-[85vw] max-w-[580px] shrink-0 sm:w-[420px] lg:w-[580px]"
+            >
+              <TestimonialCard testimonial={testimonial} />
+            </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
 
 function TestimonialCard({ testimonial }: { testimonial: TestimonialItem }) {
   return (
-    <article className="flex w-[580px] shrink-0 flex-col gap-8 rounded-2xl bg-surface-muted p-8">
-      <p className="font-body text-[20px] font-normal leading-[1.4] text-text-muted">
+    <article className="flex w-full flex-col gap-8 rounded-2xl bg-surface-muted p-8">
+      <p className="font-body text-base font-normal leading-relaxed text-text-muted sm:text-lg">
         &ldquo;{testimonial.quote}&rdquo;
       </p>
 
       <div className="flex flex-col gap-0.5">
-        <span className="font-heading text-[16px] font-semibold leading-[1.2] text-text-muted">
+        <span className="font-heading text-sm font-semibold leading-snug text-text-muted sm:text-base">
           {testimonial.name}
         </span>
-        <span className="font-body text-[14px] font-normal leading-[1.5] text-text-muted">
+        <span className="font-body text-xs font-normal leading-relaxed text-text-muted sm:text-sm">
           {testimonial.role}
         </span>
       </div>

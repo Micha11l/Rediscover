@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Container } from "@/components/layout/Container";
 import { Navbar } from "@/components/layout";
 
 /**
@@ -19,7 +20,7 @@ import { Navbar } from "@/components/layout";
 export function ServicesHeroSection() {
   return (
     <section
-      className="relative isolate min-h-[584px] w-full overflow-hidden"
+      className="relative isolate min-h-[55vh] w-full overflow-hidden sm:min-h-[60vh] lg:min-h-[584px]"
       data-testid="services-hero"
     >
       {/* Background Image + Overlay
@@ -38,12 +39,12 @@ export function ServicesHeroSection() {
       </div>
 
       {/* Content Container - Global container rule */}
-      <div className="relative z-10 mx-auto flex min-h-[584px] w-full max-w-[1440px] flex-col gap-10 px-4 py-10 md:px-8 lg:px-16 xl:px-[100px]">
+      <Container className="relative z-10 flex min-h-[55vh] flex-col gap-10 py-8 sm:min-h-[60vh] sm:py-10 lg:min-h-[584px] lg:py-10">
         {/* Navbar - Reuse existing component */}
         <Navbar variant="dark" />
 
         {/* Hero Content */}
-        <div className="flex w-full flex-1 flex-col items-center gap-6 pt-12">
+        <div className="flex w-full flex-1 flex-col items-center gap-6 py-10 sm:py-12">
           {/* Decorative Logo Symbol */}
           <Image
             src="/images/logo.png"
@@ -55,7 +56,7 @@ export function ServicesHeroSection() {
           />
 
           {/* Heading */}
-          <h1 className="text-center font-heading text-display font-medium leading-tight text-text-inverse md:text-heading-xl sm:text-heading-lg">
+          <h1 className="text-center font-heading text-heading-lg font-medium leading-tight text-text-inverse sm:text-heading-xl lg:text-display">
             Personalized Aesthetic
             <br />
             &amp;
@@ -88,7 +89,7 @@ export function ServicesHeroSection() {
             </span>
           </nav>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

@@ -31,6 +31,7 @@ type TitleSegment = {
 
 interface AntiAgingAboutSectionProps {
   id?: string;
+  dataTestId?: string;
   title: string | TitleSegment[];
   subtitle: string;
   paragraphs: Array<{
@@ -50,6 +51,7 @@ interface AntiAgingAboutSectionProps {
 
 export function AntiAgingAboutSection({
   id,
+  dataTestId,
   title,
   subtitle,
   paragraphs,
@@ -62,8 +64,8 @@ export function AntiAgingAboutSection({
   return (
     <section
       id={id}
-      data-testid={`service-about-${id || "block"}`}
-      className="relative isolate z-0 w-full scroll-mt-[160px] overflow-visible bg-surface-base pt-[10px] pb-[40px] lg:pt-[20px] lg:pb-[100px]"
+      data-testid={`service-about-${dataTestId ?? id ?? "block"}`}
+      className="relative isolate z-0 w-full scroll-mt-24 overflow-visible bg-surface-base pt-[10px] pb-[40px] sm:scroll-mt-28 lg:scroll-mt-32 lg:pt-[20px] lg:pb-[100px]"
     >
       <div className="relative mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-0">
         <div className="relative lg:min-h-[600px]">
@@ -202,7 +204,8 @@ export function ThermageAboutSection() {
   const copy = antiAgingCopy.thermage;
   return (
     <AntiAgingAboutSection
-      id="thermage"
+      id="thermage-flx"
+      dataTestId="thermage"
       title={[
         { text: "Thermage", colorClassName: "text-brand-secondary" },
         { text: "®", superscript: true, colorClassName: "text-brand-secondary" },

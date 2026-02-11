@@ -39,8 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-<<<<<<< Updated upstream
-=======
+
+# sisyphus
 .sisyphus/
 AGENTS.md
 
@@ -48,4 +48,3 @@ AGENTS.md
 test-results/
 playwright-report/
 .last-run.json
->>>>>>> Stashed changes

@@ -1,99 +1,154 @@
 import Image from "next/image";
+import Link from "next/link";
+import { Container } from "@/components/layout/Container";
 
 /**
  * Services Section
- * Figma node: 29:192 "SERVICES"
- * Dimensions: 1440 x 782px
- * Source: ./design/figma/services.extracted.json
+ * Figma node: 200:3212 "SERVICES"
+ * Dimensions: 1440 x 1314px
+ *
+ * Layout:
+ * - Headline (title + description)
+ * - 6-card grid (3 cols desktop, 2 tablet, 1 mobile)
+ *
+ * Each card has:
+ * - Full-bleed image
+ * - Bottom overlay with backdrop blur + service title
+ * - Clickable navigation to service detail page
  */
-export function ServicesSection() {
-  const services = [
-    {
-      key: "ipl-photo-facial",
-      label1: "Facial",
-      label2: "IPL Photo Facial",
-      image: "/images/IPL_facial.PNG",
-    },
-    {
-      key: "detoxing-facial",
-      label1: "Skincare",
-      label2: "Detoxing Facial",
-      image: "/images/Detoxing_facial.PNG",
-    },
-    {
-      key: "body-massage",
-      label1: "Body & Wellness",
-      label2: "Body Massage",
-      image: "/images/Body_massage.PNG",
-    },
-    {
-      key: "morpheus8",
-      label1: "Facial",
-      label2: "Morpheus8 RF Microneedling",
-      image: "/images/Morpheus8.jpg",
-    },
-  ];
 
+interface ServiceCardData {
+  id: number;
+  title: string;
+  image: string;
+  href: string;
+}
+
+const SERVICES: ServiceCardData[] = [
+  {
+    id: 1,
+    title: "Anti-Aging",
+    image: "/images/services/anti-aging.png",
+    href: "/services/anti-aging",
+  },
+  {
+    id: 2,
+    title: "Laser & Light Therapy",
+    image: "/images/services/laser-therapy.png",
+    href: "/services/laser-light-therapy",
+  },
+  {
+    id: 3,
+    title: "Skin Care & Wellness",
+    image: "/images/services/skin-care.png",
+    href: "/services/skin-care-wellness",
+  },
+  {
+    id: 4,
+    title: "Body Contouring & Weight Loss",
+    image: "/images/services/body-contouring.png",
+    href: "/services/body-contouring-weight-loss",
+  },
+  {
+    id: 5,
+    title: "Injectables",
+    image: "/images/services/injectables.png",
+    href: "/services/injectables",
+  },
+  {
+    id: 6,
+    title: "Continuously Expanding Treatments",
+    image: "/images/services/expanding-treatments.png",
+    href: "/services/expanding-treatments",
+  },
+];
+
+/**
+ * Service Card Component
+ * Displays service image with overlay title at bottom
+ * Entire card is clickable and navigates to service detail page
+ */
+function ServiceCard({
+  title,
+  image,
+  href,
+}: {
+  title: string;
+  image: string;
+  href: string;
+}) {
   return (
-    <section className="w-full" data-testid="services">
-      {/* Container: max-w-[1440px] with responsive padding */}
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-[100px] px-4 md:px-8 lg:px-16 xl:px-[100px] py-[100px]">
-        {/* Header: eyebrow + title + subtitle */}
-        <div className="flex flex-col items-center gap-6">
-          {/* Eyebrow tag */}
-          <div className="flex items-center justify-center rounded-[40px] border border-[#eedbce] px-[18px] py-[10px]">
-            <span className="font-heading text-[12px] font-light leading-[1.2] text-text-primary">
-              SERVICES
-            </span>
-          </div>
+    <Link
+      href={href}
+      aria-label={`View service: ${title}`}
+      className="group relative block h-[320px] w-full overflow-hidden rounded-lg no-underline sm:h-[380px] lg:h-[416px]"
+    >
+      {/* Image Container */}
+      <div className="absolute inset-0">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover object-center transition-transform duration-slow group-hover:scale-105"
+        />
+      </div>
 
-          {/* Headline: title + subtitle */}
-          <div className="flex flex-col items-center gap-4">
-            <h2 className="font-heading text-[40px] font-medium leading-[1.2] text-text-primary">
-              Treatments Designed for You
-            </h2>
-            <p className="font-heading text-[16px] font-normal leading-[1.2] text-text-primary">
-              Personalized care that brings out your natural beauty
-            </p>
-          </div>
-        </div>
-
-        {/* Services Grid: 2 cols mobile/tablet, 4 cols desktop */}
-        <div className="grid w-full grid-cols-2 justify-items-center gap-10 md:gap-12 lg:grid-cols-4 lg:gap-20">
-          {services.map((service) => {
-            const isIPL = service.image.includes("IPL_facial");
-            return (
-              <div
-                key={service.key}
-                className="flex w-[250px] flex-col items-center gap-6"
-              >
-                {/* Image: 250×250px with radius 16px */}
-                <div className="relative h-[250px] w-[250px] shrink-0 overflow-hidden rounded-2xl">
-                  <Image
-                    src={service.image}
-                    alt={service.label2}
-                    fill
-                    className={isIPL ? "object-cover" : "object-contain"}
-                    sizes="250px"
-                  />
-                </div>
-
-                {/* Text: eyebrow + title */}
-                <div className="flex w-full flex-col items-center gap-3 text-center">
-                  {/* Eyebrow: 16px/300/#735b4b */}
-                  <p className="font-heading text-[16px] font-light leading-[1.2] text-[#735b4b]">
-                    {service.label1}
-                  </p>
-                  {/* Title: 24px/500/#413832 */}
-                  <h3 className="font-heading text-[24px] font-medium leading-[1.2] text-[#413832]">
-                    {service.label2}
-                  </h3>
-                </div>
-              </div>
-            );
-          })}
+      {/* Bottom Overlay */}
+      <div className="absolute inset-x-0 bottom-0 h-20 bg-[rgb(52,41,36)]/65 backdrop-blur-[5px] sm:h-24">
+        <div className="flex h-full items-center justify-center px-6 text-center sm:px-8">
+          <h3 className="m-0 line-clamp-2 font-heading text-heading-md font-medium leading-[1.2] text-surface-muted">
+            {title}
+          </h3>
         </div>
       </div>
+    </Link>
+  );
+}
+
+export function ServicesSection() {
+  return (
+    <section
+      className="w-full bg-surface-base"
+      data-testid="services-list"
+    >
+      <Container className="py-12 sm:py-16 lg:py-24">
+        {/* Content wrapper with vertical gap */}
+        <div className="flex flex-col gap-12 lg:gap-20">
+          {/* Headline */}
+          <div className="flex flex-col gap-6 lg:grid lg:grid-cols-12 lg:items-stretch lg:gap-0">
+            {/* Title (left) */}
+            <div className="lg:col-span-7">
+              <h2 className="m-0 max-w-[488px] font-heading text-heading-xl font-medium leading-tight lg:min-h-[104px]">
+                <span className="text-text-primary">Restore. </span>
+                <span className="text-brand-secondary">Refine.</span>
+                <span className="text-text-primary"> Reveal.</span>
+              </h2>
+            </div>
+
+            {/* Description (right) */}
+            <div className="lg:col-span-5 lg:flex lg:justify-end">
+              <p className="m-0 max-w-prose font-body text-body font-normal leading-[1.6] text-brand-secondary lg:min-h-[104px] lg:text-right">
+                From advanced device treatments to personalized skin care
+                solutions, we offer aesthetic and wellness services designed to
+                deliver visible, long-term results.
+              </p>
+            </div>
+          </div>
+
+          {/* Service Cards Grid */}
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-10 lg:grid-cols-3 lg:gap-12">
+            {SERVICES.map((service) => (
+              <ServiceCard
+                key={service.id}
+                title={service.title}
+                image={service.image}
+                href={service.href}
+              />
+            ))}
+          </div>
+        </div>
+      </Container>
     </section>
   );
 }
