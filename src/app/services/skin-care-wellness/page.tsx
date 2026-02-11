@@ -1,18 +1,30 @@
-/**
- * Skin Care & Wellness Service Detail Page
- * Route: /services/skin-care-wellness
- */
+import { FooterSection } from "@/components/sections";
+import {
+  SkinCareHeroSection,
+  SkinCareAboutSection,
+  SkinCareWellnessSection,
+  SkinCareFaqSection,
+  SkinCareCtaSection,
+  SkinCareCarePromiseSection,
+  TestimonialsCarousel,
+} from "@/components/sections/service-detail";
+import { DecorativeDivider } from "@/components/ui";
+import { ForceTopOnLoad } from "@/components/utils/ForceTopOnLoad.client";
+import { skinCareCopy } from "@/content/skinCareCopy";
+
 export default function SkinCareWellnessPage() {
   return (
-    <main className="flex min-h-screen w-full items-center justify-center bg-surface-base">
-      <div className="text-center">
-        <h1 className="font-heading text-heading-xl font-medium text-text-primary">
-          Skin Care &amp; Wellness
-        </h1>
-        <p className="mt-4 font-body text-body text-text-muted">
-          Service details coming soon.
-        </p>
-      </div>
+    <main className="min-h-screen w-full">
+      <ForceTopOnLoad />
+      <SkinCareHeroSection />
+      <SkinCareAboutSection />
+      <DecorativeDivider className="py-12" />
+      <SkinCareWellnessSection />
+      <TestimonialsCarousel testimonials={skinCareCopy.testimonials} />
+      <SkinCareFaqSection />
+      <SkinCareCtaSection />
+      <SkinCareCarePromiseSection />
+      <FooterSection />
     </main>
   );
 }

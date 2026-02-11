@@ -29,8 +29,13 @@ interface RecommendedForGridProps {
 
 function RecommendedCard({ text }: { text: string }) {
   return (
+<<<<<<< Updated upstream
     <div className="flex h-[234px] w-full items-start rounded-[45px] bg-surface-muted px-[31px] py-[42px]">
       <p className="font-body text-[20px] leading-[1.4] text-text-muted">
+=======
+    <div className="flex h-full min-h-[180px] w-full items-center justify-center rounded-[45px] bg-surface-muted px-6 py-6 sm:min-h-[210px] sm:px-8 sm:py-8 lg:min-h-[234px] lg:px-10 lg:py-10">
+      <p className="text-center font-body text-lg leading-relaxed text-text-muted sm:text-xl lg:text-16xl">
+>>>>>>> Stashed changes
         {text}
       </p>
     </div>
@@ -57,7 +62,11 @@ export function RecommendedForGrid({
           {headline}
         </h2>
 
+<<<<<<< Updated upstream
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[49px]">
+=======
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 xl:gap-8 2xl:gap-10">
+>>>>>>> Stashed changes
           {items.map((item) => (
             <RecommendedCard key={item.id} text={item.text} />
           ))}
