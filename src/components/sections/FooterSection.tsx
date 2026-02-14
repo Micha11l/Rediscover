@@ -32,7 +32,7 @@ export function FooterSection() {
             {/* Logo + Brand */}
             <div className="flex items-center gap-4">
               <Image
-                src="/images/about-logo.png"
+                src="/images/1.svg"
                 alt="Rediscover Beauty"
                 width={68}
                 height={60}

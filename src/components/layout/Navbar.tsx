@@ -59,8 +59,8 @@ export function Navbar({ variant = "dark", className = "" }: NavbarProps) {
 
   // Determine logo source: dark variant uses white logo, light variant uses dark logo
   const logoSrc = variant === "dark"
-    ? "/images/logo.png"
-    : "/images/about-logo.png";
+    ? "/images/2.svg"
+    : "/images/1.svg";
 
   // Color classes based on variant
   const textColor = variant === "dark" ? "text-text-inverse" : "text-text-primary";
