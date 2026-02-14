@@ -48,5 +48,4 @@ AGENTS.md
 test-results/
 playwright-report/
 .last-run.json
-*.png
 *.md
