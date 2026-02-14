@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Navbar } from "@/components/layout";
 import { aboutCopy } from "@/content/aboutCopy";
 
@@ -7,55 +6,42 @@ export function AboutHeroSection() {
   const { hero } = aboutCopy;
 
   return (
-    <section data-testid="about-hero" className="relative w-full">
-      <div className="absolute inset-0" aria-hidden="true">
-        <Image
-          src={hero.backgroundImage.src}
-          alt={hero.backgroundImage.alt}
-          fill
-          priority
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-brand-primary/65" />
+    <section data-testid="about-hero" className="w-full bg-surface-base">
+      <div className="mx-auto flex h-[136px] w-full max-w-[1440px] items-center px-4 md:px-8 lg:px-16 xl:px-[64px]">
+        <Navbar variant="light" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-[1440px] px-4 pb-16 pt-10 md:px-8 lg:px-16 xl:px-[64px]">
-        <Navbar variant="dark" />
+      <div className="mx-auto w-full max-w-[1440px] px-4 pb-[40px] pt-10 md:px-8 lg:px-16 xl:px-[64px]">
+        <div className="flex flex-col gap-20">
+          <div className="flex flex-col items-start gap-6 lg:flex-row lg:items-end lg:gap-6">
+            <h1 className="m-0 flex-1 font-heading text-[40px] font-medium leading-[1.2] md:text-[52px] lg:text-[60px]">
+              <span className="block text-brand-secondary">{hero.titleAccent}</span>
+              <span className="block text-text-primary">{hero.titleMain}</span>
+            </h1>
+            <p className="m-0 w-full max-w-[378px] text-left font-body text-[18px] leading-[1.4] text-brand-secondary lg:text-right lg:text-[20px]">
+              {hero.subtitle}
+            </p>
+          </div>
 
-        <div className="mt-12 flex flex-col gap-6">
-          <h1 className="font-heading text-display font-medium leading-[1.2] text-text-inverse">
-            <span className="block">{hero.titleLine1}</span>
-            <span className="block">{hero.titleLine2}</span>
-          </h1>
-
-          <p className="ml-auto max-w-[500px] text-right font-body text-body leading-[1.6] text-brand-secondary-light">
-            {hero.subtitle}
-          </p>
-
-          <nav
-            aria-label="Breadcrumb"
-            className="flex items-center gap-2 rounded-[40px] py-[10px]"
-          >
-            <Link
-              href="/"
-              className="font-heading text-[20px] font-semibold leading-none text-brand-secondary-light no-underline transition-colors hover:text-text-inverse"
-            >
-              Home
-            </Link>
-            <span
-              aria-hidden="true"
-              className="font-heading text-[20px] font-normal leading-none text-surface-elevated"
-            >
-              /
-            </span>
-            <span
-              aria-current="page"
-              className="font-heading text-[20px] font-normal leading-none text-surface-elevated"
-            >
-              {hero.breadcrumbLabel}
-            </span>
-          </nav>
+          <div className="flex flex-col gap-6 lg:h-[335px] lg:flex-row">
+            {hero.gallery.map((image, index) => (
+              <div
+                key={image.src}
+                className={`relative h-[220px] overflow-hidden rounded-[10px] lg:h-full ${
+                  index === 2 ? "lg:w-[246px] lg:shrink-0" : "lg:flex-1"
+                }`}
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  priority={index === 0}
+                  className="object-cover"
+                  sizes={index === 2 ? "246px" : "(max-width: 1024px) 100vw, 40vw"}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

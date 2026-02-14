@@ -57,15 +57,10 @@ export function Navbar({ variant = "dark", className = "" }: NavbarProps) {
     return pathname === href || pathname.startsWith(href + "/");
   };
 
-  // Check if on Anti-Aging page for special logo
-  const isAntiAgingPage = pathname === "/services/anti-aging" || pathname.startsWith("/services/anti-aging/");
-
-  // Determine logo source: Anti-Aging page uses special logo, others follow variant
-  const logoSrc = isAntiAgingPage
-    ? "/images/about-logo.png"
-    : variant === "dark"
-      ? "/images/logo.png"
-      : "/images/logo-dark.png";
+  // Determine logo source: dark variant uses white logo, light variant uses dark logo
+  const logoSrc = variant === "dark"
+    ? "/images/logo.png"
+    : "/images/about-logo.png";
 
   // Color classes based on variant
   const textColor = variant === "dark" ? "text-text-inverse" : "text-text-primary";
@@ -77,7 +72,7 @@ export function Navbar({ variant = "dark", className = "" }: NavbarProps) {
       <Link href="/" className="shrink-0 no-underline hover:no-underline">
         <Image
           src={logoSrc}
-          alt="Beauva Logo"
+          alt="Rediscover Logo"
           width={64}
           height={56}
           className="h-14 w-16 object-contain"

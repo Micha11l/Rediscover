@@ -8,6 +8,7 @@ interface BodyContouringTreatmentSectionProps {
   whatItCanHelpWith: string[];
   recommendedFor: string;
   image: { src: string; alt: string; width: number; height: number };
+  className?: string;
 }
 
 export function BodyContouringTreatmentSection({
@@ -17,13 +18,16 @@ export function BodyContouringTreatmentSection({
   whatItCanHelpWith,
   recommendedFor,
   image,
+  className,
 }: BodyContouringTreatmentSectionProps) {
   return (
     <section data-testid={testId} className="w-full bg-surface-base">
-      <div className="mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
-        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-16">
+      <div
+        className={`mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:pl-[118px] lg:pr-[109px] ${className ?? ""}`}
+      >
+        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-[73px]">
           <div className="flex flex-col gap-6 lg:flex-1">
-            <h2 className="font-heading text-[56px] font-medium leading-[1.1] text-brand-secondary">
+            <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1] text-brand-secondary">
               {title}
             </h2>
 
@@ -31,7 +35,7 @@ export function BodyContouringTreatmentSection({
               {paragraphs.map((p, i) => (
                 <p
                   key={i}
-                  className="font-body text-body leading-[1.6] text-brand-secondary"
+                  className="m-0 font-body text-body leading-[1.6] text-brand-secondary"
                 >
                   {p.segments
                     ? p.segments.map((seg, j) =>
@@ -51,11 +55,11 @@ export function BodyContouringTreatmentSection({
               ))}
             </div>
 
-            <div className="flex flex-col gap-3">
-              <h3 className="font-heading text-body font-semibold text-text-primary">
+            <div className="flex flex-col gap-0">
+              <h3 className="m-0 font-heading text-body font-semibold text-text-primary">
                 What It Can Help With
               </h3>
-              <ul className="flex flex-col gap-2 pl-0">
+              <ul className="m-0 flex flex-col gap-2 pl-0">
                 {whatItCanHelpWith.map((item, i) => (
                   <li
                     key={i}
@@ -71,24 +75,24 @@ export function BodyContouringTreatmentSection({
               </ul>
             </div>
 
-            <div className="flex flex-col gap-3">
-              <h3 className="font-heading text-body font-semibold text-text-primary">
+            <div className="flex flex-col gap-0">
+              <h3 className="m-0 font-heading text-body font-semibold text-text-primary">
                 Recommended For
               </h3>
-              <p className="font-body text-body leading-[1.6] text-brand-secondary">
+              <p className="m-0 font-body text-body leading-[1.6] text-brand-secondary">
                 {recommendedFor}
               </p>
             </div>
           </div>
 
-          <div className="flex shrink-0 items-start justify-center lg:w-[35%]">
+          <div className="flex shrink-0 items-start lg:w-[265px]">
             <Image
               src={image.src}
               alt={image.alt}
-              width={image.width}
-              height={image.height}
-              className="object-contain"
-              sizes="(max-width: 1024px) 100vw, 35vw"
+              width={265}
+              height={471}
+              className="h-[471px] w-[265px] object-contain"
+              sizes="265px"
             />
           </div>
         </div>

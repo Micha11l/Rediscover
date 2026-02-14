@@ -1,227 +1,302 @@
-export type AboutValueItem = {
-  id: string;
-  icon: string;
-  title: string;
-  description: string;
-};
-
-export type AboutMilestone = {
-  id: string;
-  year: string;
-  description: string;
-};
-
 export type AboutTeamMember = {
   id: string;
   name: string;
-  role: string;
+  role: string | string[];
   image: { src: string; alt: string };
+};
+
+export type AboutAchievement = {
+  id: string;
+  value: string;
+  suffix?: string;
+  label: string;
 };
 
 export type AboutCopy = {
   hero: {
-    titleLine1: string;
-    titleLine2: string;
+    titleAccent: string;
+    titleMain: string;
     subtitle: string;
-    breadcrumbLabel: string;
-    backgroundImage: { src: string; alt: string };
+    gallery: Array<{ src: string; alt: string }>;
   };
-  philosophy: {
-    quote: string;
-    logos: Array<{ src: string; alt: string }>;
+  welcome: {
+    intro: {
+      heading: string;
+      paragraphs: Array<{
+        text: string;
+        highlights: string[];
+      }>;
+    };
+    closing: {
+      paragraphs: Array<{
+        text: string;
+        highlights: string[];
+      }>;
+    };
   };
-  values: {
+  achievements: {
     title: string;
-    description: string;
-    items: AboutValueItem[];
+    subtitle: string;
+    items: AboutAchievement[];
   };
-  sanctuary: {
+  clinic: {
+    titleAccent: string;
+    titleMain: string;
+    subtitle: string;
+    gallery: Array<{ src: string; alt: string }>;
+  };
+  skincare: {
     title: string;
     subtitle: string;
     image: { src: string; alt: string };
-  };
-  milestones: {
-    title: string;
-    items: AboutMilestone[];
-  };
-  cta: {
-    title: string;
-    subtitle: string;
-    buttonText: string;
+    brands: Array<{
+      name: string;
+      description: string;
+    }>;
   };
   team: {
     title: string;
     subtitle: string;
     members: AboutTeamMember[];
   };
-  carePromise: {
-    titleParts: { primary: string; accent: string };
-    body: string;
+  teamDescription: {
+    paragraphs: Array<{
+      text: string;
+      highlights: string[];
+    }>;
+  };
+  contact: {
+    phone: string;
+    website: string;
+    hours: { days: string; time: string };
+    address: string;
+  };
+  social: Array<{
+    id: string;
+    name: string;
     image: { src: string; alt: string };
+  }>;
+  cta: {
+    titleLine1: string;
+    titleLine2: string;
+    subtitle: string;
+    buttonText: string;
+    backgroundImage: { src: string; alt: string };
+  };
+  newsletter: {
+    title: string;
+    subtitle: string;
+    placeholder: string;
+    buttonText: string;
+    backgroundImage: { src: string; alt: string };
   };
 };
 
 export const aboutCopy: AboutCopy = {
   hero: {
-    titleLine1: "Rooted in Wellness,",
-    titleLine2: "Elevated by Beauty",
+    titleAccent: "About",
+    titleMain: "Rediscover Beauty Clinic",
     subtitle:
-      "Explore the spa suite for your self-care journey. Beauty, wellness, and balance come together.",
-    breadcrumbLabel: "About",
-    backgroundImage: {
-      src: "/images/about/hero.png",
-      alt: "Beauva spa interior",
+      "Thoughtfully designed care, combining medical aesthetics, therapeutic wellness, and a sense of quiet luxury.",
+    gallery: [
+      { src: "/images/about/hero-1.jpg", alt: "Clinic interior 1" },
+      { src: "/images/about/hero-2.jpg", alt: "Clinic interior 2" },
+      { src: "/images/about/hero-3.jpg", alt: "Clinic interior 3" },
+    ],
+  },
+
+  welcome: {
+    intro: {
+      heading: "At Rediscover Beauty Clinic",
+      paragraphs: [
+        {
+          text: "We believe that beauty and wellness are most meaningful when approached with intention, professionalism, and respect for individual needs.",
+          highlights: ["intention, professionalism, and respect"],
+        },
+        {
+          text: "Our clinic was created as a calm and private environment where clients can slow down, feel supported, and receive care that prioritizes both results and experience. From advanced aesthetic treatments to Registered Massage Therapy, every service is delivered with thoughtful attention to detail, clinical integrity, and long-term wellbeing in mind.",
+          highlights: ["calm and private environment"],
+        },
+      ],
+    },
+    closing: {
+      paragraphs: [
+        {
+          text: "We value transparency, comfort, and personalized care. Our team takes the time to understand each client's goals, ensuring every treatment plan is tailored, appropriate, and professionally guided.",
+          highlights: ["transparency, comfort, and personalized care"],
+        },
+        {
+          text: "Our approach balances clinical precision with a refined, calming experience — where results and comfort are equally prioritized.",
+          highlights: [],
+        },
+      ],
     },
   },
 
-  philosophy: {
-    quote:
-      "Self-care is more than a luxury \u2014 it\u2019s a lifestyle. Nestled in a calm, elegant space, our spa is a sanctuary where beauty, wellness, and inner balance come together.",
-    logos: [
-      { src: "/images/about/logo-1.png", alt: "Partner logo 1" },
-      { src: "/images/about/logo-2.png", alt: "Partner logo 2" },
-      { src: "/images/about/logo-3.png", alt: "Partner logo 3" },
-      { src: "/images/about/logo-4.png", alt: "Partner logo 4" },
-      { src: "/images/about/logo-5.png", alt: "Partner logo 5" },
-      { src: "/images/about/logo-6.png", alt: "Partner logo 6" },
-    ],
-  },
-
-  values: {
-    title: "Our Values, Your Experience",
-    description:
-      "We believe in creating an experience that goes beyond treatments \u2014 one rooted in care, intention, and lasting impact.",
+  achievements: {
+    title: "We are really\nproud of",
+    subtitle:
+      "Every number reflects our commitment\nto safe treatments, trusted results, and\nlong-term client relationships.",
     items: [
       {
-        id: "value-holistic",
-        icon: "/images/about/icon-holistic.png",
-        title: "Holistic Healing",
-        description:
-          "We treat the whole person, not just symptoms \u2014 addressing physical, emotional, and spiritual wellness.",
+        id: "clients",
+        value: "5,2K+",
+        label: "Clients Treated with Care",
       },
       {
-        id: "value-customer",
-        icon: "/images/about/icon-customer.png",
-        title: "Customer-Centric Care",
-        description:
-          "Your needs guide everything we do. We listen, adapt, and personalize every experience.",
+        id: "satisfaction",
+        value: "5.0",
+        suffix: "/5",
+        label: "Verified Client Satisfaction",
       },
       {
-        id: "value-sustainable",
-        icon: "/images/about/icon-sustainable.png",
-        title: "Sustainable Living",
-        description:
-          "We choose eco-conscious products and practices to protect both your skin and our planet.",
+        id: "experience",
+        value: "8+",
+        suffix: "Years",
+        label: "Aesthetic Experience",
       },
       {
-        id: "value-innovation",
-        icon: "/images/about/icon-innovation.png",
-        title: "Continuous Innovation",
-        description:
-          "We stay ahead of industry trends, bringing you the latest in safe, effective treatments.",
-      },
-      {
-        id: "value-authenticity",
-        icon: "/images/about/icon-authenticity.png",
-        title: "Authenticity",
-        description:
-          "We are transparent, honest, and genuine \u2014 building trust through every interaction.",
-      },
-      {
-        id: "value-community",
-        icon: "/images/about/icon-community.png",
-        title: "Community & Connection",
-        description:
-          "We foster a welcoming space where clients and staff feel like family.",
+        id: "experts",
+        value: "6+",
+        label: "Certified Wellness Experts",
       },
     ],
   },
 
-  sanctuary: {
-    title: "Step Inside Our Sanctuary",
+  clinic: {
+    titleAccent: "Our Clinic",
+    titleMain: "Environment",
     subtitle:
-      "Our space is designed to calm the senses and elevate your experience from the moment you arrive.",
+      "A thoughtfully designed space focused on comfort, privacy, and calm.",
+    gallery: [
+      { src: "/images/about/clinic-1.jpg", alt: "Clinic environment 1" },
+      { src: "/images/about/clinic-2.jpg", alt: "Clinic environment 2" },
+      { src: "/images/about/clinic-3.jpg", alt: "Clinic environment 3" },
+    ],
+  },
+
+  skincare: {
+    title: "Medical-Grade Skincare We Trust",
+    subtitle:
+      "Carefully selected to meet our standards for clinical performance, safety, and patient experience.",
     image: {
-      src: "/images/about/sanctuary.png",
-      alt: "Beauva spa sanctuary interior",
+      src: "/images/about/skincare-products.jpg",
+      alt: "Professional skincare products",
     },
-  },
-
-  milestones: {
-    title: "Milestones in Beauty & Care",
-    items: [
+    brands: [
       {
-        id: "milestone-2013",
-        year: "2013",
+        name: "ZO® Skin Health",
         description:
-          "Beauva was founded with a vision to redefine beauty and wellness in the community.",
+          "A medical-grade skincare system developed in the United States, designed to improve overall skin health by addressing concerns such as acne, pigmentation, aging, and sensitivity through clinically backed formulations and treatment-driven protocols.",
       },
       {
-        id: "milestone-2015",
-        year: "2015",
+        name: "Maria Galland Paris",
         description:
-          "We expanded our team and introduced advanced aesthetic technologies.",
-      },
-      {
-        id: "milestone-2018",
-        year: "2018",
-        description:
-          "Partnered with leading medical device manufacturers to bring cutting-edge treatments.",
-      },
-      {
-        id: "milestone-2020",
-        year: "2020",
-        description:
-          "Celebrated 7 years of service with a refreshed space and expanded service offerings.",
+          "A prestigious French professional skincare brand with decades of expertise, combining advanced active ingredients with refined textures to support customized treatments, skin balance, radiance, and long-term comfort.",
       },
     ],
-  },
-
-  cta: {
-    title: "Feel Beautiful Inside & Out",
-    subtitle:
-      "Book a consultation today and discover treatments tailored to your unique needs.",
-    buttonText: "Request a Consultation",
   },
 
   team: {
     title: "Meet the Experts Behind the Glow",
     subtitle:
-      "Our team of certified professionals is dedicated to helping you look and feel your best.",
+      "A team of certified aesthetic professionals, united by expertise, care, and attention to detail.",
     members: [
       {
-        id: "team-1",
-        name: "Chris Hoover",
-        role: "Founder & Aesthetic Director",
-        image: { src: "/images/about/team-1.png", alt: "Chris Hoover" },
+        id: "kristen",
+        name: "Kristen",
+        role: ["Founder", "Lead Aesthetic Practitioner"],
+        image: { src: "/images/about/team-kristen.jpg", alt: "Kristen" },
       },
       {
-        id: "team-2",
-        name: "Mira Lindell",
-        role: "Lead Esthetician",
-        image: { src: "/images/about/team-2.png", alt: "Mira Lindell" },
+        id: "rain",
+        name: "Rain",
+        role: "Aesthetic Practitioner",
+        image: { src: "/images/about/team-rain.jpg", alt: "Rain" },
       },
       {
-        id: "team-3",
-        name: "Natalie Crane",
-        role: "Laser Technician",
-        image: { src: "/images/about/team-3.png", alt: "Natalie Crane" },
+        id: "cammi",
+        name: "Cammi",
+        role: "Aesthetic Practitioner",
+        image: { src: "/images/about/team-cammi.jpg", alt: "Cammi" },
       },
       {
-        id: "team-4",
-        name: "Jasmine Reyes",
-        role: "Wellness Coordinator",
-        image: { src: "/images/about/team-4.png", alt: "Jasmine Reyes" },
+        id: "sandy",
+        name: "Sandy",
+        role: "Aesthetic Practitioner",
+        image: { src: "/images/about/team-sandy.jpg", alt: "Sandy" },
+      },
+      {
+        id: "zoe",
+        name: "Zoe",
+        role: "Aesthetic Practitioner",
+        image: { src: "", alt: "Zoe" },
       },
     ],
   },
 
-  carePromise: {
-    titleParts: { primary: "Our Care", accent: "Promise" },
-    body: "We believe in thoughtful, personalized care \u2014 guided by expertise, transparency, and respect for your natural beauty.\n\nAll treatments are delivered by trained and certified professionals.",
-    image: {
-      src: "/images/newsletter.png",
-      alt: "Care promise banner",
+  teamDescription: {
+    paragraphs: [
+      {
+        text: "Our practitioners are professionally trained and certified, with experience across medical aesthetics, skin health, and wellness services. Each treatment is guided by professional standards, safety protocols, and individualized assessment.",
+        highlights: ["professionally trained and certified"],
+      },
+      {
+        text: "We take time to understand each client's goals and concerns, ensuring every treatment plan is personalized, appropriate, and results-focused, while maintaining comfort and discretion throughout the experience.",
+        highlights: ["personalized, appropriate, and results-focused"],
+      },
+    ],
+  },
+
+  contact: {
+    phone: "+1 (647) 523-3988",
+    website: "https://rediscoverbeauty.ca",
+    hours: { days: "Mon – Sun", time: "10.00AM – 8.00PM" },
+    address: "9425 Leslie St Unit14, 2F, Richmond Hill, ON L4B 3N7",
+  },
+
+  social: [
+    {
+      id: "instagram",
+      name: "Instagram",
+      image: { src: "/images/about/social-instagram.jpg", alt: "Instagram" },
+    },
+    {
+      id: "wechat",
+      name: "WeChat",
+      image: { src: "/images/about/social-wechat.jpg", alt: "WeChat" },
+    },
+    {
+      id: "whatsapp",
+      name: "WhatsApp",
+      image: { src: "/images/about/social-whatsapp.jpg", alt: "WhatsApp" },
+    },
+    {
+      id: "tiktok",
+      name: "Tiktok",
+      image: { src: "/images/about/social-tiktok.jpg", alt: "Tiktok" },
+    },
+  ],
+
+  cta: {
+    titleLine1: "Rediscover Beauty",
+    titleLine2: "Begins Here",
+    subtitle: "Thoughtful aesthetic care, tailored to your skin and body.",
+    buttonText: "Request a Consultation",
+    backgroundImage: {
+      src: "/images/about/cta-banner.jpg",
+      alt: "CTA banner",
+    },
+  },
+
+  newsletter: {
+    title: "Newsletter Sign-Up",
+    subtitle: "Subscribe to receive updates on promotions, new treatments, and skincare tips.",
+    placeholder: "Enter your email",
+    buttonText: "Subscribe",
+    backgroundImage: {
+      src: "/images/about/newsletter-bg.jpg",
+      alt: "Newsletter background",
     },
   },
 };

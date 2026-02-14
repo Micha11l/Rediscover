@@ -17,7 +17,7 @@ const ICON_SIZE = 20; // 20px = size-5
  * public/images/icon/EnvelopeOpen.svg
  * public/images/icon/MapPinLine.svg
  * public/images/icon/InstagramLogo.svg
- * public/images/icon/FacebookLogo.svg
+ * public/images/icon/ic_baseline-tiktok.svg
  */
 export function FooterSection() {
   const { t } = useLanguage();
@@ -57,36 +57,29 @@ export function FooterSection() {
           {/* RIGHT BLOCK */}
           <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-[108px]">
             {/* Menu */}
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-[32px]">
                <h3 className="m-0 font-heading text-[16px] font-medium leading-none text-brand-secondary">
                  {t.footer.sections.menu}
                </h3>
 
-               <nav className="flex flex-col gap-5">
-                 <Link
-                   href="/"
-                   className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
-                 >
-                   {t.footer.menuLinks[0]}
-                 </Link>
-                 <Link
-                   href="/services"
-                   className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
-                 >
-                   {t.footer.menuLinks[1]}
-                 </Link>
-                 <Link
-                   href="/devices"
-                   className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
-                 >
-                   {t.footer.menuLinks[2]}
-                 </Link>
-                 <Link
-                   href="/rmt"
-                   className="font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
-                 >
-                   {t.footer.menuLinks[3]}
-                 </Link>
+               <nav className="flex flex-col gap-[12px]">
+                 {[
+                   { href: "/", idx: 0 },
+                   { href: "/about", idx: 1 },
+                   { href: "/services", idx: 2 },
+                   { href: "/devices", idx: 3 },
+                   { href: "/rmt", idx: 4 },
+                   { href: "/faq", idx: 5 },
+                   { href: "/promo", idx: 6 },
+                 ].map(({ href, idx }) => (
+                   <Link
+                     key={href}
+                     href={href}
+                     className="py-[4px] font-heading text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
+                   >
+                     {t.footer.menuLinks[idx]}
+                   </Link>
+                 ))}
                </nav>
             </div>
 
@@ -150,7 +143,7 @@ export function FooterSection() {
               {/* Socials */}
               <div className="flex gap-2 pt-2">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/rediscoverbeauty99?igsh=MXZ1NmluZG9tcDg4Yg=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center rounded-full bg-surface-muted p-3 transition-colors hover:bg-brand-secondary-light"
@@ -166,14 +159,14 @@ export function FooterSection() {
                 </a>
 
                 <a
-                  href="https://facebook.com"
+                  href="https://www.tiktok.com/@rediscoverbeauty?_r=1&_t=ZS-93OobkntZmG"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center rounded-full bg-surface-muted p-3 transition-colors hover:bg-brand-secondary-light"
-                  aria-label="Facebook"
+                  aria-label="TikTok"
                 >
                   <Image
-                    src="/images/icon/FacebookLogo.svg"
+                    src="/images/icon/ic_baseline-tiktok.svg"
                     alt=""
                     width={24}
                     height={24}

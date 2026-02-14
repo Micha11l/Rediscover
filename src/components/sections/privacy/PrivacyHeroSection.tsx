@@ -7,10 +7,8 @@ export function PrivacyHeroSection() {
 
   return (
     <section data-testid="privacy-hero" className="w-full bg-surface-base">
-      <div className="bg-surface-elevated">
-        <div className="mx-auto flex h-[136px] w-full max-w-[1440px] items-center px-4 md:px-8 lg:px-16 xl:px-[100px]">
-          <Navbar variant="light" />
-        </div>
+      <div className="mx-auto flex h-[136px] w-full max-w-[1440px] items-center px-4 md:px-8 lg:px-16 xl:px-[100px]">
+        <Navbar variant="light" />
       </div>
 
       <div className="mx-auto w-full max-w-[1440px] px-4 pb-16 pt-[42px] md:px-8 lg:px-16 xl:px-[100px]">

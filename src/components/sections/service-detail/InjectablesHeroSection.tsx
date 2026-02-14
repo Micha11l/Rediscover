@@ -14,7 +14,7 @@ export function InjectablesHeroSection() {
         </div>
       </div>
 
-      <div className="mx-auto w-full max-w-[1440px] px-4 pb-16 pt-[48px] md:px-8 lg:px-16 xl:px-[100px]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 pb-0 pt-[48px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="flex flex-col items-center gap-10">
           <nav
             aria-label="Breadcrumb"
@@ -53,16 +53,16 @@ export function InjectablesHeroSection() {
           </nav>
 
           <div className="flex w-full flex-col gap-4 text-center">
-            <h1 className="font-heading text-display font-medium leading-[1.2] text-text-primary">
+            <h1 className="m-0 font-heading text-display font-medium leading-[1.2] text-text-primary">
               {hero.title}
             </h1>
-            <p className="mx-auto max-w-none font-body text-body leading-[1.6] text-brand-secondary">
+            <p className="m-0 mx-auto max-w-none font-body text-body leading-[1.6] text-brand-secondary">
               {hero.subtitle}
             </p>
           </div>
         </div>
 
-        <div className="relative mt-8 h-[400px] w-full overflow-hidden rounded-[25px] lg:mx-auto lg:h-[571px] lg:max-w-[1228px]">
+        <div className="relative mt-[80px] h-[400px] w-full overflow-hidden rounded-[25px] lg:mx-auto lg:h-[571px] lg:max-w-[1228px]">
           <Image
             src={hero.image.src}
             alt={hero.image.alt}

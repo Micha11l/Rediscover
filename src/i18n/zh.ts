@@ -188,7 +188,7 @@ export const zh: Translations = {
       menu: "导航菜单",
       contactUs: "联系我们",
     },
-    menuLinks: ["首页", "服务项目", "设备技术", "按摩治疗"],
+    menuLinks: ["首页", "关于我们", "服务项目", "设备技术", "按摩治疗", "常见问题", "优惠活动"],
     copyright: "Rediscover Beauty © 2025",
     legalLinks: ["隐私政策", "条款与条件"],
   },

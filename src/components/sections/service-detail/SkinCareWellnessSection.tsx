@@ -10,7 +10,7 @@ export function SkinCareWellnessSection() {
     <section data-testid="skin-care-wellness" className="w-full bg-surface-base">
       <div className="mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="mb-12 flex flex-col gap-6">
-          <h2 className="font-heading text-[32px] font-medium leading-[1.1]">
+          <h2 className="m-0 font-heading text-[32px] font-medium leading-[1.1]">
             <span className="text-brand-secondary">{aboutWellness.titleAccent}</span>{" "}
             <span className="text-text-primary">{aboutWellness.titlePrimary}</span>
           </h2>

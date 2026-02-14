@@ -1,28 +1,34 @@
-import { FooterSection } from "@/components/sections";
+import { FooterSection, CtaSection, NewsletterSection } from "@/components/sections";
 import {
   AboutHeroSection,
-  AboutPhilosophySection,
-  AboutValuesSection,
-  AboutSanctuarySection,
-  AboutMilestonesSection,
-  AboutCtaSection,
+  AboutWelcomeSection,
+  AboutAchievementsSection,
+  AboutClinicSection,
+  AboutSkincareSection,
   AboutTeamSection,
-  AboutCarePromiseSection,
+  AboutTeamDescSection,
+  AboutContactSection,
+  AboutMapSection,
+  AboutSocialSection,
 } from "@/components/sections/about";
 import { ForceTopOnLoad } from "@/components/utils/ForceTopOnLoad.client";
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen w-full">
+    <main className="min-h-screen w-full bg-surface-base">
       <ForceTopOnLoad />
       <AboutHeroSection />
-      <AboutPhilosophySection />
-      <AboutValuesSection />
-      <AboutSanctuarySection />
-      <AboutMilestonesSection />
-      <AboutCtaSection />
+      <AboutWelcomeSection />
+      <AboutAchievementsSection />
+      <AboutClinicSection />
+      <AboutSkincareSection />
       <AboutTeamSection />
-      <AboutCarePromiseSection />
+      <AboutTeamDescSection />
+      <AboutContactSection />
+      <AboutMapSection />
+      <AboutSocialSection />
+      <CtaSection />
+      <NewsletterSection />
       <FooterSection />
     </main>
   );

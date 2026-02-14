@@ -20,7 +20,7 @@ export function DevicesHeroSection() {
         <div className="absolute inset-0 bg-brand-primary/65" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-[1440px] px-4 pb-16 pt-10 md:px-8 lg:px-16 xl:px-[64px]">
+      <div className="relative mx-auto w-full max-w-[1440px] px-4 pb-[40px] pt-10 md:px-8 lg:px-16 xl:px-[64px]">
         <Navbar variant="dark" />
 
         <div className="mt-12 flex flex-col items-center gap-6">
@@ -35,7 +35,7 @@ export function DevicesHeroSection() {
             />
           </div>
 
-          <h1 className="text-center font-heading text-display font-medium leading-[1.2] text-text-inverse">
+          <h1 className="m-0 text-center font-heading text-display font-medium leading-[1.2] text-text-inverse">
             <span className="block">{hero.titleLine1}</span>
             <span className="block">{hero.titleLine2}</span>
           </h1>

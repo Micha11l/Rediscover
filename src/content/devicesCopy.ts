@@ -45,7 +45,7 @@ export const devicesCopy: DevicesCopy = {
     titleLine2: "Aesthetic Technologies",
     breadcrumbLabel: "Devices",
     backgroundImage: {
-      src: "/images/devices/hero.png",
+      src: "/images/devices/banner.png",
       alt: "Clinical aesthetic technologies",
     },
   },
@@ -126,26 +126,26 @@ export const devicesCopy: DevicesCopy = {
       howWeUseTitleAccent: "Thermage Technology",
       timelineItems: [
         {
-          id: "thermage-900ct",
-          title: "900CT",
+          id: "thermage-900rep",
+          title: "900REP",
           description:
             "Comprehensive Thermage treatment for the full face and neck to improve skin firmness, elasticity, and overall contour.",
         },
         {
-          id: "thermage-600ct",
-          title: "600CT",
+          id: "thermage-600rep",
+          title: "600REP",
           description:
             "Targeted Thermage treatment for localized areas to enhance firmness and definition.",
         },
         {
-          id: "thermage-300ct",
-          title: "300CT",
+          id: "thermage-300rep",
+          title: "300REP",
           description:
             "Focused treatment for small areas to refine skin texture and address mild skin laxity.",
         },
         {
-          id: "thermage-450ct-eye",
-          title: "450CT(Eye)",
+          id: "thermage-450rep-eye",
+          title: "450REP(Eye)",
           description:
             "Specialized Thermage treatment for the eye area to tighten delicate skin and smooth fine lines around the eyes.",
         },

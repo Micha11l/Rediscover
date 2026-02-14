@@ -1,31 +1,44 @@
 import Image from "next/image";
 import { aboutCopy } from "@/content/aboutCopy";
 
-export function AboutSanctuarySection() {
-  const { sanctuary } = aboutCopy;
+export function AboutClinicSection() {
+  const { clinic } = aboutCopy;
 
   return (
-    <section data-testid="about-sanctuary" className="w-full">
-      <div className="mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
-        <div className="mx-auto max-w-[700px] text-center">
-          <h2 className="font-heading text-[40px] font-medium leading-[1.2] text-text-primary md:text-[48px]">
-            {sanctuary.title}
-          </h2>
-          <p className="mt-4 font-body text-body leading-[1.6] text-brand-secondary">
-            {sanctuary.subtitle}
-          </p>
-        </div>
+    <section data-testid="about-clinic" className="w-full bg-surface-base">
+      <div className="mx-auto w-full max-w-[1440px] px-4 py-10 md:px-8 lg:px-16 xl:px-[64px]">
+        <div className="flex flex-col gap-20">
+          <div className="flex flex-col items-start gap-6 lg:flex-row lg:items-end lg:gap-6">
+            <h2 className="m-0 flex-1 font-heading text-[40px] font-medium leading-[1.2] md:text-[52px] lg:text-[60px]">
+              <span className="block text-brand-secondary">{clinic.titleAccent}</span>
+              <span className="block text-text-primary">{clinic.titleMain}</span>
+            </h2>
+            <p className="m-0 w-full max-w-[378px] text-left font-body text-[18px] leading-[1.4] text-brand-secondary lg:text-right lg:text-[20px]">
+              {clinic.subtitle}
+            </p>
+          </div>
 
-        <div className="relative mt-12 aspect-[16/9] w-full overflow-hidden rounded-2xl">
-          <Image
-            src={sanctuary.image.src}
-            alt={sanctuary.image.alt}
-            fill
-            className="object-cover"
-            sizes="(min-width: 1440px) 1240px, 100vw"
-          />
+          <div className="flex flex-col gap-6 lg:h-[335px] lg:flex-row">
+            {clinic.gallery.map((image, index) => (
+              <div
+                key={image.src}
+                className="relative h-[220px] flex-1 overflow-hidden rounded-[10px] lg:h-full"
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  priority={index === 0}
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
   );
 }
+
+export { AboutClinicSection as AboutSanctuarySection };

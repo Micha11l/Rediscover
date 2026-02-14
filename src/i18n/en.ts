@@ -196,7 +196,7 @@ export const en: Translations = {
       menu: "Menu",
       contactUs: "Contact Us",
     },
-    menuLinks: ["Home", "Services", "Devices", "RMT"],
+    menuLinks: ["Home", "About", "Services", "Devices", "RMT", "FAQ", "Promo"],
     copyright: "Rediscover Beauty © 2025",
     legalLinks: ["Privacy Policy", "Terms and Conditions"],
   },

@@ -47,7 +47,7 @@ export const faqCopy: FaqCopy = {
       id: "faq-payment",
       question: "What payment methods do you accept?",
       answer:
-        "We accept:\n\u2022 Cash\n\u2022 Debit\n\u2022 Credit Cards (Visa, Mastercard)\n\u2022 E-transfer\n\nFull payment is required at the time of service unless other arrangements have been made.",
+        "We accept:\n• Cash\n• Debit\n• Credit Cards (Visa, Mastercard)\n• E-transfer\n\nFull payment is required at the time of service unless other arrangements have been made.",
     },
     {
       id: "faq-downtime",

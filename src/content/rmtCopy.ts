@@ -12,6 +12,7 @@ export type RmtPricingTier = {
 export type RmtTreatment = {
   id: string;
   title: string;
+  icon: string;
   pricing: RmtPricingTier[];
   note?: string;
 };
@@ -91,35 +92,38 @@ export const rmtCopy: RmtCopy = {
   pricingSection: {
     title: "Treatments & Pricing",
     description:
-      "We offer a range of massage therapy services tailored to your comfort and therapeutic needs. All treatments are performed by our licensed Registered Massage Therapist in a calm, private setting.",
+      "Everything we do is rooted in purpose — to nurture, uplift, and deliver beauty beyond the surface.",
   },
 
   treatments: [
     {
       id: "rmt-massage",
       title: "RMT",
+      icon: "/images/icon/FlowerLotus.svg",
       pricing: [
-        { duration: "30 mins", price: "$60" },
-        { duration: "45 mins", price: "$90" },
-        { duration: "60 mins", price: "$120" },
-        { duration: "90 mins", price: "$170" },
+        { duration: "30 minutes", price: "$60" },
+        { duration: "45 minutes", price: "$90" },
+        { duration: "60 minutes", price: "$120" },
+        { duration: "90 minutes", price: "$170" },
       ],
       note: "All prices are tax included.",
     },
     {
       id: "rmt-aroma",
       title: "Aroma Therapy",
+      icon: "/images/icon/FlowerTulip.svg",
       pricing: [
-        { duration: "30 mins", price: "$80" },
-        { duration: "45 mins", price: "$100" },
-        { duration: "60 mins", price: "$120" },
-        { duration: "90 mins", price: "$170" },
+        { duration: "30 minutes", price: "$80" },
+        { duration: "45 minutes", price: "$100" },
+        { duration: "60 minutes", price: "$120" },
+        { duration: "90 minutes", price: "$170" },
       ],
       note: "All prices are tax included.",
     },
     {
       id: "rmt-cupping",
       title: "Cupping",
+      icon: "/images/icon/la_hotjar.svg",
       pricing: [{ duration: "", price: "+$30" }],
     },
   ],

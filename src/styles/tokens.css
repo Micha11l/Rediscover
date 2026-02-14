@@ -12,6 +12,7 @@
   --palette-primary-dark: #413832;
   --palette-primary-dark-20: #80736a;
   --palette-primary-dark-30: #bcaea5;
+  --palette-primary-subtle: #d1cbc7;
 
   /* Secondary scale */
   --palette-secondary: #735b4b;
@@ -48,6 +49,7 @@
   --color-text-primary: var(--palette-primary-dark);
   --color-text-muted: var(--palette-primary-dark-20);
   --color-text-subtle: var(--palette-primary-dark-30);
+  --color-text-soft: var(--palette-primary-subtle);
   --color-text-inverse: var(--palette-white);
 
   /* Border colors */

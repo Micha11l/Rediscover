@@ -97,7 +97,7 @@ function FaqAccordionItem({
         aria-expanded={isExpanded}
         aria-controls={panelId}
         onClick={onToggle}
-        className="flex w-full appearance-none items-center gap-8 border-0 bg-transparent p-8 text-left outline-none"
+        className={`flex w-full appearance-none items-center gap-8 border-0 bg-transparent px-8 pt-8 text-left outline-none ${isExpanded ? "pb-0" : "pb-8"}`}
       >
         <span className="flex-1 font-heading text-[24px] font-normal leading-[1.2] text-text-primary">
           {item.question}
@@ -120,8 +120,8 @@ function FaqAccordionItem({
         }`}
       >
         <div className="overflow-hidden">
-          <div className="px-8 pb-8">
-            <p className="font-body text-[20px] leading-[1.4] text-brand-secondary">
+          <div className="px-8 pb-8 pt-4">
+            <p className="m-0 whitespace-pre-line font-body text-[20px] leading-[1.4] text-brand-secondary">
               {item.answer}
             </p>
           </div>
