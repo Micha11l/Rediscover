@@ -21,7 +21,7 @@ export function LaserBeforeAfterPair({
     <section data-testid="laser-before-after" className="w-full bg-surface-base">
       <div className="mx-auto w-full max-w-[1440px] px-4 pb-12 md:pb-16 lg:pb-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <div className="relative h-[291px] w-full overflow-hidden rounded-[30px]">
+          <div className="relative h-[200px] w-full overflow-hidden rounded-[30px] md:h-[291px]">
             <Image
               src={beforeSrc}
               alt={beforeAlt}
@@ -33,7 +33,7 @@ export function LaserBeforeAfterPair({
               {beforeLabel}
             </span>
           </div>
-          <div className="relative h-[291px] w-full overflow-hidden rounded-[30px]">
+          <div className="relative h-[200px] w-full overflow-hidden rounded-[30px] md:h-[291px]">
             <Image
               src={afterSrc}
               alt={afterAlt}

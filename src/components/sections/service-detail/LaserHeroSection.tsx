@@ -99,7 +99,7 @@ export function LaserHeroSection({ lang }: { lang: Language }) {
         </div>
 
         {/* Hero Image */}
-        <div className="relative mt-8 h-[400px] w-full overflow-hidden rounded-[25px] lg:mx-auto lg:h-[571px] lg:max-w-[1228px]">
+        <div className="relative mt-8 h-[240px] w-full overflow-hidden rounded-[25px] md:h-[350px] lg:mx-auto lg:h-[571px] lg:max-w-[1228px]">
           <Image
             src={hero.image.src}
             alt={hero.image.alt}
