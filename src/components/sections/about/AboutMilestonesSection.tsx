@@ -17,9 +17,9 @@ export function AboutAchievementsSection({ lang }: { lang: Language }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-x-[72px] gap-y-[72px]">
+        <div className="grid grid-cols-2 gap-x-8 gap-y-10 sm:gap-x-[72px] sm:gap-y-[72px]">
           {achievements.items.map((item) => (
-            <div key={item.id} className="flex w-[260px] flex-col gap-1">
+            <div key={item.id} className="flex w-full flex-col gap-1 sm:w-[260px]">
               <div className="flex items-baseline gap-1">
                 <span className="font-heading text-[48px] font-bold leading-[1.2] text-text-primary lg:text-[60px]">
                   {item.value}

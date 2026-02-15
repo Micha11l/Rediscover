@@ -29,7 +29,7 @@ export function AboutHeroSection({ lang }: { lang: Language }) {
             {hero.gallery.map((image, index) => (
               <div
                 key={image.src}
-                className={`relative h-[220px] overflow-hidden rounded-[10px] lg:h-full ${
+                className={`relative h-[180px] overflow-hidden rounded-[10px] md:h-[220px] lg:h-full ${
                   index === 2 ? "lg:w-[246px] lg:shrink-0" : "lg:flex-1"
                 }`}
               >

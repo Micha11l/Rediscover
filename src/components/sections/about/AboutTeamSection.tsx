@@ -29,7 +29,7 @@ export function AboutTeamSection({ lang }: { lang: Language }) {
               key={member.id}
               className="flex flex-col items-center gap-6"
             >
-              <div className="relative h-[280px] w-full overflow-hidden rounded-2xl">
+              <div className="relative h-[200px] w-full overflow-hidden rounded-2xl md:h-[240px] lg:h-[280px]">
                 {member.image.src ? (
                   <Image
                     src={member.image.src}

@@ -27,8 +27,8 @@ export function RmtCtaSection({ lang }: { lang: Language }) {
 
           <div className="relative grid min-h-[320px] grid-cols-12 items-center px-8 py-10 md:px-12 lg:px-16">
             <div className="col-span-12 md:col-span-6 md:col-start-7">
-              <div className="flex flex-col items-end gap-10 text-right">
-                <div className="flex w-full flex-col items-end gap-3">
+              <div className="flex flex-col items-center gap-10 text-center md:items-end md:text-right">
+                <div className="flex w-full flex-col items-center gap-3 md:items-end">
                   <h2 className="m-0 max-w-[520px] font-heading text-[28px] md:text-[36px] lg:text-[48px] font-medium leading-[1.2]">
                     <span className="text-brand-secondary">
                       {cta.titleParts.primary}

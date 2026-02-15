@@ -8,7 +8,7 @@ export function RmtHelpSection({ lang }: { lang: Language }) {
   return (
     <>
       <section data-testid="rmt-help" className="w-full">
-        <div className="mx-auto w-full max-w-[1440px] px-4 py-[80px] md:px-8 lg:px-16 xl:px-[100px]">
+        <div className="mx-auto w-full max-w-[1440px] px-4 py-12 md:py-16 lg:py-[80px] md:px-8 lg:px-16 xl:px-[100px]">
           <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
             <div className="lg:w-5/12">
                <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1]">
@@ -42,7 +42,7 @@ export function RmtHelpSection({ lang }: { lang: Language }) {
       </div>
 
       <section data-testid="rmt-insurance" className="w-full">
-        <div className="mx-auto w-full max-w-[1440px] px-4 py-[80px] md:px-8 lg:px-16 xl:px-[100px]">
+        <div className="mx-auto w-full max-w-[1440px] px-4 py-12 md:py-16 lg:py-[80px] md:px-8 lg:px-16 xl:px-[100px]">
           <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
             <div className="lg:w-5/12">
                <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1]">
