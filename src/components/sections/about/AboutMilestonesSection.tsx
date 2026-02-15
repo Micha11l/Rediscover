@@ -7,7 +7,7 @@ export function AboutAchievementsSection({ lang }: { lang: Language }) {
 
   return (
     <section data-testid="about-achievements" className="w-full bg-surface-base">
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col justify-between gap-16 px-4 pb-[180px] pt-[100px] md:px-8 lg:flex-row lg:px-16 xl:px-[100px]">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col justify-between gap-16 px-4 pb-16 pt-12 md:pb-20 md:pt-16 lg:pb-[180px] lg:pt-[100px] md:px-8 lg:flex-row lg:px-16 xl:px-[100px]">
         <div className="flex flex-col justify-between gap-8 lg:w-[381px]">
           <h2 className="m-0 whitespace-pre-line font-heading text-[40px] font-medium leading-[1.1] text-text-primary md:text-[48px] lg:text-[56px]">
             {achievements.title}

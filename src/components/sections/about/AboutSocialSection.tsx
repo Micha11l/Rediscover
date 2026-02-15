@@ -9,7 +9,7 @@ export function AboutSocialSection({ lang }: { lang: Language }) {
   return (
     <section data-testid="about-social" className="w-full bg-surface-base">
       <div className="mx-auto w-full max-w-[1440px] px-4 py-16 md:px-8 lg:px-[100px] lg:py-16">
-        <div className="flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-[80px]">
+        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center md:gap-[80px]">
           {social.map((item) => (
             <div
               key={item.id}

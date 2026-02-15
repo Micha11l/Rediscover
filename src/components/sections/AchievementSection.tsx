@@ -27,9 +27,9 @@ function StatCard({ number, suffix, label }: StatItem) {
     <div className="w-[260px]">
       {/* Number row */}
       <div className="flex items-baseline gap-1">
-        <span className="font-heading text-[60px] font-bold leading-[1.2] text-[color:var(--Primary-Dark)]">
-          {number}
-        </span>
+         <span className="font-heading text-[36px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] text-[color:var(--Primary-Dark)]">
+           {number}
+         </span>
         {suffix ? (
           <span className="font-heading text-[32px] font-medium leading-[1.1] text-[color:var(--Primary-Dark-20)]">
             {suffix}
@@ -64,8 +64,8 @@ export function AchievementSection() {
    return (
      <section className="w-full" data-testid="achievement">
        {/* Global container rule + Figma paddings */}
-       <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px] pt-[100px] pb-[180px]">
-         <div className="flex flex-col items-start gap-16 lg:flex-row lg:justify-between lg:gap-[72px]">
+        <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px] pt-12 pb-16 md:pt-16 md:pb-20 lg:pt-[100px] lg:pb-[180px]">
+          <div className="flex flex-col items-start gap-8 md:gap-12 lg:flex-row lg:justify-between lg:gap-[72px]">
            {/* Left column: fixed width on desktop */}
            <div className="w-full lg:w-[381px] lg:min-h-[272px] lg:shrink-0 lg:self-stretch lg:justify-between lg:flex lg:flex-col">
              <h2 className="m-0 font-heading text-[48px] font-medium leading-[1.2] text-text-primary md:text-[60px]">

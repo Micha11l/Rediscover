@@ -67,7 +67,7 @@ export function ServicesSection({ lang }: { lang: Language }) {
 
   return (
     <section
-      className="w-full bg-surface-base py-[100px]"
+       className="w-full bg-surface-base py-12 md:py-16 lg:py-[100px]"
       data-testid="services-list"
     >
       {/* Container */}

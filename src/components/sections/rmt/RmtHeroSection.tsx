@@ -12,7 +12,7 @@ export function RmtHeroSection({ lang }: { lang: Language }) {
 
   return (
     <section data-testid="rmt-hero" className="w-full bg-surface-base">
-      <div className="mx-auto flex h-[136px] w-full max-w-[1440px] items-center px-4 md:px-8 lg:px-16 xl:px-[100px]">
+      <div className="mx-auto flex h-[80px] md:h-[100px] lg:h-[136px] w-full max-w-[1440px] items-center px-4 md:px-8 lg:px-16 xl:px-[100px]">
         <Navbar variant="light" />
       </div>
 
@@ -43,21 +43,21 @@ export function RmtHeroSection({ lang }: { lang: Language }) {
           </nav>
 
           <div className="flex w-full flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-            <h1 className="m-0 font-heading text-display font-medium leading-[1.2]">
-              <span className="block text-brand-secondary">
-                {hero.titleLine1}
-              </span>
-              <span className="block text-text-primary">
-                {hero.titleLine2}
-              </span>
-            </h1>
+             <h1 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-display font-medium leading-[1.2]">
+               <span className="block text-brand-secondary">
+                 {hero.titleLine1}
+               </span>
+               <span className="block text-text-primary">
+                 {hero.titleLine2}
+               </span>
+             </h1>
             <p className="m-0 max-w-[400px] font-body text-body leading-[1.6] text-brand-secondary lg:text-right">
               {hero.subtitle}
             </p>
           </div>
         </div>
 
-        <div className="mt-[80px] grid grid-cols-1 gap-4 sm:grid-cols-3">
+         <div className="mt-8 md:mt-12 lg:mt-[80px] grid grid-cols-1 gap-4 sm:grid-cols-3">
           {hero.images.map((img) => (
             <div
               key={img.src}

@@ -31,8 +31,8 @@ export function TestimonialsSection() {
       </div>
 
       {/* Content container (global rule) */}
-      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
-        <div className="flex flex-col items-center gap-[100px] text-center">
+       <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 py-12 md:py-16 lg:py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+        <div className="flex flex-col items-center gap-10 md:gap-14 lg:gap-[100px] text-center">
           {/* Header: icon + title */}
           <div className="flex flex-col items-center gap-10">
             {/* Icon wrapper uses 4/8 scale (56×64) */}

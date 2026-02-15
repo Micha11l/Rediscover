@@ -9,7 +9,7 @@ export function PromoHeroSection({ lang }: { lang: Language }) {
   const { hero } = pickContent(promoContent, lang);
 
   return (
-    <section data-testid="promo-hero" className="relative w-full min-h-[700px]">
+     <section data-testid="promo-hero" className="relative w-full min-h-[520px] md:min-h-[620px] lg:min-h-[700px]">
       <div className="absolute inset-0" aria-hidden="true">
         <Image
           src={hero.backgroundImage.src}
@@ -22,7 +22,7 @@ export function PromoHeroSection({ lang }: { lang: Language }) {
         <div className="absolute inset-0 bg-brand-primary/65" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[700px] w-full max-w-[1440px] flex-col px-4 md:px-8 lg:px-16 xl:px-[64px]">
+       <div className="relative mx-auto flex min-h-[520px] md:min-h-[620px] lg:min-h-[700px] w-full max-w-[1440px] flex-col px-4 md:px-8 lg:px-16 xl:px-[64px]">
         <div className="pt-10">
           <Navbar variant="dark" />
         </div>

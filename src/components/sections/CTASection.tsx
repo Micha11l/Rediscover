@@ -15,7 +15,7 @@ export function CtaSection() {
   return (
     <section className="w-full" data-testid="cta">
       {/* Global container rule */}
-      <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px] py-[100px]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px] py-12 md:py-16 lg:py-[100px]">
         {/* Banner */}
         <div
           className="relative w-full overflow-hidden rounded-[24px]"
@@ -40,7 +40,7 @@ export function CtaSection() {
               <div className="flex flex-col items-end gap-10 text-right">
                 {/* Title + subtitle */}
                 <div className="flex w-full flex-col items-end gap-3">
-                  <h2 className="m-0 max-w-[520px] font-heading text-[48px] font-medium leading-[1.2]">
+                  <h2 className="m-0 max-w-[520px] font-heading text-[28px] md:text-[36px] lg:text-[48px] font-medium leading-[1.2]">
                     {t.cta.heading}
                   </h2>
                   <p className="m-0 max-w-[540px] font-body text-[16px] font-normal leading-[1.6] text-brand-secondary">

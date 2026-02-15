@@ -7,7 +7,7 @@ export function SkinCareAboutSection({ lang }: { lang: Language }) {
 
   return (
     <section data-testid="skin-care-about" className="w-full bg-surface-base">
-      <div className="mx-auto w-full max-w-[1440px] px-4 pb-[145px] pt-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 pb-12 pt-12 md:pb-16 md:pt-16 lg:pb-[145px] lg:pt-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="mb-12 flex flex-col gap-6">
           <h2 className="m-0 font-heading text-[32px] font-medium leading-[1.1]">
             <span className="text-brand-secondary">{aboutSkinCare.titleAccent}</span>{" "}

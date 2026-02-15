@@ -107,7 +107,7 @@ export function PrivacyContentSection({ lang }: { lang: Language }) {
     <section data-testid="privacy-content" className="w-full bg-surface-base pb-16">
       <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px]">
         <div className="rounded-[24px] bg-surface-muted p-6 md:p-10 lg:px-[70px] lg:py-[60px]">
-          <div className="flex flex-col gap-[57px]">
+          <div className="flex flex-col gap-8 md:gap-10 lg:gap-[57px]">
             <p className="m-0 font-body text-body leading-[1.6] text-brand-secondary">
               {introduction}
             </p>

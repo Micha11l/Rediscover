@@ -11,9 +11,9 @@ export function RmtHelpSection({ lang }: { lang: Language }) {
         <div className="mx-auto w-full max-w-[1440px] px-4 py-[80px] md:px-8 lg:px-16 xl:px-[100px]">
           <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
             <div className="lg:w-5/12">
-              <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1]">
-                <span className="text-brand-secondary">{helpSection.title}</span>
-              </h2>
+               <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1]">
+                 <span className="text-brand-secondary">{helpSection.title}</span>
+               </h2>
               <p className="mb-0 mt-6 font-body text-[16px] leading-[1.6] text-brand-secondary">
                 {helpSection.subtitle}
               </p>
@@ -45,9 +45,9 @@ export function RmtHelpSection({ lang }: { lang: Language }) {
         <div className="mx-auto w-full max-w-[1440px] px-4 py-[80px] md:px-8 lg:px-16 xl:px-[100px]">
           <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
             <div className="lg:w-5/12">
-              <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1]">
-                <span className="text-brand-secondary">{insuranceSection.title}</span>
-              </h2>
+               <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1]">
+                 <span className="text-brand-secondary">{insuranceSection.title}</span>
+               </h2>
               <p className="mb-0 mt-6 font-body text-[16px] leading-[1.6] text-brand-secondary">
                 {insuranceSection.subtitle}
               </p>

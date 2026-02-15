@@ -15,7 +15,7 @@ export function LaserRecommendedAndProcessSection({
   return (
     <section
       data-testid="laser-recommended-process"
-      className="w-full bg-brand-secondary py-[100px]"
+      className="w-full bg-brand-secondary py-12 md:py-16 lg:py-[100px]"
     >
       <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16 xl:px-[100px]">
         <div className="flex flex-col gap-12">

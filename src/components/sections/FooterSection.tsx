@@ -24,7 +24,7 @@ export function FooterSection() {
   return (
     <footer className="w-full bg-surface-base" data-testid="footer">
       {/* Global container */}
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-20 px-4 pb-8 pt-[60px] md:px-8 lg:px-16 xl:px-[100px]">
+       <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-20 px-4 pb-8 pt-10 md:pt-12 lg:pt-[60px] md:px-8 lg:px-16 xl:px-[100px]">
         {/* Body */}
         <div className="flex flex-col gap-12 lg:h-[284px] lg:flex-row lg:items-start lg:justify-between lg:gap-0">
           {/* LEFT BLOCK */}

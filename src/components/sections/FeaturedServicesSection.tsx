@@ -41,7 +41,7 @@ export function FeaturedServicesSection() {
 
   return (
     <section className="w-full" data-testid="services" data-section="services">
-      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-[100px] px-4 md:px-8 lg:px-16 xl:px-[100px] py-[100px]">
+       <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-10 md:gap-14 lg:gap-[100px] px-4 md:px-8 lg:px-16 xl:px-[100px] py-12 md:py-16 lg:py-[100px]">
         <div className="flex flex-col items-center gap-6">
           <div className="flex items-center justify-center rounded-[40px] border border-[#eedbce] px-[18px] py-[10px]">
              <span className="font-heading text-[12px] font-light leading-[1.2] text-text-primary">
@@ -50,9 +50,9 @@ export function FeaturedServicesSection() {
            </div>
 
            <div className="flex flex-col items-center gap-4">
-             <h2 className="font-heading text-[40px] font-medium leading-[1.2] text-text-primary">
-               {t.services.heading}
-             </h2>
+              <h2 className="font-heading text-[28px] md:text-[36px] lg:text-[40px] font-medium leading-[1.2] text-text-primary">
+                {t.services.heading}
+              </h2>
              <p className="font-heading text-[16px] font-normal leading-[1.2] text-text-primary">
                {t.services.subheading}
              </p>

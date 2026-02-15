@@ -23,13 +23,13 @@ export function BodyContouringTreatmentSection({
   return (
     <section data-testid={testId} className="w-full bg-surface-base">
       <div
-        className={`mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:pl-[118px] lg:pr-[109px] ${className ?? ""}`}
+        className={`mx-auto w-full max-w-[1440px] px-4 py-12 md:py-16 lg:py-[100px] md:px-8 lg:pl-[118px] lg:pr-[109px] ${className ?? ""}`}
       >
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-[73px]">
           <div className="flex flex-col gap-6 lg:flex-1">
-            <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1] text-brand-secondary">
-              {title}
-            </h2>
+             <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1] text-brand-secondary">
+               {title}
+             </h2>
 
             <div className="space-y-4">
               {paragraphs.map((p, i) => (

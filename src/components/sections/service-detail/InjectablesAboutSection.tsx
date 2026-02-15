@@ -7,7 +7,7 @@ export function InjectablesAboutSection({ lang }: { lang: Language }) {
 
   return (
     <section data-testid="injectables-about" className="w-full bg-surface-base">
-      <div className="mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 py-12 md:py-16 lg:py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="mb-[92px] flex flex-col gap-6">
           <h2 className="m-0 font-heading text-[32px] font-medium leading-[1.1]">
             <span className="text-brand-secondary">{about.titleAccent}</span>{" "}

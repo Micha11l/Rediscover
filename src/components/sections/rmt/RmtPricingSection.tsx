@@ -5,8 +5,8 @@ import { pickContent } from "@/lib/i18n";
 import type { Language } from "@/i18n/types";
 
 function TreatmentCard({ treatment }: { treatment: RmtTreatment }) {
-  return (
-    <div className="flex h-[261px] w-[535px] gap-[31px]">
+   return (
+     <div className="flex w-full lg:h-[261px] lg:w-[535px] gap-[31px]">
       <div className="flex h-[35px] shrink-0 items-center">
         <Image
           src={treatment.icon}
@@ -84,14 +84,14 @@ export function RmtPricingSection({ lang }: { lang: Language }) {
 
   return (
     <section data-testid="rmt-pricing" className="w-full bg-brand-secondary">
-      <div className="mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:pl-[137px] xl:pr-[122px]">
-        <div className="flex flex-col gap-16 lg:flex-row lg:gap-[341px]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 py-12 md:py-16 lg:py-[100px] md:px-8 lg:px-16 xl:pl-[137px] xl:pr-[122px]">
+        <div className="flex flex-col gap-8 md:gap-16 lg:flex-row lg:gap-[341px]">
           <div className="flex flex-col lg:w-[305px]">
-            <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1]">
-              <span className="text-brand-secondary-light">Treatments </span>
-              <br />
-              <span className="text-text-inverse">& Pricing</span>
-            </h2>
+             <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1]">
+               <span className="text-brand-secondary-light">Treatments </span>
+               <br />
+               <span className="text-text-inverse">& Pricing</span>
+             </h2>
             <p className="mb-0 mt-[39px] font-body text-[16px] leading-[1.6] text-[#f5f1ed]">
               {pricingSection.description}
             </p>

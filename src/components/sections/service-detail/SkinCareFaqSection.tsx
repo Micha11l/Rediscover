@@ -18,7 +18,7 @@ export function SkinCareFaqSection({ lang }: { lang: Language }) {
       aria-labelledby="skin-care-faq-heading"
       className="w-full bg-surface-base"
     >
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-20 px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-20 px-4 py-12 md:py-16 lg:py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="flex flex-col items-center gap-4 text-center">
           <h2
             id="skin-care-faq-heading"

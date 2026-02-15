@@ -8,7 +8,7 @@ export function AboutSkincareSection({ lang }: { lang: Language }) {
 
   return (
     <section data-testid="about-skincare" className="w-full bg-surface-base">
-      <div className="mx-auto w-full max-w-[1440px] px-4 pb-[108px] md:px-8 lg:px-16 xl:px-[65px]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 pb-12 md:pb-16 lg:pb-[108px] md:px-8 lg:px-16 xl:px-[65px]">
         <h2 className="m-0 py-6 font-heading text-[40px] font-medium leading-[1.1] text-brand-secondary md:text-[48px] lg:text-[56px]">
           {skincare.title}
         </h2>

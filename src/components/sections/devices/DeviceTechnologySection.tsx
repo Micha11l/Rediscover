@@ -18,8 +18,8 @@ export function DeviceTechnologySection({
 
   return (
     <section data-testid={technology.testId} className="w-full bg-surface-base">
-      <div className="mx-auto w-full max-w-[1440px] px-4 pt-[100px] md:px-8 lg:px-16 xl:px-[100px]">
-        <h2 className="mx-0 mt-0 mb-[49px] font-heading text-[56px] font-medium leading-[1.1] text-brand-secondary">
+      <div className="mx-auto w-full max-w-[1440px] px-4 pt-12 md:pt-16 lg:pt-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+        <h2 className="mx-0 mt-0 mb-[49px] font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1] text-brand-secondary">
           {technology.title}
         </h2>
 
@@ -72,12 +72,12 @@ export function DeviceTechnologySection({
         </div>
       </div>
 
-      <div className="mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+       <div className="mx-auto w-full max-w-[1440px] px-4 py-12 md:py-16 lg:py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="mb-20 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-          <h3 className="m-0 font-heading text-[56px] font-medium leading-[1.1]">
-            <span className="text-brand-secondary">{technology.howWeUseTitle} </span>
-            <span className="text-text-primary">{technology.howWeUseTitleAccent}</span>
-          </h3>
+           <h3 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1]">
+             <span className="text-brand-secondary">{technology.howWeUseTitle} </span>
+             <span className="text-text-primary">{technology.howWeUseTitleAccent}</span>
+           </h3>
           <span className="shrink-0 rounded-[40px] border border-brand-secondary-light px-[18px] py-[10px] font-heading text-button font-light leading-none text-brand-secondary">
             View Services
           </span>
@@ -105,7 +105,7 @@ export function DeviceTechnologySection({
                   className="border-l border-brand-secondary-light pb-10 pl-8 pt-5 transition-colors duration-200 group-hover:border-brand-secondary"
                   style={{ marginLeft: "5px" }}
                 >
-                  <p className="mx-0 mt-0 mb-10 font-heading text-[56px] font-medium leading-[1.1] text-text-primary transition-opacity duration-200 group-hover:opacity-80">
+                   <p className="mx-0 mt-0 mb-10 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1] text-text-primary transition-opacity duration-200 group-hover:opacity-80">
                     {item.title}
                   </p>
                   <p className="m-0 max-w-[280px] font-body text-body leading-[1.6] text-brand-secondary">

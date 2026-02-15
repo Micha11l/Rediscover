@@ -19,7 +19,7 @@ export function LaserBeforeAfterPair({
 }: LaserBeforeAfterPairProps) {
   return (
     <section data-testid="laser-before-after" className="w-full bg-surface-base">
-      <div className="mx-auto w-full max-w-[1440px] px-4 pb-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 pb-12 md:pb-16 lg:pb-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="relative h-[291px] w-full overflow-hidden rounded-[30px]">
             <Image

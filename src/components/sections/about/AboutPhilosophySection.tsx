@@ -57,7 +57,7 @@ export function AboutWelcomeSection({ lang }: { lang: Language }) {
 
   return (
     <section data-testid="about-welcome" className="w-full bg-surface-base">
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-10 px-4 pb-[100px] pt-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-10 px-4 pb-12 pt-12 md:pb-16 md:pt-16 lg:pb-[100px] lg:pt-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="flex flex-col">
           <h2 className="m-0 font-heading text-[28px] font-medium leading-[1.1] text-text-primary md:text-[32px]">
             {welcome.intro.heading}

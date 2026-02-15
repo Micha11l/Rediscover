@@ -36,7 +36,7 @@ export function NewsletterSection() {
       </div>
 
       {/* Content container */}
-      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+       <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 py-12 md:py-16 lg:py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="flex w-full flex-col items-start justify-between gap-12 lg:flex-row lg:items-center lg:gap-20">
            {/* Left title */}
            <h2 className="m-0 font-heading text-[48px] font-medium leading-[1.2] text-text-inverse md:text-[56px]">

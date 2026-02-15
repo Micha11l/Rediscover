@@ -9,7 +9,7 @@ export function AboutHeroSection({ lang }: { lang: Language }) {
 
   return (
     <section data-testid="about-hero" className="w-full bg-surface-base">
-      <div className="mx-auto flex h-[136px] w-full max-w-[1440px] items-center px-4 md:px-8 lg:px-16 xl:px-[64px]">
+      <div className="mx-auto flex h-[80px] md:h-[100px] lg:h-[136px] w-full max-w-[1440px] items-center px-4 md:px-8 lg:px-16 xl:px-[64px]">
         <Navbar variant="light" />
       </div>
 

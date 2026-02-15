@@ -43,10 +43,10 @@ export function DevicesHeroSection({ lang }: DevicesHeroSectionProps) {
             />
           </div>
 
-          <h1 className="m-0 text-center font-heading text-display font-medium leading-[1.2] text-text-inverse">
-            <span className="block">{hero.titleLine1}</span>
-            <span className="block">{hero.titleLine2}</span>
-          </h1>
+           <h1 className="m-0 text-center font-heading text-[32px] md:text-[44px] lg:text-display font-medium leading-[1.2] text-text-inverse">
+             <span className="block">{hero.titleLine1}</span>
+             <span className="block">{hero.titleLine2}</span>
+           </h1>
 
           <nav
             aria-label="Breadcrumb"

@@ -8,15 +8,15 @@ export function RmtWelcomeSection({ lang }: { lang: Language }) {
 
   return (
     <section data-testid="rmt-welcome" className="w-full">
-      <div className="mx-auto w-full max-w-[1440px] px-4 pb-[40px] pt-[100px] md:px-8 lg:px-16 xl:px-[100px]">
-        <div className="text-center font-heading text-[48px] font-medium leading-[1.2]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 pb-8 pt-12 md:pb-[40px] md:pt-16 lg:pb-[40px] lg:pt-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+        <div className="text-center font-heading text-[28px] md:text-[36px] lg:text-[48px] font-medium leading-[1.2]">
           <p className="m-0 text-brand-secondary">{welcome.message}</p>
         </div>
       </div>
 
       <DecorativeDivider className="py-6" />
 
-      <div className="mx-auto w-full max-w-[1440px] px-4 pb-[100px] pt-[40px] md:px-8 lg:px-16 xl:px-[100px]">
+       <div className="mx-auto w-full max-w-[1440px] px-4 pb-12 pt-8 md:pb-16 md:pt-[40px] lg:pb-[100px] lg:pt-[40px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="text-center font-body text-[16px] leading-[1.6] text-brand-secondary">
           <p className="mb-0 font-semibold">{welcome.aboutTitle}</p>
           <p className="mb-0">&nbsp;</p>

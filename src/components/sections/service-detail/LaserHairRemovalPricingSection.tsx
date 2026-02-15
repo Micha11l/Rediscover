@@ -19,14 +19,14 @@ export function LaserHairRemovalPricingSection({
       data-testid="laser-hair-removal"
       className="w-full scroll-mt-[160px] bg-surface-base"
     >
-      <div className="mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 py-12 md:py-16 lg:py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
           <div className="space-y-6">
-            <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1]">
-              <span className="text-text-primary">{titleParts.primary}</span>
-              <br />
-              <span className="text-brand-secondary">{titleParts.accent}</span>
-            </h2>
+             <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1]">
+               <span className="text-text-primary">{titleParts.primary}</span>
+               <br />
+               <span className="text-brand-secondary">{titleParts.accent}</span>
+             </h2>
             <p className="m-0 whitespace-pre-line font-body text-[16px] leading-[1.6] text-brand-secondary">
               {descriptionSegments.map((seg, i) =>
                 seg.bold ? (

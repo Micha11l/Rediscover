@@ -18,15 +18,15 @@ export function ServiceFaqBlockSection({
       data-testid="service-faq"
       className="w-full bg-surface-base scroll-mt-24 sm:scroll-mt-28 lg:scroll-mt-32"
     >
-      <div className="mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+      <div className="mx-auto w-full max-w-[1440px] px-4 py-12 md:py-16 lg:py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         {/* Two stacked rows; each row is (left title + right content) */}
         <div className="flex flex-col">
   {/* Row 1 */}
   <div className="grid grid-cols-1 gap-10 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
-    <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1] text-brand-secondary">
-      {data.keyBenefitsTitle}{" "}
-      <span className="text-text-primary">{data.title}</span>
-    </h2>
+     <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1] text-brand-secondary">
+       {data.keyBenefitsTitle}{" "}
+       <span className="text-text-primary">{data.title}</span>
+     </h2>
 
     <ul data-testid="faq-benefits-list" className="flex flex-col gap-6">
       {data.benefits.map((item, index) => (
@@ -57,18 +57,18 @@ export function ServiceFaqBlockSection({
     </ul>
   </div>
 
-  {/* Divider aligned to right column */}
-  <div className="mt-[72px] grid grid-cols-1 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
+   {/* Divider aligned to right column */}
+   <div className="mt-8 md:mt-12 lg:mt-[72px] grid grid-cols-1 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
     <div className="hidden lg:block" />
     <div className="h-px w-full bg-border" />
   </div>
 
-  {/* Row 2 */}
-  <div className="mt-[72px] grid grid-cols-1 gap-10 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
-    <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1] text-brand-secondary">
-      {lang === "zh" ? data.title : `What ${data.title}`}{" "}
-      <span className="text-text-primary">{data.canHelpWithTitle}</span>
-    </h2>
+   {/* Row 2 */}
+   <div className="mt-8 md:mt-12 lg:mt-[72px] grid grid-cols-1 gap-10 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
+     <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1] text-brand-secondary">
+       {lang === "zh" ? data.title : `What ${data.title}`}{" "}
+       <span className="text-text-primary">{data.canHelpWithTitle}</span>
+     </h2>
 
     <ul data-testid="faq-helps-list" className="flex flex-col gap-2">
       {data.helpsWith.map((item, index) => (

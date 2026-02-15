@@ -17,7 +17,7 @@ export function BodyContouringHeroSection({ lang }: BodyContouringHeroSectionPro
   return (
     <section data-testid="body-contouring-hero" className="w-full bg-surface-base">
       <div className="bg-surface-elevated">
-        <div className="mx-auto flex h-[136px] w-full max-w-[1440px] items-center px-4 md:px-8 lg:px-16 xl:px-[100px]">
+         <div className="mx-auto flex h-[80px] md:h-[100px] lg:h-[136px] w-full max-w-[1440px] items-center px-4 md:px-8 lg:px-16 xl:px-[100px]">
           <Navbar variant="light" />
         </div>
       </div>
@@ -61,9 +61,9 @@ export function BodyContouringHeroSection({ lang }: BodyContouringHeroSectionPro
           </nav>
 
           <div className="flex w-full flex-col gap-4 text-center">
-            <h1 className="m-0 font-heading text-display font-medium leading-[1.2] text-text-primary">
-              {hero.title}
-            </h1>
+             <h1 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-display font-medium leading-[1.2] text-text-primary">
+               {hero.title}
+             </h1>
             <p className="m-0 mx-auto max-w-none font-body text-body leading-[1.6] text-brand-secondary">
               {hero.subtitle}
             </p>

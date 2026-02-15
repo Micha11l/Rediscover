@@ -7,7 +7,7 @@ export function AboutCtaSection() {
 
   return (
     <section data-testid="about-cta" className="w-full bg-surface-base">
-      <div className="mx-auto w-full max-w-[1440px] px-4 py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+       <div className="mx-auto w-full max-w-[1440px] px-4 py-12 md:py-16 lg:py-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="relative overflow-hidden rounded-3xl">
           <Image
             src={cta.backgroundImage.src}

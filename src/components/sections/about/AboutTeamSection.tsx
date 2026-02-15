@@ -12,7 +12,7 @@ export function AboutTeamSection({ lang }: { lang: Language }) {
 
   return (
     <section data-testid="about-team" className="w-full bg-surface-base">
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-20 px-4 pb-0 pt-[100px] md:px-8 lg:px-16 xl:px-[100px]">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-20 px-4 pb-0 pt-12 md:pt-16 lg:pt-[100px] md:px-8 lg:px-16 xl:px-[100px]">
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <h2 className="m-0 max-w-[488px] font-heading text-[40px] font-medium leading-[1.1] md:text-[48px] lg:text-[56px]">
             <span className="text-text-primary">{firstThreeWords}</span>
