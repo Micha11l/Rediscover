@@ -169,7 +169,7 @@ export function LocationSection() {
             </div>
 
             {/* Right: Map (885×575 on desktop) */}
-            <div className="w-full shrink-0 overflow-hidden rounded-2xl aspect-[16/10] sm:aspect-[4/3] lg:aspect-[885/575] lg:w-[885px]">
+            <div className="w-full shrink-0 overflow-hidden rounded-2xl aspect-[16/10] sm:aspect-[4/3] lg:aspect-[885/575] lg:w-[60%] xl:w-[885px]">
               <iframe
                 src={embedUrl}
                 width="885"

@@ -65,16 +65,16 @@ export function FeaturedServicesSection() {
             return (
               <div
                 key={service.key}
-                className="flex w-[250px] flex-col items-center gap-6"
+                className="flex w-full max-w-[250px] flex-col items-center gap-6"
                 data-node={`service-card-${index + 1}`}
               >
-                <div className="relative h-[250px] w-[250px] shrink-0 overflow-hidden rounded-2xl">
+                <div className="relative aspect-square w-full shrink-0 overflow-hidden rounded-2xl">
                   <Image
                     src={service.image}
                     alt={service.label2}
                     fill
                     className={isIPL ? "object-cover" : "object-contain"}
-                    sizes="250px"
+                    sizes="(max-width: 768px) 40vw, 250px"
                   />
                 </div>
 

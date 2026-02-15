@@ -37,7 +37,7 @@ function ServiceCard({
     <Link
       href={href}
       aria-label={`View service: ${title}`}
-      className="group relative block h-[416px] w-full overflow-hidden rounded-lg no-underline"
+      className="group relative block h-[280px] w-full overflow-hidden rounded-lg no-underline md:h-[360px] lg:h-[416px]"
     >
       {/* Image Container */}
       <div className="absolute inset-0">

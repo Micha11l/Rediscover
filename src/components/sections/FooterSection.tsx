@@ -26,7 +26,7 @@ export function FooterSection() {
       {/* Global container */}
        <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-20 px-4 pb-8 pt-10 md:pt-12 lg:pt-[60px] md:px-8 lg:px-16 xl:px-[100px]">
         {/* Body */}
-        <div className="flex flex-col gap-12 lg:h-[284px] lg:flex-row lg:items-start lg:justify-between lg:gap-0">
+        <div className="flex flex-col gap-12 lg:min-h-[284px] lg:flex-row lg:items-start lg:justify-between lg:gap-0">
           {/* LEFT BLOCK */}
           <div className="flex flex-col gap-6 lg:h-full lg:w-[387px] lg:justify-between">
             {/* Logo + Brand */}
@@ -55,7 +55,7 @@ export function FooterSection() {
           </div>
 
           {/* RIGHT BLOCK */}
-          <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-[108px]">
+          <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:gap-16 xl:gap-[108px]">
             {/* Menu */}
             <div className="flex flex-col gap-[32px]">
                <h3 className="m-0 font-heading text-[16px] font-medium leading-none text-brand-secondary">

@@ -24,7 +24,7 @@ interface StatItem {
 
 function StatCard({ number, suffix, label }: StatItem) {
   return (
-    <div className="w-[260px]">
+    <div className="w-full sm:w-[260px]">
       {/* Number row */}
       <div className="flex items-baseline gap-1">
          <span className="font-heading text-[36px] md:text-[48px] lg:text-[60px] font-bold leading-[1.2] text-[color:var(--Primary-Dark)]">
