@@ -1,7 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -43,6 +45,11 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
     };
   }, [isOpen]);
 
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === "Escape" && isOpen) {
@@ -53,11 +60,14 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
     return () => document.removeEventListener("keydown", handleEscape);
   }, [isOpen, onClose]);
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <>
       <div
         className={`
-          fixed inset-0 z-40 bg-black/50 transition-opacity duration-300
+          fixed inset-0 z-40 bg-black/40 backdrop-blur-sm
+          transition-opacity duration-300
           ${isOpen ? "opacity-100" : "pointer-events-none opacity-0"}
         `}
         onClick={onClose}
@@ -66,7 +76,8 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
 
       <div
         className={`
-          fixed right-0 top-0 z-50 h-full w-72 bg-white shadow-xl
+          fixed right-0 top-0 z-50 flex h-full w-[85vw] max-w-[360px]
+          flex-col border-l border-surface-muted bg-surface-base shadow-2xl
           transition-transform duration-300 ease-out
           ${isOpen ? "translate-x-0" : "translate-x-full"}
         `}
@@ -74,10 +85,17 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
         aria-modal="true"
         aria-label="Mobile navigation menu"
       >
-        <div className="flex h-14 items-center justify-end px-4">
+        <div className="flex items-center justify-between px-8 pb-2 pt-6">
+          <Image
+            src="/images/1.svg"
+            alt="Beauva"
+            width={100}
+            height={28}
+            style={{ width: "auto", height: "28px" }}
+          />
           <button
             onClick={onClose}
-            className="flex h-10 w-10 items-center justify-center text-text-primary"
+            className="flex h-10 w-10 cursor-pointer items-center justify-center border-none bg-transparent text-brand-secondary outline-none"
             aria-label="Close menu"
           >
             <svg
@@ -86,14 +104,14 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="1.5"
             >
               <path d="M18 6L6 18M6 6l12 12" />
             </svg>
           </button>
         </div>
 
-        <nav className="flex flex-col px-6 py-4">
+        <nav className="flex flex-1 flex-col gap-1 px-8 pt-8">
           {NAV_LINKS.map((link) => {
             const active = isActive(link.href);
             return (
@@ -102,10 +120,13 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
                 href={link.href}
                 onClick={onClose}
                 className={`
-                  border-b border-border-subtle py-4
-                  font-heading text-lg no-underline
-                  transition-colors hover:text-brand-secondary
-                  ${active ? "font-semibold text-brand-secondary" : "text-text-primary"}
+                  rounded-lg px-4 py-3 font-heading text-xl no-underline
+                  transition-colors
+                  ${
+                    active
+                      ? "bg-surface-muted font-semibold text-brand-secondary"
+                      : "text-text-primary hover:bg-surface-muted/60"
+                  }
                 `}
               >
                 {t.nav[link.key]}
@@ -114,38 +135,48 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
           })}
         </nav>
 
-         <div className="absolute bottom-8 left-0 right-0 px-6">
-           <div className="flex items-center justify-center gap-4 rounded-lg bg-surface-secondary py-3">
-             <button
-               onClick={() => {
-                 setLanguage("en");
-                 router.refresh();
-               }}
-               className={`
-                 font-heading text-lg transition-opacity
-                 ${language === "en" ? "text-text-primary" : "text-text-primary/50"}
-               `}
-               aria-label="Switch to English"
-             >
-               A
-             </button>
-             <span className="text-text-primary/30">|</span>
-             <button
-               onClick={() => {
-                 setLanguage("zh");
-                 router.refresh();
-               }}
-               className={`
-                 font-heading text-lg transition-opacity
-                 ${language === "zh" ? "text-text-primary" : "text-text-primary/50"}
-               `}
-               aria-label="Switch to Chinese"
-             >
-               文
-             </button>
-           </div>
-         </div>
+        <div className="px-8 pb-10 pt-6">
+          <div className="flex rounded-full bg-surface-muted p-1">
+            <button
+              onClick={() => {
+                setLanguage("en");
+                router.refresh();
+              }}
+              className={`
+                flex-1 cursor-pointer rounded-full border-none py-2.5 text-sm font-medium
+                outline-none transition-all duration-200
+                ${
+                  language === "en"
+                    ? "bg-brand-secondary text-text-inverse shadow-sm"
+                    : "bg-transparent text-text-primary"
+                }
+              `}
+              aria-label="Switch to English"
+            >
+              English
+            </button>
+            <button
+              onClick={() => {
+                setLanguage("zh");
+                router.refresh();
+              }}
+              className={`
+                flex-1 cursor-pointer rounded-full border-none py-2.5 text-sm font-medium
+                outline-none transition-all duration-200
+                ${
+                  language === "zh"
+                    ? "bg-brand-secondary text-text-inverse shadow-sm"
+                    : "bg-transparent text-text-primary"
+                }
+              `}
+              aria-label="Switch to Chinese"
+            >
+              中文
+            </button>
+          </div>
+        </div>
       </div>
-    </>
+    </>,
+    document.body
   );
 }

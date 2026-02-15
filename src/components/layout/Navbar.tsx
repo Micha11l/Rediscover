@@ -111,8 +111,8 @@ export function Navbar({ variant = "dark", className = "" }: NavbarProps) {
              setLanguage("en");
              router.refresh();
            }}
-           className={`font-heading text-button leading-none transition-opacity ${language === "en" ? "" : "opacity-50"}`}
-           aria-label="Switch to English"
+            className={`cursor-pointer border-none bg-transparent font-heading text-button leading-none outline-none transition-opacity ${language === "en" ? "" : "opacity-50"}`}
+            aria-label="Switch to English"
          >
            A
          </button>
@@ -122,8 +122,8 @@ export function Navbar({ variant = "dark", className = "" }: NavbarProps) {
              setLanguage("zh");
              router.refresh();
            }}
-           className={`font-heading text-button leading-none transition-opacity ${language === "zh" ? "" : "opacity-50"}`}
-           aria-label="Switch to Chinese"
+            className={`cursor-pointer border-none bg-transparent font-heading text-button leading-none outline-none transition-opacity ${language === "zh" ? "" : "opacity-50"}`}
+            aria-label="Switch to Chinese"
          >
            文
          </button>
@@ -132,7 +132,7 @@ export function Navbar({ variant = "dark", className = "" }: NavbarProps) {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsMenuOpen(true)}
-        className={`flex h-10 w-10 items-center justify-center ${textColor} lg:hidden`}
+        className={`flex h-10 w-10 cursor-pointer items-center justify-center border-none bg-transparent outline-none ${textColor} lg:hidden`}
         aria-label="Open menu"
       >
         <svg
