@@ -18,7 +18,7 @@ export function BodyContouringCtaSection({ lang }: BodyContouringCtaSectionProps
           className="relative w-full overflow-hidden rounded-[24px]"
           data-testid="body-contouring-cta-banner"
         >
-          <div className="absolute inset-0" aria-hidden="true">
+          <div className="relative h-[200px] md:absolute md:inset-0 md:h-auto" aria-hidden="true">
             <Image
               src={cta.image.src}
               alt={cta.image.alt}
@@ -29,10 +29,10 @@ export function BodyContouringCtaSection({ lang }: BodyContouringCtaSectionProps
             />
           </div>
 
-          <div className="relative grid min-h-[320px] grid-cols-12 items-center px-8 py-10 md:px-12 lg:px-16">
-            <div className="col-span-12 md:col-span-6 md:col-start-7">
-              <div className="flex flex-col items-end gap-10 text-right">
-                <div className="flex w-full flex-col items-end gap-3">
+          <div className="relative bg-surface-muted px-6 py-8 md:bg-transparent md:grid md:min-h-[320px] md:grid-cols-12 md:items-center md:px-12 lg:px-16">
+            <div className="md:col-span-6 md:col-start-7">
+              <div className="flex flex-col items-center gap-10 text-center md:items-end md:text-right">
+                <div className="flex w-full flex-col items-center gap-3 md:items-end">
                   <h2 className="m-0 max-w-[520px] font-heading text-[28px] md:text-[36px] lg:text-[48px] font-medium leading-[1.2]">
                     <span className="text-brand-secondary">
                       {cta.titleParts.primary}

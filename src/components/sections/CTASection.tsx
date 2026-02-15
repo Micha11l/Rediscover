@@ -21,8 +21,8 @@ export function CtaSection() {
           className="relative w-full overflow-hidden rounded-[24px]"
           data-testid="cta-banner"
         >
-          {/* Background image (decorative) */}
-          <div className="absolute inset-0" aria-hidden="true">
+          {/* Background image: stacked on mobile, absolute overlay on md+ */}
+          <div className="relative h-[200px] md:absolute md:inset-0 md:h-auto" aria-hidden="true">
             <Image
               src="/images/banner.png"
               alt=""
@@ -33,8 +33,8 @@ export function CtaSection() {
             />
           </div>
 
-          {/* Content grid (no fake padding-left magic) */}
-          <div className="relative grid min-h-[320px] grid-cols-12 items-center px-8 py-10 md:px-12 lg:px-16">
+          {/* Content: solid bg on mobile, transparent overlay on md+ */}
+          <div className="relative bg-surface-muted px-6 py-8 md:bg-transparent md:grid md:min-h-[320px] md:grid-cols-12 md:items-center md:px-12 lg:px-16">
             {/* Put content on the right side */}
             <div className="col-span-12 md:col-span-6 md:col-start-7">
               <div className="flex flex-col items-center gap-10 text-center md:items-end md:text-right">
