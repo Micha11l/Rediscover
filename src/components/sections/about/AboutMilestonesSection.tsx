@@ -1,7 +1,9 @@
-import { aboutCopy } from "@/content/aboutCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { aboutContent } from "@/content/aboutCopy";
 
-export function AboutAchievementsSection() {
-  const { achievements } = aboutCopy;
+export function AboutAchievementsSection({ lang }: { lang: Language }) {
+  const { achievements } = pickContent(aboutContent, lang);
 
   return (
     <section data-testid="about-achievements" className="w-full bg-surface-base">

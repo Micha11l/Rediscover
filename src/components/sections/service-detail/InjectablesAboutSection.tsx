@@ -1,7 +1,9 @@
-import { injectablesCopy } from "@/content/injectablesCopy";
+import { injectablesContent } from "@/content/injectablesCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function InjectablesAboutSection() {
-  const { about, treatments } = injectablesCopy;
+export function InjectablesAboutSection({ lang }: { lang: Language }) {
+  const { about, treatments } = pickContent(injectablesContent, lang);
 
   return (
     <section data-testid="injectables-about" className="w-full bg-surface-base">

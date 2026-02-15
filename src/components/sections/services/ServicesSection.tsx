@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { servicesContent } from "@/content/servicesCopy";
 
 /**
  * Services Section
@@ -15,52 +18,6 @@ import Link from "next/link";
  * - Bottom overlay with backdrop blur + service title
  * - Clickable navigation to service detail page
  */
-
-interface ServiceCardData {
-  id: number;
-  title: string;
-  image: string;
-  href: string;
-}
-
-const SERVICES: ServiceCardData[] = [
-  {
-    id: 1,
-    title: "Anti-Aging",
-    image: "/images/services/anti-aging.png",
-    href: "/services/anti-aging",
-  },
-  {
-    id: 2,
-    title: "Laser & Light Therapy",
-    image: "/images/services/laser-therapy.png",
-    href: "/services/laser-light-therapy",
-  },
-  {
-    id: 3,
-    title: "Skin Care & Wellness",
-    image: "/images/services/skin-care.png",
-    href: "/services/skin-care-wellness",
-  },
-  {
-    id: 4,
-    title: "Body Contouring & Weight Loss",
-    image: "/images/services/body-contouring.png",
-    href: "/services/body-contouring-weight-loss",
-  },
-  {
-    id: 5,
-    title: "Injectables",
-    image: "/images/services/injectables.png",
-    href: "/services/injectables",
-  },
-  {
-    id: 6,
-    title: "Continuously Expanding Treatments",
-    image: "/images/services/expanding-treatments.png",
-    href: "/services/expanding-treatments",
-  },
-];
 
 /**
  * Service Card Component
@@ -105,7 +62,9 @@ function ServiceCard({
   );
 }
 
-export function ServicesSection() {
+export function ServicesSection({ lang }: { lang: Language }) {
+  const { headline, cards } = pickContent(servicesContent, lang);
+
   return (
     <section
       className="w-full bg-surface-base py-[100px]"
@@ -120,25 +79,23 @@ export function ServicesSection() {
             {/* Title (left) */}
             <div className="lg:col-span-7">
               <h2 className="m-0 max-w-[488px] font-heading text-heading-xl font-medium leading-tight lg:min-h-[104px]">
-                <span className="text-text-primary">Restore. </span>
-                <span className="text-brand-secondary">Refine.</span>
-                <span className="text-text-primary"> Reveal.</span>
+                <span className="text-text-primary">{headline.titleParts.restore} </span>
+                <span className="text-brand-secondary">{headline.titleParts.refine}</span>
+                <span className="text-text-primary"> {headline.titleParts.reveal}</span>
               </h2>
             </div>
 
       {/* Description (right) */}
       <div className="lg:col-span-5 lg:flex lg:justify-end">
         <p className="m-0 max-w-[348px] font-body text-body font-normal leading-[1.6] text-brand-secondary lg:min-h-[104px] lg:text-right">
-          From advanced device treatments to personalized skin care solutions, we
-          offer aesthetic and wellness services designed to deliver visible,
-          long-term results.
+          {headline.description}
         </p>
         </div>
       </div>
 
           {/* Service Cards Grid */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-20">
-            {SERVICES.map((service) => (
+            {cards.map((service) => (
               <ServiceCard
                 key={service.id}
                 title={service.title}

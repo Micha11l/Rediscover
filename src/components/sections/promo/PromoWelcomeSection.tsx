@@ -1,8 +1,10 @@
 import { DecorativeDivider } from "@/components/ui";
-import { promoCopy } from "@/content/promoCopy";
+import { promoContent } from "@/content/promoCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function PromoWelcomeSection() {
-  const { welcome } = promoCopy;
+export function PromoWelcomeSection({ lang }: { lang: Language }) {
+  const { welcome } = pickContent(promoContent, lang);
 
   return (
     <section data-testid="promo-welcome" className="w-full">

@@ -5,14 +5,16 @@ import {
   TermsCarePromiseSection,
 } from "@/components/sections/terms";
 import { ForceTopOnLoad } from "@/components/utils/ForceTopOnLoad.client";
+import { getLanguage } from "@/lib/i18n";
 
-export default function TermsPage() {
+export default async function TermsPage() {
+  const lang = await getLanguage();
   return (
     <main className="min-h-screen w-full">
       <ForceTopOnLoad />
-      <TermsHeroSection />
-      <TermsContentSection />
-      <TermsCarePromiseSection />
+      <TermsHeroSection lang={lang} />
+      <TermsContentSection lang={lang} />
+      <TermsCarePromiseSection lang={lang} />
       <FooterSection />
     </main>
   );

@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-type CardLabel = "Before" | "After";
-
 function ImageCard({
   src,
   alt,
@@ -9,7 +7,7 @@ function ImageCard({
 }: {
   src: string;
   alt: string;
-  label: CardLabel;
+  label: string;
 }) {
   return (
     <div className="relative h-[291px] w-full overflow-hidden rounded-[30px]">
@@ -27,7 +25,13 @@ function ImageCard({
   );
 }
 
-export function Morpheus8BeforeAfterPair() {
+export function Morpheus8BeforeAfterPair({
+  beforeLabel = "Before",
+  afterLabel = "After",
+}: {
+  beforeLabel?: string;
+  afterLabel?: string;
+} = {}) {
   return (
     <div
       data-testid="morpheus8-before-after-pair"
@@ -36,12 +40,12 @@ export function Morpheus8BeforeAfterPair() {
       <ImageCard
         src="/images/anti-aging/morpheus8-Before.png"
         alt="Morpheus8 treatment - before"
-        label="Before"
+        label={beforeLabel}
       />
       <ImageCard
         src="/images/anti-aging/morpheus8-After.png"
         alt="Morpheus8 treatment - after"
-        label="After"
+        label={afterLabel}
       />
     </div>
   );

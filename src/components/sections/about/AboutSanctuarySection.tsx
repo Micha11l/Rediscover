@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { aboutCopy } from "@/content/aboutCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { aboutContent } from "@/content/aboutCopy";
 
-export function AboutClinicSection() {
-  const { clinic } = aboutCopy;
+export function AboutClinicSection({ lang }: { lang: Language }) {
+  const { clinic } = pickContent(aboutContent, lang);
 
   return (
     <section data-testid="about-clinic" className="w-full bg-surface-base">

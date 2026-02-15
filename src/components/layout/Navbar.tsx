@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { MobileMenuDrawer } from "./MobileMenuDrawer";
 
@@ -44,6 +44,7 @@ export interface NavbarProps {
  */
 export function Navbar({ variant = "dark", className = "" }: NavbarProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const { language, setLanguage, t } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -103,24 +104,30 @@ export function Navbar({ variant = "dark", className = "" }: NavbarProps) {
         })}
       </div>
 
-      {/* Language Switcher (Desktop) */}
-      <div className={`hidden h-8 w-[53px] shrink-0 items-center justify-center gap-1 ${textColor} lg:flex`}>
-        <button
-          onClick={() => setLanguage("en")}
-          className={`font-heading text-button leading-none transition-opacity ${language === "en" ? "" : "opacity-50"}`}
-          aria-label="Switch to English"
-        >
-          A
-        </button>
-        <span className={variant === "dark" ? "text-text-inverse/50" : "text-text-primary/50"}>|</span>
-        <button
-          onClick={() => setLanguage("zh")}
-          className={`font-heading text-button leading-none transition-opacity ${language === "zh" ? "" : "opacity-50"}`}
-          aria-label="Switch to Chinese"
-        >
-          文
-        </button>
-      </div>
+       {/* Language Switcher (Desktop) */}
+       <div className={`hidden h-8 w-[53px] shrink-0 items-center justify-center gap-1 ${textColor} lg:flex`}>
+         <button
+           onClick={() => {
+             setLanguage("en");
+             router.refresh();
+           }}
+           className={`font-heading text-button leading-none transition-opacity ${language === "en" ? "" : "opacity-50"}`}
+           aria-label="Switch to English"
+         >
+           A
+         </button>
+         <span className={variant === "dark" ? "text-text-inverse/50" : "text-text-primary/50"}>|</span>
+         <button
+           onClick={() => {
+             setLanguage("zh");
+             router.refresh();
+           }}
+           className={`font-heading text-button leading-none transition-opacity ${language === "zh" ? "" : "opacity-50"}`}
+           aria-label="Switch to Chinese"
+         >
+           文
+         </button>
+       </div>
 
       {/* Mobile Menu Button */}
       <button

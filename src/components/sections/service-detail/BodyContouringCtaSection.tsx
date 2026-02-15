@@ -1,9 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { bodyContouringCopy } from "@/content/bodyContouringCopy";
+import { pickContent } from "@/lib/i18n";
+import { bodyContouringContent } from "@/content/bodyContouringCopy";
+import type { Language } from "@/i18n/types";
 
-export function BodyContouringCtaSection() {
-  const { cta } = bodyContouringCopy;
+interface BodyContouringCtaSectionProps {
+  lang: Language;
+}
+
+export function BodyContouringCtaSection({ lang }: BodyContouringCtaSectionProps) {
+  const { cta } = pickContent(bodyContouringContent, lang);
 
   return (
     <section className="w-full" data-testid="body-contouring-cta">

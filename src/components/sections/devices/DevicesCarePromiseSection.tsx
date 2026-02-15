@@ -1,8 +1,14 @@
 import Image from "next/image";
-import { devicesCopy } from "@/content/devicesCopy";
+import { devicesContent } from "@/content/devicesCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function DevicesCarePromiseSection() {
-  const { carePromise } = devicesCopy;
+interface DevicesCarePromiseSectionProps {
+  lang: Language;
+}
+
+export function DevicesCarePromiseSection({ lang }: DevicesCarePromiseSectionProps) {
+  const { carePromise } = pickContent(devicesContent, lang);
 
   return (
     <section

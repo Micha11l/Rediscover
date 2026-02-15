@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { Navbar } from "@/components/layout";
-import { termsCopy } from "@/content/termsCopy";
+import { termsContent } from "@/content/termsCopy";
+import { uiStrings } from "@/content/shared";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
 
-export function TermsHeroSection() {
-  const { hero, introduction } = termsCopy;
+export function TermsHeroSection({ lang }: { lang: Language }) {
+  const { hero } = pickContent(termsContent, lang);
+  const ui = pickContent(uiStrings, lang);
 
   return (
     <section data-testid="terms-hero" className="w-full bg-surface-base">
@@ -21,7 +25,7 @@ export function TermsHeroSection() {
               href="/"
               className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
             >
-              Home
+              {ui.breadcrumbs.home}
             </Link>
             <span
               aria-hidden="true"
@@ -33,7 +37,7 @@ export function TermsHeroSection() {
               aria-current="page"
               className="font-heading text-button font-normal leading-none text-text-primary"
             >
-              Terms & Conditions
+              {ui.breadcrumbs.termsConditions}
             </span>
           </nav>
 
@@ -42,7 +46,7 @@ export function TermsHeroSection() {
               {hero.title}
             </h1>
             <p className="mx-auto max-w-none font-body text-body leading-[1.6] text-brand-secondary">
-              Effective Date: {hero.effectiveDate}
+              {ui.labels.effectiveDate}: {hero.effectiveDate}
             </p>
           </div>
         </div>

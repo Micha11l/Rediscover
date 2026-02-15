@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { laserCopy } from "@/content/laserCopy";
+import { laserContent } from "@/content/laserCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
 
-export function LaserCtaSection() {
-  const { cta } = laserCopy;
+export function LaserCtaSection({ lang }: { lang: Language }) {
+  const { cta } = pickContent(laserContent, lang);
 
   return (
     <section className="w-full" data-testid="laser-cta">

@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { privacyCopy } from "@/content/privacyCopy";
+import { privacyContent } from "@/content/privacyCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
 
-export function PrivacyCarePromiseSection() {
-  const { carePromise } = privacyCopy;
+export function PrivacyCarePromiseSection({ lang }: { lang: Language }) {
+  const { carePromise } = pickContent(privacyContent, lang);
 
   return (
     <section

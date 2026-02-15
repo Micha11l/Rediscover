@@ -1,5 +1,8 @@
 import Image from "next/image";
-import { aboutCopy } from "@/content/aboutCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { aboutContent } from "@/content/aboutCopy";
+import { uiStrings } from "@/content/shared";
 
 function ClockIcon() {
   return (
@@ -54,8 +57,9 @@ function HouseIcon() {
   );
 }
 
-export function AboutContactSection() {
-  const { contact } = aboutCopy;
+export function AboutContactSection({ lang }: { lang: Language }) {
+  const { contact } = pickContent(aboutContent, lang);
+  const ui = pickContent(uiStrings, lang);
 
   return (
     <section data-testid="about-contact" className="w-full bg-surface-base">
@@ -73,7 +77,7 @@ export function AboutContactSection() {
             </div>
             <div className="flex flex-col items-center gap-4">
               <h3 className="m-0 font-heading text-[28px] font-medium leading-[1.1] text-text-primary md:text-[32px]">
-                Contact
+                {ui.labels.contact}
               </h3>
               <div className="flex flex-col items-center">
                 <p className="m-0 font-body text-[18px] leading-[1.4] text-brand-secondary md:text-[20px]">
@@ -92,7 +96,7 @@ export function AboutContactSection() {
             </div>
             <div className="flex flex-col items-center gap-4">
               <h3 className="m-0 font-heading text-[28px] font-medium leading-[1.1] text-text-primary md:text-[32px]">
-                Opening Hours
+                {ui.labels.openingHours}
               </h3>
               <div className="flex flex-col items-center">
                 <p className="m-0 font-body text-[18px] leading-[1.4] text-brand-secondary md:text-[20px]">
@@ -111,7 +115,7 @@ export function AboutContactSection() {
             </div>
             <div className="flex flex-col items-center gap-4">
               <h3 className="m-0 font-heading text-[28px] font-medium leading-[1.1] text-text-primary md:text-[32px]">
-                Address
+                {ui.labels.address}
               </h3>
               <p className="m-0 text-center font-body text-[18px] leading-[1.4] text-brand-secondary md:text-[20px]">
                 {contact.address}

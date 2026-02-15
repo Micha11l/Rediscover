@@ -82,8 +82,8 @@
      (Variables injected by Next.js font loader)
      ========================================================================== */
 
-  --font-heading: var(--font-bricolage), "Bricolage Grotesque", system-ui, sans-serif;
-  --font-body: var(--font-schibsted), "Schibsted Grotesk", system-ui, sans-serif;
+   --font-heading: var(--font-bricolage), "Bricolage Grotesque", var(--font-noto-sc), "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+   --font-body: var(--font-schibsted), "Schibsted Grotesk", var(--font-noto-sc), "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
 
   /* Legacy aliases */
   --font-sans: var(--font-heading);

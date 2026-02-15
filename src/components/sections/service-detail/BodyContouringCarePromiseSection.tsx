@@ -1,8 +1,14 @@
 import Image from "next/image";
-import { bodyContouringCopy } from "@/content/bodyContouringCopy";
+import { pickContent } from "@/lib/i18n";
+import { bodyContouringContent } from "@/content/bodyContouringCopy";
+import type { Language } from "@/i18n/types";
 
-export function BodyContouringCarePromiseSection() {
-  const { carePromise } = bodyContouringCopy;
+interface BodyContouringCarePromiseSectionProps {
+  lang: Language;
+}
+
+export function BodyContouringCarePromiseSection({ lang }: BodyContouringCarePromiseSectionProps) {
+  const { carePromise } = pickContent(bodyContouringContent, lang);
 
   return (
     <section

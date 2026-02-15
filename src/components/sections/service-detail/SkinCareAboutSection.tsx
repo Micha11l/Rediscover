@@ -1,7 +1,9 @@
-import { skinCareCopy } from "@/content/skinCareCopy";
+import { skinCareContent } from "@/content/skinCareCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function SkinCareAboutSection() {
-  const { aboutSkinCare, facialTreatments } = skinCareCopy;
+export function SkinCareAboutSection({ lang }: { lang: Language }) {
+  const { aboutSkinCare, facialTreatments } = pickContent(skinCareContent, lang);
 
   return (
     <section data-testid="skin-care-about" className="w-full bg-surface-base">

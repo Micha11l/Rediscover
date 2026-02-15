@@ -17,14 +17,20 @@ import {
 } from "@/components/sections/service-detail";
 import { DecorativeDivider } from "@/components/ui";
 import { ForceTopOnLoad } from "@/components/utils/ForceTopOnLoad.client";
-import { antiAgingContent } from "@/content/antiAgingPage";
-import { laserCopy } from "@/content/laserCopy";
+import { antiAgingPageContent } from "@/content/antiAgingPage";
+import { laserContent } from "@/content/laserCopy";
+import { uiStrings } from "@/content/shared";
+import { getLanguage, pickContent } from "@/lib/i18n";
 
-export default function LaserLightTherapyPage() {
+export default async function LaserLightTherapyPage() {
+  const lang = await getLanguage();
+  const laserCopy = pickContent(laserContent, lang);
+  const antiAgingContent = pickContent(antiAgingPageContent, lang);
+  const ui = pickContent(uiStrings, lang);
   return (
     <main className="min-h-screen w-full">
       <ForceTopOnLoad />
-      <LaserHeroSection />
+      <LaserHeroSection lang={lang} />
 
       <LaserAboutSection
         id="lumecca"
@@ -49,6 +55,8 @@ export default function LaserLightTherapyPage() {
         afterSrc={laserCopy.lumecca.beforeAfter.afterSrc}
         beforeAlt={laserCopy.lumecca.beforeAfter.beforeAlt}
         afterAlt={laserCopy.lumecca.beforeAfter.afterAlt}
+        beforeLabel={ui.labels.before}
+        afterLabel={ui.labels.after}
       />
 
       <DecorativeDivider className="py-12" />
@@ -76,6 +84,8 @@ export default function LaserLightTherapyPage() {
         afterSrc={laserCopy.pigmentation.beforeAfter.afterSrc}
         beforeAlt={laserCopy.pigmentation.beforeAfter.beforeAlt}
         afterAlt={laserCopy.pigmentation.beforeAfter.afterAlt}
+        beforeLabel={ui.labels.before}
+        afterLabel={ui.labels.after}
       />
 
       <DecorativeDivider className="py-12" />
@@ -89,12 +99,12 @@ export default function LaserLightTherapyPage() {
         groups={laserCopy.hairRemoval.groups}
       />
 
-      <TestimonialsCarousel testimonials={antiAgingContent.testimonials} />
+      <TestimonialsCarousel testimonials={antiAgingContent.testimonials} headingLine1={ui.labels.yourWords} headingLine2={ui.labels.ourPride} />
 
-      <LaserFaqSection />
+      <LaserFaqSection lang={lang} />
 
-      <LaserCtaSection />
-      <LaserCarePromiseSection />
+      <LaserCtaSection lang={lang} />
+      <LaserCarePromiseSection lang={lang} />
       <FooterSection />
     </main>
   );

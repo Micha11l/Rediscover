@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { promoCopy } from "@/content/promoCopy";
+import { promoContent } from "@/content/promoCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function PromoCtaSection() {
-  const { cta } = promoCopy;
+export function PromoCtaSection({ lang }: { lang: Language }) {
+  const { cta } = pickContent(promoContent, lang);
 
   return (
     <section className="w-full" data-testid="promo-cta">

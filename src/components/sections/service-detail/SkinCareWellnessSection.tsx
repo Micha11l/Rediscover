@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { skinCareCopy } from "@/content/skinCareCopy";
+import { skinCareContent } from "@/content/skinCareCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function SkinCareWellnessSection() {
-  const { aboutWellness, wellnessTreatments } = skinCareCopy;
+export function SkinCareWellnessSection({ lang }: { lang: Language }) {
+  const { aboutWellness, wellnessTreatments } = pickContent(skinCareContent, lang);
   const bodyMassage = wellnessTreatments.find((t) => t.type === "duration");
   const lymphaticDrainage = wellnessTreatments.find((t) => t.type === "vip-reg");
 

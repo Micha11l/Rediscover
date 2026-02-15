@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { rmtCopy } from "@/content/rmtCopy";
+import { rmtContent } from "@/content/rmtCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function RmtCtaSection() {
-  const { cta } = rmtCopy;
+export function RmtCtaSection({ lang }: { lang: Language }) {
+  const { cta } = pickContent(rmtContent, lang);
 
   return (
     <section className="w-full" data-testid="rmt-cta">

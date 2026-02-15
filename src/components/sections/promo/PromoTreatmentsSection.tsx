@@ -1,6 +1,8 @@
 import Image from "next/image";
-import { promoCopy } from "@/content/promoCopy";
+import { promoContent } from "@/content/promoCopy";
 import type { PromoTreatment } from "@/content/promoCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
 function TreatmentCard({ treatment }: { treatment: PromoTreatment }) {
   return (
@@ -32,8 +34,8 @@ function TreatmentCard({ treatment }: { treatment: PromoTreatment }) {
   );
 }
 
-export function PromoTreatmentsSection() {
-  const { treatments } = promoCopy;
+export function PromoTreatmentsSection({ lang }: { lang: Language }) {
+  const { treatments } = pickContent(promoContent, lang);
 
   return (
     <section data-testid="promo-treatments" className="w-full">
@@ -50,12 +52,7 @@ export function PromoTreatmentsSection() {
           </h2>
 
           <p className="m-0 max-w-[800px] text-center font-body text-[16px] font-light leading-[1.4] text-brand-secondary">
-            <span className="lg:whitespace-nowrap">
-              Our most requested treatments, specially curated for first-time
-              clients to experience our signature
-            </span>
-            <br className="hidden lg:inline" />
-            <span>care at VIP pricing.</span>
+            {treatments.subtitle}
           </p>
         </div>
 

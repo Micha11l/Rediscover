@@ -1,4 +1,6 @@
-import { termsCopy, TermsSection, TermsSubsection } from "@/content/termsCopy";
+import { termsContent, TermsSection, TermsSubsection } from "@/content/termsCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
 
 function renderParagraphs(paragraphs?: string[]) {
   if (!paragraphs || paragraphs.length === 0) return null;
@@ -65,8 +67,8 @@ function SectionBlock({ section }: { section: TermsSection }) {
   );
 }
 
-export function TermsContentSection() {
-  const { introduction, sections } = termsCopy;
+export function TermsContentSection({ lang }: { lang: Language }) {
+  const { introduction, sections } = pickContent(termsContent, lang);
 
   return (
     <section data-testid="terms-content" className="w-full bg-surface-base pb-16">

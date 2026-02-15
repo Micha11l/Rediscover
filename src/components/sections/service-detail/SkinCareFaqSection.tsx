@@ -1,7 +1,17 @@
 import { FaqAccordion } from "@/components/sections/faq";
-import { skinCareCopy } from "@/content/skinCareCopy";
+import { skinCareContent } from "@/content/skinCareCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function SkinCareFaqSection() {
+export function SkinCareFaqSection({ lang }: { lang: Language }) {
+  const faqHeading = lang === "zh" 
+    ? { part1: "需要更多", part2: "信息", part3: "？" }
+    : { part1: "Need More ", part2: "Information", part3: "?" };
+  
+  const faqSubtitle = lang === "zh"
+    ? "清晰解答，帮助您自信准备疗程。"
+    : "Clear answers to help you prepare for your treatment with confidence.";
+
   return (
     <section
       data-testid="skin-care-faq"
@@ -14,16 +24,16 @@ export function SkinCareFaqSection() {
             id="skin-care-faq-heading"
             className="font-heading text-heading-xl font-medium leading-tight"
           >
-            <span className="text-brand-secondary">Need More </span>
-            <span className="text-text-primary">Information</span>
-            <span className="text-brand-secondary">?</span>
+            <span className="text-brand-secondary">{faqHeading.part1}</span>
+            <span className="text-text-primary">{faqHeading.part2}</span>
+            <span className="text-brand-secondary">{faqHeading.part3}</span>
           </h2>
           <p className="font-body text-body leading-relaxed text-brand-secondary">
-            Clear answers to help you prepare for your treatment with confidence.
+            {faqSubtitle}
           </p>
         </div>
 
-        <FaqAccordion items={skinCareCopy.faq.items} />
+        <FaqAccordion items={pickContent(skinCareContent, lang).faq.items} />
       </div>
     </section>
   );

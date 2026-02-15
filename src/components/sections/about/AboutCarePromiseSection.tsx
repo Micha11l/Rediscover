@@ -1,4 +1,6 @@
-import { aboutCopy } from "@/content/aboutCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { aboutContent } from "@/content/aboutCopy";
 
 function HighlightedText({
   text,
@@ -49,8 +51,8 @@ function HighlightedText({
   );
 }
 
-export function AboutTeamDescSection() {
-  const { teamDescription } = aboutCopy;
+export function AboutTeamDescSection({ lang }: { lang: Language }) {
+  const { teamDescription } = pickContent(aboutContent, lang);
 
   return (
     <section data-testid="about-team-desc" className="w-full bg-surface-base">

@@ -1,7 +1,27 @@
 import { FaqAccordion } from "@/components/sections/faq";
-import { injectablesCopy } from "@/content/injectablesCopy";
+import { injectablesContent } from "@/content/injectablesCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function InjectablesFaqSection() {
+const headingText = {
+  en: {
+    part1: "Need More ",
+    part2: "Information",
+    part3: "?",
+    subtitle: "Clear answers to help you prepare for your treatment with confidence.",
+  },
+  zh: {
+    part1: "需要更多",
+    part2: "资讯",
+    part3: "?",
+    subtitle: "清晰解答，帮助您充分准备，安心接受疗程。",
+  },
+};
+
+export function InjectablesFaqSection({ lang }: { lang: Language }) {
+  const copy = pickContent(injectablesContent, lang);
+  const heading = pickContent(headingText, lang);
+
   return (
     <section
       data-testid="injectables-faq"
@@ -14,16 +34,16 @@ export function InjectablesFaqSection() {
             id="injectables-faq-heading"
             className="font-heading text-heading-xl font-medium leading-tight"
           >
-            <span className="text-brand-secondary">Need More </span>
-            <span className="text-text-primary">Information</span>
-            <span className="text-brand-secondary">?</span>
+            <span className="text-brand-secondary">{heading.part1}</span>
+            <span className="text-text-primary">{heading.part2}</span>
+            <span className="text-brand-secondary">{heading.part3}</span>
           </h2>
           <p className="font-body text-body leading-relaxed text-brand-secondary">
-            Clear answers to help you prepare for your treatment with confidence.
+            {heading.subtitle}
           </p>
         </div>
 
-        <FaqAccordion items={injectablesCopy.faq.items} />
+        <FaqAccordion items={copy.faq.items} />
       </div>
     </section>
   );

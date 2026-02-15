@@ -1,6 +1,8 @@
 import Image from "next/image";
-import { rmtCopy } from "@/content/rmtCopy";
+import { rmtContent } from "@/content/rmtCopy";
 import type { RmtTreatment } from "@/content/rmtCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
 function TreatmentCard({ treatment }: { treatment: RmtTreatment }) {
   return (
@@ -74,8 +76,8 @@ function CuppingCard({ treatment }: { treatment: RmtTreatment }) {
   );
 }
 
-export function RmtPricingSection() {
-  const { pricingSection, treatments } = rmtCopy;
+export function RmtPricingSection({ lang }: { lang: Language }) {
+  const { pricingSection, treatments } = pickContent(rmtContent, lang);
   const rmtTreatment = treatments[0];
   const aromaTreatment = treatments[1];
   const cuppingTreatment = treatments[2];

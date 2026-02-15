@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { skinCareCopy } from "@/content/skinCareCopy";
+import { skinCareContent } from "@/content/skinCareCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function SkinCareCarePromiseSection() {
-  const { carePromise } = skinCareCopy;
+export function SkinCareCarePromiseSection({ lang }: { lang: Language }) {
+  const { carePromise } = pickContent(skinCareContent, lang);
 
   return (
     <section

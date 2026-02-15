@@ -1,10 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout";
-import { bodyContouringCopy } from "@/content/bodyContouringCopy";
+import { pickContent } from "@/lib/i18n";
+import { bodyContouringContent } from "@/content/bodyContouringCopy";
+import type { Language } from "@/i18n/types";
+import { uiStrings } from "@/content/shared";
 
-export function BodyContouringHeroSection() {
-  const { hero } = bodyContouringCopy;
+interface BodyContouringHeroSectionProps {
+  lang: Language;
+}
+
+export function BodyContouringHeroSection({ lang }: BodyContouringHeroSectionProps) {
+  const { hero } = pickContent(bodyContouringContent, lang);
+  const ui = pickContent(uiStrings, lang);
 
   return (
     <section data-testid="body-contouring-hero" className="w-full bg-surface-base">
@@ -24,7 +32,7 @@ export function BodyContouringHeroSection() {
               href="/"
               className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
             >
-              Home
+              {ui.breadcrumbs.home}
             </Link>
             <span
               aria-hidden="true"
@@ -36,7 +44,7 @@ export function BodyContouringHeroSection() {
               href="/services"
               className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
             >
-              Services
+              {ui.breadcrumbs.services}
             </Link>
             <span
               aria-hidden="true"

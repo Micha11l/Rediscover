@@ -8,17 +8,20 @@ import {
   PromoCarePromiseSection,
 } from "@/components/sections/promo";
 import { ForceTopOnLoad } from "@/components/utils/ForceTopOnLoad.client";
+import { getLanguage } from "@/lib/i18n";
 
-export default function PromoPage() {
+export default async function PromoPage() {
+  const lang = await getLanguage();
+
   return (
     <main className="min-h-screen w-full">
       <ForceTopOnLoad />
-      <PromoHeroSection />
-      <PromoWelcomeSection />
-      <PromoTreatmentsSection />
-      <PromoGuidelineSection />
-      <PromoCtaSection />
-      <PromoCarePromiseSection />
+      <PromoHeroSection lang={lang} />
+      <PromoWelcomeSection lang={lang} />
+      <PromoTreatmentsSection lang={lang} />
+      <PromoGuidelineSection lang={lang} />
+      <PromoCtaSection lang={lang} />
+      <PromoCarePromiseSection lang={lang} />
       <FooterSection />
     </main>
   );

@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { laserCopy } from "@/content/laserCopy";
+import { laserContent } from "@/content/laserCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
 
-export function LaserCarePromiseSection() {
-  const { carePromise } = laserCopy;
+export function LaserCarePromiseSection({ lang }: { lang: Language }) {
+  const { carePromise } = pickContent(laserContent, lang);
 
   return (
     <section

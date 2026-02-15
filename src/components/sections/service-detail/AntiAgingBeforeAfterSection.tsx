@@ -9,6 +9,9 @@
 import { BeforeAfterGrid } from "@/components/sections/shared";
 import { Morpheus8BeforeAfterPair } from "./Morpheus8BeforeAfterPair";
 import { FormaBeforeAfterGrid } from "./FormaBeforeAfterGrid";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { uiStrings } from "@/content/shared";
 
 /* ==========================================================================
    SOFWAVE BEFORE/AFTER SECTION
@@ -28,7 +31,8 @@ const SOFWAVE_IMAGES = [
   },
 ];
 
-export function SofwaveBeforeAfterSection() {
+export function SofwaveBeforeAfterSection({ lang }: { lang: Language }) {
+  const ui = pickContent(uiStrings, lang);
   return (
     <section
       data-testid="sofwave-before-after"
@@ -38,6 +42,8 @@ export function SofwaveBeforeAfterSection() {
         <BeforeAfterGrid
           id="sofwave-results"
           images={SOFWAVE_IMAGES}
+          beforeLabel={ui.labels.before}
+          afterLabel={ui.labels.after}
         />
       </div>
     </section>
@@ -64,7 +70,8 @@ const THERMAGE_IMAGES = [
   },
 ];
 
-export function ThermageBeforeAfterSection() {
+export function ThermageBeforeAfterSection({ lang }: { lang: Language }) {
+  const ui = pickContent(uiStrings, lang);
   return (
     <section
       data-testid="thermage-before-after"
@@ -74,6 +81,8 @@ export function ThermageBeforeAfterSection() {
         <BeforeAfterGrid
           id="thermage-results"
           images={THERMAGE_IMAGES}
+          beforeLabel={ui.labels.before}
+          afterLabel={ui.labels.after}
         />
       </div>
     </section>
@@ -98,14 +107,15 @@ const MORPHEUS8_IMAGES = [
   },
 ];
 
-export function Morpheus8BeforeAfterSection() {
+export function Morpheus8BeforeAfterSection({ lang }: { lang: Language }) {
+  const ui = pickContent(uiStrings, lang);
   return (
     <section
       data-testid="morpheus8-before-after"
       className="w-full bg-surface-base"
     >
       <div className="mx-auto w-full max-w-[1440px] px-4 pb-16 md:px-8 lg:px-16 xl:px-[100px]">
-        <Morpheus8BeforeAfterPair />
+        <Morpheus8BeforeAfterPair beforeLabel={ui.labels.before} afterLabel={ui.labels.after} />
       </div>
     </section>
   );
@@ -129,14 +139,15 @@ const FORMA_IMAGES = [
   },
 ];
 
-export function FormaBeforeAfterSection() {
+export function FormaBeforeAfterSection({ lang }: { lang: Language }) {
+  const ui = pickContent(uiStrings, lang);
   return (
     <section
       data-testid="forma-before-after"
       className="w-full bg-surface-base"
     >
       <div className="mx-auto w-full max-w-[1440px] px-4 pb-16 md:px-8 lg:px-16 xl:px-[100px]">
-        <FormaBeforeAfterGrid />
+        <FormaBeforeAfterGrid beforeLabel={ui.labels.before} afterLabel={ui.labels.after} />
       </div>
     </section>
   );

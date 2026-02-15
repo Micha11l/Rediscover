@@ -1,7 +1,13 @@
 import { FaqAccordion } from "@/components/sections/faq";
-import { bodyContouringCopy } from "@/content/bodyContouringCopy";
+import { pickContent } from "@/lib/i18n";
+import { bodyContouringContent } from "@/content/bodyContouringCopy";
+import type { Language } from "@/i18n/types";
 
-export function BodyContouringFaqSection() {
+interface BodyContouringFaqSectionProps {
+  lang: Language;
+}
+
+export function BodyContouringFaqSection({ lang }: BodyContouringFaqSectionProps) {
   return (
     <section
       data-testid="body-contouring-faq"
@@ -23,7 +29,7 @@ export function BodyContouringFaqSection() {
           </p>
         </div>
 
-        <FaqAccordion items={bodyContouringCopy.faq.items} />
+        <FaqAccordion items={pickContent(bodyContouringContent, lang).faq.items} />
       </div>
     </section>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Schibsted_Grotesk, Noto_Sans_SC } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./Providers";
+import { getLanguage } from "@/lib/i18n";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -29,9 +30,10 @@ export const metadata: Metadata = {
   description: "Beauva website",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const lang = await getLanguage();
   return (
-    <html lang="en" className={`${bricolageGrotesque.variable} ${schibstedGrotesk.variable} ${notoSansSC.variable}`}>
+    <html lang={lang} className={`${bricolageGrotesque.variable} ${schibstedGrotesk.variable} ${notoSansSC.variable}`}>
       <body>
         <Providers>{children}</Providers>
       </body>

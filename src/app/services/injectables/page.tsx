@@ -8,18 +8,24 @@ import {
   TestimonialsCarousel,
 } from "@/components/sections/service-detail";
 import { ForceTopOnLoad } from "@/components/utils/ForceTopOnLoad.client";
-import { injectablesCopy } from "@/content/injectablesCopy";
+import { injectablesContent } from "@/content/injectablesCopy";
+import { uiStrings } from "@/content/shared";
+import { getLanguage, pickContent } from "@/lib/i18n";
 
-export default function InjectablesPage() {
+export default async function InjectablesPage() {
+  const lang = await getLanguage();
+  const copy = pickContent(injectablesContent, lang);
+  const ui = pickContent(uiStrings, lang);
+
   return (
     <main className="min-h-screen w-full">
       <ForceTopOnLoad />
-      <InjectablesHeroSection />
-      <InjectablesAboutSection />
-      <TestimonialsCarousel testimonials={injectablesCopy.testimonials} />
-      <InjectablesFaqSection />
-      <InjectablesCtaSection />
-      <InjectablesCarePromiseSection />
+      <InjectablesHeroSection lang={lang} />
+      <InjectablesAboutSection lang={lang} />
+      <TestimonialsCarousel testimonials={copy.testimonials} headingLine1={ui.labels.yourWords} headingLine2={ui.labels.ourPride} />
+      <InjectablesFaqSection lang={lang} />
+      <InjectablesCtaSection lang={lang} />
+      <InjectablesCarePromiseSection lang={lang} />
       <FooterSection />
     </main>
   );

@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { aboutCopy } from "@/content/aboutCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { aboutContent } from "@/content/aboutCopy";
 
-export function AboutTeamSection() {
-  const { team } = aboutCopy;
+export function AboutTeamSection({ lang }: { lang: Language }) {
+  const { team } = pickContent(aboutContent, lang);
 
   const titleParts = team.title.split(" ");
   const firstThreeWords = titleParts.slice(0, 3).join(" ");

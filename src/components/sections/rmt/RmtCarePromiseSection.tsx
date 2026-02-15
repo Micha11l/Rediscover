@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { rmtCopy } from "@/content/rmtCopy";
+import { rmtContent } from "@/content/rmtCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function RmtCarePromiseSection() {
-  const { carePromise } = rmtCopy;
+export function RmtCarePromiseSection({ lang }: { lang: Language }) {
+  const { carePromise } = pickContent(rmtContent, lang);
 
   return (
     <section

@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-type CardLabel = "Before" | "After";
-
 function HalfImage({
   src,
   alt,
@@ -11,7 +9,7 @@ function HalfImage({
 }: {
   src: string;
   alt: string;
-  label: CardLabel;
+  label: string;
   labelClassName?: string;
   imgClassName?: string;
 }) {
@@ -40,11 +38,15 @@ function HalfImage({
 function BeforeAfterPair({
   before,
   after,
+  beforeLabel = "Before",
+  afterLabel = "After",
   afterLabelClassName,
   afterImageClassName,
 }: {
   before: { src: string; alt: string };
   after: { src: string; alt: string };
+  beforeLabel?: string;
+  afterLabel?: string;
   afterLabelClassName?: string;
   afterImageClassName?: string;
 }) {
@@ -54,7 +56,7 @@ function BeforeAfterPair({
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* 左：Before（外侧圆角由外层负责，这里不要圆角） */}
         <div className="relative">
-          <HalfImage src={before.src} alt={before.alt} label="Before" />
+          <HalfImage src={before.src} alt={before.alt} label={beforeLabel} />
           {/* 可选：中间分隔线（只在 md+） */}
           <div className="pointer-events-none absolute right-0 top-0 hidden h-full w-px bg-white/30 md:block" />
         </div>
@@ -64,7 +66,7 @@ function BeforeAfterPair({
           <HalfImage
             src={after.src}
             alt={after.alt}
-            label="After"
+            label={afterLabel}
             labelClassName={afterLabelClassName}
             imgClassName={afterImageClassName}
           />
@@ -87,14 +89,20 @@ const FORMA_PAIRS = [
   },
 ];
 
-export function FormaBeforeAfterGrid() {
+export function FormaBeforeAfterGrid({
+  beforeLabel = "Before",
+  afterLabel = "After",
+}: {
+  beforeLabel?: string;
+  afterLabel?: string;
+} = {}) {
   return (
     <div data-testid="forma-before-after-grid" className="flex flex-col gap-4">
       {/* 上面一组 */}
-      <BeforeAfterPair before={FORMA_PAIRS[0].before} after={FORMA_PAIRS[0].after} afterImageClassName="object-[25%_50%] scale-[1.105]" />
+      <BeforeAfterPair before={FORMA_PAIRS[0].before} after={FORMA_PAIRS[0].after} beforeLabel={beforeLabel} afterLabel={afterLabel} afterImageClassName="object-[25%_50%] scale-[1.105]" />
 
       {/* 下面一组 */}
-      <BeforeAfterPair before={FORMA_PAIRS[1].before} after={FORMA_PAIRS[1].after} />
+      <BeforeAfterPair before={FORMA_PAIRS[1].before} after={FORMA_PAIRS[1].after} beforeLabel={beforeLabel} afterLabel={afterLabel} />
     </div>
   );
 }

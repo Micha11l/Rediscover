@@ -1,14 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout";
-import { laserCopy } from "@/content/laserCopy";
+import { laserContent } from "@/content/laserCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { uiStrings } from "@/content/shared";
 
 /**
  * Laser & Light Therapy Hero Section
  * Layout mirrors AntiAgingHeroSection with laser-specific copy and assets.
  */
-export function LaserHeroSection() {
-  const { hero } = laserCopy;
+export function LaserHeroSection({ lang }: { lang: Language }) {
+  const { hero } = pickContent(laserContent, lang);
+  const ui = pickContent(uiStrings, lang);
 
   return (
     <section data-testid="laser-hero" className="w-full bg-surface-base">
@@ -32,7 +36,7 @@ export function LaserHeroSection() {
               href="/"
               className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
             >
-              Home
+              {ui.breadcrumbs.home}
             </Link>
             <span
               aria-hidden="true"
@@ -44,7 +48,7 @@ export function LaserHeroSection() {
               href="/services"
               className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
             >
-              Services
+              {ui.breadcrumbs.services}
             </Link>
             <span
               aria-hidden="true"
@@ -56,7 +60,7 @@ export function LaserHeroSection() {
               aria-current="page"
               className="font-heading text-button font-normal leading-none text-text-primary"
             >
-              Laser &amp; Light Therapy
+              {hero.breadcrumbLabel}
             </span>
           </nav>
 

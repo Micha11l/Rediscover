@@ -1,11 +1,15 @@
-import { antiAgingCopy, type TreatmentId } from "@/content/antiAgingCopy";
+import { antiAgingContent, type TreatmentId } from "@/content/antiAgingCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
 export function ServiceFaqBlockSection({
   treatment,
+  lang,
 }: {
   treatment: TreatmentId;
+  lang: Language;
 }) {
-  const data = antiAgingCopy[treatment].faq;
+  const data = pickContent(antiAgingContent, lang)[treatment].faq;
   const sectionId = `serviceFaqBlock-${treatment}`;
 
   return (
@@ -20,7 +24,7 @@ export function ServiceFaqBlockSection({
   {/* Row 1 */}
   <div className="grid grid-cols-1 gap-10 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
     <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1] text-brand-secondary">
-      Key Benefits of{" "}
+      {data.keyBenefitsTitle}{" "}
       <span className="text-text-primary">{data.title}</span>
     </h2>
 
@@ -62,8 +66,8 @@ export function ServiceFaqBlockSection({
   {/* Row 2 */}
   <div className="mt-[72px] grid grid-cols-1 gap-10 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
     <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1] text-brand-secondary">
-      What {data.title}{" "}
-      <span className="text-text-primary">Can Help With</span>
+      {lang === "zh" ? data.title : `What ${data.title}`}{" "}
+      <span className="text-text-primary">{data.canHelpWithTitle}</span>
     </h2>
 
     <ul data-testid="faq-helps-list" className="flex flex-col gap-2">

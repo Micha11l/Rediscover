@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const NAV_LINKS = [
@@ -22,6 +22,7 @@ export interface MobileMenuDrawerProps {
 
 export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const { language, setLanguage, t } = useLanguage();
 
   const isActive = (href: string) => {
@@ -113,31 +114,37 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
           })}
         </nav>
 
-        <div className="absolute bottom-8 left-0 right-0 px-6">
-          <div className="flex items-center justify-center gap-4 rounded-lg bg-surface-secondary py-3">
-            <button
-              onClick={() => setLanguage("en")}
-              className={`
-                font-heading text-lg transition-opacity
-                ${language === "en" ? "text-text-primary" : "text-text-primary/50"}
-              `}
-              aria-label="Switch to English"
-            >
-              A
-            </button>
-            <span className="text-text-primary/30">|</span>
-            <button
-              onClick={() => setLanguage("zh")}
-              className={`
-                font-heading text-lg transition-opacity
-                ${language === "zh" ? "text-text-primary" : "text-text-primary/50"}
-              `}
-              aria-label="Switch to Chinese"
-            >
-              文
-            </button>
-          </div>
-        </div>
+         <div className="absolute bottom-8 left-0 right-0 px-6">
+           <div className="flex items-center justify-center gap-4 rounded-lg bg-surface-secondary py-3">
+             <button
+               onClick={() => {
+                 setLanguage("en");
+                 router.refresh();
+               }}
+               className={`
+                 font-heading text-lg transition-opacity
+                 ${language === "en" ? "text-text-primary" : "text-text-primary/50"}
+               `}
+               aria-label="Switch to English"
+             >
+               A
+             </button>
+             <span className="text-text-primary/30">|</span>
+             <button
+               onClick={() => {
+                 setLanguage("zh");
+                 router.refresh();
+               }}
+               className={`
+                 font-heading text-lg transition-opacity
+                 ${language === "zh" ? "text-text-primary" : "text-text-primary/50"}
+               `}
+               aria-label="Switch to Chinese"
+             >
+               文
+             </button>
+           </div>
+         </div>
       </div>
     </>
   );

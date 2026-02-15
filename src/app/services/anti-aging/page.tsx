@@ -21,42 +21,46 @@ import {
   ServiceFaqBlockSection,
   TestimonialsCarousel,
 } from "@/components/sections/service-detail";
-import { antiAgingContent } from "@/content/antiAgingPage";
+import { antiAgingPageContent } from "@/content/antiAgingPage";
+import { uiStrings } from "@/content/shared";
 import { DecorativeDivider } from "@/components/ui";
 import { ForceTopOnLoad } from "@/components/utils/ForceTopOnLoad.client";
+import { getLanguage, pickContent } from "@/lib/i18n";
 
+export default async function AntiAgingPage() {
+  const lang = await getLanguage();
+  const content = pickContent(antiAgingPageContent, lang);
+  const ui = pickContent(uiStrings, lang);
 
-
-export default function AntiAgingPage() {
   return (
     <main className="min-h-screen w-full">
       <ForceTopOnLoad />
-      <AntiAgingHeroSection />
+      <AntiAgingHeroSection lang={lang} />
 
-      <SofwaveAboutSection />
-      <SofwaveRecommendedSection />
-      <ServiceFaqBlockSection treatment="sofwave" />
-      <SofwaveBeforeAfterSection />
+      <SofwaveAboutSection lang={lang} />
+      <SofwaveRecommendedSection lang={lang} />
+      <ServiceFaqBlockSection treatment="sofwave" lang={lang} />
+      <SofwaveBeforeAfterSection lang={lang} />
       <DecorativeDivider className="py-12" />
 
-      <ThermageAboutSection />
-      <ThermageRecommendedSection />
-      <ServiceFaqBlockSection treatment="thermage" />
-      <ThermageBeforeAfterSection />
+      <ThermageAboutSection lang={lang} />
+      <ThermageRecommendedSection lang={lang} />
+      <ServiceFaqBlockSection treatment="thermage" lang={lang} />
+      <ThermageBeforeAfterSection lang={lang} />
       <DecorativeDivider className="py-12" />
 
-      <Morpheus8AboutSection />
-      <Morpheus8RecommendedSection />
-      <ServiceFaqBlockSection treatment="morpheus8" />
-      <Morpheus8BeforeAfterSection />
+      <Morpheus8AboutSection lang={lang} />
+      <Morpheus8RecommendedSection lang={lang} />
+      <ServiceFaqBlockSection treatment="morpheus8" lang={lang} />
+      <Morpheus8BeforeAfterSection lang={lang} />
       <DecorativeDivider className="py-12" />
 
-      <FormaAboutSection />
-      <FormaRecommendedSection />
-      <ServiceFaqBlockSection treatment="forma" />
-      <FormaBeforeAfterSection />
+      <FormaAboutSection lang={lang} />
+      <FormaRecommendedSection lang={lang} />
+      <ServiceFaqBlockSection treatment="forma" lang={lang} />
+      <FormaBeforeAfterSection lang={lang} />
 
-      <TestimonialsCarousel testimonials={antiAgingContent.testimonials} />
+      <TestimonialsCarousel testimonials={content.testimonials} headingLine1={ui.labels.yourWords} headingLine2={ui.labels.ourPride} />
 
       <AntiAgingFaqSection />
 

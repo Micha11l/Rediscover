@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { antiAgingCopy } from "@/content/antiAgingCopy";
+import { antiAgingContent } from "@/content/antiAgingCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
 interface LayoutTweaks {
   leftTopPx?: number;
@@ -180,8 +182,8 @@ export function AntiAgingAboutSection({
   );
 }
 
-export function SofwaveAboutSection() {
-  const copy = antiAgingCopy.sofwave;
+export function SofwaveAboutSection({ lang }: { lang: Language }) {
+  const copy = pickContent(antiAgingContent, lang).sofwave;
   return (
     <AntiAgingAboutSection
       id="sofwave"
@@ -200,8 +202,8 @@ export function SofwaveAboutSection() {
   );
 }
 
-export function ThermageAboutSection() {
-  const copy = antiAgingCopy.thermage;
+export function ThermageAboutSection({ lang }: { lang: Language }) {
+  const copy = pickContent(antiAgingContent, lang).thermage;
   return (
     <AntiAgingAboutSection
       id="thermage-flx"
@@ -230,8 +232,8 @@ export function ThermageAboutSection() {
   );
 }
 
-export function Morpheus8AboutSection() {
-  const copy = antiAgingCopy.morpheus8;
+export function Morpheus8AboutSection({ lang }: { lang: Language }) {
+  const copy = pickContent(antiAgingContent, lang).morpheus8;
   return (
     <AntiAgingAboutSection
       id="morpheus8"
@@ -261,8 +263,8 @@ export function Morpheus8AboutSection() {
   );
 }
 
-export function FormaAboutSection() {
-  const copy = antiAgingCopy.forma;
+export function FormaAboutSection({ lang }: { lang: Language }) {
+  const copy = pickContent(antiAgingContent, lang).forma;
   return (
     <AntiAgingAboutSection
       id="forma"

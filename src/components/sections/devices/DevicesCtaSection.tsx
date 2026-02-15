@@ -1,9 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { devicesCopy } from "@/content/devicesCopy";
+import { devicesContent } from "@/content/devicesCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function DevicesCtaSection() {
-  const { cta } = devicesCopy;
+interface DevicesCtaSectionProps {
+  lang: Language;
+}
+
+export function DevicesCtaSection({ lang }: DevicesCtaSectionProps) {
+  const { cta } = pickContent(devicesContent, lang);
 
   return (
     <section className="w-full" data-testid="devices-cta">

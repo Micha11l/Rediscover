@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { Navbar } from "@/components/layout";
-import { faqCopy } from "@/content/faqCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { faqContent } from "@/content/faqCopy";
+import { uiStrings } from "@/content/shared";
 
-export function FaqPageHeroSection() {
-  const { hero } = faqCopy;
+export function FaqPageHeroSection({ lang }: { lang: Language }) {
+  const { hero } = pickContent(faqContent, lang);
+  const ui = pickContent(uiStrings, lang);
 
   return (
     <section data-testid="faq-hero" className="w-full bg-surface-base">
@@ -21,7 +25,7 @@ export function FaqPageHeroSection() {
               href="/"
               className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
             >
-              Home
+              {ui.breadcrumbs.home}
             </Link>
             <span
               aria-hidden="true"
@@ -33,7 +37,7 @@ export function FaqPageHeroSection() {
               aria-current="page"
               className="font-heading text-button font-normal leading-none text-text-primary"
             >
-              FAQ
+              {ui.breadcrumbs.faq}
             </span>
           </nav>
 

@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout";
-import { promoCopy } from "@/content/promoCopy";
+import { promoContent } from "@/content/promoCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function PromoHeroSection() {
-  const { hero } = promoCopy;
+export function PromoHeroSection({ lang }: { lang: Language }) {
+  const { hero } = pickContent(promoContent, lang);
 
   return (
     <section data-testid="promo-hero" className="relative w-full min-h-[700px]">

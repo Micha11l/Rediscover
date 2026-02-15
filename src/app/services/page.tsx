@@ -1,3 +1,4 @@
+import { getLanguage } from "@/lib/i18n";
 import {
   ServicesHeroSection,
   ServicesSection,
@@ -15,14 +16,16 @@ import {
  * Displays all available aesthetic and wellness services.
  * Sections are composed here and rendered in order.
  */
-export default function ServicesPage() {
+export default async function ServicesPage() {
+  const lang = await getLanguage();
+
   return (
     <main className="min-h-screen w-full bg-surface-base">
       {/* Hero Section */}
-      <ServicesHeroSection />
+      <ServicesHeroSection lang={lang} />
 
       {/* Services List Grid */}
-      <ServicesSection />
+      <ServicesSection lang={lang} />
 
       {/* Call to Action */}
       <CtaSection />

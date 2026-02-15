@@ -11,7 +11,7 @@ export const zh: Translations = {
     promo: "优惠活动",
   },
   hero: {
-    title: ["Rediscover", "Beauty", "Begins Here"],
+    title: ["Rediscover", "Beauty", "由此开始"],
     subtitle:
       "融合先进医学美容科技与整体护理理念，为您的肌肤、身体与身心健康量身定制专属方案。",
     ctaButton: "探索服务",

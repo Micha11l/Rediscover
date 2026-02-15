@@ -1,3 +1,4 @@
+import { getLanguage, pickContent } from "@/lib/i18n";
 import { FooterSection } from "@/components/sections";
 import {
   BodyContouringHeroSection,
@@ -9,21 +10,26 @@ import {
 } from "@/components/sections/service-detail";
 import { DecorativeDivider } from "@/components/ui";
 import { ForceTopOnLoad } from "@/components/utils/ForceTopOnLoad.client";
-import { bodyContouringCopy } from "@/content/bodyContouringCopy";
+import { bodyContouringContent } from "@/content/bodyContouringCopy";
+import { uiStrings } from "@/content/shared";
 
-export default function BodyContouringWeightLossPage() {
+export default async function BodyContouringWeightLossPage() {
+  const lang = await getLanguage();
+  const copy = pickContent(bodyContouringContent, lang);
+  const ui = pickContent(uiStrings, lang);
+
   return (
     <main className="min-h-screen w-full">
       <ForceTopOnLoad />
-      <BodyContouringHeroSection />
-      <BodyContouringTreatmentSection {...bodyContouringCopy.treatments[0]} className="!pt-[72px] !pb-[106px]" />
-      <BodyContouringTreatmentSection {...bodyContouringCopy.treatments[1]} className="!pt-0 !pb-[77px]" />
+      <BodyContouringHeroSection lang={lang} />
+      <BodyContouringTreatmentSection {...copy.treatments[0]} className="!pt-[72px] !pb-[106px]" />
+      <BodyContouringTreatmentSection {...copy.treatments[1]} className="!pt-0 !pb-[77px]" />
       <DecorativeDivider className="!py-0" />
-      <BodyContouringTreatmentSection {...bodyContouringCopy.treatments[2]} className="!pt-[75px] !pb-[100px]" />
-      <TestimonialsCarousel testimonials={bodyContouringCopy.testimonials} />
-      <BodyContouringFaqSection />
-      <BodyContouringCtaSection />
-      <BodyContouringCarePromiseSection />
+      <BodyContouringTreatmentSection {...copy.treatments[2]} className="!pt-[75px] !pb-[100px]" />
+      <TestimonialsCarousel testimonials={copy.testimonials} headingLine1={ui.labels.yourWords} headingLine2={ui.labels.ourPride} />
+      <BodyContouringFaqSection lang={lang} />
+      <BodyContouringCtaSection lang={lang} />
+      <BodyContouringCarePromiseSection lang={lang} />
       <FooterSection />
     </main>
   );

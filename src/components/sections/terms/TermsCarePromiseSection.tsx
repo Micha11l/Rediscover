@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { termsCopy } from "@/content/termsCopy";
+import { termsContent } from "@/content/termsCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
 
-export function TermsCarePromiseSection() {
-  const { carePromise } = termsCopy;
+export function TermsCarePromiseSection({ lang }: { lang: Language }) {
+  const { carePromise } = pickContent(termsContent, lang);
 
   return (
     <section

@@ -1,7 +1,9 @@
-import { promoCopy } from "@/content/promoCopy";
+import { promoContent } from "@/content/promoCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function PromoGuidelineSection() {
-  const { guideline } = promoCopy;
+export function PromoGuidelineSection({ lang }: { lang: Language }) {
+  const { guideline } = pickContent(promoContent, lang);
 
   return (
     <section data-testid="promo-guideline" className="w-full">

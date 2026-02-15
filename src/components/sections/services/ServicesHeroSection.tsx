@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Navbar } from "@/components/layout";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { servicesContent } from "@/content/servicesCopy";
 
 /**
  * Services Hero Section
@@ -17,7 +20,8 @@ import { Navbar } from "@/components/layout";
  * - Includes breadcrumb navigation
  * - Centered logo symbol above heading
  */
-export function ServicesHeroSection() {
+export function ServicesHeroSection({ lang }: { lang: Language }) {
+  const { hero } = pickContent(servicesContent, lang);
   return (
     <section
       className="relative isolate min-h-[55vh] w-full overflow-hidden sm:min-h-[60vh] lg:min-h-[584px]"
@@ -57,11 +61,11 @@ export function ServicesHeroSection() {
 
           {/* Heading */}
           <h1 className="text-center font-heading text-heading-lg font-medium leading-tight text-text-inverse sm:text-heading-xl lg:text-display">
-            Personalized Aesthetic
+            {hero.titleLines[0]}
             <br />
-            &amp;
+            {hero.titleLines[1]}
             <br />
-            Wellness Treatments
+            {hero.titleLines[2]}
           </h1>
 
           {/* Breadcrumb */}
@@ -73,7 +77,7 @@ export function ServicesHeroSection() {
               href="/"
               className="font-heading text-body-lg font-semibold leading-none text-brand-secondary-light transition-colors hover:text-text-inverse"
             >
-              Home
+              {hero.breadcrumbs.home}
             </Link>
             <span
               aria-hidden="true"
@@ -85,7 +89,7 @@ export function ServicesHeroSection() {
               aria-current="page"
               className="font-heading text-body-lg font-normal leading-none text-surface-elevated"
             >
-              Services
+              {hero.breadcrumbs.services}
             </span>
           </nav>
         </div>

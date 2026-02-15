@@ -1,14 +1,17 @@
 import Image from "next/image";
 import type { DeviceTechnology } from "@/content/devicesCopy";
 import { DecorativeDivider } from "@/components/ui";
+import type { Language } from "@/i18n/types";
 
 interface DeviceTechnologySectionProps {
   technology: DeviceTechnology;
+  lang: Language;
   showDivider?: boolean;
 }
 
 export function DeviceTechnologySection({
   technology,
+  lang,
   showDivider = true,
 }: DeviceTechnologySectionProps) {
   const whyName = technology.title.replace(/[®™]/g, "").replace(/ Technology$/, "").trim();

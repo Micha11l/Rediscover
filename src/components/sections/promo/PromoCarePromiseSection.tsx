@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { promoCopy } from "@/content/promoCopy";
+import { promoContent } from "@/content/promoCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function PromoCarePromiseSection() {
-  const { carePromise } = promoCopy;
+export function PromoCarePromiseSection({ lang }: { lang: Language }) {
+  const { carePromise } = pickContent(promoContent, lang);
 
   return (
     <section

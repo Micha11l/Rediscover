@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { uiStrings } from "@/content/shared";
 
 /**
  * Anti-Aging Hero Section
@@ -20,7 +23,8 @@ const PROCESS_ITEMS = [
   { id: "forma", label: "Forma", href: "#forma" },
 ];
 
-export function AntiAgingHeroSection() {
+export function AntiAgingHeroSection({ lang }: { lang: Language }) {
+  const ui = pickContent(uiStrings, lang);
   return (
     <section
       data-testid="anti-aging-hero"
@@ -46,7 +50,7 @@ export function AntiAgingHeroSection() {
               href="/"
               className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
             >
-              Home
+              {ui.breadcrumbs.home}
             </Link>
             <span
               aria-hidden="true"
@@ -58,7 +62,7 @@ export function AntiAgingHeroSection() {
               href="/services"
               className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
             >
-              Services
+              {ui.breadcrumbs.services}
             </Link>
             <span
               aria-hidden="true"
@@ -70,18 +74,19 @@ export function AntiAgingHeroSection() {
               aria-current="page"
               className="font-heading text-button font-normal leading-none text-text-primary"
             >
-              Anti-Aging
+              {ui.breadcrumbs.antiAging}
             </span>
           </nav>
 
           {/* Headline */}
           <div className="flex w-full flex-col gap-4 text-center">
             <h1 className="font-heading text-display font-medium leading-[1.2] text-text-primary">
-              Anti-Aging
+              {ui.breadcrumbs.antiAging}
             </h1>
             <p className="mx-auto max-w-none font-body text-body leading-[1.6] text-brand-secondary">
-              Advanced technologies designed to lift, tighten, and support skin
-              at a deeper structural level.
+              {lang === "en"
+                ? "Advanced technologies designed to lift, tighten, and support skin at a deeper structural level."
+                : "先进技术，旨在提升、紧致并从更深层次支持肌肤结构。"}
             </p>
           </div>
 

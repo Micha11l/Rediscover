@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { injectablesCopy } from "@/content/injectablesCopy";
+import { injectablesContent } from "@/content/injectablesCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function InjectablesCtaSection() {
-  const { cta } = injectablesCopy;
+export function InjectablesCtaSection({ lang }: { lang: Language }) {
+  const { cta } = pickContent(injectablesContent, lang);
 
   return (
     <section className="w-full" data-testid="injectables-cta">

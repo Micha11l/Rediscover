@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { faqCopy } from "@/content/faqCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { faqContent } from "@/content/faqCopy";
 
-export function FaqPageCarePromiseSection() {
-  const { carePromise } = faqCopy;
+export function FaqPageCarePromiseSection({ lang }: { lang: Language }) {
+  const { carePromise } = pickContent(faqContent, lang);
 
   return (
     <section

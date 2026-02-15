@@ -80,7 +80,7 @@ export type SkinCareCopy = {
   };
 };
 
-export const skinCareCopy: SkinCareCopy = {
+const skinCareCopyEn: SkinCareCopy = {
   hero: {
     title: "Skin Care & Wellness",
     subtitle:
@@ -299,4 +299,234 @@ export const skinCareCopy: SkinCareCopy = {
       alt: "Care promise banner",
     },
   },
+};
+
+const skinCareCopyZh: SkinCareCopy = {
+  hero: {
+    title: "护肤与养生",
+    subtitle:
+      "个性化护肤与养生疗程，致力于滋养、修复与维持肌肤健康。",
+    breadcrumbLabel: "护肤与养生",
+    image: {
+      src: "/images/skincare/hero.png",
+      alt: "护肤与养生疗程",
+    },
+  },
+
+  aboutSkinCare: {
+    titleAccent: "关于",
+    titlePrimary: "护肤服务",
+    paragraphs: [
+      {
+        text: "我们的护肤服务专注于通过温和、有效且个性化的面部护理来恢复肌肤健康。",
+      },
+      {
+        text: "从深层补水、氧气疗法到舒缓排毒面部护理，我们的疗程结合专业技术与精选产品，针对干燥、暗沉、堵塞和敏感等常见问题。",
+      },
+      {
+        text: "所有护肤服务均根据个人肌肤状况和需求定制，提供放松体验与可见改善，且无需恢复期。",
+      },
+    ],
+  },
+
+  aboutWellness: {
+    titleAccent: "关于",
+    titlePrimary: "养生",
+    paragraphs: [
+      {
+        text: "我们的养生服务专注于放松、促进循环和整体身心平衡，采用温和的手法疗程。旨在缓解紧张、减少体液积聚并促进淋巴流动，这些疗程支持身体舒适与肌肤活力。",
+      },
+      {
+        text: "每次疗程均根据个人需求定制，提供舒缓体验与可见焕新，且无需恢复期。",
+      },
+    ],
+  },
+
+  facialTreatments: [
+    {
+      id: "facial-ultra-boosting",
+      title: "美拉提水光肌",
+      effect:
+        "深层提升肌肤活力与紧致度，帮助疲惫肌肤看起来更饱满、更焕发。",
+      duration: "90 分钟",
+      vipPrice: "$128",
+      regPrice: "$198",
+    },
+    {
+      id: "facial-hydration",
+      title: "保湿嫩白",
+      effect:
+        "强效补充水分，改善干燥，平滑肌肤纹理，恢复健康光泽。",
+      duration: "90 分钟",
+      vipPrice: "$98",
+      regPrice: "$138",
+    },
+    {
+      id: "facial-oxygen",
+      title: "小气泡清洁",
+      effect:
+        "焕活暗沉、疲惫的肌肤，改善循环，提升肌肤明亮度与清透感。",
+      duration: "90 分钟",
+      vipPrice: "$138",
+      regPrice: "$168",
+    },
+    {
+      id: "facial-dewy-glow",
+      title: "深海活氧焕颜水疗",
+      effect:
+        "提升肌肤光泽与平滑度，打造水润透亮的光泽肌。",
+      duration: "90 分钟",
+      vipPrice: "$168",
+      regPrice: "$228",
+    },
+    {
+      id: "facial-detoxing",
+      title: "面部桃花灸护理",
+      effect:
+        "减少浮肿，促进淋巴引流，提供深度放松的疗程体验。",
+      duration: "90 分钟",
+      vipPrice: "$98",
+      regPrice: "$158",
+    },
+    {
+      id: "facial-cool-down",
+      title: "舒敏肌肤新生管理",
+      effect:
+        "舒缓敏感或受刺激的肌肤，减少红肿，恢复舒适与水分。",
+      duration: "90 分钟",
+      vipPrice: "$158",
+      regPrice: "$198",
+    },
+    {
+      id: "facial-advanced",
+      title: "面部基础护理",
+      effect:
+        "高效基础面部护理，专注于清洁、补水与基础肌肤维护。",
+      duration: "60 分钟",
+      vipPrice: "$80",
+      regPrice: "$120",
+    },
+    {
+      id: "facial-ultra-flawness",
+      title: "焕白无暇灯泡肌",
+      effect:
+        "改善肤色不均与暗沉，展现更清透、更明亮、更均匀的肌肤。",
+      duration: "90 分钟",
+      vipPrice: "$250",
+      regPrice: "$368",
+    },
+    {
+      id: "facial-laser-lifting",
+      title: "黑瓷娃娃",
+      effect:
+        "支持肌肤紧致与轮廓塑造，打造更紧实、更提拉的外观。",
+      duration: "90 分钟",
+      vipPrice: "$198",
+      regPrice: "$268",
+    },
+  ],
+
+  wellnessTreatments: [
+    {
+      id: "wellness-body-massage",
+      title: "专业身体按摩",
+      effect:
+        "缓解肌肉紧张，改善循环，促进整体放松与肌肤活力。",
+      type: "duration",
+      pricing: [
+        { duration: "60 分钟", price: "$80" },
+        { duration: "90 分钟", price: "$120" },
+      ],
+      image: {
+        src: "/images/skincare/body-massage.png",
+        alt: "身体按摩疗程",
+      },
+    },
+    {
+      id: "wellness-lymphatic-drainage",
+      title: "芳香经络疗法",
+      effect:
+        "支持淋巴流动，减少体液滞留与浮肿，促进轻盈焕新的感觉。",
+      type: "vip-reg",
+      vipPrice: "$128",
+      regPrice: "$200",
+    },
+  ],
+
+  testimonials: [
+    {
+      id: "testimonial-1",
+      quote:
+        "疗程后我注意到明显的提拉和紧致效果，特别是在下颌线和下面部区域。咨询非常全面且专业，整个过程感觉非常精准和安全。我很喜欢效果在接下来的几周内持续改善。",
+      name: "Emily R.",
+      role: "热玛吉客户",
+    },
+    {
+      id: "testimonial-2",
+      quote:
+        "仅一次疗程后，我的肌肤看起来更明亮、更平滑、更均匀。我最欣赏的是疗程的个性化——这不是千篇一律的方案。团队真正懂得如何护肤。",
+      name: "Sofia W.",
+      role: "光子嫩肤客户",
+    },
+    {
+      id: "testimonial-3",
+      quote:
+        "这是我第一次尝试医美疗程，我感到非常放心。所有细节都解释得很清楚，效果看起来自然焕新——正是我所期待的。",
+      name: "Jenna L.",
+      role: "初次客户",
+    },
+  ],
+
+  faq: {
+    items: [
+      {
+        id: "faq-suitable",
+        question: "这些疗程适合所有人吗？",
+        answer:
+          "大多数疗程适合广泛人群。然而，适用性取决于肌肤状况、病史和个人目标。需要进行专业咨询以确定最合适的疗程方案，并确保安全与最佳效果。",
+      },
+      {
+        id: "faq-prepare",
+        question: "预约前我需要做什么准备吗？",
+        answer:
+          "通常需要最少的准备。我们可能会建议在某些疗程前避免使用活性护肤成分、暴露在阳光下或进行注射疗程。具体说明将在咨询时提供。",
+      },
+      {
+        id: "faq-downtime",
+        question: "疗程后是否需要恢复期？",
+        answer:
+          "恢复期因疗程类型而异。许多疗程几乎不需要恢复期，让您能够快速恢复正常活动。某些疗程后可能会出现轻微红肿、肿胀或敏感，通常会在短时间内消退。",
+      },
+    ],
+  },
+
+  cta: {
+    title: "重塑美丽，由此开始",
+    titleParts: { primary: "重塑美丽", accent: "由此开始" },
+    body: "专业细致的美学护理，为您的肌肤与身体量身定制。",
+    buttonText: "预约咨询",
+    image: {
+      src: "/images/banner.png",
+      alt: "护肤咨询横幅",
+    },
+  },
+
+  carePromise: {
+    title: "我们的护理承诺",
+    titleParts: { primary: "我们的护理", accent: "承诺" },
+    body: "我们倡导细致入微、个性化的护理理念——以专业知识为指引，秉持透明与尊重您自然之美的原则。\n\n所有疗程均由经过培训和认证的专业人员提供。",
+    image: {
+      src: "/images/newsletter.png",
+      alt: "护理承诺",
+    },
+  },
+};
+
+// Backward-compatible default export for any code still importing skinCareCopy directly
+export const skinCareCopy = skinCareCopyEn;
+
+// Bilingual content object for new i18n pattern
+export const skinCareContent: { en: SkinCareCopy; zh: SkinCareCopy } = {
+  en: skinCareCopyEn,
+  zh: skinCareCopyZh,
 };

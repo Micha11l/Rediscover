@@ -26,12 +26,16 @@ export function LanguageProvider({
   // Browser detection and localStorage restoration on mount
   useEffect(() => {
     const saved = localStorage.getItem("language") as Language | null;
+    let lang: Language;
     if (saved) {
-      setLanguageState(saved);
+      lang = saved;
     } else {
       const browserLang = navigator.language || "en";
-      setLanguageState(browserLang.startsWith("zh") ? "zh" : "en");
+      lang = browserLang.startsWith("zh") ? "zh" : "en";
     }
+    setLanguageState(lang);
+    // Sync cookie for server components
+    document.cookie = `lang=${lang};path=/;max-age=${60 * 60 * 24 * 365};SameSite=Lax`;
     setMounted(true);
   }, []);
 
@@ -44,6 +48,8 @@ export function LanguageProvider({
 
   const setLanguage = (newLanguage: Language) => {
     setLanguageState(newLanguage);
+    // Sync cookie for server components
+    document.cookie = `lang=${newLanguage};path=/;max-age=${60 * 60 * 24 * 365};SameSite=Lax`;
   };
 
   const translations: Translations = language === "zh" ? zh : en;

@@ -1,7 +1,10 @@
 import { FaqAccordion } from "@/components/sections/faq";
-import { laserCopy } from "@/content/laserCopy";
+import { laserContent } from "@/content/laserCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
 
-export function LaserFaqSection() {
+export function LaserFaqSection({ lang }: { lang: Language }) {
+  const laserCopy = pickContent(laserContent, lang);
   return (
     <section
       data-testid="laser-faq"

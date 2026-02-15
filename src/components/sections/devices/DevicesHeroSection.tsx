@@ -1,10 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout";
-import { devicesCopy } from "@/content/devicesCopy";
+import { devicesContent } from "@/content/devicesCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
+import { uiStrings } from "@/content/shared";
 
-export function DevicesHeroSection() {
-  const { hero } = devicesCopy;
+interface DevicesHeroSectionProps {
+  lang: Language;
+}
+
+export function DevicesHeroSection({ lang }: DevicesHeroSectionProps) {
+  const { hero } = pickContent(devicesContent, lang);
+  const ui = pickContent(uiStrings, lang);
 
   return (
     <section data-testid="devices-hero" className="relative w-full">
@@ -48,7 +56,7 @@ export function DevicesHeroSection() {
               href="/"
               className="font-heading text-[20px] font-semibold leading-none text-brand-secondary-light no-underline transition-colors hover:text-text-inverse"
             >
-              Home
+              {ui.breadcrumbs.home}
             </Link>
             <span
               aria-hidden="true"

@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { injectablesCopy } from "@/content/injectablesCopy";
+import { injectablesContent } from "@/content/injectablesCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
 
-export function InjectablesCarePromiseSection() {
-  const { carePromise } = injectablesCopy;
+export function InjectablesCarePromiseSection({ lang }: { lang: Language }) {
+  const { carePromise } = pickContent(injectablesContent, lang);
 
   return (
     <section

@@ -12,6 +12,8 @@ export type TestimonialItem = {
 
 type TestimonialsCarouselProps = {
   testimonials: TestimonialItem[];
+  headingLine1?: string;
+  headingLine2?: string;
 };
 
 function ChevronLeftIcon({ className }: { className?: string }) {
@@ -54,6 +56,8 @@ function ChevronRightIcon({ className }: { className?: string }) {
 
 export function TestimonialsCarousel({
   testimonials,
+  headingLine1 = "Your Words,",
+  headingLine2 = "Our Pride",
 }: TestimonialsCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(() => {
@@ -110,8 +114,8 @@ export function TestimonialsCarousel({
       <Container>
         <div className="flex flex-col items-start gap-8 sm:flex-row sm:items-end sm:justify-between sm:gap-12 lg:gap-20">
           <h2 className="font-heading text-3xl font-medium leading-tight text-surface-muted sm:text-4xl lg:text-5xl">
-            <span className="block text-brand-secondary-light">Your Words,</span>
-            <span className="block text-surface-base">Our Pride</span>
+            <span className="block text-brand-secondary-light">{headingLine1}</span>
+            <span className="block text-surface-base">{headingLine2}</span>
           </h2>
 
           <div className="flex shrink-0 items-end gap-2">

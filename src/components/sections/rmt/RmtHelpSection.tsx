@@ -1,4 +1,10 @@
-export function RmtHelpSection() {
+import { rmtContent } from "@/content/rmtCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
+
+export function RmtHelpSection({ lang }: { lang: Language }) {
+  const { helpSection, insuranceSection } = pickContent(rmtContent, lang);
+
   return (
     <>
       <section data-testid="rmt-help" className="w-full">
@@ -6,31 +12,24 @@ export function RmtHelpSection() {
           <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
             <div className="lg:w-5/12">
               <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1]">
-                <span className="text-brand-secondary">What RMT </span>
-                <span className="text-text-primary">Can Help With?</span>
+                <span className="text-brand-secondary">{helpSection.title}</span>
               </h2>
               <p className="mb-0 mt-6 font-body text-[16px] leading-[1.6] text-brand-secondary">
-                Clinically focused therapeutic massage to support pain relief and recovery.
+                {helpSection.subtitle}
               </p>
             </div>
 
             <div className="flex flex-1 flex-col font-heading text-[24px] leading-[1.5]">
-              <p className="mb-0 text-text-primary">
-                Registered Massage Therapy may help support:
-              </p>
               <div className="h-[24px]" />
               <ul className="mb-0 list-disc pl-[36px] text-brand-secondary">
-                <li className="mb-0">Muscle tension and chronic pain</li>
-                <li className="mb-0">Neck, shoulder, and lower back discomfort</li>
-                <li className="mb-0">Postural strain from work or daily activities</li>
-                <li className="mb-0">Sports-related soreness or recovery</li>
-                <li className="mb-0">Stress relief and relaxation</li>
-                <li className="mb-0">Improved circulation and mobility</li>
+                {helpSection.bullets.map((bullet) => (
+                  <li key={bullet.id} className="mb-0">
+                    {bullet.text}
+                  </li>
+                ))}
               </ul>
               <div className="h-[24px]" />
-              <p className="mb-0 text-text-primary">
-                Each treatment plan is adjusted based on your comfort level and treatment goals.
-              </p>
+              <p className="mb-0 text-text-primary">{helpSection.closingParagraph}</p>
             </div>
           </div>
         </div>
@@ -47,25 +46,20 @@ export function RmtHelpSection() {
           <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
             <div className="lg:w-5/12">
               <h2 className="m-0 font-heading text-[56px] font-medium leading-[1.1]">
-                <span className="text-brand-secondary">Insurance & </span>
-                <span className="text-text-primary">Receipts</span>
+                <span className="text-brand-secondary">{insuranceSection.title}</span>
               </h2>
               <p className="mb-0 mt-6 font-body text-[16px] leading-[1.6] text-brand-secondary">
-                Coverage may vary by insurance provider.
+                {insuranceSection.subtitle}
               </p>
             </div>
 
             <div className="flex flex-1 flex-col font-heading text-[24px] leading-[1.5] text-text-primary">
               <ul className="mb-0 list-disc pl-[36px]">
-                <li className="mb-0">
-                  RMT services may be eligible for reimbursement under many extended health insurance plans
-                </li>
-              </ul>
-              <div className="h-[24px]" />
-              <ul className="mb-0 list-disc pl-[36px]">
-                <li className="mb-0 font-semibold">
-                  Official insurance receipts are provided upon request
-                </li>
+                {insuranceSection.bullets.map((bullet, i) => (
+                  <li key={i} className="mb-0">
+                    {bullet}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

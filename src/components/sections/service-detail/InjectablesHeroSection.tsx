@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout";
-import { injectablesCopy } from "@/content/injectablesCopy";
+import { injectablesContent } from "@/content/injectablesCopy";
+import { pickContent } from "@/lib/i18n";
+import type { Language } from "@/i18n/types";
+import { uiStrings } from "@/content/shared";
 
-export function InjectablesHeroSection() {
-  const { hero } = injectablesCopy;
+export function InjectablesHeroSection({ lang }: { lang: Language }) {
+  const { hero } = pickContent(injectablesContent, lang);
+  const ui = pickContent(uiStrings, lang);
 
   return (
     <section data-testid="injectables-hero" className="w-full bg-surface-base">
@@ -24,7 +28,7 @@ export function InjectablesHeroSection() {
               href="/"
               className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
             >
-              Home
+              {ui.breadcrumbs.home}
             </Link>
             <span
               aria-hidden="true"
@@ -36,7 +40,7 @@ export function InjectablesHeroSection() {
               href="/services"
               className="font-heading text-button font-normal leading-none text-brand-secondary no-underline transition-colors hover:text-text-primary"
             >
-              Services
+              {ui.breadcrumbs.services}
             </Link>
             <span
               aria-hidden="true"

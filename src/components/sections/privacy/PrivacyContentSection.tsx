@@ -1,4 +1,6 @@
-import { privacyCopy, PrivacySection, PrivacySubsection } from "@/content/privacyCopy";
+import { privacyContent, PrivacySection, PrivacySubsection } from "@/content/privacyCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
 
 function renderParagraphs(paragraphs?: string[]) {
   if (!paragraphs || paragraphs.length === 0) return null;
@@ -98,8 +100,8 @@ function SectionBlock({ section }: { section: PrivacySection }) {
   );
 }
 
-export function PrivacyContentSection() {
-  const { introduction, sections } = privacyCopy;
+export function PrivacyContentSection({ lang }: { lang: Language }) {
+  const { introduction, sections } = pickContent(privacyContent, lang);
 
   return (
     <section data-testid="privacy-content" className="w-full bg-surface-base pb-16">

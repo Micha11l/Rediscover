@@ -5,6 +5,8 @@ interface LaserBeforeAfterPairProps {
   afterSrc: string;
   beforeAlt: string;
   afterAlt: string;
+  beforeLabel?: string;
+  afterLabel?: string;
 }
 
 export function LaserBeforeAfterPair({
@@ -12,6 +14,8 @@ export function LaserBeforeAfterPair({
   afterSrc,
   beforeAlt,
   afterAlt,
+  beforeLabel = "Before",
+  afterLabel = "After",
 }: LaserBeforeAfterPairProps) {
   return (
     <section data-testid="laser-before-after" className="w-full bg-surface-base">
@@ -26,7 +30,7 @@ export function LaserBeforeAfterPair({
               className="object-cover object-center"
             />
             <span className="absolute bottom-[12px] left-[12px] font-heading text-base font-semibold text-surface-elevated md:bottom-[16px] md:left-[16px]">
-              Before
+              {beforeLabel}
             </span>
           </div>
           <div className="relative h-[291px] w-full overflow-hidden rounded-[30px]">
@@ -38,7 +42,7 @@ export function LaserBeforeAfterPair({
               className="object-cover object-center"
             />
             <span className="absolute bottom-[12px] left-[12px] font-heading text-base font-semibold text-surface-elevated md:bottom-[16px] md:left-[16px]">
-              After
+              {afterLabel}
             </span>
           </div>
         </div>

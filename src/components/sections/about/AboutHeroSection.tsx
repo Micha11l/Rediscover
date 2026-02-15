@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { Navbar } from "@/components/layout";
-import { aboutCopy } from "@/content/aboutCopy";
+import type { Language } from "@/i18n/types";
+import { pickContent } from "@/lib/i18n";
+import { aboutContent } from "@/content/aboutCopy";
 
-export function AboutHeroSection() {
-  const { hero } = aboutCopy;
+export function AboutHeroSection({ lang }: { lang: Language }) {
+  const { hero } = pickContent(aboutContent, lang);
 
   return (
     <section data-testid="about-hero" className="w-full bg-surface-base">

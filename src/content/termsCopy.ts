@@ -28,7 +28,7 @@ export type TermsCopy = {
   };
 };
 
-export const termsCopy: TermsCopy = {
+const termsCopyEn: TermsCopy = {
   hero: {
     title: "Terms & Conditions",
     effectiveDate: "January 25, 2026",
@@ -167,4 +167,152 @@ export const termsCopy: TermsCopy = {
       alt: "Care promise banner",
     },
   },
+};
+
+const termsCopyZh: TermsCopy = {
+  hero: {
+    title: "条款与条件",
+    effectiveDate: "2026年1月25日",
+  },
+
+  introduction:
+    "本条款与条件（以下简称\u201c条款\u201d）适用于您访问和使用 Rediscover Beauty Clinic（以下简称\u201c诊所\u201d、\u201c我们\u201d）所提供的服务，包括网站内容、疗程、预约及相关互动。",
+
+  sections: [
+    {
+      id: "acceptance",
+      title: "条款的接受",
+      paragraphs: [
+        "在 Rediscover Beauty Clinic 预约或接受任何服务，即表示您确认已阅读、理解并同意本条款及诊所的相关政策，包括隐私政策、预约与取消政策以及其他适用条款。",
+      ],
+    },
+    {
+      id: "service-description",
+      title: "服务说明",
+      paragraphs: [
+        "Rediscover Beauty Clinic 提供专业的医学美容及健康护理服务，包括但不限于：",
+      ],
+      bullets: [
+        "面部护理及皮肤管理服务",
+        "紧肤与抗衰老疗程",
+        "体型塑造及身体护理疗程",
+        "光电类医学美容疗程",
+        "注射类医美服务（如肉毒素和皮肤填充剂）",
+        "专业咨询及皮肤评估",
+      ],
+      afterBulletsParagraphs: [
+        "本网站上所有服务说明仅供一般信息参考。",
+        "实际治疗方案、操作流程和效果可能因个人状况、专业评估和适用性而异。\n\nRediscover Beauty Clinic 保留根据自身判断并在适用法律法规范围内修改、更新或停止任何服务的权利。",
+      ],
+    },
+    {
+      id: "eligibility",
+      title: "服务资格",
+      paragraphs: [
+        "您须年满 18 周岁，或在父母或法定监护人的同意和陪同下方可接受特定服务。\n\n某些疗程可能有特定的资格要求，我们保留基于适用性和安全考量拒绝提供服务的权利。",
+      ],
+    },
+    {
+      id: "appointment-scheduling",
+      title: "预约安排",
+      paragraphs: [
+        "预约通过电话、通讯平台、电子邮件或到店直接进行。我们不使用收集个人数据的自动在线预约系统。\n\n疗程的开始时间根据我们的日程安排和可用性确定。",
+      ],
+    },
+    {
+      id: "appointment-changes",
+      title: "预约变更与取消",
+      bullets: [
+        "预约变更或取消须至少提前 24 小时提交",
+        "当日取消或未到诊可能会产生取消费用，具体由诊所酌情决定",
+        "迟到可能导致疗程时间缩短，以避免影响其他客户",
+        "服务更换或替代需经诊所批准并视可用性而定，且可能存在价差",
+      ],
+    },
+    {
+      id: "service-fees",
+      title: "服务费用与定价",
+      bullets: [
+        "本网站及推广材料上显示的所有价格均为税前价格，除非另有说明",
+        "最终收费须加上适用的联邦和省税",
+        "服务价格可能因治疗部位、使用产品、治疗方案和专业评估而有所不同",
+        "价格、套餐和促销活动可能会在不另行通知的情况下更新或调整",
+        "预付服务、套餐和促销优惠不可退款、不可转让，除非经诊所批准",
+        "服务更换需经诊所批准，且视可用性和价差而定",
+        "所有价格仅供参考，最终以服务当日确认为准",
+        "网站上列出的价格如有变动，恕不另行通知",
+      ],
+    },
+    {
+      id: "payment-methods",
+      title: "接受的付款方式",
+      paragraphs: ["我们接受以下付款方式："],
+      bullets: [
+        "Cash",
+        "Debit",
+        "Credit Cards (Visa, Mastercard)",
+        "E-transfer",
+        "NFC mobile payments",
+      ],
+      afterBulletsParagraphs: [
+        "除另有约定外，服务时须全额付款。\n付款方式可能因服务类型或促销活动而异。",
+      ],
+    },
+    {
+      id: "treatment-expectations",
+      title: "疗程效果预期",
+      paragraphs: [
+        "治疗效果因人而异。我们提供的信息基于专业知识和经验，但不对特定效果作出任何保证。\n\n客户有责任遵循疗程前后的建议，以确保安全并获得最佳效果。",
+      ],
+    },
+    {
+      id: "professional-advice",
+      title: "专业建议",
+      paragraphs: [
+        "诊所提供的信息（包括网站内容和员工沟通）仅供参考，不能替代专业医疗建议。\n\n如有医疗方面的问题，请咨询具备资质的医疗专业人士。",
+      ],
+    },
+    {
+      id: "limitation-liability",
+      title: "责任限制",
+      paragraphs: [
+        "在法律允许的最大范围内，Rediscover Beauty Clinic 及其关联方对因您使用我们的服务而产生的间接、附带或后果性损害不承担责任。",
+      ],
+    },
+    {
+      id: "changes",
+      title: "条款与条件的变更",
+      paragraphs: [
+        "我们保留随时更新或修改本条款的权利。更新版本将在此页面上发布，并注明修订后的生效日期。",
+      ],
+    },
+    {
+      id: "contact",
+      title: "联系信息",
+      paragraphs: [
+        "如您对本条款与条件有任何疑问或顾虑，请与我们联系：",
+        "Rediscover Beauty Clinic",
+      ],
+      bullets: [
+        "Phone: +1 647 523 3988",
+        "Address: 9425 Leslie St, Unit 14, 2F, Richmond Hill, ON L4B 3N7",
+      ],
+    },
+  ],
+
+  carePromise: {
+    titleParts: { primary: "我们的护理", accent: "承诺" },
+    body: "我们相信用心、个性化的护理——以专业知识、透明度和对您自然之美的尊重为指引。\n\n所有治疗均由经过培训和认证的专业人员提供。",
+    image: {
+      src: "/images/newsletter.png",
+      alt: "护理承诺",
+    },
+  },
+};
+
+export const termsCopy = termsCopyEn;
+
+export const termsContent: { en: TermsCopy; zh: TermsCopy } = {
+  en: termsCopyEn,
+  zh: termsCopyZh,
 };
