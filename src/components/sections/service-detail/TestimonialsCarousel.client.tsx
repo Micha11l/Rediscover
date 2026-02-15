@@ -124,10 +124,10 @@ export function TestimonialsCarousel({
               onClick={handlePrev}
               disabled={!canGoPrev}
               aria-label="Previous testimonial"
-              className={`flex h-12 w-12 items-center justify-center rounded-full border transition-colors ${
+              className={`flex h-12 w-12 items-center justify-center rounded-full border outline-none transition-colors ${
                 canGoPrev
-                  ? "border-surface-muted text-surface-muted hover:bg-surface-muted hover:text-brand-secondary"
-                  : "cursor-not-allowed border-surface-muted/40 text-surface-muted/40"
+                  ? "border-text-inverse/60 text-text-inverse hover:border-text-inverse hover:bg-text-inverse hover:text-brand-secondary"
+                  : "cursor-not-allowed border-text-inverse/20 text-text-inverse/20"
               }`}
             >
               <ChevronLeftIcon className="h-6 w-6" />
@@ -137,10 +137,10 @@ export function TestimonialsCarousel({
               onClick={handleNext}
               disabled={!canGoNext}
               aria-label="Next testimonial"
-              className={`flex h-12 w-12 items-center justify-center rounded-full transition-colors ${
+              className={`flex h-12 w-12 items-center justify-center rounded-full border outline-none transition-colors ${
                 canGoNext
-                  ? "bg-surface-muted text-brand-primary-muted hover:bg-surface-elevated"
-                  : "cursor-not-allowed bg-surface-muted/40 text-brand-primary-muted/40"
+                  ? "border-surface-muted bg-surface-muted text-brand-secondary hover:border-surface-elevated hover:bg-surface-elevated"
+                  : "cursor-not-allowed border-surface-muted/40 bg-surface-muted/40 text-brand-secondary/40"
               }`}
             >
               <ChevronRightIcon className="h-6 w-6" />
