@@ -51,7 +51,7 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
         {
           segments: [
             {
-              text: "Sofwave® is a non-invasive aesthetic treatment that uses advanced ",
+              text: "Sofwave is a non-invasive aesthetic treatment that uses advanced ",
             },
             {
               text: "SUPERB™ (Synchronous Ultrasound Parallel Beam)",
@@ -132,7 +132,7 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
         {
           segments: [
             {
-              text: "Thermage® FLX is the fourth and latest generation of Thermage non-invasive radiofrequenncy (RF) skin tightening technology.",
+              text: "Thermage FLX is the fourth and latest generation of Thermage non-invasive radiofrequenncy (RF) skin tightening technology.",
               bold: true,
             },
             {
@@ -223,7 +223,7 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
       paragraphs: [
         {
           segments: [
-            { text: "Morpheus8® is a minimally invasive treatment that " },
+            { text: "Morpheus8 is a minimally invasive treatment that " },
             {
               text: "combines microneedling with radiofrequency (RF) energy to target the deeper layers of the skin",
               bold: true,
@@ -333,7 +333,7 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
           text: "Unlike invasive procedures or injectable treatments, Forma delivers consistent, comfortable warmth without needles or downtime. Treatments are often described as a \"lunchtime facial,\" as sessions are quick and allow clients to return to daily activities immediately.",
         },
         {
-          text: "Forma® is ideal for clients seeking subtle yet effective skin tightening and maintenance, whether as a standalone treatment or as part of a personalized aesthetic program.",
+          text: "Forma is ideal for clients seeking subtle yet effective skin tightening and maintenance, whether as a standalone treatment or as part of a personalized aesthetic program.",
         },
       ],
     },
@@ -403,7 +403,7 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
         {
           segments: [
             {
-              text: "Sofwave® 是一种非侵入性美容疗程，采用先进的 ",
+              text: "Sofwave 是一种非侵入性美容疗程，采用先进的 ",
             },
             {
               text: "SUPERB™ 同步超声平行波束技术",
@@ -484,7 +484,7 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
         {
           segments: [
             {
-              text: "Thermage® FLX 是 Thermage 第四代也是最新一代的非侵入性射频 (RF) 紧肤技术。",
+              text: "Thermage FLX 是 Thermage 第四代也是最新一代的非侵入性射频 (RF) 紧肤技术。",
               bold: true,
             },
             {
@@ -575,7 +575,7 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
       paragraphs: [
         {
           segments: [
-            { text: "Morpheus8® 是一种微创治疗，" },
+            { text: "Morpheus8 是一种微创治疗，" },
             {
               text: "结合微针和射频 (RF) 能量，针对肌肤深层",
               bold: true,
@@ -685,7 +685,7 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
           text: "与侵入性程序或注射治疗不同，Forma 提供持续、舒适的温暖感，无需针头或恢复期。治疗通常被描述为\"午餐美容\"，因为疗程快速，客户可立即恢复日常活动。",
         },
         {
-          text: "Forma® 适合寻求微妙而有效的紧肤和维护的客户，无论是作为独立治疗还是个性化美容计划的一部分。",
+          text: "Forma 适合寻求微妙而有效的紧肤和维护的客户，无论是作为独立治疗还是个性化美容计划的一部分。",
         },
       ],
     },

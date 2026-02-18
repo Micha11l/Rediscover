@@ -4,6 +4,7 @@ export type PromoTreatment = {
   image: { src: string; alt: string };
   vipPrice: string;
   regularPrice: string;
+  duration: string;
 };
 
 export type PromoCopy = {
@@ -73,6 +74,7 @@ const promoCopyEn: PromoCopy = {
         image: { src: "/images/promo/lumecca.png", alt: "Lumecca Photo Facial treatment" },
         vipPrice: "$250",
         regularPrice: "$380",
+        duration: "45 mins",
       },
       {
         id: "detoxing",
@@ -80,6 +82,7 @@ const promoCopyEn: PromoCopy = {
         image: { src: "/images/promo/detoxing.png", alt: "Detoxing Facial treatment" },
         vipPrice: "$98",
         regularPrice: "$158",
+        duration: "90 mins",
       },
       {
         id: "lymphatic",
@@ -87,6 +90,7 @@ const promoCopyEn: PromoCopy = {
         image: { src: "/images/promo/lymphatic.png", alt: "Lymphatic Drainage treatment" },
         vipPrice: "$128",
         regularPrice: "$200",
+        duration: "60 mins",
       },
       {
         id: "forma",
@@ -94,6 +98,7 @@ const promoCopyEn: PromoCopy = {
         image: { src: "/images/promo/forma.png", alt: "Forma Lifting treatment" },
         vipPrice: "$368",
         regularPrice: "$468",
+        duration: "105 mins",
       },
     ],
   },
@@ -162,6 +167,7 @@ const promoCopyZh: PromoCopy = {
         image: { src: "/images/promo/lumecca.png", alt: "Lumecca 光子嫩肤疗程" },
         vipPrice: "$250",
         regularPrice: "$380",
+        duration: "45 分钟",
       },
       {
         id: "detoxing",
@@ -169,6 +175,7 @@ const promoCopyZh: PromoCopy = {
         image: { src: "/images/promo/detoxing.png", alt: "面部桃花灸护理疗程" },
         vipPrice: "$98",
         regularPrice: "$158",
+        duration: "90 分钟",
       },
       {
         id: "lymphatic",
@@ -176,6 +183,7 @@ const promoCopyZh: PromoCopy = {
         image: { src: "/images/promo/lymphatic.png", alt: "芳香经络疗法疗程" },
         vipPrice: "$128",
         regularPrice: "$200",
+        duration: "60 分钟",
       },
       {
         id: "forma",
@@ -183,6 +191,7 @@ const promoCopyZh: PromoCopy = {
         image: { src: "/images/promo/forma.png", alt: "Forma 热立塑疗程" },
         vipPrice: "$368",
         regularPrice: "$468",
+        duration: "105 分钟",
       },
     ],
   },

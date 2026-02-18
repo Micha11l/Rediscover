@@ -25,29 +25,30 @@ function FeatureCardRow({
   textAlign,
   iconSide,
 }: FeatureCard) {
-  const isRightText = textAlign === "right";
-  const iconOnLeft = iconSide === "left";
+  const iconOnRight = iconSide === "right";
 
   return (
-    <div className="flex items-center gap-6 rounded-2xl bg-[#f4efe7] p-5 sm:p-8">
-      {/* Icon left */}
-      {iconOnLeft && (
-        <div className="relative h-8 w-8 shrink-0">
-          <Image
-            src={`/images/icon/${iconName}.svg`}
-            alt=""
-            width={32}
-            height={32}
-            className="h-8 w-8"
-          />
-        </div>
-      )}
+    <div
+      className={[
+        "flex items-center gap-6 rounded-2xl bg-[#f4efe7] p-5 sm:p-8",
+        iconOnRight ? "lg:flex-row-reverse" : "",
+      ].join(" ")}
+    >
+      <div className="relative h-8 w-8 shrink-0">
+        <Image
+          src={`/images/icon/${iconName}.svg`}
+          alt=""
+          width={32}
+          height={32}
+          className="h-8 w-8"
+        />
+      </div>
 
-      {/* Text */}
       <div
         className={[
           "flex min-w-0 flex-1 flex-col gap-2",
-          isRightText ? "items-end text-right" : "items-start text-left",
+          "items-start text-left",
+          textAlign === "right" ? "lg:items-end lg:text-right" : "",
         ].join(" ")}
       >
         <h3 className="m-0 font-heading text-[20px] font-normal leading-[1.2] text-text-primary sm:text-[24px]">
@@ -57,19 +58,6 @@ function FeatureCardRow({
           {description}
         </p>
       </div>
-
-      {/* Icon right */}
-      {!iconOnLeft && (
-        <div className="relative h-8 w-8 shrink-0">
-          <Image
-            src={`/images/icon/${iconName}.svg`}
-            alt=""
-            width={32}
-            height={32}
-            className="h-8 w-8"
-          />
-        </div>
-      )}
     </div>
   );
 }

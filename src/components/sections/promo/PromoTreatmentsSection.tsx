@@ -20,6 +20,9 @@ function TreatmentCard({ treatment }: { treatment: PromoTreatment }) {
         <h3 className="m-0 font-heading text-heading-md font-medium leading-[1.2] text-brand-secondary">
           {treatment.title}
         </h3>
+        <p className="m-0 font-body text-[14px] text-text-muted">
+          {treatment.duration}
+        </p>
         <div className="font-heading text-[20px] leading-none text-text-primary">
           <p className="m-0">VIP: {treatment.vipPrice}</p>
           <p className="m-0">

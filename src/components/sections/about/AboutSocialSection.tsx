@@ -15,13 +15,13 @@ export function AboutSocialSection({ lang }: { lang: Language }) {
               key={item.id}
               className="flex w-full max-w-[300px] flex-col items-center gap-6 md:max-w-[250px]"
             >
-              <div className="relative h-[200px] w-full overflow-hidden rounded-2xl md:h-[242px]">
+              <div className="relative h-[200px] w-full overflow-hidden rounded-2xl bg-surface-muted md:h-[242px]">
                 <Image
                   src={item.image.src}
                   alt={item.image.alt}
                   fill
                   sizes="250px"
-                  className="object-cover"
+                  className="object-contain md:object-cover"
                 />
               </div>
               <p className="m-0 text-center font-heading text-[20px] font-medium leading-[1.2] text-text-primary md:text-[24px]">

@@ -57,7 +57,7 @@ const devicesCopyEn: DevicesCopy = {
     {
       id: "inmode",
       testId: "devices-tech-inmode",
-      title: "InMode® Technology",
+      title: "InMode Technology",
       image: {
         src: "/images/devices/inmode.png",
         alt: "InMode device",
@@ -106,13 +106,13 @@ const devicesCopyEn: DevicesCopy = {
     {
       id: "thermage",
       testId: "devices-tech-thermage",
-      title: "Thermage® Technology",
+      title: "Thermage Technology",
       image: {
         src: "/images/devices/thermage.png",
         alt: "Thermage device",
       },
       descriptionParagraphs: [
-        "Powered by Thermage®, a clinically trusted monopolar radiofrequency (RF) technology used to improve skin firmness and overall texture.",
+        "Powered by Thermage, a clinically trusted monopolar radiofrequency (RF) technology used to improve skin firmness and overall texture.",
         "Thermage delivers controlled heat into deeper dermal layers to support collagen remodeling—helping create a smoother, tighter-looking appearance without surgery.",
       ],
       whyTitle: "Why",
@@ -233,7 +233,7 @@ const devicesCopyZh: DevicesCopy = {
     {
       id: "inmode",
       testId: "devices-tech-inmode",
-      title: "InMode® 技术",
+      title: "InMode 技术",
       image: {
         src: "/images/devices/inmode.png",
         alt: "InMode 设备",
@@ -282,13 +282,13 @@ const devicesCopyZh: DevicesCopy = {
     {
       id: "thermage",
       testId: "devices-tech-thermage",
-      title: "Thermage® 技术",
+      title: "Thermage 技术",
       image: {
         src: "/images/devices/thermage.png",
         alt: "Thermage 设备",
       },
       descriptionParagraphs: [
-        "Thermage® 是临床信赖的单极射频（RF）技术，用于改善肌肤紧致度和整体质感。",
+        "Thermage 是临床信赖的单极射频（RF）技术，用于改善肌肤紧致度和整体质感。",
         "Thermage 将可控热能传递至深层真皮层，支持胶原蛋白重塑——无需手术即可打造更平滑、更紧致的外观。",
       ],
       whyTitle: "为什么选择",

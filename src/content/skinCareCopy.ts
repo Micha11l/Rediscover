@@ -136,7 +136,7 @@ const skinCareCopyEn: SkinCareCopy = {
       title: "Hydration",
       effect:
         "Intensely replenishes moisture to improve dryness, smooth texture, and restore a healthy glow.",
-      duration: "90 mins",
+      duration: "80 mins",
       vipPrice: "$98",
       regPrice: "$138",
     },
@@ -357,7 +357,7 @@ const skinCareCopyZh: SkinCareCopy = {
       title: "保湿嫩白",
       effect:
         "强效补充水分，改善干燥，平滑肌肤纹理，恢复健康光泽。",
-      duration: "90 分钟",
+      duration: "80 分钟",
       vipPrice: "$98",
       regPrice: "$138",
     },

@@ -58,7 +58,7 @@ const bodyContouringCopyEn: BodyContouringCopy = {
     {
       id: "bodyfx",
       testId: "body-contouring-treatment-bodyfx",
-      title: "BodyFX\u00AE",
+      title: "BodyFX",
       paragraphs: [
         {
           segments: [
@@ -93,7 +93,7 @@ const bodyContouringCopyEn: BodyContouringCopy = {
     {
       id: "forma-body",
       testId: "body-contouring-treatment-forma-body",
-      title: "Forma\u00AE Body",
+      title: "Forma Body",
       paragraphs: [
         {
           segments: [
@@ -128,7 +128,7 @@ const bodyContouringCopyEn: BodyContouringCopy = {
     {
       id: "plus90",
       testId: "body-contouring-treatment-plus90",
-      title: "Plus 90\u00AE",
+      title: "Plus 90",
       paragraphs: [
         {
           segments: [
@@ -240,7 +240,7 @@ const bodyContouringCopyZh: BodyContouringCopy = {
     {
       id: "bodyfx",
       testId: "body-contouring-treatment-bodyfx",
-      title: "BodyFX®",
+      title: "BodyFX",
       paragraphs: [
         {
           segments: [
@@ -275,7 +275,7 @@ const bodyContouringCopyZh: BodyContouringCopy = {
     {
       id: "forma-body",
       testId: "body-contouring-treatment-forma-body",
-      title: "Forma® Body",
+      title: "Forma Body",
       paragraphs: [
         {
           segments: [
@@ -310,7 +310,7 @@ const bodyContouringCopyZh: BodyContouringCopy = {
     {
       id: "plus90",
       testId: "body-contouring-treatment-plus90",
-      title: "Plus 90®",
+      title: "Plus 90",
       paragraphs: [
         {
           segments: [

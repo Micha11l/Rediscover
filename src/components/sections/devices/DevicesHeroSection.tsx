@@ -34,7 +34,7 @@ export function DevicesHeroSection({ lang }: DevicesHeroSectionProps) {
         <div className="mt-12 flex flex-col items-center gap-6">
           <div className="relative h-[55px] w-[64px]">
             <Image
-              src="/images/logo.png"
+              src="/images/2.svg"
               alt=""
               width={64}
               height={55}

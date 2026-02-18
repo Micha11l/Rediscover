@@ -36,7 +36,7 @@ export function AboutSection() {
             <div className="flex flex-col gap-8 lg:gap-6">
               <div className="h-10 w-10">
                 <Image
-                  src="/images/about-logo.png"
+                  src="/images/2.svg"
                   alt=""
                   width={40}
                   height={40}
@@ -49,7 +49,7 @@ export function AboutSection() {
                    <h2 className="font-heading text-heading-lg font-medium leading-tight text-text-primary md:text-heading-md">
                      {t.about.heading}
                    </h2>
-                   <p className="font-heading text-3xl font-normal leading-[1.2] text-brand-secondary sm:text-4xl md:text-heading-lg">
+                   <p className="font-heading text-[40px] font-normal leading-[1.2] text-brand-secondary md:text-heading-lg">
                      {t.about.subheading}
                    </p>
                  </div>

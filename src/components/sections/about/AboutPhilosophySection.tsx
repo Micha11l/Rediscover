@@ -79,7 +79,7 @@ export function AboutWelcomeSection({ lang }: { lang: Language }) {
         </div>
 
         <DecorativeDivider
-          logoSrc="/images/about-logo.png"
+          logoSrc="/images/2.svg"
           logoHeight={60}
           logoWidth={68}
           logoOpacity={0.3}

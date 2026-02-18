@@ -128,12 +128,12 @@ const laserCopyEn: LaserCopy = {
   },
   lumecca: {
     about: {
-      title: "Lumecca® Photo Facial",
+      title: "Lumecca Photo Facial",
       subtitle: "",
       paragraphs: [
         {
           segments: [
-            { text: "Lumecca® Photo Facial is " },
+            { text: "Lumecca Photo Facial is " },
             { text: "an advanced Intense Pulsed Light (IPL) treatment", bold: true },
             { text: " designed to improve skin clarity, brightness, and overall tone. Using powerful broad-spectrum light technology, Lumecca targets pigmentation and vascular concerns at their source, helping to correct discoloration and reduce redness." },
           ],
@@ -203,7 +203,7 @@ const laserCopyEn: LaserCopy = {
         {
           segments: [
             { text: "InMode Pigmentation Removal uses " },
-            { text: "Lumecca® IPL (Intense Pulsed Light) technology", bold: true },
+            { text: "Lumecca IPL (Intense Pulsed Light) technology", bold: true },
             { text: " to target and reduce unwanted pigmentation caused by sun damage, age spots, freckles, and uneven skin tone." },
           ],
         },
@@ -356,7 +356,7 @@ const laserCopyZh: LaserCopy = {
       "精准的激光和光疗技术,用于提亮肤色、改善肤质、解决常见的色素沉着和毛发问题。",
     breadcrumbLabel: "激光与光疗",
     processItems: [
-      { id: "lumecca", label: "Lumecca® 光子嫩肤", href: "#lumecca" },
+      { id: "lumecca", label: "Lumecca 光子嫩肤", href: "#lumecca" },
       { id: "pigmentation", label: "色素祛除", href: "#pigmentation" },
       { id: "hair-removal", label: "激光脱毛", href: "#hair-removal" },
     ],
@@ -367,12 +367,12 @@ const laserCopyZh: LaserCopy = {
   },
   lumecca: {
     about: {
-      title: "Lumecca® 光子嫩肤",
+      title: "Lumecca 光子嫩肤",
       subtitle: "",
       paragraphs: [
         {
           segments: [
-            { text: "Lumecca® 光子嫩肤是" },
+            { text: "Lumecca 光子嫩肤是" },
             { text: "一种先进的强脉冲光 (IPL) 治疗", bold: true },
             { text: "，旨在改善肌肤清晰度、亮度和整体肤色。通过强大的广谱光技术，Lumecca 从源头针对色素沉着和血管问题，帮助修正色素不均并减少泛红现象。" },
           ],
@@ -442,7 +442,7 @@ const laserCopyZh: LaserCopy = {
         {
           segments: [
             { text: "InMode 色素祛除使用" },
-            { text: "Lumecca® IPL（强脉冲光）技术", bold: true },
+            { text: "Lumecca IPL（强脉冲光）技术", bold: true },
             { text: "，针对并减少因日晒损伤、老年斑、雀斑和肤色不均引起的色素沉着。" },
           ],
         },

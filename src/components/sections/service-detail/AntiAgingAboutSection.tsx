@@ -187,7 +187,7 @@ export function SofwaveAboutSection({ lang }: { lang: Language }) {
   return (
     <AntiAgingAboutSection
       id="sofwave"
-      title="Sofwave®"
+      title="Sofwave"
       subtitle={copy.about.subtitle}
       paragraphs={copy.about.paragraphs}
       leftImage={{
@@ -210,7 +210,6 @@ export function ThermageAboutSection({ lang }: { lang: Language }) {
       dataTestId="thermage"
       title={[
         { text: "Thermage", colorClassName: "text-brand-secondary" },
-        { text: "®", superscript: true, colorClassName: "text-brand-secondary" },
         { text: " FLX", colorClassName: "text-brand-secondary" },
       ]}
       subtitle={copy.about.subtitle}
@@ -237,10 +236,7 @@ export function Morpheus8AboutSection({ lang }: { lang: Language }) {
   return (
     <AntiAgingAboutSection
       id="morpheus8"
-      title={[
-        { text: "Morpheus8", colorClassName: "text-brand-secondary" },
-        { text: "®", superscript: true, colorClassName: "text-brand-secondary" },
-      ]}
+      title="Morpheus8"
       subtitle={copy.about.subtitle}
       paragraphs={copy.about.paragraphs}
       leftImage={{
@@ -268,10 +264,7 @@ export function FormaAboutSection({ lang }: { lang: Language }) {
   return (
     <AntiAgingAboutSection
       id="forma"
-      title={[
-        { text: "Forma", colorClassName: "text-brand-secondary" },
-        { text: "®", superscript: true, colorClassName: "text-brand-secondary" },
-      ]}
+      title="Forma"
       subtitle={copy.about.subtitle}
       paragraphs={copy.about.paragraphs}
       leftImage={{

@@ -17,7 +17,7 @@ export function FeaturedServicesSection() {
       key: "ipl-photo-facial",
       label1: "Facial",
       label2: "IPL Photo Facial",
-      image: "/images/IPL_facial.PNG",
+      image: "/images/IPL_facial.png",
     },
     {
       key: "detoxing-facial",

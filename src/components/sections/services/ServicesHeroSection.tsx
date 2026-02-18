@@ -51,7 +51,7 @@ export function ServicesHeroSection({ lang }: { lang: Language }) {
         <div className="flex w-full flex-1 flex-col items-center gap-6 py-10 sm:py-12">
           {/* Decorative Logo Symbol */}
           <Image
-            src="/images/logo.png"
+            src="/images/2.svg"
             alt=""
             width={64}
             height={56}

@@ -24,12 +24,12 @@ export function DeviceTechnologySection({
         </h2>
 
         <div className="flex flex-col overflow-hidden rounded-[24px] bg-surface-elevated lg:flex-row">
-          <div className="relative h-[300px] w-full shrink-0 lg:h-auto lg:w-[553px]">
+          <div className="relative h-[300px] w-full shrink-0 bg-surface-muted lg:h-auto lg:w-[553px]">
             <Image
               src={technology.image.src}
               alt={technology.image.alt}
               fill
-              className="object-cover"
+              className="object-contain md:object-cover"
               sizes="(max-width: 1024px) 100vw, 553px"
             />
           </div>

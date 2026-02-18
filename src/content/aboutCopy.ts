@@ -185,7 +185,7 @@ const aboutCopyEn: AboutCopy = {
     },
     brands: [
       {
-        name: "ZO® Skin Health",
+        name: "ZO Skin Health",
         description:
           "A medical-grade skincare system developed in the United States, designed to improve overall skin health by addressing concerns such as acne, pigmentation, aging, and sensitivity through clinically backed formulations and treatment-driven protocols.",
       },
@@ -394,7 +394,7 @@ const aboutCopyZh: AboutCopy = {
     },
     brands: [
       {
-        name: "ZO® Skin Health",
+        name: "ZO Skin Health",
         description:
           "来自美国的医学级护肤系统，旨在通过经临床验证的配方和以治疗为导向的方案，改善整体肌肤健康，解决痤疮、色素沉着、老化和敏感等问题。",
       },

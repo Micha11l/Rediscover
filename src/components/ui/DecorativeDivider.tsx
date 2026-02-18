@@ -26,7 +26,7 @@ interface DecorativeDividerProps {
 }
 
 export function DecorativeDivider({
-  logoSrc = "/images/anti-aging/logo.png",
+  logoSrc = "/images/anti-aging/2.svg",
   logoAlt = "",
   logoWidth = 68,
   logoHeight = 60,
