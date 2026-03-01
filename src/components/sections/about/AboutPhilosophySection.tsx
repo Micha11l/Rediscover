@@ -14,7 +14,7 @@ function HighlightedText({
     return <>{text}</>;
   }
 
-  let result = text;
+  const result = text;
   const parts: Array<{ text: string; highlighted: boolean }> = [];
   let currentIndex = 0;
 
