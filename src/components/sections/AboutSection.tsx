@@ -36,7 +36,7 @@ export function AboutSection() {
             <div className="flex flex-col gap-8 lg:gap-6">
               <div className="h-10 w-10">
                 <Image
-                  src="/images/2.svg"
+                  src="/images/1.svg"
                   alt=""
                   width={40}
                   height={40}

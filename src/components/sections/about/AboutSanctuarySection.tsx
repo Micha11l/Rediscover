@@ -24,7 +24,7 @@ export function AboutClinicSection({ lang }: { lang: Language }) {
             {clinic.gallery.map((image, index) => (
               <div
                 key={image.src}
-                className="relative h-[220px] flex-1 overflow-hidden rounded-[10px] lg:h-full"
+                className="relative h-[180px] overflow-hidden rounded-[10px] md:h-[220px] lg:flex-1 lg:h-full"
               >
                 <Image
                   src={image.src}

@@ -363,7 +363,7 @@ const skinCareCopyZh: SkinCareCopy = {
     },
     {
       id: "facial-oxygen",
-      title: "小气泡清洁",
+      title: "小气泡深度清洁",
       effect:
         "焕活暗沉、疲惫的肌肤，改善循环，提升肌肤明亮度与清透感。",
       duration: "90 分钟",
