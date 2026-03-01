@@ -29,7 +29,7 @@ export function DeviceTechnologySection({
               src={technology.image.src}
               alt={technology.image.alt}
               fill
-              className="object-contain md:object-cover"
+              className="object-cover object-top md:object-center"
               sizes="(max-width: 1024px) 100vw, 553px"
             />
           </div>
