@@ -74,7 +74,7 @@ const promoCopyEn: PromoCopy = {
         image: { src: "/images/promo/lumecca.png", alt: "Lumecca Photo Facial treatment" },
         vipPrice: "$250",
         regularPrice: "$380",
-        duration: "45 mins",
+        duration: "90 mins",
       },
       {
         id: "detoxing",
@@ -167,7 +167,7 @@ const promoCopyZh: PromoCopy = {
         image: { src: "/images/promo/lumecca.png", alt: "Lumecca 光子嫩肤疗程" },
         vipPrice: "$250",
         regularPrice: "$380",
-        duration: "45 分钟",
+        duration: "90 分钟",
       },
       {
         id: "detoxing",
