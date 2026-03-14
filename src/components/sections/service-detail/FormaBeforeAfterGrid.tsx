@@ -14,13 +14,13 @@ function HalfImage({
   imgClassName?: string;
 }) {
   return (
-    <div className="relative h-[291px] w-full">
+    <div className="relative aspect-[16/10] w-full md:h-[291px] md:aspect-auto">
       <Image
         src={src}
         alt={alt}
         fill
         sizes="(max-width: 768px) 100vw, 50vw"
-        className={["object-cover", imgClassName].filter(Boolean).join(" ")}
+        className={["object-contain md:object-cover", imgClassName].filter(Boolean).join(" ")}
       />
 
       <span
@@ -99,7 +99,7 @@ export function FormaBeforeAfterGrid({
   return (
     <div data-testid="forma-before-after-grid" className="flex flex-col gap-4">
       {/* 上面一组 */}
-      <BeforeAfterPair before={FORMA_PAIRS[0].before} after={FORMA_PAIRS[0].after} beforeLabel={beforeLabel} afterLabel={afterLabel} afterImageClassName="object-[25%_50%] scale-[1.105]" />
+      <BeforeAfterPair before={FORMA_PAIRS[0].before} after={FORMA_PAIRS[0].after} beforeLabel={beforeLabel} afterLabel={afterLabel} afterImageClassName="md:object-[25%_50%] md:scale-[1.105]" />
 
       {/* 下面一组 */}
       <BeforeAfterPair before={FORMA_PAIRS[1].before} after={FORMA_PAIRS[1].after} beforeLabel={beforeLabel} afterLabel={afterLabel} />

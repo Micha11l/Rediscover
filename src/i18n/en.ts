@@ -161,7 +161,7 @@ export const en: Translations = {
     hoursLabel: "Hours",
     hours: [
       { text: "Monday – Sunday", bold: false },
-      { text: "10:00 AM – 8:00 PM", bold: false },
+      { text: "10:00 – 8:00", bold: false },
       { text: "By appointment only", bold: true },
     ],
     parking: [

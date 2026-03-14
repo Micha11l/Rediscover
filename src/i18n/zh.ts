@@ -153,7 +153,7 @@ export const zh: Translations = {
     hoursLabel: "营业时间",
     hours: [
       { text: "周一至周日", bold: false },
-      { text: "上午 10:00 – 晚上 8:00", bold: false },
+      { text: "10:00 – 8:00", bold: false },
       { text: "仅限预约", bold: true },
     ],
     parking: [

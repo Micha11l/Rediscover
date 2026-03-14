@@ -157,22 +157,22 @@ export function AntiAgingAboutSection({
           </div>
 
           <div className="mt-12 flex flex-col gap-6 lg:hidden">
-            <div className="relative h-[200px] w-full">
+            <div className="relative aspect-[4/5] w-full">
               <Image
                 src={leftImage.src}
                 alt={leftImage.alt}
                 fill
                 sizes="100vw"
-                className="object-cover object-center"
+                className="object-contain object-center"
               />
             </div>
-            <div className="relative h-[200px] w-full">
+            <div className="relative aspect-[4/5] w-full">
               <Image
                 src={rightImage.src}
                 alt={rightImage.alt}
                 fill
                 sizes="100vw"
-                className="object-cover object-center"
+                className="object-contain object-center"
               />
             </div>
           </div>
@@ -187,7 +187,7 @@ export function SofwaveAboutSection({ lang }: { lang: Language }) {
   return (
     <AntiAgingAboutSection
       id="sofwave"
-      title="Sofwave"
+      title={lang === "zh" ? "索芙波" : "Sofwave"}
       subtitle={copy.about.subtitle}
       paragraphs={copy.about.paragraphs}
       leftImage={{
@@ -209,7 +209,7 @@ export function ThermageAboutSection({ lang }: { lang: Language }) {
       id="thermage-flx"
       dataTestId="thermage"
       title={[
-        { text: "Thermage", colorClassName: "text-brand-secondary" },
+        { text: lang === "zh" ? "热玛吉" : "Thermage", colorClassName: "text-brand-secondary" },
         { text: " FLX", colorClassName: "text-brand-secondary" },
       ]}
       subtitle={copy.about.subtitle}

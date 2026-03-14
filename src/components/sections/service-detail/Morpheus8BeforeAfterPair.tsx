@@ -10,13 +10,13 @@ function ImageCard({
   label: string;
 }) {
   return (
-    <div className="relative h-[291px] w-full overflow-hidden rounded-[30px]">
+    <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[30px] md:h-[291px] md:aspect-auto">
       <Image
         src={src}
         alt={alt}
         fill
         sizes="(max-width: 768px) 100vw, 50vw"
-        className="object-cover"
+        className="object-contain md:object-cover"
       />
       <span className="absolute bottom-[12px] left-[12px] font-heading text-base font-semibold text-surface-elevated md:bottom-[16px] md:left-[16px]">
         {label}

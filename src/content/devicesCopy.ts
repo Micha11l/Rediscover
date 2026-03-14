@@ -282,24 +282,27 @@ const devicesCopyZh: DevicesCopy = {
     {
       id: "thermage",
       testId: "devices-tech-thermage",
-      title: "Thermage 技术",
+      title: "Thermage 热玛吉",
       image: {
         src: "/images/devices/thermage.png",
         alt: "Thermage 设备",
       },
       descriptionParagraphs: [
-        "Thermage 是临床信赖的单极射频（RF）技术，用于改善肌肤紧致度和整体质感。",
-        "Thermage 将可控热能传递至深层真皮层，支持胶原蛋白重塑——无需手术即可打造更平滑、更紧致的外观。",
+        "热玛吉 FLX (第五代) | 智能全层紧致系统。",
+        "Thermage® FLX 是全球公认的抗衰标杆。它利用单极射频（Monopolar RF）技术，跨越表皮，直接作用于真皮层及皮下组织，实现从内而外的深度紧致与轮廓重塑。",
+        "核心技术原理：三维立体加热 · 胶原再生工程。1. 即刻收缩：射频能量产生 65°C-75°C 的热效应，促使胶原纤维瞬时收缩。2. 深度修复：热能直达约 4.3mm 皮肤深层，激活成纤维细胞大量增生。3. 长效重塑：术后 3-6 个月进入胶原生长高峰期，皮肤弹性、厚度及光泽度显著提升。",
       ],
-      whyTitle: "为什么选择",
+      whyTitle: "FLX 三大核心优势 ·",
       whyBullets: [
-        "非手术紧肤与轮廓提升",
-        "改善紧致度、质感和弹性",
-        "适用于面部、下颌线、颈部和眼周",
-        "恢复期短，可定制化疗程设置",
+        "AccuREP™ 智能调节：每一发能量输出前，系统自动检测局部阻抗，实现更精准的能量分布。",
+        "全方位震动减痛：采用改良版多方向震动模式，有效干扰痛觉信号，治疗过程更舒适。",
+        "4.0 智能探头：治疗面积增加 33%，覆盖更广、速度更快，显著缩短治疗时长。",
+        "适用部位与功效：改善法令纹、提升下颌缘、紧致双下巴、复位苹果肌。",
+        "眼周精雕：改善上睑松弛、淡化鱼尾纹，是唯一获得 FDA 认证可作用于眼睑的射频技术。",
+        "身体塑形：针对腹部、大腿、手臂等部位的松弛皮肤，并帮助改善橘皮组织。",
       ],
       howWeUseTitle: "我们如何使用",
-      howWeUseTitleAccent: "Thermage 技术",
+      howWeUseTitleAccent: "Thermage 热玛吉",
       timelineItems: [
         {
           id: "thermage-900rep",
@@ -330,42 +333,43 @@ const devicesCopyZh: DevicesCopy = {
     {
       id: "sofwave",
       testId: "devices-tech-sofwave",
-      title: "Sofwave™ 技术",
+      title: "Sofwave 索芙波",
       image: {
         src: "/images/devices/sofwave.png",
         alt: "Sofwave 设备",
       },
       descriptionParagraphs: [
-        "我们精选医疗级医美技术，支持非手术肌肤再生、轮廓优化和整体肌肤质量提升。",
-        "每台设备均基于临床可靠性、安全标准和经过验证的性能而选择，使疗程能够针对深层结构问题的同时保持肌肤完整性。",
+        "索芙波核心原理：同步平行超声束（SUPERB™）。",
+        "能量形态：索芙波会同时发射 7 条圆柱形超声束，在皮下约 1.5mm 的真皮层产生高热量。这些圆柱形能量块可将局部组织加热至 60°C-70°C，是胶原蛋白变性、收缩及再生的黄金温度。",
+        "相比点状加热，这种圆柱状立体加热覆盖面积更大，更全面地刺激真皮层。搭载 Sofcool™ 智能冷却系统，在发射能量的同时实时保护表皮，实现深层紧致而不伤表皮，恢复期极短。",
       ],
       whyTitle: "为什么选择",
       whyBullets: [
-        "无创超声波疗程",
-        "促进胶原蛋白再生与肌肤紧致",
-        "适用于面部和颈部区域",
-        "无针头，无手术，恢复期短",
+        "无创超声波 · 深层紧致不伤表皮。",
+        "促进胶原新生 · 肌肤弹性与质感焕新。",
+        "适用部位：面部、颈部、下颌线。",
+        "无针头、无手术，几乎无恢复期。",
       ],
       howWeUseTitle: "我们如何使用",
-      howWeUseTitleAccent: "Sofwave 技术",
+      howWeUseTitleAccent: "Sofwave 索芙波",
       timelineItems: [
         {
           id: "sofwave-face-neck",
           title: "面部+颈部",
           description:
-            "全面的射频疗程，旨在紧致和提拉面部及颈部肌肤，同时支持长期胶原蛋白更新。",
+            "面部与颈部综合超声紧致疗程，帮助提升轮廓、改善松弛，并持续促进胶原更新。",
         },
         {
           id: "sofwave-full-face",
           title: "全脸",
           description:
-            "全脸单极射频疗程，改善整体肌肤紧致度、弹性和面部轮廓。",
+            "针对全脸真皮层的超声胶原激活疗程，帮助改善整体紧致度、弹性与面部轮廓。",
         },
         {
           id: "sofwave-one-party",
           title: "单部位",
           description:
-            "针对单一面部区域的精准射频疗程，解决局部松弛问题，优化轮廓。",
+            "聚焦单一部位的精准超声疗程，适合改善局部松弛并细致优化轮廓线条。",
         },
       ],
     },

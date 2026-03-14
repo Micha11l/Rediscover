@@ -118,7 +118,7 @@ const laserCopyEn: LaserCopy = {
     breadcrumbLabel: "Laser & Light Therapy",
     processItems: [
       { id: "lumecca", label: "Lumecca Photo Facial", href: "#lumecca" },
-      { id: "pigmentation", label: "Pigmentation Removal", href: "#pigmentation" },
+      { id: "pigmentation", label: "Pigmentation Management", href: "#pigmentation" },
       { id: "hair-removal", label: "Hair Removal", href: "#hair-removal" },
     ],
     image: {
@@ -135,15 +135,11 @@ const laserCopyEn: LaserCopy = {
           segments: [
             { text: "Lumecca Photo Facial is " },
             { text: "an advanced Intense Pulsed Light (IPL) treatment", bold: true },
-            { text: " designed to improve skin clarity, brightness, and overall tone. Using powerful broad-spectrum light technology, Lumecca targets pigmentation and vascular concerns at their source, helping to correct discoloration and reduce redness." },
+            { text: " designed to enhance skin clarity, radiance, and overall tone evenness. Using high-energy, broad-spectrum light technology, Lumecca precisely targets pigmentation and vascular skin concerns at their source, effectively reducing discoloration and visibly diminishing facial redness." },
           ],
         },
         {
-          segments: [
-            { text: "Unlike traditional IPL treatments, Lumecca delivers " },
-            { text: "optimized high-energy pulses,", bold: true },
-            { text: " allowing for effective correction with fewer sessions and minimal downtime. By also supporting collagen production, the treatment enhances overall skin quality, resulting in a clearer, brighter, and more even complexion that looks naturally refreshed." },
-          ],
+          text: "Compared to traditional IPL treatments, Lumecca delivers optimized high-energy pulses for superior results with fewer sessions and shorter recovery. It also stimulates new collagen production to improve skin quality from within, leaving the complexion clearer, brighter, and more even\u2014with a naturally refreshed glow.",
         },
       ],
     },
@@ -197,25 +193,26 @@ const laserCopyEn: LaserCopy = {
   },
   pigmentation: {
     about: {
-      title: "Pigmentation Removal",
+      title: "Pigmentation Management",
       subtitle: "",
       paragraphs: [
         {
           segments: [
-            { text: "InMode Pigmentation Removal uses " },
+            { text: "Lumecca Precision Pigmentation Management. ", bold: true },
+            { text: "Say goodbye to stubborn spots and welcome a clearer, brighter complexion. InMode's pigmentation protocol uses " },
             { text: "Lumecca IPL (Intense Pulsed Light) technology", bold: true },
-            { text: " to target and reduce unwanted pigmentation caused by sun damage, age spots, freckles, and uneven skin tone." },
+            { text: " to address discoloration linked to photoaging, sun damage, age spots, freckles, and uneven tone." },
           ],
         },
         {
           segments: [
-            { text: "By delivering " },
-            { text: "high-intensity light energy", bold: true },
-            { text: " into the skin, Lumecca selectively breaks down excess melanin while improving overall skin clarity and brightness with minimal downtime." },
+            { text: "By emitting " },
+            { text: "high-energy, precisely targeted broad-spectrum light", bold: true },
+            { text: ", the device selectively breaks down excess melanin and disrupts pigment clusters at the source. Beyond visible spots, the treatment also improves dullness and redness, helping skin look clearer and more luminous with minimal downtime." },
           ],
         },
         {
-          text: "This treatment is designed to create visible improvement in fewer sessions compared to traditional IPL, revealing a more even and radiant complexion over time.",
+          text: "Compared with traditional IPL, Lumecca's optimized wavelengths and energy output deliver stronger visible renewal in fewer sessions. Each treatment gradually reveals a more even, luminous, and youthful-looking complexion.",
         },
       ],
     },
@@ -229,32 +226,32 @@ const laserCopyEn: LaserCopy = {
     },
     processText: "",
     benefits: [
-      "Targets sun spots, age spots, and freckles",
-      "Improves uneven skin tone and discoloration",
-      "Fewer sessions compared to traditional IPL",
+      "Targets sun spots, age spots, freckles, and other visible pigmentation",
+      "Improves dullness, redness, and uneven tone",
+      "Delivers stronger visible renewal in fewer sessions than traditional IPL",
       "Non-invasive with minimal downtime",
-      "Suitable for face and selected body areas",
+      "Helps reveal a clearer, brighter complexion",
     ],
     helpsWith: [
       "Sun damage and UV-related pigmentation",
-      "Age spots and freckles",
+      "Age spots, freckles, and superficial discoloration",
       "Uneven skin tone",
-      "Dull or blotchy complexion",
+      "Dullness, redness, and blotchy complexion",
     ],
     beforeAfter: {
       beforeSrc: "/images/laser/pigmentation-before.png",
       afterSrc: "/images/laser/pigmentation-after.png",
-      beforeAlt: "Before pigmentation removal treatment",
-      afterAlt: "After pigmentation removal treatment",
+      beforeAlt: "Before pigmentation management treatment",
+      afterAlt: "After pigmentation management treatment",
     },
     images: {
       left: {
         src: "/images/laser/pigmentation-left.png",
-        alt: "Pigmentation removal device front view",
+        alt: "Pigmentation management device front view",
       },
       right: {
         src: "/images/laser/pigmentation-right.png",
-        alt: "Pigmentation removal device angled view",
+        alt: "Pigmentation management device angled view",
       },
     },
     layoutTweaks: {
@@ -324,7 +321,7 @@ const laserCopyEn: LaserCopy = {
         id: "faq-downtime",
         question: "Is there any downtime after treatment?",
         answer:
-          "Downtime varies depending on the treatment type. Many procedures have little to no downtime, allowing you to return to normal activities quickly. Mild redness, swelling, or sensitivity may occur after certain treatments and typically resolve within a short period.",
+          "Downtime varies by treatment, but many of our light-based services have little to no recovery time. With Lumecca and pigmentation-focused IPL treatments, mild redness or temporary darkening of pigment may occur and usually settles within hours to a few days.",
       },
     ],
   },
@@ -356,8 +353,8 @@ const laserCopyZh: LaserCopy = {
       "精准的激光和光疗技术,用于提亮肤色、改善肤质、解决常见的色素沉着和毛发问题。",
     breadcrumbLabel: "激光与光疗",
     processItems: [
-      { id: "lumecca", label: "Lumecca 光子嫩肤", href: "#lumecca" },
-      { id: "pigmentation", label: "色素祛除", href: "#pigmentation" },
+      { id: "lumecca", label: "Lumecca 光感焕颜", href: "#lumecca" },
+      { id: "pigmentation", label: "光子祛斑", href: "#pigmentation" },
       { id: "hair-removal", label: "激光脱毛", href: "#hair-removal" },
     ],
     image: {
@@ -367,22 +364,18 @@ const laserCopyZh: LaserCopy = {
   },
   lumecca: {
     about: {
-      title: "Lumecca 光子嫩肤",
+      title: "Lumecca 光感焕颜",
       subtitle: "",
       paragraphs: [
         {
           segments: [
-            { text: "Lumecca 光子嫩肤是" },
-            { text: "一种先进的强脉冲光 (IPL) 治疗", bold: true },
-            { text: "，旨在改善肌肤清晰度、亮度和整体肤色。通过强大的广谱光技术，Lumecca 从源头针对色素沉着和血管问题，帮助修正色素不均并减少泛红现象。" },
+            { text: "Lumecca 光感焕颜是一项先进的" },
+            { text: "强脉冲光（IPL）疗程", bold: true },
+            { text: "，专为提升肌肤的清晰度、光泽度与整体肤色均匀度而设计。该疗程采用高能量宽谱光技术，从源头精准作用于色素性及血管性皮肤问题，有效改善色斑沉着，并显著减轻面部泛红。" },
           ],
         },
         {
-          segments: [
-            { text: "与传统 IPL 治疗不同，Lumecca 提供" },
-            { text: "优化的高能量脉冲", bold: true },
-            { text: "，能够以更少的疗程和最小的恢复期实现有效修复。同时，通过促进胶原蛋白生成，该疗程提升整体肌肤质量，令肤色更清晰、更明亮、更均匀，呈现自然焕新的效果。" },
-          ],
+          text: "相较于传统 IPL 治疗，Lumecca 可输出优化的高能量脉冲，实现更卓越的疗效，所需治疗次数更少，恢复期更短。同时，其还能刺激胶原蛋白新生，从深层改善肤质，使肌肤愈显清透、明亮、匀净，呈现宛如天生的自然光彩。",
         },
       ],
     },
@@ -436,25 +429,26 @@ const laserCopyZh: LaserCopy = {
   },
   pigmentation: {
     about: {
-      title: "色素祛除",
+      title: "光子祛斑",
       subtitle: "",
       paragraphs: [
         {
           segments: [
-            { text: "InMode 色素祛除使用" },
-            { text: "Lumecca IPL（强脉冲光）技术", bold: true },
-            { text: "，针对并减少因日晒损伤、老年斑、雀斑和肤色不均引起的色素沉着。" },
+            { text: "Lumecca 超光子精准色素管理。", bold: true },
+            { text: "告别顽固色斑，迎接无瑕澄净。InMode 色素管理疗程搭载 " },
+            { text: "Lumecca 强脉冲光（IPL）技术", bold: true },
+            { text: "，专为攻克因光老化、日晒损伤、老年斑、雀斑及肤色不均引发的色素沉着问题而设计。" },
           ],
         },
         {
           segments: [
-            { text: "通过向皮肤输送" },
-            { text: "高强度光能", bold: true },
-            { text: "，Lumecca 选择性地分解多余的黑色素，同时在最小恢复期内改善整体肌肤清晰度和亮度。" },
+            { text: "该设备通过发射" },
+            { text: "高能量、精准的宽谱光能", bold: true },
+            { text: "，选择性分解多余的黑色素，从根源击碎色素团块。治疗不仅针对表皮斑点，更能有效改善肤色暗沉与泛红，在极短的恢复期内，实现肌肤通透感与明亮度的双重跃升。" },
           ],
         },
         {
-          text: "与传统 IPL 相比，该疗程旨在以更少的疗程次数创造明显改善，随时间揭示更均匀、更光彩的肤色。",
+          text: "相较于传统 IPL，Lumecca 以其优化的光波与能量，能够以更少的治疗次数，触发更显著的焕肤效果。每一次治疗，都在悄然揭启肌肤的新生篇章，逐步展露均匀、透亮、富有光采的年轻肤质。",
         },
       ],
     },
@@ -483,17 +477,17 @@ const laserCopyZh: LaserCopy = {
     beforeAfter: {
       beforeSrc: "/images/laser/pigmentation-before.png",
       afterSrc: "/images/laser/pigmentation-after.png",
-      beforeAlt: "色素祛除治疗前",
-      afterAlt: "色素祛除治疗后",
+      beforeAlt: "光子祛斑治疗前",
+      afterAlt: "光子祛斑治疗后",
     },
     images: {
       left: {
         src: "/images/laser/pigmentation-left.png",
-        alt: "色素祛除设备正面",
+        alt: "光子祛斑设备正面",
       },
       right: {
         src: "/images/laser/pigmentation-right.png",
-        alt: "色素祛除设备侧面",
+        alt: "光子祛斑设备侧面",
       },
     },
     layoutTweaks: {
@@ -563,7 +557,7 @@ const laserCopyZh: LaserCopy = {
         id: "faq-downtime",
         question: "治疗后是否需要恢复期？",
         answer:
-          "恢复期因疗程类型而异。许多疗程几乎不需要恢复期，您可以快速恢复正常活动。某些疗程后可能会出现轻微泛红、肿胀或敏感，通常会在短时间内消退。",
+          "恢复期会因疗程类型而异，但大多数光疗项目几乎不需要恢复期。以 Lumecca 和光子祛斑类疗程为例，术后可能出现轻微泛红或色素暂时加深，通常会在数小时至数天内逐步消退。",
       },
     ],
   },

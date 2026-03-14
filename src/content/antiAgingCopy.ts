@@ -46,24 +46,24 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
   sofwave: {
     about: {
       subtitle:
-        "Non-invasive ultrasound technology for skin tightening and natural lifting.",
+        "Non-invasive ultrasound skin tightening for natural contour refinement.",
       paragraphs: [
         {
           segments: [
             {
-              text: "Sofwave is a non-invasive aesthetic treatment that uses advanced ",
+              text: "Sofwave is an innovative non-invasive aesthetic treatment that uses advanced ",
             },
             {
               text: "SUPERB™ (Synchronous Ultrasound Parallel Beam)",
               bold: true,
             },
             {
-              text: " technology to improve skin firmness, reduce fine lines, and restore a naturally lifted appearance.",
+              text: " technology to precisely target the mid-dermis, gently tightening skin, softening fine lines, and restoring a naturally defined contour.",
             },
           ],
         },
         {
-          text: "By delivering controlled ultrasound energy into the mid-dermis, Sofwave stimulates the body's natural production of collagen and elastin—resulting in gradual, natural-looking rejuvenation with minimal downtime.",
+          text: "By delivering controlled ultrasound energy beneath the skin, Sofwave stimulates collagen and elastin renewal from within. The treatment is comfortable, downtime is minimal, and results build gradually for a natural-looking lifting effect.",
         },
       ],
     },
@@ -94,20 +94,20 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
       canHelpWithTitle: "Can Help With",
       benefits: [
         {
-          title: "Non-Invasive Treatment",
+          title: "Non-Invasive Ultrasound Tightening",
           text: "No needles, no surgery, and no incisions required.",
         },
         {
-          title: "Skin Tightening & Lifting",
-          text: "Helps improve mild to moderate skin laxity and soft tissue sagging.",
+          title: "Dermal-Level Collagen Renewal",
+          text: "SUPERB™ energy works in the mid-dermis to support firmer, more elastic skin.",
         },
         {
-          title: "Versatile Treatment Areas",
-          text: "Effective for facial fine lines, wrinkles, brow lifting, neck tightening, and submental (under-chin) areas.",
+          title: "Natural Contour Refinement",
+          text: "Helps improve the face, neck, jawline, and other areas without an overdone look.",
         },
         {
-          title: "Safe for All Skin Types",
-          text: "Clinically proven to be safe and effective across all skin tones.",
+          title: "Safe Across Skin Types",
+          text: "Clinically proven to be broadly compatible across different skin tones.",
         },
         {
           title: "Minimal Downtime",
@@ -115,12 +115,12 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
         },
       ],
       helpsWith: [
-        "Skin laxity and loss of firmness",
-        "Fine lines and wrinkles",
-        "Mild sagging in the lower face and jawline",
-        "Brow drooping",
-        "Neck and submental skin laxity",
-        "Early signs of aging",
+        "Mild to moderate facial laxity",
+        "Fine lines and early wrinkles",
+        "Jawline softness and lower-face sagging",
+        "Brow and upper-face descent",
+        "Neck laxity and crepey skin",
+        "Early collagen loss and contour blurring",
       ],
     },
   },
@@ -132,30 +132,19 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
         {
           segments: [
             {
-              text: "Thermage FLX is the fourth and latest generation of Thermage non-invasive radiofrequenncy (RF) skin tightening technology.",
+              text: "Thermage FLX is Solta Medical's fifth-generation monopolar radiofrequency skin-tightening technology, ",
               bold: true,
             },
             {
-              text: " Released by Solta Medical, it is designed to smooth, firm, and contour skin on the face, eyes, and body without surgery, needles, or downtime.",
+              text: "designed to smooth, firm, and contour the face, eye area, and body without surgery, needles, or downtime.",
             },
           ],
         },
         {
-          segments: [
-            {
-              text: "Globally recognized and clinically established, Thermage FLX is ",
-            },
-            {
-              text: "the only non-invasive skin tightening technology approved for use around the eyes",
-              bold: true,
-            },
-            {
-              text: ", making it a trusted choice for delicate areas as well as full-face and neck treatments.",
-            },
-          ],
+          text: "Clinically established worldwide, Thermage FLX is the only non-invasive tightening technology cleared for use around the eyes, making it especially trusted for delicate areas as well as full-face and neck rejuvenation.",
         },
         {
-          text: "By evenly heating the deeper dermal layers, Thermage FLX stimulates collagen remodeling while tightening existing collagen fibers—resulting in smoother, firmer, and naturally lifted-looking skin with minimal downtime.",
+          text: "By precisely heating the deep dermis, Thermage FLX delivers immediate collagen contraction while triggering long-term collagen renewal, so skin gradually looks firmer, smoother, and naturally lifted over time.",
         },
       ],
     },
@@ -183,36 +172,34 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
     faq: {
       title: "Thermage FLX",
       keyBenefitsTitle: "Key Benefits of",
-      canHelpWithTitle: "Can Help With",
+      canHelpWithTitle: "Can Address",
       benefits: [
         {
-          title: "Latest-Generation Technology",
-          text: "Thermage FLX represents the most advanced evolution of Thermage, offering improved comfort and precision.",
+          title: "Fifth-Generation Intelligent RF Delivery",
+          text: "FLX uses smarter energy delivery for greater precision, comfort, and treatment consistency.",
         },
         {
-          title: "Eye-Area Safe & Proven",
-          text: "Globally recognized as the only non-invasive skin tightening treatment approved for delicate eye areas.",
+          title: "Globally Cleared for Eye-Area Use",
+          text: "It remains the only non-invasive tightening technology approved for delicate eyelid and peri-orbital treatment.",
         },
         {
-          title: "Non-Invasive Treatment",
-          text: "No needles, no injections, and no skin breakage required.",
+          title: "Non-Invasive, Comfortable, and Walk-In/Walk-Out",
+          text: "No needles, no surgery, and no surface injury, with a comfortable treatment experience and no disruption to daily life.",
         },
         {
-          title: "Skin Tightening & Firming",
-          text: "Stimulates collagen boosting and regeneration to improve laxity and contour.",
+          title: "Immediate Tightening + Long-Term Regeneration",
+          text: "Deep thermal stimulation contracts existing collagen and supports long-term collagen rebuilding.",
         },
         {
-          title: "Minimal Downtime",
-          text: "Most patients return to daily activities immediately after treatment.",
+          title: "No Downtime for Daily Life",
+          text: "Temporary redness is usually mild and brief, so most clients return to work and social routines right away.",
         },
       ],
       helpsWith: [
-        "Skin laxity and loss of firmness",
-        "Fine lines and wrinkles",
-        "Eye-area skin looseness and crepiness",
-        "Jawline and lower face sagging",
-        "Neck skin laxity",
-        "Early signs of aging",
+        "Facial laxity, brow descent, jawline softness, and sagging tissue",
+        "Fine lines, nasolabial folds, marionette lines, and neck lines",
+        "Rough texture, visible pores, and declining elasticity",
+        "Blurred contour, cheek descent, and submental fullness",
       ],
     },
   },
@@ -223,39 +210,24 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
       paragraphs: [
         {
           segments: [
-            { text: "Morpheus8 is a minimally invasive treatment that " },
+            { text: "Morpheus8 RF microneedling " },
             {
-              text: "combines microneedling with radiofrequency (RF) energy to target the deeper layers of the skin",
+              text: "combines microneedling with radiofrequency (RF) energy to remodel the skin from within",
               bold: true,
             },
             {
-              text: ". By creating controlled micro-injuries and delivering RF heat beneath the surface, it stimulates collagen and elastin production to improve skin firmness, texture, and overall quality.",
+              text: ". By creating controlled micro-injuries while delivering heat into the dermis and subdermal tissue, it stimulates collagen and elastin renewal to improve firmness, texture, and overall skin quality.",
             },
           ],
         },
         {
-          segments: [
-            { text: "Unlike non-invasive treatments, Morpheus8 " },
-            {
-              text: "penetrates through the skin barrier",
-              bold: true,
-            },
-            {
-              text: ", allowing for deeper remodeling of both skin and underlying tissue. This makes it especially effective for concerns such as skin laxity, enlarged pores, acne scars, and uneven texture.",
-            },
-          ],
+          text: "Unlike non-invasive treatments, Morpheus8 crosses the skin barrier to achieve deeper remodeling of both the skin and underlying support structures. This makes it especially effective for laxity, enlarged pores, acne scars, atrophic scarring, uneven texture, and fine wrinkles.",
         },
         {
-          segments: [
-            { text: "Morpheus8 is " },
-            {
-              text: "fully customizable in depth and intensity",
-              bold: true,
-            },
-            {
-              text: ", making it suitable for a wide range of skin types and treatment goals while maintaining a balance between effectiveness and recovery time.",
-            },
-          ],
+          text: "Treatment depth and energy can be tailored to the area, skin type, and treatment goal, allowing precise rejuvenation on the face, neck, and body while balancing visible improvement with recovery time.",
+        },
+        {
+          text: "Morpheus8 helps awaken the skin's regenerative response for firmer, smoother, and more youthful-looking skin.",
         },
       ],
     },
@@ -264,19 +236,19 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
       items: [
         {
           id: "morpheus8-1",
-          text: "Those seeking deep skin remodeling for acne scars and uneven texture",
+          text: "Those seeking deep skin remodeling for acne scars, stretch marks, and uneven texture",
         },
         {
           id: "morpheus8-2",
-          text: "Those who want to address both skin laxity and fat reduction in one treatment",
+          text: "Those who want to improve skin laxity, pores, and scarring within one treatment course",
         },
         {
           id: "morpheus8-3",
-          text: "Those looking for dramatic improvement in fine lines and deeper wrinkles",
+          text: "Those looking for stronger remodeling than non-invasive anti-aging treatments",
         },
         {
           id: "morpheus8-4",
-          text: "Those who prefer a minimally invasive alternative to surgical procedures",
+          text: "Those who prefer a customizable minimally invasive option for face, neck, or body rejuvenation",
         },
       ],
     },
@@ -303,13 +275,12 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
         },
       ],
       helpsWith: [
-        "Skin laxity and loss of firmness",
-        "Fine lines and wrinkles",
-        "Acne scars and uneven skin texture",
-        "Enlarged pores",
-        "Uneven skin tone",
-        "Mild to moderate sagging in facial and body areas",
-        "Overall skin quality and structure improvement",
+        "Mild to moderate skin laxity on the face, neck, and body",
+        "Fine lines, wrinkles, and crepey texture",
+        "Acne scars, atrophic scars, and stretch marks",
+        "Enlarged pores and rough, uneven texture",
+        "Uneven tone, dullness, and loss of radiance",
+        "Reduced elasticity and weakened structural support",
       ],
     },
   },
@@ -321,19 +292,22 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
         {
           segments: [
             {
-              text: "Forma lifting is a non-invasive cosmetic treatment that uses radiofrequency (RF) energy ",
+              text: "Forma is a non-invasive radiofrequency (RF) treatment that ",
               bold: true,
             },
             {
-              text: "to heat deep skin layers, stimulating new collagen production to tighten, lift, and firm sagging skin on the face, neck, and body, reducing wrinkles and improving texture with minimal downtime.",
+              text: "gently heats the dermis to stimulate collagen renewal, helping tighten, lift, and contour the face, neck, and body with minimal downtime.",
             },
           ],
         },
         {
-          text: "Unlike invasive procedures or injectable treatments, Forma delivers consistent, comfortable warmth without needles or downtime. Treatments are often described as a \"lunchtime facial,\" as sessions are quick and allow clients to return to daily activities immediately.",
+          text: "Unlike surgery or injectables, Forma delivers a steady, comfortable warmth without needles, incisions, or recovery time. Because sessions are fast and convenient, it is often described as a \"lunchtime\" skin-tightening treatment.",
         },
         {
-          text: "Forma is ideal for clients seeking subtle yet effective skin tightening and maintenance, whether as a standalone treatment or as part of a personalized aesthetic program.",
+          text: "Forma can be performed on its own or as part of a personalized aesthetic plan for clients seeking gradual, natural-looking firming and maintenance care.",
+        },
+        {
+          text: "Forma Plus expands treatment efficiency and coverage for larger or more complex areas such as the jawline, abdomen, and arms.",
         },
       ],
     },
@@ -342,19 +316,19 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
       items: [
         {
           id: "forma-1",
-          text: "Those seeking gentle, comfortable skin tightening with no downtime",
+          text: "Those who want to improve mild laxity on the face, neck, or body with natural-looking firming",
         },
         {
           id: "forma-2",
-          text: "Those who want to maintain and enhance previous treatment results",
+          text: "Those dealing with fine lines, rough texture, or blurred contours and hoping for a gradual lift",
         },
         {
           id: "forma-3",
-          text: "Those in their 30s and 40s looking for preventative anti-aging care",
+          text: "Those who prefer a non-invasive, no-downtime, comfortable treatment experience",
         },
         {
           id: "forma-4",
-          text: "Those who prefer gradual, natural-looking improvement over time",
+          text: "Those seeking a long-term maintenance option for regular anti-aging care",
         },
       ],
     },
@@ -364,32 +338,32 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
       canHelpWithTitle: "Can Help With",
       benefits: [
         {
-          title: "Non-Invasive Treatment",
-          text: "No needles, no incisions, and no recovery time required.",
+          title: "Non-Invasive and Walk-In/Walk-Out",
+          text: "No needles, no incisions, and no recovery period are required.",
         },
         {
-          title: "Comfortable & Relaxing",
-          text: "Warm, soothing sensation throughout the session.",
+          title: "Warm, Comfortable Experience",
+          text: "The treatment feels like a controlled, soothing thermal spa rather than an aggressive procedure.",
         },
         {
-          title: "Targeted Treatment Areas",
-          text: "Ideal for localized facial zones such as cheeks, jawline, and lower face.",
+          title: "Targeted Contour Refinement",
+          text: "Especially useful for focal areas such as the cheeks, jawline, lower face, and other localized zones.",
         },
         {
-          title: "Safe for All Skin Types",
-          text: "Suitable for a wide range of skin tones and conditions.",
+          title: "Broad Skin-Type Compatibility",
+          text: "Energy delivery is gentle and controlled across a wide range of tones and skin types.",
         },
         {
-          title: "Gradual, Natural Improvement",
-          text: "Skin appears firmer, smoother, and more refined over time.",
+          title: "Gradual, Natural Change",
+          text: "Skin progressively looks firmer, smoother, and more refined without a sudden or artificial effect.",
         },
       ],
       helpsWith: [
-        "Mild to moderate skin laxity",
-        "Loss of firmness and elasticity",
-        "Early aging concerns",
-        "Dull or tired-looking skin",
-        "Localized facial contour refinement",
+        "Facial skin laxity and declining elasticity",
+        "Blurred jawline and submental fullness",
+        "Fine lines around the eyes and upper-eyelid laxity",
+        "Horizontal neck lines and neck looseness",
+        "Localized skin sagging on the body, such as the abdomen or arms",
       ],
     },
   },
@@ -398,24 +372,24 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
 const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
   sofwave: {
     about: {
-      subtitle: "非侵入性超声技术，用于紧致肌肤和自然提升。",
+      subtitle: "非侵入性超声紧肤，重塑自然轮廓。",
       paragraphs: [
         {
           segments: [
             {
-              text: "Sofwave 是一种非侵入性美容疗程，采用先进的 ",
+              text: "索芙波是一项创新的非侵入性美容疗程，采用先进的 ",
             },
             {
               text: "SUPERB™ 同步超声平行波束技术",
               bold: true,
             },
             {
-              text: "，改善肌肤紧致度、减少细纹，恢复自然提升的外观。",
+              text: "，精准作用于真皮中层，温和而有效地收紧肌肤，改善细纹与松弛，恢复面部自然立体的轮廓。",
             },
           ],
         },
         {
-          text: "通过向真皮中层输送可控超声能量，Sofwave 刺激人体自然产生胶原蛋白和弹性蛋白——在最少恢复期的情况下，实现渐进、自然的年轻化效果。",
+          text: "该技术通过向皮肤深层输送可控的超声能量，刺激胶原蛋白与弹性蛋白的新生，帮助肌肤由内而外逐步恢复紧致与弹性。疗程过程舒适，恢复期短，效果渐进自然，适合追求安全、高效抗老方案的人群。",
         },
       ],
     },
@@ -441,25 +415,25 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
       ],
     },
     faq: {
-      title: "Sofwave",
+      title: "索芙波",
       keyBenefitsTitle: "主要优势",
       canHelpWithTitle: "可以改善的问题",
       benefits: [
         {
-          title: "非侵入性治疗",
-          text: "无需针头、手术或切口。",
+          title: "无创超声紧肤",
+          text: "无需针头、手术或切口，即可完成深层紧致管理。",
         },
         {
-          title: "紧肤与提升",
-          text: "帮助改善轻度至中度肌肤松弛和软组织下垂。",
+          title: "胶原新生不伤表层",
+          text: "在真皮层内促进胶原更新，同时保持表皮舒适与完整。",
         },
         {
-          title: "多样化治疗区域",
-          text: "有效治疗面部细纹、皱纹、眉部提升、颈部紧致以及下颌下区域。",
+          title: "自然轮廓提升",
+          text: "适合改善面部、颈部与下颌线的轻中度松弛与轮廓感下降。",
         },
         {
-          title: "适用于所有肤质",
-          text: "经临床验证，对所有肤色安全有效。",
+          title: "广泛肤质兼容",
+          text: "能量稳定可控，适用于多种肤色与肤质类型。",
         },
         {
           title: "恢复期短",
@@ -467,12 +441,12 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
         },
       ],
       helpsWith: [
-        "肌肤松弛和紧致度下降",
-        "细纹和皱纹",
-        "下面部和下颌线轻度下垂",
-        "眉部下垂",
-        "颈部和下颌下肌肤松弛",
-        "早期衰老迹象",
+        "面部轻中度松弛与轮廓下垂",
+        "细纹与早期皱纹",
+        "下颌线模糊与下面部轻度下垂",
+        "眉尾下垂与上面部支撑减弱",
+        "颈部松弛与下颌下轮廓感下降",
+        "早期胶原流失导致的初老迹象",
       ],
     },
   },
@@ -484,30 +458,19 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
         {
           segments: [
             {
-              text: "Thermage FLX 是 Thermage 第四代也是最新一代的非侵入性射频 (RF) 紧肤技术。",
+              text: "热玛吉 FLX 是出自 Solta Medical 的第五代非侵入式单极射频紧肤技术，也是该系列的最新升级版本。",
               bold: true,
             },
             {
-              text: " 由 Solta Medical 推出，旨在无需手术、针头或恢复期的情况下，平滑、紧致和塑形面部、眼部和身体肌肤。",
+              text: " 它无需手术、无针无创，亦无恢复期，即可对面部、眼周及身体肌肤进行紧致、平滑与轮廓重塑。",
             },
           ],
         },
         {
-          segments: [
-            {
-              text: "Thermage FLX 在全球范围内得到认可并经过临床验证，是 ",
-            },
-            {
-              text: "唯一一种获批用于眼周区域的非侵入性紧肤技术",
-              bold: true,
-            },
-            {
-              text: "，使其成为敏感区域以及全脸和颈部治疗的可靠选择。",
-            },
-          ],
+          text: "作为全球临床验证的经典抗衰项目，Thermage FLX 是目前唯一获得监管许可、可安全用于眼周区域的非侵入式紧肤技术，在敏感部位及全脸颈部治疗中均展现出卓越的可靠性与效果。",
         },
         {
-          text: "通过均匀加热真皮深层，Thermage FLX 刺激胶原蛋白重塑，同时紧致现有胶原纤维——在最少恢复期的情况下，实现更平滑、更紧致、自然提升的肌肤外观。",
+          text: "该技术通过精准加热真皮深层，同步实现胶原蛋白的即刻收缩与长期再生。既能紧致现有胶原纤维，又能刺激新生胶原持续重塑，令肌肤逐步呈现紧实、平滑、自然上扬的年轻状态。",
         },
       ],
     },
@@ -533,38 +496,36 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
       ],
     },
     faq: {
-      title: "Thermage FLX",
+      title: "热玛吉 FLX",
       keyBenefitsTitle: "主要优势",
-      canHelpWithTitle: "可以改善的问题",
+      canHelpWithTitle: "适用问题",
       benefits: [
         {
-          title: "最新一代技术",
-          text: "Thermage FLX 代表了 Thermage 的最先进演进，提供改进的舒适度和精确性。",
+          title: "第五代智能射频技术",
+          text: "作为 Thermage 系列的最新一代升级，FLX 搭载更智能的能量发射系统，精准调控每一发射频脉冲，在确保效果的同时提升舒适度与安全性。",
         },
         {
-          title: "眼部安全且经过验证",
-          text: "在全球范围内被认可为唯一一种获批用于敏感眼周区域的非侵入性紧肤治疗。",
+          title: "全球唯一眼周合规认证",
+          text: "凭借精准加热控制与表皮保护，Thermage FLX 是目前唯一获监管机构批准可安全用于眼睑等敏感区域的非侵入式紧肤技术。",
         },
         {
-          title: "非侵入性治疗",
-          text: "无需针头、注射或破坏肌肤。",
+          title: "无创无痛，即做即走",
+          text: "无需针剂、无需手术、无表皮创伤，治疗舒适，结束后即可恢复正常生活。",
         },
         {
-          title: "紧肤与塑形",
-          text: "刺激胶原蛋白增生和再生，改善松弛和轮廓。",
+          title: "即刻紧致 + 长效再生",
+          text: "通过立体加热真皮深层，触发胶原纤维即刻收缩，同时启动胶原蛋白长期新生，实现自然且持久的紧致提升。",
         },
         {
-          title: "恢复期短",
-          text: "大多数客户治疗后可立即恢复日常活动。",
+          title: "零恢复期，不影响日常",
+          text: "治疗后仅可能出现轻微泛红，多数情况下数小时内消退，绝大多数客户可即刻回归工作与社交。",
         },
       ],
       helpsWith: [
-        "肌肤松弛和紧致度下降",
-        "细纹和皱纹",
-        "眼周肌肤松弛和皱纹",
-        "下颌线和下面部下垂",
-        "颈部肌肤松弛",
-        "早期衰老迹象",
+        "面部松弛：提升眉尾、收紧下颌线，改善下垂组织",
+        "皱纹细纹：淡化法令纹、木偶纹及颈部横纹",
+        "肤质粗糙：通过胶原重塑，细腻毛孔，提升肌肤弹性",
+        "轮廓模糊：针对苹果肌复位、双下巴有收紧效果",
       ],
     },
   },
@@ -575,39 +536,20 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
       paragraphs: [
         {
           segments: [
-            { text: "Morpheus8 是一种微创治疗，" },
-            {
-              text: "结合微针和射频 (RF) 能量，针对肌肤深层",
-              bold: true,
-            },
-            {
-              text: "。通过制造可控的微创伤并在表面下输送射频热量，刺激胶原蛋白和弹性蛋白的产生，改善肌肤紧致度、质地和整体品质。",
-            },
+            { text: "魔肤微针——微针射频联合，重塑肌底年轻力。", bold: true },
           ],
         },
         {
-          segments: [
-            { text: "与非侵入性治疗不同，Morpheus8 " },
-            {
-              text: "穿透肌肤屏障",
-              bold: true,
-            },
-            {
-              text: "，实现肌肤和底层组织的深层重塑。这使其对肌肤松弛、毛孔粗大、痤疮疤痕和不均匀质地等问题特别有效。",
-            },
-          ],
+          text: "魔肤微针是一款创新的微创治疗技术，它将微针的物理穿透与射频（RF）能量的热作用相结合，精准作用至肌肤深层。通过制造可控的微创伤并在真皮及皮下组织释放射频热量，能够高效刺激胶原蛋白与弹性蛋白新生，从而实现肌肤紧致度、质地与整体品质的显著提升。",
         },
         {
-          segments: [
-            { text: "Morpheus8 的 " },
-            {
-              text: "深度和强度完全可定制",
-              bold: true,
-            },
-            {
-              text: "，适合各种肤质和治疗目标，同时在有效性和恢复时间之间保持平衡。",
-            },
-          ],
+          text: "与非侵入性治疗不同，魔肤微针能够突破表皮屏障，直接作用于深层组织，实现由内而外的立体重塑。这一独特机制使其尤其擅长改善：肌肤松弛与弹性下降、毛孔粗大、痤疮疤痕及其他凹陷性疤痕，以及肤质不均与细纹皱纹。",
+        },
+        {
+          text: "治疗深度与能量强度均可根据个人肤质、部位及目标灵活调节，确保在效果与恢复期之间达到理想平衡。无论是面部、颈部还是身体其他区域，魔肤微针都能提供个性化精准治疗。",
+        },
+        {
+          text: "魔肤微针——用科技唤醒肌肤自愈力，重塑紧致平滑的年轻质感。",
         },
       ],
     },
@@ -616,19 +558,19 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
       items: [
         {
           id: "morpheus8-1",
-          text: "寻求针对痤疮疤痕和不均匀质地进行深层肌肤重塑的人群",
+          text: "寻求针对痤疮疤痕、妊娠纹和不均匀质地进行深层肌肤重塑的人群",
         },
         {
           id: "morpheus8-2",
-          text: "希望在一次治疗中同时解决肌肤松弛和脂肪减少问题的人群",
+          text: "希望同步改善肌肤松弛、毛孔粗大与疤痕问题的人群",
         },
         {
           id: "morpheus8-3",
-          text: "希望显著改善细纹和深层皱纹的人群",
+          text: "希望获得强于非侵入疗程的重塑效果，同时仍接受可控恢复期的人群",
         },
         {
           id: "morpheus8-4",
-          text: "偏好微创替代手术的人群",
+          text: "偏好可依部位与肤质定制深度和能量的微创抗老方案的人群",
         },
       ],
     },
@@ -655,13 +597,12 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
         },
       ],
       helpsWith: [
-        "肌肤松弛和紧致度下降",
-        "细纹和皱纹",
-        "痤疮疤痕和不均匀肤质",
-        "毛孔粗大",
-        "肤色不均",
-        "面部和身体区域的轻度至中度下垂",
-        "整体肌肤品质和结构改善",
+        "面部、颈部及身体局部的轻度至中度肌肤松弛",
+        "细纹、皱纹与松弛带来的质感下降",
+        "痤疮疤痕、凹陷性疤痕与妊娠纹",
+        "毛孔粗大、粗糙与不均匀肤质",
+        "暗沉、肤色不均与光泽度下降",
+        "弹性流失与结构性支撑减弱",
       ],
     },
   },
@@ -673,19 +614,22 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
         {
           segments: [
             {
-              text: "Forma 提升是一种非侵入性美容治疗，使用射频 (RF) 能量 ",
+              text: "Forma——温感焕肤，重塑轮廓的“午餐式”美学。",
               bold: true,
-            },
-            {
-              text: "加热肌肤深层，刺激新胶原蛋白的产生，紧致、提升和塑形面部、颈部和身体的下垂肌肤，减少皱纹，改善质地，且恢复期极短。",
             },
           ],
         },
         {
-          text: "与侵入性程序或注射治疗不同，Forma 提供持续、舒适的温暖感，无需针头或恢复期。治疗通常被描述为\"午餐美容\"，因为疗程快速，客户可立即恢复日常活动。",
+          text: "Forma 是一项非侵入性射频（RF）美容技术，通过温和加热真皮层，刺激胶原蛋白新生，实现面部、颈部及身体肌肤的紧致、提升与轮廓重塑。它能有效改善松弛、淡化细纹、优化肤质，且恢复期极短，是日常维养与抗衰管理的理想选择。",
         },
         {
-          text: "Forma 适合寻求微妙而有效的紧肤和维护的客户，无论是作为独立治疗还是个性化美容计划的一部分。",
+          text: "与手术或注射类治疗不同，Forma 以持续舒适的温热感作用于肌肤深层，全程无痛、无创、无需恢复。单次治疗快速便捷，结束后即可立即回归正常生活，因此被广泛誉为“午餐式美容”。",
+        },
+        {
+          text: "Forma 既可独立施作，亦可作为个性化美容方案的组成部分，为追求自然、渐进效果的客户提供安全、舒适的紧肤体验。",
+        },
+        {
+          text: "Forma Plus 升级之选：Forma Plus 在原有技术基础上进一步优化能量覆盖与治疗效率，适用于更大面积或更复杂区域，如面部、下颌线、腹部、手臂等。",
         },
       ],
     },
@@ -694,19 +638,19 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
       items: [
         {
           id: "forma-1",
-          text: "寻求温和、舒适的紧肤治疗且无恢复期的人群",
+          text: "希望改善面部、颈部或身体轻度松弛，追求自然紧致效果的人群",
         },
         {
           id: "forma-2",
-          text: "希望维持和增强先前治疗效果的人群",
+          text: "存在细纹、肤质粗糙或轮廓模糊，期待渐进式提升的人群",
         },
         {
           id: "forma-3",
-          text: "30至40岁，寻求预防性抗衰老护理的人群",
+          text: "偏好非侵入、无恢复期、舒适便捷治疗方式的人群",
         },
         {
           id: "forma-4",
-          text: "偏好随时间渐进、自然外观改善的人群",
+          text: "寻求可作为定期维养的长期抗衰方案的人群",
         },
       ],
     },
@@ -716,32 +660,32 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
       canHelpWithTitle: "可以改善的问题",
       benefits: [
         {
-          title: "非侵入性治疗",
-          text: "无需针头、切口或恢复时间。",
+          title: "无创无痕，即做即走",
+          text: "无需针头、无需切口、无恢复期，治疗结束后即可恢复正常生活，是轻负担式美学护理。",
         },
         {
-          title: "舒适且放松",
-          text: "整个疗程中温暖、舒缓的感觉。",
+          title: "温感舒享，全程放松",
+          text: "整个过程以持续舒适的温热感为主导，无痛无灼热，体验更接近温热 SPA。",
         },
         {
-          title: "针对性治疗区域",
-          text: "适合局部面部区域，如脸颊、下颌线和下面部。",
+          title: "精雕局部，重点提升",
+          text: "特别适合脸颊松弛、下颌线模糊和下面部堆积等局部区域的精准紧塑。",
         },
         {
-          title: "适用于所有肤质",
-          text: "适合各种肤色和肌肤状况。",
+          title: "普适兼容，全肤质适用",
+          text: "能量温和可控，适用于多种肤色与肤质，包括敏感肌与深肤色人群。",
         },
         {
-          title: "渐进、自然改善",
-          text: "随着时间推移，肌肤变得更紧致、更平滑、更精致。",
+          title: "渐进蜕变，自然有致",
+          text: "效果随时间逐步显现，肌肤愈发紧致、平滑、细腻，自然但可感知。",
         },
       ],
       helpsWith: [
-        "轻度至中度肌肤松弛",
-        "紧致度和弹性下降",
-        "早期衰老问题",
-        "暗沉或疲惫外观的肌肤",
-        "局部面部轮廓精修",
+        "面部肌肤松弛、弹性下降",
+        "下颌线模糊、双下巴",
+        "眼周细纹、上眼睑松弛",
+        "颈部横纹与松弛",
+        "身体局部皮肤松垂，如腹部与手臂",
       ],
     },
   },

@@ -163,8 +163,8 @@ const promoCopyZh: PromoCopy = {
     items: [
       {
         id: "lumecca",
-        title: "Lumecca 光子嫩肤",
-        image: { src: "/images/promo/lumecca.png", alt: "Lumecca 光子嫩肤疗程" },
+        title: "Lumecca 光感焕颜",
+        image: { src: "/images/promo/lumecca.png", alt: "Lumecca 光感焕颜疗程" },
         vipPrice: "$250",
         regularPrice: "$380",
         duration: "90 分钟",

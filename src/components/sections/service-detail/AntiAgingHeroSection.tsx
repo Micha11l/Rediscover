@@ -15,16 +15,18 @@ import { uiStrings } from "@/content/shared";
  * - Hero Content: Breadcrumb, Headline, Process Nav, Hero Image
  */
 
-/** Process navigation items - links to sections within the page */
-const PROCESS_ITEMS = [
-  { id: "sofwave", label: "Sofwave", href: "#sofwave" },
-  { id: "thermage-flx", label: "Thermage FLX", href: "#thermage-flx" },
-  { id: "morpheus8", label: "Morpheus8", href: "#morpheus8" },
-  { id: "forma", label: "Forma", href: "#forma" },
-];
-
 export function AntiAgingHeroSection({ lang }: { lang: Language }) {
   const ui = pickContent(uiStrings, lang);
+  const processItems = [
+    { id: "sofwave", label: lang === "zh" ? "索芙波" : "Sofwave", href: "#sofwave" },
+    {
+      id: "thermage-flx",
+      label: lang === "zh" ? "热玛吉 FLX" : "Thermage FLX",
+      href: "#thermage-flx",
+    },
+    { id: "morpheus8", label: "Morpheus8", href: "#morpheus8" },
+    { id: "forma", label: "Forma", href: "#forma" },
+  ];
   return (
     <section
       data-testid="anti-aging-hero"
@@ -95,7 +97,7 @@ export function AntiAgingHeroSection({ lang }: { lang: Language }) {
             aria-label="Treatment options"
             className="flex w-full max-w-[1200px] flex-wrap items-start justify-center gap-4 lg:h-[90px] lg:flex-nowrap lg:justify-between lg:gap-0"
           >
-            {PROCESS_ITEMS.map((item, index) => (
+            {processItems.map((item, index) => (
               <div key={item.id} className="flex items-center justify-center lg:flex-1">
                 <Link
                   href={item.href}
@@ -104,7 +106,7 @@ export function AntiAgingHeroSection({ lang }: { lang: Language }) {
                   {item.label}
                 </Link>
                 {/* Divider - hide on last item and on mobile */}
-                {index < PROCESS_ITEMS.length - 1 && (
+                {index < processItems.length - 1 && (
                   <div
                     aria-hidden="true"
                     className="ml-4 hidden h-[45px] w-px bg-border/60 lg:ml-8 lg:block"

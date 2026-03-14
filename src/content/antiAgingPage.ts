@@ -198,6 +198,9 @@ const antiAgingContentEn: AntiAgingPageContent = {
           {
             text: "With its unique comfort pulse technology and optimized treatment algorithms, Thermage FLX delivers consistent results with improved patient comfort—ideal for treating the face, eyes, and body.",
           },
+          {
+            text: "Thermage FLX uses Monopolar Radiofrequency (RF) energy to heat the deep, collagen-rich layers of your skin. 1) Immediate Tightening: The heat causes existing collagen fibers to contract instantly. 2) Long-Term Repair: The controlled thermal energy triggers your body's natural healing process, producing new collagen over the next 2–6 months. 3) The \"FLX\" Difference: \"F\" stands for Faster, \"L\" for Algorithm (AccuREP technology that adjusts energy in real-time), and \"X\" for Experience (enhanced vibration to improve comfort).",
+          },
         ],
         leftImage: {
           src: "/images/anti-aging/thermage-device-left.png",
@@ -256,6 +259,7 @@ const antiAgingContentEn: AntiAgingPageContent = {
           "Jawline and lower face sagging",
           "Neck skin laxity",
           "Early signs of aging",
+          "Body: Tightens loose skin on the abdomen (popular post-pregnancy) and \"kninkles\" (knee wrinkles)",
         ],
       },
       beforeAfter: [
@@ -349,6 +353,7 @@ const antiAgingContentEn: AntiAgingPageContent = {
           "Uneven skin tone",
           "Mild to moderate sagging in facial and body areas",
           "Overall skin quality and structure improvement",
+          "Stretch marks: One of the few effective treatments for stubborn body scarring",
         ],
       },
       beforeAfter: [
@@ -639,6 +644,9 @@ const antiAgingContentZh: AntiAgingPageContent = {
           {
             text: "凭借其独特的舒适脉冲技术和优化的疗程算法，Thermage FLX 提供一致的效果和更佳的客户舒适度——适用于面部、眼部和身体疗程。",
           },
+          {
+            text: "Thermage FLX 使用单极射频（RF）能量加热肌肤深层富含胶原蛋白的组织层。1）即时紧致：热量使现有胶原纤维立即收缩。2）长期修复：受控的热能触发身体的自然愈合过程，在接下来的 2–6 个月内生成新的胶原蛋白。3）\"FLX\" 的含义：\"F\" 代表 Faster（更快速），\"L\" 代表 Algorithm（AccuREP 实时能量调节技术），\"X\" 代表 Experience（增强振动以提升舒适度）。",
+          },
         ],
         leftImage: {
           src: "/images/anti-aging/thermage-device-left.png",
@@ -697,6 +705,7 @@ const antiAgingContentZh: AntiAgingPageContent = {
           "下颌线和面部下方下垂",
           "颈部肌肤松弛",
           "衰老早期迹象",
+          "身体：紧致腹部松弛皮肤（产后热门项目）及膝部皱纹",
         ],
       },
       beforeAfter: [
@@ -790,6 +799,7 @@ const antiAgingContentZh: AntiAgingPageContent = {
           "肤色不均",
           "面部和身体区域轻度至中度下垂",
           "整体肌肤质量和结构改善",
+          "妊娠纹：针对顽固身体疤痕的少数有效疗法之一",
         ],
       },
       beforeAfter: [

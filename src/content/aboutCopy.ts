@@ -251,7 +251,7 @@ const aboutCopyEn: AboutCopy = {
   contact: {
     phone: "+1 (647) 523-3988",
     website: "https://rediscoverbeauty.ca",
-    hours: { days: "Mon – Sun", time: "10.00AM – 8.00PM" },
+    hours: { days: "Mon – Sun", time: "10:00 – 8:00" },
     address: "9425 Leslie St Unit14, 2F, Richmond Hill, ON L4B 3N7",
   },
 
@@ -460,7 +460,7 @@ const aboutCopyZh: AboutCopy = {
   contact: {
     phone: "+1 (647) 523-3988",
     website: "https://rediscoverbeauty.ca",
-    hours: { days: "周一至周日", time: "上午 10:00 – 晚上 8:00" },
+    hours: { days: "周一至周日", time: "10:00 – 8:00" },
     address: "9425 Leslie St Unit14, 2F, Richmond Hill, ON L4B 3N7",
   },
 

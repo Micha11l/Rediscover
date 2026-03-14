@@ -7,7 +7,7 @@ import type { Language } from "@/i18n/types";
 function TreatmentCard({ treatment }: { treatment: PromoTreatment }) {
   return (
     <div className="flex flex-col items-center gap-6">
-      <div className="relative h-[200px] w-full overflow-hidden rounded-2xl md:h-[242px]">
+      <div className="relative aspect-[250/242] w-full overflow-hidden rounded-2xl md:h-[242px] md:aspect-auto">
         <Image
           src={treatment.image.src}
           alt={treatment.image.alt}

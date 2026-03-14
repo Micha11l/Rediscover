@@ -1,13 +1,23 @@
 import Image from "next/image";
 import type { Paragraph } from "@/content/skinCareCopy";
 
+interface BodyContouringDetailGroup {
+  title: string;
+  items: string[];
+}
+
 interface BodyContouringTreatmentSectionProps {
   testId: string;
   title: string;
   paragraphs: Paragraph[];
-  whatItCanHelpWith: string[];
-  recommendedFor: string;
+  helpHeading?: string;
+  whatItCanHelpWith?: string[];
+  detailGroups?: BodyContouringDetailGroup[];
+  recommendedHeading?: string;
+  recommendedFor?: string;
   image: { src: string; alt: string; width: number; height: number };
+  imageDisplay?: "default" | "top-crop";
+  imageCropHeightPx?: number;
   className?: string;
 }
 
@@ -15,11 +25,22 @@ export function BodyContouringTreatmentSection({
   testId,
   title,
   paragraphs,
+  helpHeading,
   whatItCanHelpWith,
+  detailGroups,
+  recommendedHeading,
   recommendedFor,
   image,
+  imageDisplay = "default",
+  imageCropHeightPx = 208,
   className,
 }: BodyContouringTreatmentSectionProps) {
+  const groups = detailGroups ?? (
+    whatItCanHelpWith && whatItCanHelpWith.length > 0
+      ? [{ title: helpHeading ?? "What It Can Help With", items: whatItCanHelpWith }]
+      : []
+  );
+
   return (
     <section data-testid={testId} className="w-full bg-surface-base">
       <div
@@ -55,45 +76,69 @@ export function BodyContouringTreatmentSection({
               ))}
             </div>
 
-            <div className="flex flex-col gap-0">
-              <h3 className="m-0 font-heading text-body font-semibold text-text-primary">
-                What It Can Help With
-              </h3>
-              <ul className="m-0 flex flex-col gap-2 pl-0">
-                {whatItCanHelpWith.map((item, i) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-3 font-body text-body leading-[1.6] text-brand-secondary"
-                  >
-                    <span
-                      className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-secondary"
-                      aria-hidden="true"
-                    />
-                    {item}
-                  </li>
+            {groups.length > 0 ? (
+              <div className="flex flex-col gap-6">
+                {groups.map((group) => (
+                  <div key={group.title} className="flex flex-col gap-2">
+                    <h3 className="m-0 font-heading text-[20px] font-semibold leading-[1.2] text-text-primary">
+                      {group.title}
+                    </h3>
+                    <ul className="m-0 flex flex-col gap-2 pl-0">
+                      {group.items.map((item, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start gap-3 font-body text-body leading-[1.6] text-brand-secondary"
+                        >
+                          <span
+                            className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-secondary"
+                            aria-hidden="true"
+                          />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))}
-              </ul>
-            </div>
+              </div>
+            ) : null}
 
-            <div className="flex flex-col gap-0">
-              <h3 className="m-0 font-heading text-body font-semibold text-text-primary">
-                Recommended For
-              </h3>
-              <p className="m-0 font-body text-body leading-[1.6] text-brand-secondary">
-                {recommendedFor}
-              </p>
-            </div>
+            {recommendedFor ? (
+              <div className="flex flex-col gap-2">
+                <h3 className="m-0 font-heading text-[20px] font-semibold leading-[1.2] text-text-primary">
+                  {recommendedHeading ?? "Recommended For"}
+                </h3>
+                <p className="m-0 font-body text-body leading-[1.6] text-brand-secondary">
+                  {recommendedFor}
+                </p>
+              </div>
+            ) : null}
           </div>
 
-          <div className="flex shrink-0 items-start lg:w-[265px]">
-            <Image
-              src={image.src}
-              alt={image.alt}
-              width={265}
-              height={471}
-              className="h-[471px] w-[265px] object-contain"
-              sizes="265px"
-            />
+          <div className="flex shrink-0 items-start justify-center lg:w-[265px]">
+            {imageDisplay === "top-crop" ? (
+              <div
+                className="w-full max-w-[265px] overflow-hidden"
+                style={{ height: `${imageCropHeightPx}px` }}
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  className="h-auto w-full max-w-none"
+                  sizes="265px"
+                />
+              </div>
+            ) : (
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={265}
+                height={471}
+                className="h-[471px] w-[265px] object-contain"
+                sizes="265px"
+              />
+            )}
           </div>
         </div>
       </div>

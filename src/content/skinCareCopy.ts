@@ -124,7 +124,7 @@ const skinCareCopyEn: SkinCareCopy = {
   facialTreatments: [
     {
       id: "facial-ultra-boosting",
-      title: "Ultra Boosting",
+      title: "Ultra Boosting Facial",
       effect:
         "Deeply boosts skin vitality and firmness, helping tired skin look plumper and more refreshed.",
       duration: "90 mins",
@@ -133,7 +133,7 @@ const skinCareCopyEn: SkinCareCopy = {
     },
     {
       id: "facial-hydration",
-      title: "Hydration",
+      title: "Hydration Facial",
       effect:
         "Intensely replenishes moisture to improve dryness, smooth texture, and restore a healthy glow.",
       duration: "80 mins",
@@ -142,9 +142,9 @@ const skinCareCopyEn: SkinCareCopy = {
     },
     {
       id: "facial-oxygen",
-      title: "Oxygen",
+      title: "Oxygen Facial",
       effect:
-        "Revitalizes dull, stressed skin by improving circulation and enhancing skin brightness and clarity.",
+        "Deep Cleansing & Exfoliation. Hydration & Glow. Revitalizes dull, tired skin by deep cleansing excess oil from pores, reducing clogging, blackheads, and blemishes while delivering hydration and moisture replenishment.",
       duration: "90 mins",
       vipPrice: "$138",
       regPrice: "$168",
@@ -162,7 +162,7 @@ const skinCareCopyEn: SkinCareCopy = {
       id: "facial-detoxing",
       title: "Detoxing Facial",
       effect:
-        "Reduces puffiness and promotes lymphatic drainage with a deeply relaxing treatment.",
+        "Combines botanical essential oils with traditional moxibustion and gua sha techniques to reduce puffiness, promote detoxification and blood circulation, and restore a healthy, radiant glow — all within a deeply relaxing treatment experience.",
       duration: "90 mins",
       vipPrice: "$98",
       regPrice: "$158",
@@ -189,7 +189,7 @@ const skinCareCopyEn: SkinCareCopy = {
       id: "facial-ultra-flawness",
       title: "Ultra Flawness Brightening",
       effect:
-        "Improves uneven tone and dullness, revealing clearer, brighter, and more even-looking skin.",
+        "Improves dullness and dryness, brightens skin tone, and restores a clearer, more luminous, even-looking complexion.",
       duration: "90 mins",
       vipPrice: "$250",
       regPrice: "$368",
@@ -198,7 +198,7 @@ const skinCareCopyEn: SkinCareCopy = {
       id: "facial-laser-lifting",
       title: "Laser Lifting",
       effect:
-        "Supports skin firmness and contour definition for a tighter, more lifted appearance.",
+        "Deep cleanses pores, reduces dark spots, acne marks, and breakouts while firming the skin and brightening the overall complexion.",
       duration: "90 mins",
       vipPrice: "$198",
       regPrice: "$268",
@@ -345,7 +345,7 @@ const skinCareCopyZh: SkinCareCopy = {
   facialTreatments: [
     {
       id: "facial-ultra-boosting",
-      title: "美拉提水光肌",
+      title: "美拉提水光肌 Facial",
       effect:
         "深层提升肌肤活力与紧致度，帮助疲惫肌肤看起来更饱满、更焕发。",
       duration: "90 分钟",
@@ -354,7 +354,7 @@ const skinCareCopyZh: SkinCareCopy = {
     },
     {
       id: "facial-hydration",
-      title: "保湿嫩白",
+      title: "保湿嫩白 Facial",
       effect:
         "强效补充水分，改善干燥，平滑肌肤纹理，恢复健康光泽。",
       duration: "80 分钟",
@@ -363,9 +363,9 @@ const skinCareCopyZh: SkinCareCopy = {
     },
     {
       id: "facial-oxygen",
-      title: "小气泡深度清洁",
+      title: "小气泡深度清洁 Facial",
       effect:
-        "焕活暗沉、疲惫的肌肤，改善循环，提升肌肤明亮度与清透感。",
+        "深层清洁去角质，补水焕亮。深层清洁毛孔的油脂，改善毛孔堵塞，黑头闭口等问题，改善肌肤的同时还可以保湿补水。",
       duration: "90 分钟",
       vipPrice: "$138",
       regPrice: "$168",
@@ -383,7 +383,7 @@ const skinCareCopyZh: SkinCareCopy = {
       id: "facial-detoxing",
       title: "面部桃花灸护理",
       effect:
-        "减少浮肿，促进淋巴引流，提供深度放松的疗程体验。",
+        "植物精油结合传统艾灸和刮痧排毒手法，减少浮肿，排水排毒，促进血液循环，让面部皮肤更加红润有光泽，提供深度放松的疗程体验。",
       duration: "90 分钟",
       vipPrice: "$98",
       regPrice: "$158",
@@ -410,7 +410,7 @@ const skinCareCopyZh: SkinCareCopy = {
       id: "facial-ultra-flawness",
       title: "焕白无暇灯泡肌",
       effect:
-        "改善肤色不均与暗沉，展现更清透、更明亮、更均匀的肌肤。",
+        "针对暗沉发黄与肤色不均，改善干燥粗糙与光泽不足，焕发更清透、匀净、明亮的灯泡肌光采。",
       duration: "90 分钟",
       vipPrice: "$250",
       regPrice: "$368",
@@ -419,7 +419,7 @@ const skinCareCopyZh: SkinCareCopy = {
       id: "facial-laser-lifting",
       title: "黑瓷娃娃",
       effect:
-        "支持肌肤紧致与轮廓塑造，打造更紧实、更提拉的外观。",
+        "深层清洁毛孔，改善暗黑，痘印和痘肌，紧致肌肤，提亮肤色。",
       duration: "90 分钟",
       vipPrice: "$198",
       regPrice: "$268",

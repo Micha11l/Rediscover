@@ -34,7 +34,7 @@ export function SkinCareWellnessSection({ lang }: { lang: Language }) {
               data-testid="wellness-card"
               className="flex flex-col overflow-hidden rounded-[24px] bg-surface-muted md:flex-row"
             >
-              <div className="relative h-[200px] w-full md:h-auto md:min-h-[340px] md:w-1/2">
+              <div className="relative aspect-[386/340] w-full md:h-auto md:min-h-[340px] md:w-1/2 md:aspect-auto">
                 {bodyMassage.image && (
                   <Image
                     src={bodyMassage.image.src}

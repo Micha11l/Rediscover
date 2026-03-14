@@ -49,7 +49,7 @@ export function FooterSection() {
                  {t.footer.sections.businessHours}
                </h3>
               <p className="m-0 font-body text-[16px] font-normal leading-[1.6] text-brand-secondary">
-                Monday - Sunday: 10.00am - 8.00pm
+                Monday - Sunday: 10:00 - 8:00
               </p>
             </div>
           </div>

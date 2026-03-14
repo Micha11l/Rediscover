@@ -14,6 +14,8 @@ export function DeviceTechnologySection({
   lang,
   showDivider = true,
 }: DeviceTechnologySectionProps) {
+  const deviceHeading = lang === "zh" ? "医学级医美设备" : "Medical-Grade Aesthetic Devices";
+  const viewServicesLabel = lang === "zh" ? "查看服务" : "View Services";
   const whyName = technology.title.replace(/[®™]/g, "").replace(/ Technology$/, "").trim();
 
   return (
@@ -24,7 +26,7 @@ export function DeviceTechnologySection({
         </h2>
 
         <div className="flex flex-col overflow-hidden rounded-[24px] bg-surface-elevated lg:flex-row">
-          <div className="relative h-[300px] w-full shrink-0 bg-surface-muted lg:h-auto lg:w-[553px]">
+          <div className="relative aspect-[553/585] w-full shrink-0 bg-surface-muted lg:h-auto lg:w-[553px] lg:aspect-auto">
             <Image
               src={technology.image.src}
               alt={technology.image.alt}
@@ -37,8 +39,7 @@ export function DeviceTechnologySection({
           <div className="flex flex-1 flex-col gap-8 px-6 py-8 lg:px-10 lg:py-[78px]">
             <div className="flex flex-col gap-4">
               <h3 className="m-0 font-heading text-[32px] font-bold leading-[1.1]">
-                <span className="text-brand-secondary">Medical-Grade </span>
-                <span className="text-text-primary">Aesthetic Devices</span>
+                <span className="text-brand-secondary">{deviceHeading}</span>
               </h3>
               <div className="flex flex-col gap-4">
                 {technology.descriptionParagraphs.map((p, i) => (
@@ -79,7 +80,7 @@ export function DeviceTechnologySection({
              <span className="text-text-primary">{technology.howWeUseTitleAccent}</span>
            </h3>
           <span className="shrink-0 rounded-[40px] border border-brand-secondary-light px-[18px] py-[10px] font-heading text-button font-light leading-none text-brand-secondary">
-            View Services
+            {viewServicesLabel}
           </span>
         </div>
 
