@@ -1,5 +1,6 @@
 export { AboutHeroSection } from "./AboutHeroSection";
 export { AboutWelcomeSection, AboutPhilosophySection } from "./AboutPhilosophySection";
+export { AboutApproachSection } from "./AboutApproachSection";
 export { AboutSkincareSection, AboutValuesSection } from "./AboutValuesSection";
 export { AboutClinicSection, AboutSanctuarySection } from "./AboutSanctuarySection";
 export { AboutAchievementsSection, AboutMilestonesSection } from "./AboutMilestonesSection";

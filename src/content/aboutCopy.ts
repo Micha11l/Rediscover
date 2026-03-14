@@ -34,6 +34,12 @@ export type AboutCopy = {
       }>;
     };
   };
+  approach: {
+    titleAccent: string;
+    titleMain: string;
+    body: string;
+    gallery: Array<{ src: string; alt: string }>;
+  };
   achievements: {
     title: string;
     subtitle: string;
@@ -99,9 +105,9 @@ const aboutCopyEn: AboutCopy = {
     subtitle:
       "Thoughtfully designed care, combining medical aesthetics, therapeutic wellness, and a sense of quiet luxury.",
     gallery: [
-      { src: "/images/about/hero-1.jpg", alt: "Clinic interior 1" },
-      { src: "/images/about/hero-2.jpg", alt: "Clinic interior 2" },
-      { src: "/images/about/hero-3.jpg", alt: "Clinic interior 3" },
+      { src: "/images/about/hero-1.svg", alt: "Clinic interior 1" },
+      { src: "/images/about/hero-2.svg", alt: "Clinic interior 2" },
+      { src: "/images/about/hero-3.svg", alt: "Clinic interior 3" },
     ],
   },
 
@@ -131,6 +137,18 @@ const aboutCopyEn: AboutCopy = {
         },
       ],
     },
+  },
+
+  approach: {
+    titleAccent: "Our",
+    titleMain: "Approach",
+    body:
+      "Every treatment begins with a professional skin analysis and consultation to understand your skin condition and goals.",
+    gallery: [
+      { src: "/images/about/approach-1.svg", alt: "Treatment consultation environment 1" },
+      { src: "/images/about/approach-2.svg", alt: "Treatment consultation environment 2" },
+      { src: "/images/about/approach-3.svg", alt: "Treatment consultation environment 3" },
+    ],
   },
 
   achievements: {
@@ -169,9 +187,9 @@ const aboutCopyEn: AboutCopy = {
     subtitle:
       "A thoughtfully designed space focused on comfort, privacy, and calm.",
     gallery: [
-      { src: "/images/about/clinic-1.jpg", alt: "Clinic environment 1" },
+      { src: "/images/about/clinic-1.svg", alt: "Clinic environment 1" },
       { src: "/images/about/clinic-2.jpg", alt: "Clinic environment 2" },
-      { src: "/images/about/clinic-3.jpg", alt: "Clinic environment 3" },
+      { src: "/images/about/clinic-2.svg", alt: "Clinic environment 3" },
     ],
   },
 
@@ -340,6 +358,18 @@ const aboutCopyZh: AboutCopy = {
         },
       ],
     },
+  },
+
+  approach: {
+    titleAccent: "我们的",
+    titleMain: "护理方式",
+    body:
+      "每一次疗程都始于专业的肌肤分析与咨询，以充分了解您的肌肤状态与护理目标。",
+    gallery: [
+      { src: "/images/about/clinic-1.jpg", alt: "疗程咨询环境 1" },
+      { src: "/images/about/clinic-2.jpg", alt: "疗程咨询环境 2" },
+      { src: "/images/about/clinic-3.jpg", alt: "疗程咨询环境 3" },
+    ],
   },
 
   achievements: {

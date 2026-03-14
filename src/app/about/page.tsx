@@ -3,11 +3,10 @@ import { FooterSection, CtaSection, NewsletterSection } from "@/components/secti
 import {
   AboutHeroSection,
   AboutWelcomeSection,
+  AboutApproachSection,
   AboutAchievementsSection,
   AboutClinicSection,
   AboutSkincareSection,
-  AboutTeamSection,
-  AboutTeamDescSection,
   AboutContactSection,
   AboutMapSection,
   AboutSocialSection,
@@ -22,11 +21,10 @@ export default async function AboutPage() {
       <ForceTopOnLoad />
       <AboutHeroSection lang={lang} />
       <AboutWelcomeSection lang={lang} />
+      <AboutApproachSection lang={lang} />
       <AboutAchievementsSection lang={lang} />
       <AboutClinicSection lang={lang} />
       <AboutSkincareSection lang={lang} />
-      <AboutTeamSection lang={lang} />
-      <AboutTeamDescSection lang={lang} />
       <AboutContactSection lang={lang} />
       <AboutMapSection />
       <AboutSocialSection lang={lang} />
