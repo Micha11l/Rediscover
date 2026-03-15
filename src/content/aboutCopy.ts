@@ -189,7 +189,7 @@ const aboutCopyEn: AboutCopy = {
     gallery: [
       { src: "/images/about/clinic-1.svg", alt: "Clinic environment 1" },
       { src: "/images/about/clinic-2.svg", alt: "Clinic environment 2" },
-      { src: "/images/about/clinic-3.jpg", alt: "Clinic environment 3" },
+      { src: "/images/about/clinic-3.svg", alt: "Clinic environment 3" },
     ],
   },
 
