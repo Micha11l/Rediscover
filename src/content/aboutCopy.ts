@@ -188,8 +188,8 @@ const aboutCopyEn: AboutCopy = {
       "A thoughtfully designed space focused on comfort, privacy, and calm.",
     gallery: [
       { src: "/images/about/clinic-1.svg", alt: "Clinic environment 1" },
-      { src: "/images/about/clinic-2.jpg", alt: "Clinic environment 2" },
-      { src: "/images/about/clinic-2.svg", alt: "Clinic environment 3" },
+      { src: "/images/about/clinic-2.svg", alt: "Clinic environment 2" },
+      { src: "/images/about/clinic-3.svg", alt: "Clinic environment 3" },
     ],
   },
 
@@ -366,9 +366,9 @@ const aboutCopyZh: AboutCopy = {
     body:
       "每一次疗程都始于专业的肌肤分析与咨询，以充分了解您的肌肤状态与护理目标。",
     gallery: [
-      { src: "/images/about/clinic-1.jpg", alt: "疗程咨询环境 1" },
-      { src: "/images/about/clinic-2.jpg", alt: "疗程咨询环境 2" },
-      { src: "/images/about/clinic-3.jpg", alt: "疗程咨询环境 3" },
+      { src: "/images/about/approach-1.svg", alt: "疗程咨询环境 1" },
+      { src: "/images/about/approach-2.svg", alt: "疗程咨询环境 2" },
+      { src: "/images/about/approach-3.svg", alt: "疗程咨询环境 3" },
     ],
   },
 

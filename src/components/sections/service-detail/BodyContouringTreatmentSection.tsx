@@ -16,8 +16,6 @@ interface BodyContouringTreatmentSectionProps {
   recommendedHeading?: string;
   recommendedFor?: string;
   image: { src: string; alt: string; width: number; height: number };
-  imageDisplay?: "default" | "top-crop";
-  imageCropHeightPx?: number;
   className?: string;
 }
 
@@ -31,8 +29,6 @@ export function BodyContouringTreatmentSection({
   recommendedHeading,
   recommendedFor,
   image,
-  imageDisplay = "default",
-  imageCropHeightPx = 208,
   className,
 }: BodyContouringTreatmentSectionProps) {
   const groups = detailGroups ?? (
@@ -115,30 +111,14 @@ export function BodyContouringTreatmentSection({
           </div>
 
           <div className="flex shrink-0 items-start justify-center lg:w-[265px]">
-            {imageDisplay === "top-crop" ? (
-              <div
-                className="w-full max-w-[265px] overflow-hidden"
-                style={{ height: `${imageCropHeightPx}px` }}
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={image.width}
-                  height={image.height}
-                  className="h-auto w-full max-w-none"
-                  sizes="265px"
-                />
-              </div>
-            ) : (
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={265}
-                height={471}
-                className="h-[471px] w-[265px] object-contain"
-                sizes="265px"
-              />
-            )}
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={image.width}
+              height={image.height}
+              className="h-auto w-full max-w-[265px] object-contain"
+              sizes="265px"
+            />
           </div>
         </div>
       </div>

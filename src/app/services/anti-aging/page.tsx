@@ -62,7 +62,7 @@ export default async function AntiAgingPage() {
 
       <TestimonialsCarousel testimonials={content.testimonials} headingLine1={ui.labels.yourWords} headingLine2={ui.labels.ourPride} />
 
-      <AntiAgingFaqSection />
+      <AntiAgingFaqSection lang={lang} items={content.faq} />
 
       <CtaSection />
       <NewsletterSection />

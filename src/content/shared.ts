@@ -94,6 +94,28 @@ export type UiStrings = {
   };
 };
 
+export type SharedFaqHeading = {
+  part1: string;
+  part2: string;
+  part3: string;
+  subtitle: string;
+};
+
+export const sharedFaqHeading: { en: SharedFaqHeading; zh: SharedFaqHeading } = {
+  en: {
+    part1: "Need More ",
+    part2: "Information",
+    part3: "?",
+    subtitle: "Clear answers to help you prepare for your treatment with confidence.",
+  },
+  zh: {
+    part1: "需要更多",
+    part2: "信息",
+    part3: "？",
+    subtitle: "清晰解答，帮助您自信准备疗程。",
+  },
+};
+
 export const uiStrings: { en: UiStrings; zh: UiStrings } = {
   en: {
     breadcrumbs: {

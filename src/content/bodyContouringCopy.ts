@@ -23,8 +23,6 @@ export type BodyContouringTreatment = {
   recommendedHeading?: string;
   recommendedFor?: string;
   image: { src: string; alt: string; width: number; height: number };
-  imageDisplay?: "default" | "top-crop";
-  imageCropHeightPx?: number;
 };
 
 export type BodyContouringCopy = {
@@ -115,13 +113,11 @@ const bodyContouringCopyEn: BodyContouringCopy = {
         },
       ],
       image: {
-        src: "/images/body/bodyfx.png",
+        src: "/images/body/bodyfx.svg",
         alt: "BodyFX device",
-        width: 274,
-        height: 450,
+        width: 335,
+        height: 301,
       },
-      imageDisplay: "top-crop",
-      imageCropHeightPx: 208,
     },
     {
       id: "forma-body",
@@ -154,13 +150,11 @@ const bodyContouringCopyEn: BodyContouringCopy = {
       recommendedFor:
         "Those seeking non-surgical skin tightening and firming without fat reduction, especially for areas with mild to moderate skin laxity.",
       image: {
-        src: "/images/body/forma-body.png",
+        src: "/images/body/forma-body.svg",
         alt: "Forma Body device",
         width: 265,
         height: 471,
       },
-      imageDisplay: "top-crop",
-      imageCropHeightPx: 208,
     },
     {
       id: "plus90",
@@ -358,13 +352,11 @@ const bodyContouringCopyZh: BodyContouringCopy = {
         },
       ],
       image: {
-        src: "/images/body/bodyfx.png",
+        src: "/images/body/bodyfx.svg",
         alt: "BodyFX 设备",
-        width: 274,
-        height: 450,
+        width: 335,
+        height: 301,
       },
-      imageDisplay: "top-crop",
-      imageCropHeightPx: 208,
     },
     {
       id: "forma-body",
@@ -409,13 +401,11 @@ const bodyContouringCopyZh: BodyContouringCopy = {
         },
       ],
       image: {
-        src: "/images/body/forma-body.png",
+        src: "/images/body/forma-body.svg",
         alt: "Forma Body 设备",
         width: 265,
         height: 471,
       },
-      imageDisplay: "top-crop",
-      imageCropHeightPx: 208,
     },
     {
       id: "plus90",

@@ -32,6 +32,11 @@ interface BeforeAfterGridProps {
   beforeLabel?: string;
   /** Optional custom "After" label text */
   afterLabel?: string;
+  /**
+   * Optional className applied to each card container.
+   * Useful for mobile-only aspect ratio overrides when images are very wide.
+   */
+  cardClassName?: string;
 }
 
 /**
@@ -43,17 +48,21 @@ function BeforeAfterCard({
   beforeLabel = "Before",
   afterLabel = "After",
   labelClassName,
+  cardClassName,
 }: {
   src: string;
   alt: string;
   beforeLabel?: string;
   afterLabel?: string;
   labelClassName?: string;
+  cardClassName?: string;
 }) {
   const labelColorClass = labelClassName ?? "text-surface-elevated";
 
   return (
-    <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[30px] md:h-[291px] md:aspect-auto">
+    <div
+      className={`relative aspect-[16/10] w-full overflow-hidden rounded-[30px] md:h-[291px] md:aspect-auto ${cardClassName ?? ""}`}
+    >
       <Image
         src={src}
         alt={alt}
@@ -87,6 +96,7 @@ export function BeforeAfterGrid({
   images,
   beforeLabel = "Before",
   afterLabel = "After",
+  cardClassName,
 }: BeforeAfterGridProps) {
   return (
     <div
@@ -102,6 +112,7 @@ export function BeforeAfterGrid({
           beforeLabel={beforeLabel}
           afterLabel={afterLabel}
           labelClassName={image.labelClassName}
+          cardClassName={cardClassName}
         />
       ))}
     </div>

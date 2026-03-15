@@ -1,10 +1,12 @@
 import { FaqAccordion } from "@/components/sections/faq";
 import { laserContent } from "@/content/laserCopy";
+import { sharedFaqHeading } from "@/content/shared";
 import type { Language } from "@/i18n/types";
 import { pickContent } from "@/lib/i18n";
 
 export function LaserFaqSection({ lang }: { lang: Language }) {
   const laserCopy = pickContent(laserContent, lang);
+  const heading = pickContent(sharedFaqHeading, lang);
   return (
     <section
       data-testid="laser-faq"
@@ -17,12 +19,12 @@ export function LaserFaqSection({ lang }: { lang: Language }) {
             id="laser-faq-heading"
             className="font-heading text-heading-xl font-medium leading-tight"
           >
-            <span className="text-brand-secondary">Need More </span>
-            <span className="text-text-primary">Information</span>
-            <span className="text-brand-secondary">?</span>
+            <span className="text-brand-secondary">{heading.part1}</span>
+            <span className="text-text-primary">{heading.part2}</span>
+            <span className="text-brand-secondary">{heading.part3}</span>
           </h2>
           <p className="font-body text-body leading-relaxed text-brand-secondary">
-            Clear answers to help you prepare for your treatment with confidence.
+            {heading.subtitle}
           </p>
         </div>
 

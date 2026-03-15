@@ -44,6 +44,9 @@ export function SofwaveBeforeAfterSection({ lang }: { lang: Language }) {
           images={SOFWAVE_IMAGES}
           beforeLabel={ui.labels.before}
           afterLabel={ui.labels.after}
+          // Mobile: Sofwave before/after images are very wide, so use a matching aspect ratio
+          // to avoid letterboxing that pushes the labels off the image content.
+          cardClassName="aspect-[612/291]"
         />
       </div>
     </section>
