@@ -189,7 +189,7 @@ const aboutCopyEn: AboutCopy = {
     gallery: [
       { src: "/images/about/clinic-1.svg", alt: "Clinic environment 1" },
       { src: "/images/about/clinic-2.svg", alt: "Clinic environment 2" },
-      { src: "/images/about/clinic-3.svg", alt: "Clinic environment 3" },
+      { src: "/images/about/clinic-3.jpg", alt: "Clinic environment 3" },
     ],
   },
 
@@ -326,9 +326,9 @@ const aboutCopyZh: AboutCopy = {
     subtitle:
       "精心设计的专业护理，融合医学美容、疗愈养生与低调奢华的品质体验。",
     gallery: [
-      { src: "/images/about/hero-1.jpg", alt: "诊所内景 1" },
-      { src: "/images/about/hero-2.jpg", alt: "诊所内景 2" },
-      { src: "/images/about/hero-3.jpg", alt: "诊所内景 3" },
+      { src: "/images/about/hero-1.svg", alt: "诊所内景 1" },
+      { src: "/images/about/hero-2.svg", alt: "诊所内景 2" },
+      { src: "/images/about/hero-3.svg", alt: "诊所内景 3" },
     ],
   },
 
@@ -408,8 +408,8 @@ const aboutCopyZh: AboutCopy = {
     subtitle:
       "精心设计的空间，专注于舒适、私密与宁静。",
     gallery: [
-      { src: "/images/about/clinic-1.jpg", alt: "诊所环境 1" },
-      { src: "/images/about/clinic-2.jpg", alt: "诊所环境 2" },
+      { src: "/images/about/clinic-1.svg", alt: "诊所环境 1" },
+      { src: "/images/about/clinic-2.svg", alt: "诊所环境 2" },
       { src: "/images/about/clinic-3.jpg", alt: "诊所环境 3" },
     ],
   },
