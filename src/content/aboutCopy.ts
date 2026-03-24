@@ -410,7 +410,7 @@ const aboutCopyZh: AboutCopy = {
     gallery: [
       { src: "/images/about/clinic-1.svg", alt: "诊所环境 1" },
       { src: "/images/about/clinic-2.svg", alt: "诊所环境 2" },
-      { src: "/images/about/clinic-3.jpg", alt: "诊所环境 3" },
+      { src: "/images/about/clinic-3.svg", alt: "诊所环境 3" },
     ],
   },
 
