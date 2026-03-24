@@ -4,6 +4,8 @@ import { pickContent } from "@/lib/i18n";
 import { aboutContent } from "@/content/aboutCopy";
 import { uiStrings } from "@/content/shared";
 
+const GMAIL_COMPOSE_URL = "https://mail.google.com/mail/?view=cm&fs=1&to=rediscoverbeauty99@gmail.com";
+
 function ClockIcon() {
   return (
     <svg
@@ -80,9 +82,15 @@ export function AboutContactSection({ lang }: { lang: Language }) {
                 {ui.labels.contact}
               </h3>
               <div className="flex flex-col items-center">
-                <p className="m-0 font-body text-[18px] leading-[1.4] text-brand-secondary md:text-[20px]">
-                  {contact.website.replace("https://", "")}
-                </p>
+                <a
+                  href={GMAIL_COMPOSE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="m-0 font-body text-[18px] leading-[1.4] text-brand-secondary no-underline transition-colors hover:text-text-primary md:text-[20px]"
+                  aria-label={`Send email to ${contact.website} in Gmail`}
+                >
+                  {contact.website}
+                </a>
                 <p className="m-0 font-body text-[18px] leading-[1.4] text-brand-secondary md:text-[20px]">
                   {contact.phone}
                 </p>

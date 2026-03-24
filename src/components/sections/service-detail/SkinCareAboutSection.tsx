@@ -17,7 +17,9 @@ export function SkinCareAboutSection({ lang }: { lang: Language }) {
             {aboutSkinCare.paragraphs.map((paragraph, index) => (
               <p
                 key={index}
-                className="font-body text-body leading-[1.6] text-brand-secondary"
+                className={`font-body text-body leading-[1.6] text-brand-secondary${
+                  paragraph.extraTopSpace ? " !mt-8" : ""
+                }`}
               >
                 {paragraph.text}
               </p>

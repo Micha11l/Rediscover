@@ -74,8 +74,8 @@ export const zh: Translations = {
         description: "先进射频微针技术，紧致、平滑并重塑肌肤",
       },
       {
-        title: "Advanced Treatments",
-        description: "可扩展的 InMode 解决方案，满足未来面部与身体护理需求",
+        title: "Plus90",
+        description: "专为女性设计，帮助提升私密紧致度与舒适感。",
       },
     ],
   },
@@ -153,7 +153,7 @@ export const zh: Translations = {
     hoursLabel: "营业时间",
     hours: [
       { text: "周一至周日", bold: false },
-      { text: "10:00 – 8:00", bold: false },
+      { text: "10:00AM-8:00PM", bold: false },
       { text: "仅限预约", bold: true },
     ],
     parking: [

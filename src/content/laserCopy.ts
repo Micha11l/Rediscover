@@ -151,7 +151,7 @@ const laserCopyEn: LaserCopy = {
         { id: "lumecca-rec-4", text: "Those looking for fast, visible results with non-invasive treatment" },
       ],
     },
-    processText: "Relaxation Back Massage (10 mins) ---> Cleansing ---> Peeling ---> Steaming ---> Extraction ---> Eyebrow Shaping ---> Face Massage (15 mins) ---> IPL Machine (Neck + Face + Eye Area) (20 mins)  ---> Double Masks ---> Shoulder, Head & Hand Massage (Included)",
+    processText: "Relaxation Back Massage → Cleansing → Peeling → Steaming → Extraction → Eyebrow Shaping → IPL for Full Face & Neck → Serum Infusion → Double Layer Masks → Shoulder, Head & Hand Massage (Included)",
     benefits: [
       "Improves pigmentation, sun spots, and uneven skin tone",
       "Reduces redness and vascular concerns",

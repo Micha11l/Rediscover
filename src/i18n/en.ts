@@ -77,9 +77,9 @@ export const en: Translations = {
           "Advanced RF microneedling to tighten, smooth, and remodel skin",
       },
       {
-        title: "Advanced Treatments",
+        title: "Plus90",
         description:
-          "Expandable InMode solutions for future face and body treatments",
+          "Designed for women to enhance intimate tightness and comfort.",
       },
     ],
   },
@@ -161,7 +161,7 @@ export const en: Translations = {
     hoursLabel: "Hours",
     hours: [
       { text: "Monday – Sunday", bold: false },
-      { text: "10:00 – 8:00", bold: false },
+      { text: "10:00AM-8:00PM", bold: false },
       { text: "By appointment only", bold: true },
     ],
     parking: [

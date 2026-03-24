@@ -5,6 +5,16 @@ import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const ICON_SIZE = 20; // 20px = size-5
+const CONTACT_EMAIL = "rediscoverbeauty99@gmail.com";
+const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT_EMAIL}`;
+const FOOTER_MENU_LINKS = [
+  { href: "/", idx: 0 },
+  { href: "/about", idx: 1 },
+  { href: "/services", idx: 2 },
+  { href: "/rmt", idx: 4 },
+  { href: "/faq", idx: 5 },
+  { href: "/promo", idx: 6 },
+];
 
 /**
  * Footer Section
@@ -49,7 +59,7 @@ export function FooterSection() {
                  {t.footer.sections.businessHours}
                </h3>
               <p className="m-0 font-body text-[16px] font-normal leading-[1.6] text-brand-secondary">
-                Monday - Sunday: 10:00 - 8:00
+                {`${t.location.hours[0].text}: ${t.location.hours[1].text}`}
               </p>
             </div>
           </div>
@@ -63,15 +73,7 @@ export function FooterSection() {
                </h3>
 
                <nav className="flex flex-col gap-[12px]">
-                 {[
-                   { href: "/", idx: 0 },
-                   { href: "/about", idx: 1 },
-                   { href: "/services", idx: 2 },
-                   { href: "/devices", idx: 3 },
-                   { href: "/rmt", idx: 4 },
-                   { href: "/faq", idx: 5 },
-                   { href: "/promo", idx: 6 },
-                 ].map(({ href, idx }) => (
+                 {FOOTER_MENU_LINKS.map(({ href, idx }) => (
                    <Link
                      key={href}
                      href={href}
@@ -108,8 +110,11 @@ export function FooterSection() {
 
                 {/* Email */}
                 <a
-                  href="mailto:info@rediscoverbeauty.ca"
+                  href={GMAIL_COMPOSE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 font-body text-[16px] font-normal leading-none text-text-primary transition-colors hover:text-brand-secondary"
+                  aria-label={`Send email to ${CONTACT_EMAIL} in Gmail`}
                 >
                   <Image
                     src="/images/icon/EnvelopeOpen.svg"
@@ -119,7 +124,7 @@ export function FooterSection() {
                     className="shrink-0"
                     aria-hidden={true}
                   />
-                  <span className="break-all">info@rediscoverbeauty.ca</span>
+                  <span className="break-all">{CONTACT_EMAIL}</span>
                 </a>
 
                 {/* Address */}

@@ -33,7 +33,7 @@ export function ServiceFaqBlockSection({
         <li key={item.title} data-testid={`faq-item-${index}`} className="flex gap-4">
           <span
             aria-hidden="true"
-            className="shrink-0 font-heading text-[24px] leading-[1.2] text-text-primary"
+            className="shrink-0 font-body text-[16px] leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:leading-[1.2]"
           >
             •
           </span>
@@ -41,13 +41,13 @@ export function ServiceFaqBlockSection({
           <div className="flex flex-col">
             <span
               data-testid={`faq-q-${index}`}
-              className="font-heading text-[24px] font-medium leading-[1.2] text-text-primary"
+              className="font-body text-[16px] font-semibold leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:font-medium md:leading-[1.2]"
             >
               {item.title}
             </span>
             <p
               data-testid={`faq-a-${index}`}
-              className="m-0 mt-1 font-heading text-[24px] font-normal leading-[1.2] text-brand-secondary"
+              className="m-0 mt-1 font-body text-[16px] font-normal leading-[1.6] text-brand-secondary md:font-heading md:text-[24px] md:leading-[1.2]"
             >
               {item.text}
             </p>
@@ -75,11 +75,11 @@ export function ServiceFaqBlockSection({
         <li key={item} data-testid={`faq-helps-${index}`} className="flex gap-4">
           <span
             aria-hidden="true"
-            className="shrink-0 font-heading text-[24px] leading-[2] text-text-primary"
+            className="shrink-0 font-body text-[16px] leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:leading-[2]"
           >
             •
           </span>
-          <span className="font-heading text-[24px] font-normal leading-[2] text-text-primary">
+          <span className="font-body text-[16px] font-normal leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:leading-[2]">
             {item}
           </span>
         </li>

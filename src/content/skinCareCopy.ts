@@ -11,6 +11,7 @@ export type TextSegment = { text: string; bold?: boolean };
 export type Paragraph = {
   text?: string;
   segments?: TextSegment[];
+  extraTopSpace?: boolean;
 };
 
 export type FacialTreatment = {
@@ -105,6 +106,13 @@ const skinCareCopyEn: SkinCareCopy = {
       {
         text: "All skin care services are customized based on individual skin conditions and needs, offering a relaxing experience with visible improvements and no downtime.",
       },
+      {
+        text: "Skin Care Service Process: Relaxation Back Massage → Cleansing → Peeling → Steaming → Extraction → Eyebrow Shaping → Customized Facial Treatment → Serum Infusion → Double Layer Masks → Shoulder, Head & Hand Massage (Included)",
+        extraTopSpace: true,
+      },
+      {
+        text: "The treatment process for Advanced Facial may vary depending on the session duration.",
+      },
     ],
   },
 
@@ -162,7 +170,7 @@ const skinCareCopyEn: SkinCareCopy = {
       id: "facial-detoxing",
       title: "Detoxing Facial",
       effect:
-        "Combines botanical essential oils with traditional moxibustion and gua sha techniques to reduce puffiness, promote detoxification and blood circulation, and restore a healthy, radiant glow — all within a deeply relaxing treatment experience.",
+        "A synergistic blend of essential oils, traditional moxibustion, and expert gua sha techniques designed to revitalize the body and soul by stimulating lymphatic drainage to reduce puffiness, enhancing circulation for a healthy, vibrant complexion, and restoring your natural radiance through deep relaxation.",
       duration: "90 mins",
       vipPrice: "$98",
       regPrice: "$158",

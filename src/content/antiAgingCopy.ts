@@ -629,7 +629,7 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
           text: "Forma 既可独立施作，亦可作为个性化美容方案的组成部分，为追求自然、渐进效果的客户提供安全、舒适的紧肤体验。",
         },
         {
-          text: "Forma Plus 升级之选：Forma Plus 在原有技术基础上进一步优化能量覆盖与治疗效率，适用于更大面积或更复杂区域，如面部、下颌线、腹部、手臂等。",
+          text: "Forma Plus 升级之选：Forma Plus 在原有技术基础上进一步优化能量覆盖与治疗效率，适用于更大面积或更复杂区域，如大腿内侧、下颌线、腹部、手臂等。",
         },
       ],
     },

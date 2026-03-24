@@ -105,7 +105,7 @@ const aboutCopyEn: AboutCopy = {
     subtitle:
       "Thoughtfully designed care, combining medical aesthetics, therapeutic wellness, and a sense of quiet luxury.",
     gallery: [
-      { src: "/images/about/hero-1.svg", alt: "Clinic interior 1" },
+      { src: "/images/about/hero-1.jpg", alt: "Clinic interior 1" },
       { src: "/images/about/hero-2.svg", alt: "Clinic interior 2" },
       { src: "/images/about/hero-3.svg", alt: "Clinic interior 3" },
     ],
@@ -268,8 +268,8 @@ const aboutCopyEn: AboutCopy = {
 
   contact: {
     phone: "+1 (647) 523-3988",
-    website: "https://rediscoverbeauty.ca",
-    hours: { days: "Mon – Sun", time: "10:00 – 8:00" },
+    website: "rediscoverbeauty99@gmail.com",
+    hours: { days: "Mon – Sun", time: "10:00AM-8:00PM" },
     address: "9425 Leslie St Unit14, 2F, Richmond Hill, ON L4B 3N7",
   },
 
@@ -326,7 +326,7 @@ const aboutCopyZh: AboutCopy = {
     subtitle:
       "精心设计的专业护理，融合医学美容、疗愈养生与低调奢华的品质体验。",
     gallery: [
-      { src: "/images/about/hero-1.svg", alt: "诊所内景 1" },
+      { src: "/images/about/hero-1.jpg", alt: "诊所内景 1" },
       { src: "/images/about/hero-2.svg", alt: "诊所内景 2" },
       { src: "/images/about/hero-3.svg", alt: "诊所内景 3" },
     ],
@@ -489,8 +489,8 @@ const aboutCopyZh: AboutCopy = {
 
   contact: {
     phone: "+1 (647) 523-3988",
-    website: "https://rediscoverbeauty.ca",
-    hours: { days: "周一至周日", time: "10:00 – 8:00" },
+    website: "rediscoverbeauty99@gmail.com",
+    hours: { days: "周一至周日", time: "10:00AM-8:00PM" },
     address: "9425 Leslie St Unit14, 2F, Richmond Hill, ON L4B 3N7",
   },
 
