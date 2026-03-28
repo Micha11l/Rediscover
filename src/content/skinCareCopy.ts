@@ -110,9 +110,9 @@ const skinCareCopyEn: SkinCareCopy = {
         text: "Skin Care Service Process: Relaxation Back Massage → Cleansing → Peeling → Steaming → Extraction → Eyebrow Shaping → Customized Facial Treatment → Serum Infusion → Double Layer Masks → Shoulder, Head & Hand Massage (Included)",
         extraTopSpace: true,
       },
-      {
-        text: "The treatment process for Advanced Facial may vary depending on the session duration.",
-      },
+      // {
+      //   text: "The treatment process for Advanced Facial may vary depending on the session duration.",
+      // },
     ],
   },
 
@@ -189,7 +189,7 @@ const skinCareCopyEn: SkinCareCopy = {
       title: "Advanced Facial",
       effect:
         "A time-efficient essential facial focused on cleansing, hydration, and basic skin maintenance.",
-      duration: "60 mins",
+      duration: "60 mins (without back massage)",
       vipPrice: "$80",
       regPrice: "$120",
     },
@@ -204,9 +204,9 @@ const skinCareCopyEn: SkinCareCopy = {
     },
     {
       id: "facial-laser-lifting",
-      title: "Laser Lifting",
+      title: "Laser Lifting Facial",
       effect:
-        "Deep cleanses pores, reduces dark spots, acne marks, and breakouts while firming the skin and brightening the overall complexion.",
+        "Deep pores cleansing, reduces dullness, acne marks, and breakouts while firming the skin and brightening the overall complexion.",
       duration: "90 mins",
       vipPrice: "$198",
       regPrice: "$268",
@@ -235,8 +235,8 @@ const skinCareCopyEn: SkinCareCopy = {
       effect:
         "Supports lymphatic flow to reduce fluid retention, puffiness, and promote a lighter, refreshed feeling.",
       type: "vip-reg",
-      vipPrice: "$128",
-      regPrice: "$200",
+      vipPrice: "$128 (90 mins)\n$98 (60 mins)",
+      regPrice: "$200 (90 mins)\n$158 (60 mins)",
     },
   ],
 
@@ -338,9 +338,9 @@ const skinCareCopyZh: SkinCareCopy = {
         text: "护肤服务流程：放松背部按摩 → 洁面 → 去角质 → 蒸脸 → 清洁毛孔 → 修眉 → 定制面部护理 → 精华导入 → 双层面膜 → 肩部、头部及手部按摩（含）",
         extraTopSpace: true,
       },
-      {
-        text: "Advanced Facial 的治疗流程会根据护理时长有所不同。",
-      },
+      // {
+      //   text: "Advanced Facial 的治疗流程会根据护理时长有所不同。",
+      // },
     ],
   },
 
@@ -417,7 +417,7 @@ const skinCareCopyZh: SkinCareCopy = {
       title: "面部基础护理",
       effect:
         "高效基础面部护理，专注于清洁、补水与基础肌肤维护。",
-      duration: "60 分钟",
+      duration: "60 分钟 （不含背部放松）",
       vipPrice: "$80",
       regPrice: "$120",
     },
@@ -434,7 +434,7 @@ const skinCareCopyZh: SkinCareCopy = {
       id: "facial-laser-lifting",
       title: "黑瓷娃娃",
       effect:
-        "深层清洁毛孔，改善暗黑，痘印和痘肌，紧致肌肤，提亮肤色。",
+        "深层清洁毛孔，改善暗沉，痘印和痘后色素不均，紧致肌肤，提亮肤色。",
       duration: "90 分钟",
       vipPrice: "$198",
       regPrice: "$268",
@@ -463,8 +463,8 @@ const skinCareCopyZh: SkinCareCopy = {
       effect:
         "支持淋巴流动，减少体液滞留与浮肿，促进轻盈焕新的感觉。",
       type: "vip-reg",
-      vipPrice: "$128",
-      regPrice: "$200",
+      vipPrice: "$128（90分钟）\n$98（60分钟）",
+      regPrice: "$200（90分钟）\n$158（60分钟）",
     },
   ],
 

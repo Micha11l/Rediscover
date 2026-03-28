@@ -21,7 +21,7 @@ export const zh: Translations = {
     subheading: "Rediscover Beauty",
     paragraphs: [
       "在 Rediscover Beauty 诊所，我们相信美丽不是速效方案，而是平衡、精准与悉心呵护的结果。",
-      "我们将医疗级美容科技与个性化健康护理相结合，助您重拾自信、放松身心、焕发光彩。",
+      "我们将现代科学美容与个性化健康护理相结合，助您重拾自信、放松身心、焕发光彩。",
     ],
     button: "了解更多",
   },

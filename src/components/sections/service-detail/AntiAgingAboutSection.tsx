@@ -49,6 +49,7 @@ interface AntiAgingAboutSectionProps {
     alt: string;
   };
   layoutTweaks?: LayoutTweaks;
+  desktopTextInFlow?: boolean;
 }
 
 export function AntiAgingAboutSection({
@@ -60,6 +61,7 @@ export function AntiAgingAboutSection({
   leftImage,
   rightImage,
   layoutTweaks,
+  desktopTextInFlow = false,
 }: AntiAgingAboutSectionProps) {
   const layout = { ...DEFAULT_LAYOUT, ...layoutTweaks };
 
@@ -83,7 +85,7 @@ export function AntiAgingAboutSection({
               alt={leftImage.alt}
               fill
               sizes="367px"
-              className="object-cover object-center"
+              className="object-contain object-center"
             />
           </div>
 
@@ -103,11 +105,17 @@ export function AntiAgingAboutSection({
               alt={rightImage.alt}
               fill
               sizes="453px"
-              className="object-cover object-center"
+              className="object-contain object-center"
             />
           </div>
 
-          <div className="relative z-10 mx-auto w-full max-w-[553px] px-4 md:px-8 lg:px-0 lg:absolute lg:left-1/2 lg:top-[10px] lg:-translate-x-1/2">
+          <div
+            className={
+              desktopTextInFlow
+                ? "relative z-10 mx-auto w-full max-w-[553px] px-4 md:px-8 lg:max-w-[620px] lg:bg-surface-base lg:px-8 lg:pt-6 lg:pb-8"
+                : "relative z-10 mx-auto w-full max-w-[553px] px-4 md:px-8 lg:px-0 lg:absolute lg:left-1/2 lg:top-[10px] lg:-translate-x-1/2"
+            }
+          >
             <h2 className="mb-[28px] font-heading text-heading-xl font-medium leading-[1.1] text-brand-secondary">
               {Array.isArray(title)
                 ? title.map((segment, index) =>
@@ -134,9 +142,11 @@ export function AntiAgingAboutSection({
             </h2>
 
             <div className="space-y-4 text-brand-secondary">
-              <p className="font-body text-[16px] font-semibold leading-[1.6]">
-                {subtitle}
-              </p>
+              {subtitle ? (
+                <p className="font-body text-[16px] font-semibold leading-[1.6]">
+                  {subtitle}
+                </p>
+              ) : null}
 
               {paragraphs.map((para, index) => (
                 <p key={index} className="font-body text-[16px] leading-[1.6]">
@@ -227,6 +237,7 @@ export function ThermageAboutSection({ lang }: { lang: Language }) {
         rightHeightPx: 679,
         rightTranslateYPx: 2,
       }}
+      desktopTextInFlow
     />
   );
 }

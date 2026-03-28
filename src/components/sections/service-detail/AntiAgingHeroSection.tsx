@@ -99,12 +99,12 @@ export function AntiAgingHeroSection({ lang }: { lang: Language }) {
           >
             {processItems.map((item, index) => (
               <div key={item.id} className="flex items-center justify-center lg:flex-1">
-                <Link
+                <a
                   href={item.href}
                   className="px-0 py-[5px] text-center font-heading text-heading-lg font-medium leading-[1.1] text-text-muted no-underline transition-colors hover:text-brand-secondary lg:flex-1"
                 >
                   {item.label}
-                </Link>
+                </a>
                 {/* Divider - hide on last item and on mobile */}
                 {index < processItems.length - 1 && (
                   <div

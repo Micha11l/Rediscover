@@ -88,7 +88,7 @@ const promoCopyEn: PromoCopy = {
         id: "lymphatic",
         title: "Lymphatic Drainage",
         image: { src: "/images/promo/lymphatic.png", alt: "Lymphatic Drainage treatment" },
-        vipPrice: "$128",
+        vipPrice: "$98",
         regularPrice: "$200",
         duration: "60 mins",
       },
@@ -163,8 +163,8 @@ const promoCopyZh: PromoCopy = {
     items: [
       {
         id: "lumecca",
-        title: "Lumecca 光感焕颜",
-        image: { src: "/images/promo/lumecca.png", alt: "Lumecca 光感焕颜疗程" },
+        title: "Lumecca 超光子嫩肤",
+        image: { src: "/images/promo/lumecca.png", alt: "Lumecca 超光子嫩肤" },
         vipPrice: "$250",
         regularPrice: "$380",
         duration: "90 分钟",
@@ -181,8 +181,8 @@ const promoCopyZh: PromoCopy = {
         id: "lymphatic",
         title: "芳香经络疗法",
         image: { src: "/images/promo/lymphatic.png", alt: "芳香经络疗法疗程" },
-        vipPrice: "$128",
-        regularPrice: "$200",
+        vipPrice: "$98",
+        regularPrice: "$158",
         duration: "60 分钟",
       },
       {

@@ -17,7 +17,7 @@ export const en: Translations = {
     ctaButton: "Explore Services",
   },
   about: {
-    heading: "Experience True Wellness at",
+    heading: "Experience True Beauty and Wellness at",
     subheading: "Rediscover Beauty",
     paragraphs: [
       "At Rediscover Beauty Clinic, we believe beauty is not about quick fixes — it's about balance, precision, and care.",

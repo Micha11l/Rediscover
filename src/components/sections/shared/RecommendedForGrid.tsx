@@ -59,7 +59,13 @@ export function RecommendedForGrid({
           {headline}
         </h2>
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+        <div
+          className={
+            items.length <= 3
+              ? "grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10"
+              : "grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10"
+          }
+        >
           {items.map((item) => (
             <RecommendedCard key={item.id} text={item.text} />
           ))}

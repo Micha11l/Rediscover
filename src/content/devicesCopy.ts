@@ -11,6 +11,7 @@ export type DeviceTechnology = {
   image: { src: string; alt: string };
   descriptionParagraphs: string[];
   whyTitle: string;
+  whyTitleAccent?: string | null;
   whyBullets: string[];
   howWeUseTitle: string;
   howWeUseTitleAccent: string;
@@ -288,18 +289,21 @@ const devicesCopyZh: DevicesCopy = {
         alt: "Thermage 设备",
       },
       descriptionParagraphs: [
-        "热玛吉 FLX (第五代) | 智能全层紧致系统。",
-        "Thermage® FLX 是全球公认的抗衰标杆。它利用单极射频（Monopolar RF）技术，跨越表皮，直接作用于真皮层及皮下组织，实现从内而外的深度紧致与轮廓重塑。",
-        "核心技术原理：三维立体加热 · 胶原再生工程。1. 即刻收缩：射频能量产生 65°C-75°C 的热效应，促使胶原纤维瞬时收缩。2. 深度修复：热能直达约 4.3mm 皮肤深层，激活成纤维细胞大量增生。3. 长效重塑：术后 3-6 个月进入胶原生长高峰期，皮肤弹性、厚度及光泽度显著提升。",
+        "热玛吉 FLX (第五代) | 智能全层紧致系统",
+        "Thermage® FLX：定义非侵入式抗衰新标准",
+        "热玛吉 FLX 是全球公认的抗衰标杆。它利用单极射频 (Monopolar RF) 技术，跨越表皮，直接作用于真皮层及皮下组织，实现从内而外的深度紧致与轮廓重塑。",
+        "核心技术原理",
+        "三维立体加热 · 胶原再生工程",
+        "1. 即刻收缩：射频能量产生 65°C-75°C 的热效应，促使胶原纤维瞬时收缩，术后即刻紧致。",
+        "2. 深度修复：热能直达 4.3mm 皮肤深层，激活成纤维细胞大量增生。",
+        "3. 长效重塑：术后 3-6 个月进入胶原生长高峰期，皮肤弹性、厚度及光泽度显著提升。",
       ],
-      whyTitle: "FLX 三大核心优势 ·",
+      whyTitle: "FLX 三大核心优势",
+      whyTitleAccent: null,
       whyBullets: [
-        "AccuREP™ 智能调节：每一发能量输出前，系统自动检测局部阻抗，实现更精准的能量分布。",
+        "AccuREP™ 智能调节：每一发能量输出前，系统自动检测局部阻抗，实现“私人定制”般的精准能量分布。",
         "全方位震动减痛：采用改良版多方向震动模式，有效干扰痛觉信号，治疗过程更舒适。",
         "4.0 智能探头：治疗面积增加 33%，覆盖更广、速度更快，显著缩短治疗时长。",
-        "适用部位与功效：改善法令纹、提升下颌缘、紧致双下巴、复位苹果肌。",
-        "眼周精雕：改善上睑松弛、淡化鱼尾纹，是唯一获得 FDA 认证可作用于眼睑的射频技术。",
-        "身体塑形：针对腹部、大腿、手臂等部位的松弛皮肤，并帮助改善橘皮组织。",
       ],
       howWeUseTitle: "我们如何使用",
       howWeUseTitleAccent: "Thermage 热玛吉",

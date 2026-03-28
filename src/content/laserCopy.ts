@@ -151,7 +151,7 @@ const laserCopyEn: LaserCopy = {
         { id: "lumecca-rec-4", text: "Those looking for fast, visible results with non-invasive treatment" },
       ],
     },
-    processText: "Relaxation Back Massage → Cleansing → Peeling → Steaming → Extraction → Eyebrow Shaping → IPL for Full Face & Neck → Serum Infusion → Double Layer Masks → Shoulder, Head & Hand Massage (Included)",
+    processText: "Relaxation Back Massage → Cleansing → Peeling → Steaming → Extraction → Eyebrow Shaping → IPL for Full Face & Neck → Serum Infusion → Double Layer Masks for Face & Neck → Shoulder, Head & Hand Massage (Included)",
     benefits: [
       "Improves pigmentation, sun spots, and uneven skin tone",
       "Reduces redness and vascular concerns",
@@ -353,7 +353,7 @@ const laserCopyZh: LaserCopy = {
       "精准的激光和光疗技术,用于提亮肤色、改善肤质、解决常见的色素沉着和毛发问题。",
     breadcrumbLabel: "激光与光疗",
     processItems: [
-      { id: "lumecca", label: "Lumecca 光感焕颜", href: "#lumecca" },
+      { id: "lumecca", label: "Lumecca 超光子嫩肤", href: "#lumecca" },
       { id: "pigmentation", label: "光子祛斑", href: "#pigmentation" },
       { id: "hair-removal", label: "激光脱毛", href: "#hair-removal" },
     ],
@@ -364,12 +364,12 @@ const laserCopyZh: LaserCopy = {
   },
   lumecca: {
     about: {
-      title: "Lumecca 光感焕颜",
+      title: "Lumecca 超光子嫩肤",
       subtitle: "",
       paragraphs: [
         {
           segments: [
-            { text: "Lumecca 光感焕颜是一项先进的" },
+            { text: "Lumecca 超光子嫩肤是一项先进的" },
             { text: "强脉冲光（IPL）疗程", bold: true },
             { text: "，专为提升肌肤的清晰度、光泽度与整体肤色均匀度而设计。该疗程采用高能量宽谱光技术，从源头精准作用于色素性及血管性皮肤问题，有效改善色斑沉着，并显著减轻面部泛红。" },
           ],

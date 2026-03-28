@@ -173,7 +173,7 @@ const privacyCopyEn: PrivacyCopy = {
       id: "contact",
       title: "Contact Information",
       paragraphs: [
-        "If you have any questions or concerns regarding this Privacy Policy or your personal information, please contact us:\n\nRediscover Beauty Clinic\nPhone: +1 647 523 3988\nAddress: 9425 Leslie St, Unit 14, 2F, Richmond Hill, ON L4B 3N7",
+        "If you have any questions or concerns regarding this Privacy Policy or your personal information, please contact us:\n\nRediscover Beauty Clinic\nPhone: +1 647 523 3988\nAddress: 9425 Leslie St, Unit 14, 2F, Richmond Hill, ON L4B 3N7\nEmail: rediscoverbeauty99@gmail.com",
       ],
     },
   ],

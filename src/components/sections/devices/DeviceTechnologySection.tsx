@@ -16,7 +16,10 @@ export function DeviceTechnologySection({
 }: DeviceTechnologySectionProps) {
   const deviceHeading = lang === "zh" ? "医学级医美设备" : "Medical-Grade Aesthetic Devices";
   const viewServicesLabel = lang === "zh" ? "查看服务" : "View Services";
-  const whyName = technology.title.replace(/[®™]/g, "").replace(/ Technology$/, "").trim();
+  const whyName =
+    technology.whyTitleAccent === undefined
+      ? technology.title.replace(/[®™]/g, "").replace(/ Technology$/, "").trim()
+      : technology.whyTitleAccent;
 
   return (
     <section data-testid={technology.testId} className="w-full bg-surface-base">
@@ -55,8 +58,8 @@ export function DeviceTechnologySection({
 
             <div className="flex flex-col gap-4">
               <h3 className="m-0 font-heading text-[32px] font-bold leading-[1.1]">
-                <span className="text-brand-secondary">{technology.whyTitle} </span>
-                <span className="text-text-primary">{whyName}</span>
+                <span className="text-brand-secondary">{technology.whyTitle}</span>
+                {whyName ? <span className="text-text-primary"> {whyName}</span> : null}
               </h3>
               <ul className="m-0 list-disc space-y-1 pl-6">
                 {technology.whyBullets.map((bullet, i) => (

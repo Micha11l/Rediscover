@@ -97,7 +97,8 @@ export function TestimonialsCarousel({
     if (target) {
       target.scrollIntoView({ behavior: "smooth", inline: "start", block: "nearest" });
     }
-  }, [currentIndex, visibleCount]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentIndex]);
 
   const canGoPrev = currentIndex > 0;
   const canGoNext = currentIndex < maxIndex;

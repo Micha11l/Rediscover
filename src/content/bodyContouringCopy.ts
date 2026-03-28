@@ -159,7 +159,7 @@ const bodyContouringCopyEn: BodyContouringCopy = {
     {
       id: "plus90",
       testId: "body-contouring-treatment-plus90",
-      title: "Plus 90",
+      title: "Plus 90 Feminine Wellness",
       paragraphs: [
         {
           segments: [
@@ -410,7 +410,7 @@ const bodyContouringCopyZh: BodyContouringCopy = {
     {
       id: "plus90",
       testId: "body-contouring-treatment-plus90",
-      title: "Plus 90",
+      title: "Plus 90 女性私密保养",
       paragraphs: [
         {
           segments: [

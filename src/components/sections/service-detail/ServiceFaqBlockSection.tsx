@@ -11,6 +11,7 @@ export function ServiceFaqBlockSection({
 }) {
   const data = pickContent(antiAgingContent, lang)[treatment].faq;
   const sectionId = `serviceFaqBlock-${treatment}`;
+  const hasHelpsWith = data.helpsWith.length > 0;
 
   return (
     <section
@@ -57,35 +58,39 @@ export function ServiceFaqBlockSection({
     </ul>
   </div>
 
-   {/* Divider aligned to right column */}
-   <div className="mt-8 md:mt-12 lg:mt-[72px] grid grid-cols-1 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
-    <div className="hidden lg:block" />
-    <div className="h-px w-full bg-border" />
-  </div>
+   {hasHelpsWith ? (
+     <>
+       {/* Divider aligned to right column */}
+       <div className="mt-8 md:mt-12 lg:mt-[72px] grid grid-cols-1 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
+        <div className="hidden lg:block" />
+        <div className="h-px w-full bg-border" />
+      </div>
 
-   {/* Row 2 */}
-   <div className="mt-8 md:mt-12 lg:mt-[72px] grid grid-cols-1 gap-10 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
-     <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1] text-brand-secondary">
-       {lang === "zh" ? data.title : `What ${data.title}`}{" "}
-       <span className="text-text-primary">{data.canHelpWithTitle}</span>
-     </h2>
+       {/* Row 2 */}
+       <div className="mt-8 md:mt-12 lg:mt-[72px] grid grid-cols-1 gap-10 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
+         <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1] text-brand-secondary">
+           {lang === "zh" ? data.title : `What ${data.title}`}{" "}
+           <span className="text-text-primary">{data.canHelpWithTitle}</span>
+         </h2>
 
-    <ul data-testid="faq-helps-list" className="flex flex-col gap-2">
-      {data.helpsWith.map((item, index) => (
-        <li key={item} data-testid={`faq-helps-${index}`} className="flex gap-4">
-          <span
-            aria-hidden="true"
-            className="shrink-0 font-body text-[16px] leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:leading-[2]"
-          >
-            •
-          </span>
-          <span className="font-body text-[16px] font-normal leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:leading-[2]">
-            {item}
-          </span>
-        </li>
-      ))}
-    </ul>
-  </div>
+        <ul data-testid="faq-helps-list" className="flex flex-col gap-2">
+          {data.helpsWith.map((item, index) => (
+            <li key={item} data-testid={`faq-helps-${index}`} className="flex gap-4">
+              <span
+                aria-hidden="true"
+                className="shrink-0 font-body text-[16px] leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:leading-[2]"
+              >
+                •
+              </span>
+              <span className="font-body text-[16px] font-normal leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:leading-[2]">
+                {item}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
+     </>
+   ) : null}
 </div>
       </div>
     </section>

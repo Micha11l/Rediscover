@@ -155,6 +155,7 @@ const termsCopyEn: TermsCopy = {
       bullets: [
         "Phone: +1 647 523 3988",
         "Address: 9425 Leslie St, Unit 14, 2F, Richmond Hill, ON L4B 3N7",
+        "Email: rediscoverbeauty99@gmail.com",
       ],
     },
   ],

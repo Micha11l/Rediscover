@@ -237,7 +237,7 @@ const antiAgingContentEn: AntiAgingPageContent = {
           },
           {
             title: "Eye-Area Safe & Proven",
-            text: "Globally recognized as the only non-invasive skin tightening treatment approved for delicate eye areas.",
+            text: "Thermage® FLX is one of the only FDA-approved non-invasive treatments specifically cleared for use on both the upper and lower eyelid.",
           },
           {
             title: "Non-Invasive Treatment",

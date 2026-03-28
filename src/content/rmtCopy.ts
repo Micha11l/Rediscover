@@ -177,7 +177,7 @@ const rmtCopyZh: RmtCopy = {
   hero: {
     titleLine1: "注册按摩治疗",
     titleLine2: "RMT",
-    subtitle: "在宁静私密的诊所环境中，为您提供专业的治疗性按摩服务。",
+    subtitle: "为您提供专业的服务。",
     breadcrumbLabel: "注册按摩治疗",
     images: [
       { src: "/images/rmt/hero-1.png", alt: "RMT 疗程 1" },
@@ -199,7 +199,7 @@ const rmtCopyZh: RmtCopy = {
 
   pricingSection: {
     title: "疗程与价格",
-    description: "我们所做的一切都源于目标——滋养、提升，并传递超越表面的美。",
+    description: "我们所做的一切都源于目标——舒压缓解肌肉酸痛 身心愉悦放松。",
   },
 
   treatments: [
