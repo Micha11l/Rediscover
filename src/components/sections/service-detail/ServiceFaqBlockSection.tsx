@@ -69,8 +69,17 @@ export function ServiceFaqBlockSection({
        {/* Row 2 */}
        <div className="mt-8 md:mt-12 lg:mt-[72px] grid grid-cols-1 gap-10 lg:grid-cols-[480px_1fr] lg:gap-[80px]">
          <h2 className="m-0 font-heading text-[32px] md:text-[44px] lg:text-[56px] font-medium leading-[1.1] text-brand-secondary">
-           {lang === "zh" ? data.title : `What ${data.title}`}{" "}
-           <span className="text-text-primary">{data.canHelpWithTitle}</span>
+           {data.canHelpWithAccent ? (
+             <>
+               {data.canHelpWithTitle}{" "}
+               <span className="text-text-primary">{data.canHelpWithAccent}</span>
+             </>
+           ) : (
+             <>
+               {lang === "zh" ? data.title : `What ${data.title}`}{" "}
+               <span className="text-text-primary">{data.canHelpWithTitle}</span>
+             </>
+           )}
          </h2>
 
         <ul data-testid="faq-helps-list" className="flex flex-col gap-2">

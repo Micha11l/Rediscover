@@ -38,7 +38,7 @@ export function SkinCareAboutSection({ lang }: { lang: Language }) {
                 <h3 className="font-heading text-[32px] font-medium leading-[1.1] text-text-primary">
                   {treatment.title}
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-6">
                   <div>
                     <h4 className="m-0 mb-1 font-heading text-[18px] font-semibold leading-[1.3] text-text-primary">
                       Effect:

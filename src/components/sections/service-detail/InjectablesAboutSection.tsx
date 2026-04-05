@@ -43,7 +43,7 @@ export function InjectablesAboutSection({ lang }: { lang: Language }) {
                 )}
               </div>
 
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-10">
                 <div>
                   <h4 className="m-0 mb-1 font-heading text-[18px] font-semibold leading-[1.3] text-text-primary">
                     Effect:

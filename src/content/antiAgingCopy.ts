@@ -33,10 +33,12 @@ export interface TreatmentCopy {
     headline: string;
     items: RecommendedItem[];
   };
+  repCards?: FaqBenefit[];
   faq: {
     title: string;
     keyBenefitsTitle: string;
     canHelpWithTitle: string;
+    canHelpWithAccent?: string;
     benefits: FaqBenefit[];
     helpsWith: string[];
   };
@@ -161,29 +163,46 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
         },
       ],
     },
+    repCards: [
+      { title: "900REP", text: "Comprehensive Thermage treatment for the full face and neck to improve skin firmness, elasticity, and overall contour." },
+      { title: "600REP", text: "Targeted Thermage treatment for localized areas to enhance firmness and definition." },
+      { title: "300REP", text: "Focused treatment for small areas to refine skin texture and address mild skin laxity." },
+      { title: "450REP(Eye)", text: "Specialized Thermage treatment for the eye area to tighten delicate skin and smooth fine lines around the eyes." },
+    ],
     faq: {
-      title: "Thermage Technology",
-      keyBenefitsTitle: "How We Use",
-      canHelpWithTitle: "",
+      title: "Key Benefits",
+      keyBenefitsTitle: "Thermage FLX",
+      canHelpWithTitle: "Indications for",
+      canHelpWithAccent: "Thermage FLX",
       benefits: [
         {
-          title: "900REP",
-          text: "Comprehensive Thermage treatment for the full face and neck to improve skin firmness, elasticity, and overall contour.",
+          title: "5th-Generation Intelligent RF Technology",
+          text: "As the latest advancement in the Thermage series, FLX features a more intelligent energy delivery system that precisely controls each RF pulse, enhancing both treatment comfort and safety while maintaining optimal results.",
         },
         {
-          title: "600REP",
-          text: "Targeted Thermage treatment for localized areas to enhance firmness and definition.",
+          title: "Globally Approved for Eye Area Treatment",
+          text: "With precise heat control and integrated epidermal cooling, Thermage FLX is currently the only non-invasive skin tightening technology approved for use on delicate areas such as the eyelids, trusted by medical professionals worldwide.",
         },
         {
-          title: "300REP",
-          text: "Focused treatment for small areas to refine skin texture and address mild skin laxity.",
+          title: "Non-Invasive, Comfortable, No Downtime",
+          text: "No needles, no surgery, and no surface damage. The treatment is comfortable, and clients can immediately return to their daily activities — a true \"lunchtime\" procedure.",
         },
         {
-          title: "450REP(Eye)",
-          text: "Specialized Thermage treatment for the eye area to tighten delicate skin and smooth fine lines around the eyes.",
+          title: "Immediate Tightening with Long-Term Regeneration",
+          text: "By delivering controlled heat to the deep dermal layers, Thermage FLX triggers immediate collagen contraction while stimulating long-term collagen production, resulting in natural, long-lasting lifting and contouring.",
+        },
+        {
+          title: "Zero Downtime, Minimal Disruption",
+          text: "Mild redness may occur temporarily and typically subsides within a few hours. Most clients can resume work and social activities right away without special aftercare.",
         },
       ],
-      helpsWith: [],
+      helpsWith: [
+        "Skin laxity and loss of elasticity",
+        "Blurred jawline or double chin",
+        "Fine lines around the eyes and eyelid laxity",
+        "Neck wrinkles and skin looseness",
+        "Mild to moderate skin laxity on the body (e.g., abdomen, arms)",
+      ],
     },
   },
 
@@ -481,29 +500,46 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
         },
       ],
     },
+    repCards: [
+      { title: "900REP", text: "全面的 Thermage 疗程，针对全脸及颈部，改善肌肤紧致度、弹性和整体轮廓。" },
+      { title: "600REP", text: "针对局部区域的精准 Thermage 疗程，增强紧致度和轮廓感。" },
+      { title: "300REP", text: "针对小面积的集中疗程，改善肌肤质感，解决轻度松弛问题。" },
+      { title: "450REP（眼部）", text: "专为眼周设计的 Thermage 疗程，紧致娇嫩肌肤，抚平眼周细纹。" },
+    ],
     faq: {
-      title: "Thermage 热玛吉",
-      keyBenefitsTitle: "我们如何使用",
-      canHelpWithTitle: "",
+      title: "核心优势",
+      keyBenefitsTitle: "Thermage FLX",
+      canHelpWithTitle: "适用问题",
+      canHelpWithAccent: "Thermage FLX",
       benefits: [
         {
-          title: "900REP",
-          text: "全面的 Thermage 疗程，针对全脸及颈部，改善肌肤紧致度、弹性和整体轮廓。",
+          title: "第五代智能射频技术",
+          text: "作为 Thermage 系列的最新一代升级，FLX 搭载更智能的能量发射系统，精准调控每一发射频脉冲，在确保效果的同时大幅提升治疗舒适度与安全性。",
         },
         {
-          title: "600REP",
-          text: "针对局部区域的精准 Thermage 疗程，增强紧致度和轮廓感。",
+          title: "全球唯一眼周合规认证",
+          text: "凭借其精准的加热控制与表皮冷却保护，Thermage FLX 是目前全球唯一获监管机构批准、可安全用于眼睑等敏感区域的非侵入式紧肤技术，深受专业医师信赖。",
         },
         {
-          title: "300REP",
-          text: "针对小面积的集中疗程，改善肌肤质感，解决轻度松弛问题。",
+          title: "无创无痛，即做即走",
+          text: "无需针剂、无需手术、无表皮创伤，治疗过程舒适，结束后即可恢复正常生活，是真正意义上的\u201C午餐式\u201D美容。",
         },
         {
-          title: "450REP（眼部）",
-          text: "专为眼周设计的 Thermage 疗程，紧致娇嫩肌肤，抚平眼周细纹。",
+          title: "即刻紧致 + 长效再生",
+          text: "通过立体加热真皮深层，触发胶原纤维即刻收缩，同时启动胶原蛋白长期新生，实现由内而外的紧致提升与轮廓重塑，效果自然且持久。",
+        },
+        {
+          title: "零恢复期，不影响日常",
+          text: "治疗后仅可能出现轻微泛红，数小时内消退，绝大多数客户可即刻回归工作与社交，无需特殊护理。",
         },
       ],
-      helpsWith: [],
+      helpsWith: [
+        "面部肌肤松弛、弹性下降",
+        "下颌线模糊、双下巴",
+        "眼周细纹、上眼睑松弛",
+        "颈部横纹与松弛",
+        "身体局部皮肤松垂（如腹部、手臂）",
+      ],
     },
   },
 
