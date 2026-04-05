@@ -37,8 +37,10 @@ export type WellnessTreatmentVipReg = {
   title: string;
   effect: string;
   type: "vip-reg";
-  vipPrice: string;
-  regPrice: string;
+  vipPricing: Array<{ duration: string; price: string }>;
+  regPricing: Array<{ duration: string; price: string }>;
+  vipLabel: string;
+  regLabel: string;
 };
 
 export type WellnessTreatment = WellnessTreatmentDuration | WellnessTreatmentVipReg;
@@ -107,7 +109,7 @@ const skinCareCopyEn: SkinCareCopy = {
         text: "All skin care services are customized based on individual skin conditions and needs, offering a relaxing experience with visible improvements and no downtime.",
       },
       {
-        text: "Skin Care Service Process: Relaxation Back Massage → Cleansing → Peeling → Steaming → Extraction → Eyebrow Shaping → Customized Facial Treatment → Serum Infusion → Double Layer Masks → Shoulder, Head & Hand Massage (Included)",
+        text: "Skin Care Service Process: Relaxation Back Massage (10 mins) → Cleansing → Peeling → Steaming → Extraction → Eyebrow Shaping → Customized Facial Treatment → Double Layer Mask (Neck + Face) → Shoulder, Head & Hand Massage",
         extraTopSpace: true,
       },
       // {
@@ -189,7 +191,7 @@ const skinCareCopyEn: SkinCareCopy = {
       title: "Advanced Facial",
       effect:
         "A time-efficient essential facial focused on cleansing, hydration, and basic skin maintenance.",
-      duration: "60 mins (without back massage)",
+      duration: "60 mins (No back massage)",
       vipPrice: "$80",
       regPrice: "$120",
     },
@@ -235,8 +237,16 @@ const skinCareCopyEn: SkinCareCopy = {
       effect:
         "Supports lymphatic flow to reduce fluid retention, puffiness, and promote a lighter, refreshed feeling.",
       type: "vip-reg",
-      vipPrice: "$128 (90 mins)\n$98 (60 mins)",
-      regPrice: "$200 (90 mins)\n$158 (60 mins)",
+      vipLabel: "VIP",
+      regLabel: "Reg",
+      vipPricing: [
+        { duration: "90 mins", price: "$128" },
+        { duration: "60 mins", price: "$98" },
+      ],
+      regPricing: [
+        { duration: "90 mins", price: "$200" },
+        { duration: "60 mins", price: "$158" },
+      ],
     },
   ],
 
@@ -335,7 +345,7 @@ const skinCareCopyZh: SkinCareCopy = {
         text: "所有护肤服务均根据个人肌肤状况和需求定制，提供放松体验与可见改善，且无需恢复期。",
       },
       {
-        text: "护肤服务流程：放松背部按摩 → 洁面 → 去角质 → 蒸脸 → 清洁毛孔 → 修眉 → 定制面部护理 → 精华导入 → 双层面膜 → 肩部、头部及手部按摩（含）",
+        text: "护肤服务流程：放松背部按摩（10分钟） → 洁面 → 去角质 → 蒸脸+肩颈按摩 → 清洁毛孔 → 修眉 → 定制面部护理 → 双层面膜（面部+颈部） → 肩部、头部及手部按摩",
         extraTopSpace: true,
       },
       // {
@@ -463,8 +473,16 @@ const skinCareCopyZh: SkinCareCopy = {
       effect:
         "支持淋巴流动，减少体液滞留与浮肿，促进轻盈焕新的感觉。",
       type: "vip-reg",
-      vipPrice: "$128（90分钟）\n$98（60分钟）",
-      regPrice: "$200（90分钟）\n$158（60分钟）",
+      vipLabel: "VIP",
+      regLabel: "Reg",
+      vipPricing: [
+        { duration: "90 分钟", price: "$128" },
+        { duration: "60 分钟", price: "$98" },
+      ],
+      regPricing: [
+        { duration: "90 分钟", price: "$200" },
+        { duration: "60 分钟", price: "$158" },
+      ],
     },
   ],
 

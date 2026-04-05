@@ -70,8 +70,8 @@ const promoCopyEn: PromoCopy = {
     items: [
       {
         id: "lumecca",
-        title: "Lumecca Photo Facial",
-        image: { src: "/images/promo/lumecca.png", alt: "Lumecca Photo Facial treatment" },
+        title: "Lumecca PhotoFacial",
+        image: { src: "/images/promo/lumecca.png", alt: "Lumecca PhotoFacial treatment" },
         vipPrice: "$250",
         regularPrice: "$380",
         duration: "90 mins",
@@ -89,7 +89,7 @@ const promoCopyEn: PromoCopy = {
         title: "Lymphatic Drainage",
         image: { src: "/images/promo/lymphatic.png", alt: "Lymphatic Drainage treatment" },
         vipPrice: "$98",
-        regularPrice: "$200",
+        regularPrice: "$158",
         duration: "60 mins",
       },
       {

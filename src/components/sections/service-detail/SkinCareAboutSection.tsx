@@ -39,14 +39,22 @@ export function SkinCareAboutSection({ lang }: { lang: Language }) {
                   {treatment.title}
                 </h3>
                 <div className="space-y-4">
-                  <p className="font-body text-body leading-[1.6] text-brand-secondary">
-                    <span className="font-semibold text-text-primary">Effect:</span>{" "}
-                    {treatment.effect}
-                  </p>
-                  <p className="font-body text-body leading-[1.6] text-brand-secondary">
-                    <span className="font-semibold text-text-primary">Duration:</span>{" "}
-                    {treatment.duration}
-                  </p>
+                  <div>
+                    <h4 className="m-0 mb-1 font-heading text-[18px] font-semibold leading-[1.3] text-text-primary">
+                      Effect:
+                    </h4>
+                    <p className="m-0 font-body text-[15px] leading-[1.6] text-brand-secondary">
+                      {treatment.effect}
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="m-0 mb-1 font-heading text-[18px] font-semibold leading-[1.3] text-text-primary">
+                      Duration:
+                    </h4>
+                    <p className="m-0 font-body text-[15px] leading-[1.6] text-brand-secondary">
+                      {treatment.duration}
+                    </p>
+                  </div>
                 </div>
               </div>
 

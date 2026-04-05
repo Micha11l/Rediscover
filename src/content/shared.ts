@@ -37,12 +37,12 @@ export const sharedCta: { en: SharedCta; zh: SharedCta } = {
     },
   },
   zh: {
-    titleParts: { primary: "Rediscover Beauty", accent: "由此开始" },
+    titleParts: { primary: "爱妍舍", accent: "由此开始" },
     body: "专业细致的医学美容护理——为您的肌肤、身体与个人目标量身定制。",
     buttonText: "预约咨询",
     image: {
       src: "/images/banner.png",
-      alt: "Rediscover Beauty 预约咨询",
+      alt: "爱妍舍预约咨询",
     },
   },
 };
@@ -142,7 +142,7 @@ export const uiStrings: { en: UiStrings; zh: UiStrings } = {
       home: "首页",
       services: "服务",
       faq: "常见问题",
-      antiAging: "抗衰老",
+      antiAging: "抗衰老项目",
       privacyPolicy: "隐私政策",
       termsConditions: "条款与条件",
     },

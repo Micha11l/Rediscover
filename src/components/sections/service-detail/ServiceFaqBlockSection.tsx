@@ -34,7 +34,7 @@ export function ServiceFaqBlockSection({
         <li key={item.title} data-testid={`faq-item-${index}`} className="flex gap-4">
           <span
             aria-hidden="true"
-            className="shrink-0 font-body text-[16px] leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:leading-[1.2]"
+            className="shrink-0 font-heading text-[16px] leading-[1.4] text-text-primary md:text-[20px] lg:text-[24px]"
           >
             •
           </span>
@@ -42,13 +42,13 @@ export function ServiceFaqBlockSection({
           <div className="flex flex-col">
             <span
               data-testid={`faq-q-${index}`}
-              className="font-body text-[16px] font-semibold leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:font-medium md:leading-[1.2]"
+              className="font-heading text-[16px] font-semibold leading-[1.4] text-text-primary md:text-[20px] md:font-medium lg:text-[24px]"
             >
               {item.title}
             </span>
             <p
               data-testid={`faq-a-${index}`}
-              className="m-0 mt-1 font-body text-[16px] font-normal leading-[1.6] text-brand-secondary md:font-heading md:text-[24px] md:leading-[1.2]"
+              className="m-0 mt-1 font-body text-[16px] font-normal leading-[1.6] text-brand-secondary"
             >
               {item.text}
             </p>
@@ -78,11 +78,11 @@ export function ServiceFaqBlockSection({
             <li key={item} data-testid={`faq-helps-${index}`} className="flex gap-4">
               <span
                 aria-hidden="true"
-                className="shrink-0 font-body text-[16px] leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:leading-[2]"
+                className="shrink-0 font-body text-[16px] leading-[1.6] text-text-primary"
               >
                 •
               </span>
-              <span className="font-body text-[16px] font-normal leading-[1.6] text-text-primary md:font-heading md:text-[24px] md:leading-[2]">
+              <span className="font-body text-[16px] font-normal leading-[1.6] text-text-primary">
                 {item}
               </span>
             </li>

@@ -117,7 +117,7 @@ const laserCopyEn: LaserCopy = {
       "Targeted laser and light-based treatments to brighten skin, improve tone, and address common pigmentation and hair concerns.",
     breadcrumbLabel: "Laser & Light Therapy",
     processItems: [
-      { id: "lumecca", label: "Lumecca Photo Facial", href: "#lumecca" },
+      { id: "lumecca", label: "Lumecca PhotoFacial", href: "#lumecca" },
       { id: "pigmentation", label: "Pigmentation Management", href: "#pigmentation" },
       { id: "hair-removal", label: "Hair Removal", href: "#hair-removal" },
     ],
@@ -128,12 +128,12 @@ const laserCopyEn: LaserCopy = {
   },
   lumecca: {
     about: {
-      title: "Lumecca Photo Facial",
+      title: "Lumecca PhotoFacial",
       subtitle: "",
       paragraphs: [
         {
           segments: [
-            { text: "Lumecca Photo Facial is " },
+            { text: "Lumecca PhotoFacial is " },
             { text: "an advanced Intense Pulsed Light (IPL) treatment", bold: true },
             { text: " designed to enhance skin clarity, radiance, and overall tone evenness. Using high-energy, broad-spectrum light technology, Lumecca precisely targets pigmentation and vascular skin concerns at their source, effectively reducing discoloration and visibly diminishing facial redness." },
           ],
@@ -151,7 +151,7 @@ const laserCopyEn: LaserCopy = {
         { id: "lumecca-rec-4", text: "Those looking for fast, visible results with non-invasive treatment" },
       ],
     },
-    processText: "Relaxation Back Massage → Cleansing → Peeling → Steaming → Extraction → Eyebrow Shaping → IPL for Full Face & Neck → Serum Infusion → Double Layer Masks for Face & Neck → Shoulder, Head & Hand Massage (Included)",
+    processText: "Relaxation Back Massage → Cleansing → Peeling → Steaming → Extraction → Eyebrow Shaping → IPL for Full Face & Neck → Serum Infusion → Double Layer Masks for Face & Neck → Shoulder, Head & Hand Massage",
     benefits: [
       "Improves pigmentation, sun spots, and uneven skin tone",
       "Reduces redness and vascular concerns",
@@ -309,7 +309,7 @@ const laserCopyEn: LaserCopy = {
         id: "faq-suitable",
         question: "Are these treatments suitable for everyone?",
         answer:
-          "Most treatments are suitable for a wide range of individuals. However, suitability depends on skin condition, medical history, and personal goals. A professional consultation is required to determine the most appropriate treatment plan and ensure safety and optimal results.",
+          "These treatments are suitable for individuals with Fitzpatrick skin types I–VI who have not had tanning, excessive sun exposure, or sunburn within the past 2–3 weeks. However, suitability depends on skin condition, medical history, and personal goals. A professional consultation is required to determine the most appropriate treatment plan and ensure safety and optimal results.",
       },
       {
         id: "faq-prepare",
@@ -322,6 +322,12 @@ const laserCopyEn: LaserCopy = {
         question: "Is there any downtime after treatment?",
         answer:
           "Downtime varies by treatment, but many of our light-based services have little to no recovery time. With Lumecca and pigmentation-focused IPL treatments, mild redness or temporary darkening of pigment may occur and usually settles within hours to a few days.",
+      },
+      {
+        id: "faq-aftercare",
+        question: "How should I care for my skin after treatment?",
+        answer:
+          "After the treatment, you might experience some mild redness or a sensation similar to a light sunburn, but this typically fades within a few hours. In rare cases, it can last a couple of days. Patients are advised to avoid direct sunlight or tanning for the first few days and to wear sunscreen to protect the treated area.",
       },
     ],
   },
@@ -387,7 +393,7 @@ const laserCopyZh: LaserCopy = {
         { id: "lumecca-rec-4", text: "寻求非侵入性治疗并快速见效" },
       ],
     },
-    processText: "放松背部按摩 → 洁面 → 去角质 → 蒸脸 → 清洁毛孔 → 修眉 → 全脸与颈部 IPL 光疗 → 精华导入 → 双层面膜 → 肩部、头部及手部按摩（含）",
+    processText: "放松背部按摩 → 洁面 → 去角质 → 蒸脸 → 清洁毛孔 → 修眉 → 全脸与颈部 IPL 光疗 → 精华冰导镇定修复 → 双层修复面膜 → 肩部、头部及手部按摩",
     benefits: [
       "改善色素沉着、日晒斑和肤色不均",
       "减少泛红和血管问题",
@@ -545,7 +551,7 @@ const laserCopyZh: LaserCopy = {
         id: "faq-suitable",
         question: "这些疗程适合所有人吗？",
         answer:
-          "大多数疗程适合广泛人群。然而，适用性取决于肌肤状况、病史和个人目标。需要进行专业咨询，以确定最合适的疗程方案，并确保安全性和最佳效果。",
+          "只适合Fitzpatrick光型(I-VI型)且近期(2-3周内)没有美黑，暴晒或晒伤史的人。然而，适用性取决于肌肤状况，病史和个人目标。需要进行专业咨询，以确定最合适的疗程方案，并确保安全性和最佳效果。",
       },
       {
         id: "faq-prepare",
@@ -558,6 +564,12 @@ const laserCopyZh: LaserCopy = {
         question: "治疗后是否需要恢复期？",
         answer:
           "恢复期会因疗程类型而异，但大多数光疗项目几乎不需要恢复期。以 Lumecca 和光子祛斑类疗程为例，术后可能出现轻微泛红或色素暂时加深，通常会在数小时至数天内逐步消退。",
+      },
+      {
+        id: "faq-aftercare",
+        question: "治疗后应该如何护理？",
+        answer:
+          "治疗后，您可能会出现轻微泛红或类似轻度晒伤的感觉，但通常会在几小时内消退。在极少数情况下，可能会持续几天。建议在治疗后的最初几天内避免阳光直射或日光浴，并涂抹防晒霜以保护治疗区域。",
       },
     ],
   },

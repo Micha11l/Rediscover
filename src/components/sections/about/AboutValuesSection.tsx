@@ -13,8 +13,8 @@ export function AboutSkincareSection({ lang }: { lang: Language }) {
           {skincare.title}
         </h2>
 
-        <div className="flex flex-col overflow-hidden rounded-3xl bg-surface-muted lg:flex-row">
-          <div className="relative h-[300px] w-full lg:h-[575px] lg:w-[705px] lg:shrink-0">
+        <div className="flex flex-col overflow-hidden rounded-3xl bg-surface-muted lg:flex-row lg:items-stretch">
+          <div className="relative h-[300px] w-full lg:h-auto lg:min-h-[575px] lg:w-[705px] lg:shrink-0">
             <Image
               src={skincare.image.src}
               alt={skincare.image.alt}

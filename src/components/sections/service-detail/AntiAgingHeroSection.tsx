@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Navbar } from "@/components/layout";
+import { antiAgingPageContent } from "@/content/antiAgingPage";
 import type { Language } from "@/i18n/types";
 import { pickContent } from "@/lib/i18n";
 import { uiStrings } from "@/content/shared";
@@ -16,16 +17,17 @@ import { uiStrings } from "@/content/shared";
  */
 
 export function AntiAgingHeroSection({ lang }: { lang: Language }) {
+  const content = pickContent(antiAgingPageContent, lang);
   const ui = pickContent(uiStrings, lang);
   const processItems = [
     { id: "sofwave", label: lang === "zh" ? "索芙波" : "Sofwave", href: "#sofwave" },
     {
       id: "thermage-flx",
-      label: lang === "zh" ? "热玛吉 FLX" : "Thermage FLX",
+      label: lang === "zh" ? "热玛吉第五代" : "ThermageFLX",
       href: "#thermage-flx",
     },
-    { id: "morpheus8", label: "Morpheus8", href: "#morpheus8" },
-    { id: "forma", label: "Forma", href: "#forma" },
+    { id: "morpheus8", label: lang === "zh" ? "魔力微针" : "Morpheus8", href: "#morpheus8" },
+    { id: "forma", label: lang === "zh" ? "热立塑" : "Forma", href: "#forma" },
   ];
   return (
     <section
@@ -83,12 +85,10 @@ export function AntiAgingHeroSection({ lang }: { lang: Language }) {
           {/* Headline */}
           <div className="flex w-full flex-col gap-4 text-center">
              <h1 className="font-heading text-[32px] md:text-[44px] lg:text-display font-medium leading-[1.2] text-text-primary">
-               {ui.breadcrumbs.antiAging}
+               {content.hero.title}
              </h1>
-            <p className="mx-auto max-w-none font-body text-body leading-[1.6] text-brand-secondary">
-              {lang === "en"
-                ? "Advanced technologies designed to lift, tighten, and support skin at a deeper structural level."
-                : "先进技术，旨在提升、紧致并从更深层次支持肌肤结构。"}
+            <p className="mx-auto max-w-none whitespace-pre-line font-body text-body leading-[1.6] text-brand-secondary">
+              {content.hero.description}
             </p>
           </div>
 

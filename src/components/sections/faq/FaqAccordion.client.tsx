@@ -99,7 +99,7 @@ function FaqAccordionItem({
         onClick={onToggle}
         className={`flex w-full appearance-none items-center gap-8 border-0 bg-transparent px-8 pt-8 text-left outline-none ${isExpanded ? "pb-0" : "pb-8"}`}
       >
-        <span className="flex-1 font-heading text-[24px] font-normal leading-[1.2] text-text-primary">
+        <span className="flex-1 font-heading text-[18px] font-medium leading-[1.3] text-text-primary sm:text-[20px] lg:text-[24px]">
           {item.question}
         </span>
         <span className="shrink-0 text-brand-secondary transition-transform duration-200">
@@ -121,7 +121,7 @@ function FaqAccordionItem({
       >
         <div className="overflow-hidden">
           <div className="px-8 pb-8 pt-4">
-            <p className="m-0 whitespace-pre-line font-body text-[20px] leading-[1.4] text-brand-secondary">
+            <p className="m-0 whitespace-pre-line font-body text-[15px] leading-[1.6] text-brand-secondary sm:text-[16px] lg:text-[18px]">
               {item.answer}
             </p>
           </div>

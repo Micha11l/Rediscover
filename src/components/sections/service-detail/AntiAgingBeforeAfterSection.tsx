@@ -63,12 +63,12 @@ const THERMAGE_IMAGES = [
   {
     id: "thermage-ba-1",
     src: "/images/anti-aging/thermage-before-after-1.png",
-    alt: "Thermage FLX treatment results - before and after comparison",
+    alt: "ThermageFLX treatment results - before and after comparison",
   },
   {
     id: "thermage-ba-2",
     src: "/images/anti-aging/thermage-before-after-2.png",
-    alt: "Thermage FLX treatment results - before and after comparison",
+    alt: "ThermageFLX treatment results - before and after comparison",
     labelClassName: "text-text-primary",
   },
 ];

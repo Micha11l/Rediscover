@@ -69,7 +69,7 @@ const rmtCopyEn: RmtCopy = {
     titleLine1: "Registered",
     titleLine2: "Massage Therapy",
     subtitle:
-      "Professional therapeutic massage in a calm, private clinic setting.",
+      "Professional therapeutic massage in a calm, private setting. Designed to relax the body and restore balance.",
     breadcrumbLabel: "Registered Massage Therapy",
     images: [
       { src: "/images/rmt/hero-1.png", alt: "RMT treatment 1" },
@@ -80,7 +80,7 @@ const rmtCopyEn: RmtCopy = {
 
   welcome: {
     message:
-      "At Rediscover Beauty Clinic, our Registered Massage Therapy services are designed to support both physical recovery and overall well-being.",
+      "Registered Massage Therapy services are designed to support both physical recovery and overall well-being.",
     aboutTitle: "About Our RMT Services",
     aboutParagraphs: [
       "Our Registered Massage Therapists (RMTs) provide professional, evidence-based treatments tailored to each client's needs — whether you're managing chronic pain, recovering from injury, or simply in need of deep relaxation.",
@@ -177,7 +177,7 @@ const rmtCopyZh: RmtCopy = {
   hero: {
     titleLine1: "注册按摩治疗",
     titleLine2: "RMT",
-    subtitle: "为您提供专业的服务。",
+    subtitle: "远离喧嚣\n沉浸于温暖与放松之中\n唤醒身体的自然修复力",
     breadcrumbLabel: "注册按摩治疗",
     images: [
       { src: "/images/rmt/hero-1.png", alt: "RMT 疗程 1" },
@@ -188,12 +188,12 @@ const rmtCopyZh: RmtCopy = {
 
   welcome: {
     message:
-      "在 Rediscover Beauty Clinic，我们的注册按摩治疗 (RMT) 服务旨在支持身体康复和整体健康。",
+      "在爱妍舍，我们的注册按摩治疗 (RMT) 服务旨在支持身体康复和整体健康。",
     aboutTitle: "关于我们的 RMT 服务",
     aboutParagraphs: [
-      "我们的注册按摩治疗师 (RMT) 提供专业的、基于循证医学的治疗方案，针对每位客户的需求量身定制——无论您是在管理慢性疼痛、从损伤中恢复，还是仅仅需要深度放松。",
-      "所有疗程均在诊所内宁静私密的治疗室中进行，确保从头到尾都能获得舒适而专注的体验。",
-      "我们还提供芳香疗法和拔罐等可选增强项目，根据您的偏好和治疗目标为您的疗程锦上添花。",
+      "我们的注册按摩治疗师（RMT）提供基于循证医学的专业治疗方案，量身定制，满足每位客户的独特需求——无论您是在应对慢性疼痛、从损伤中恢复，还是寻求深度的身心放松。",
+      "所有疗程均在诊所内安静私密的治疗室中进行，为您营造舒适、专注的疗愈体验。",
+      "我们还提供芳香疗法与拔罐等可选增强项目，根据您的偏好与治疗目标，为治疗增添更多个性化元素。",
     ],
   },
 

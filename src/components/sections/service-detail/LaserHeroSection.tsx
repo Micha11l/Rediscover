@@ -81,12 +81,12 @@ export function LaserHeroSection({ lang }: { lang: Language }) {
           >
             {hero.processItems.map((item, index) => (
               <div key={item.id} className="contents">
-                <Link
+                <a
                   href={item.href}
                   className="py-[5px] text-center font-heading text-heading-lg font-medium leading-[1.1] text-text-muted no-underline transition-colors hover:text-brand-secondary lg:flex-1"
                 >
                   {item.label}
-                </Link>
+                </a>
                 {index < hero.processItems.length - 1 && (
                   <div
                     aria-hidden="true"

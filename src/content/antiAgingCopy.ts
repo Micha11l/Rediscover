@@ -130,10 +130,10 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
       subtitle: "",
       paragraphs: [
         {
-          text: "Thermage FLX is Solta Medical\u2019s fifth-generation non-invasive monopolar radiofrequency skin tightening technology and the latest upgraded version in the series. It is non-surgical, needle-free, non-invasive, and requires no recovery time, providing firming, smoothing, and contouring treatments for the face, eye area, and body.",
+          text: "ThermageFLX is Solta Medical\u2019s fifth-generation non-invasive monopolar radiofrequency skin tightening technology and the latest upgraded version in the series. It is non-surgical, needle-free, non-invasive, and requires no recovery time, providing firming, smoothing, and contouring treatments for the face, eye area, and body.",
         },
         {
-          text: "Thermage\u00AE FLX is one of the only FDA-approved non-invasive treatments specifically cleared for use on both the upper and lower eyelid.",
+          text: "Thermage\u00AEFLX is one of the only FDA-approved non-invasive treatments specifically cleared for use on both the upper and lower eyelid.",
         },
         {
           text: "This technology precisely heats the deep dermis, simultaneously achieving immediate contraction and long-term regeneration of collagen. It not only tightens existing collagen fibers but also stimulates the continuous remodeling of new collagen, gradually revealing a firm, smooth, and naturally lifted youthful appearance.",
@@ -439,13 +439,13 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
       subtitle: "",
       paragraphs: [
         {
-          text: "热玛吉 FLX (第五代) | 智能全层紧致系统",
+          text: "热玛吉FLX (第五代) | 智能全层紧致系统",
         },
         {
-          text: "Thermage® FLX：定义非侵入式抗衰新标准",
+          text: "Thermage®FLX：定义非侵入式抗衰新标准",
         },
         {
-          text: "热玛吉 FLX 是全球公认的抗衰标杆。它利用单极射频 (Monopolar RF) 技术，跨越表皮，直接作用于真皮层及皮下组织，实现从内而外的深度紧致与轮廓重塑。",
+          text: "热玛吉FLX 是全球公认的抗衰标杆。它利用单极射频 (Monopolar RF) 技术，跨越表皮，直接作用于真皮层及皮下组织，实现从内而外的深度紧致与轮廓重塑。",
         },
         {
           text: "核心技术原理",

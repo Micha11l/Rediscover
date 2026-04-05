@@ -177,21 +177,21 @@ const termsCopyZh: TermsCopy = {
   },
 
   introduction:
-    "本条款与条件（以下简称\u201c条款\u201d）适用于您访问和使用 Rediscover Beauty Clinic（以下简称\u201c诊所\u201d、\u201c我们\u201d）所提供的服务，包括网站内容、疗程、预约及相关互动。",
+    "本条款与条件（以下简称\u201c条款\u201d）适用于您访问和使用爱妍舍（以下简称\u201c诊所\u201d、\u201c我们\u201d）所提供的服务，包括网站内容、疗程、预约及相关互动。",
 
   sections: [
     {
       id: "acceptance",
       title: "条款的接受",
       paragraphs: [
-        "在 Rediscover Beauty Clinic 预约或接受任何服务，即表示您确认已阅读、理解并同意本条款及诊所的相关政策，包括隐私政策、预约与取消政策以及其他适用条款。",
+        "在爱妍舍预约或接受任何服务，即表示您确认已阅读、理解并同意本条款及诊所的相关政策，包括隐私政策、预约与取消政策以及其他适用条款。",
       ],
     },
     {
       id: "service-description",
       title: "服务说明",
       paragraphs: [
-        "Rediscover Beauty Clinic 提供专业的医学美容及健康护理服务，包括但不限于：",
+        "爱妍舍提供专业的医学美容及健康护理服务，包括但不限于：",
       ],
       bullets: [
         "面部护理及皮肤管理服务",
@@ -203,7 +203,7 @@ const termsCopyZh: TermsCopy = {
       ],
       afterBulletsParagraphs: [
         "本网站上所有服务说明仅供一般信息参考。",
-        "实际治疗方案、操作流程和效果可能因个人状况、专业评估和适用性而异。\n\nRediscover Beauty Clinic 保留根据自身判断并在适用法律法规范围内修改、更新或停止任何服务的权利。",
+        "实际治疗方案、操作流程和效果可能因个人状况、专业评估和适用性而异。\n\n爱妍舍保留根据自身判断并在适用法律法规范围内修改、更新或停止任何服务的权利。",
       ],
     },
     {
@@ -277,7 +277,7 @@ const termsCopyZh: TermsCopy = {
       id: "limitation-liability",
       title: "责任限制",
       paragraphs: [
-        "在法律允许的最大范围内，Rediscover Beauty Clinic 及其关联方对因您使用我们的服务而产生的间接、附带或后果性损害不承担责任。",
+        "在法律允许的最大范围内，爱妍舍及其关联方对因您使用我们的服务而产生的间接、附带或后果性损害不承担责任。",
       ],
     },
     {
@@ -292,7 +292,7 @@ const termsCopyZh: TermsCopy = {
       title: "联系信息",
       paragraphs: [
         "如您对本条款与条件有任何疑问或顾虑，请与我们联系：",
-        "Rediscover Beauty Clinic",
+        "爱妍舍 (Rediscover Beauty Clinic)",
       ],
       bullets: [
         "Phone: +1 647 523 3988",

@@ -195,7 +195,7 @@ const privacyCopyZh: PrivacyCopy = {
   },
 
   introduction:
-    "Rediscover Beauty Clinic 致力于保护您的隐私并妥善保管您的个人信息。本隐私政策说明了我们收集哪些信息、如何使用这些信息，以及您在访问和使用我们网站或服务时就个人数据所享有的权利。",
+    "爱妍舍致力于保护您的隐私并妥善保管您的个人信息。本隐私政策说明了我们收集哪些信息、如何使用这些信息，以及您在访问和使用我们网站或服务时就个人数据所享有的权利。",
 
   sections: [
     {
@@ -255,7 +255,7 @@ const privacyCopyZh: PrivacyCopy = {
       bullets: [
         "当您通过电话、消息或当面沟通等直接联系方式自愿提供信息时",
         "当法律、法规、法院命令或法律程序要求披露时",
-        "当为保护 Rediscover Beauty Clinic、我们的客户或其他人的权利、安全或财产而有必要披露时",
+        "当为保护爱妍舍、我们的客户或其他人的权利、安全或财产而有必要披露时",
       ],
       afterBulletsParagraphs: [
         "我们不使用自动预约系统或收集个人数据的在线排程平台。\n\n您提供给我们的所有个人信息均由我们直接处理并严格保密。",
@@ -305,14 +305,14 @@ const privacyCopyZh: PrivacyCopy = {
         "服务更换或替代需经诊所批准，且视实际情况和可用性而定",
       ],
       afterBulletsParagraphs: [
-        "在 Rediscover Beauty Clinic 预约即表示您已知悉并同意本预约与取消政策。",
+        "在爱妍舍预约即表示您已知悉并同意本预约与取消政策。",
       ],
     },
     {
       id: "children-minors",
       title: "儿童与未成年人",
       paragraphs: [
-        "Rediscover Beauty Clinic 不会故意收集或征求 18 岁以下人士的个人信息。\n\n18 岁以下的客户须在父母或法定监护人的陪同和同意下方可接受服务或疗程。",
+        "爱妍舍不会故意收集或征求 18 岁以下人士的个人信息。\n\n18 岁以下的客户须在父母或法定监护人的陪同和同意下方可接受服务或疗程。",
       ],
     },
     {
@@ -333,7 +333,7 @@ const privacyCopyZh: PrivacyCopy = {
       id: "contact",
       title: "联系信息",
       paragraphs: [
-        "如您对本隐私政策或您的个人信息有任何疑问或顾虑，请与我们联系：\n\nRediscover Beauty Clinic\nPhone: +1 647 523 3988\nAddress: 9425 Leslie St, Unit 14, 2F, Richmond Hill, ON L4B 3N7",
+        "如您对本隐私政策或您的个人信息有任何疑问或顾虑，请与我们联系：\n\n爱妍舍 (Rediscover Beauty Clinic)\nPhone: +1 647 523 3988\nAddress: 9425 Leslie St, Unit 14, 2F, Richmond Hill, ON L4B 3N7",
       ],
     },
   ],

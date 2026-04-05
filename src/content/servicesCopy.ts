@@ -80,7 +80,7 @@ const servicesCopyZh: ServicesCopy = {
   cards: [
     {
       id: 1,
-      title: "抗衰老",
+      title: "抗衰老项目",
       image: "/images/services/anti-aging.png",
       href: "/services/anti-aging",
     },

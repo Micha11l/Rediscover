@@ -11,16 +11,16 @@ export const zh: Translations = {
     promo: "优惠活动",
   },
   hero: {
-    title: ["Rediscover", "Beauty", "由此开始"],
+    title: ["爱妍舍", "", "由此开始"],
     subtitle:
       "融合先进医学美容科技与整体护理理念，为您的肌肤、身体与身心健康量身定制专属方案。",
     ctaButton: "探索服务",
   },
   about: {
     heading: "在此体验真正的健康之美",
-    subheading: "Rediscover Beauty",
+    subheading: "爱妍舍",
     paragraphs: [
-      "在 Rediscover Beauty 诊所，我们相信美丽不是速效方案，而是平衡、精准与悉心呵护的结果。",
+      "在爱妍舍，我们相信美丽不是速效方案，而是平衡、精准与悉心呵护的结果。",
       "我们将现代科学美容与个性化健康护理相结合，助您重拾自信、放松身心、焕发光彩。",
     ],
     button: "了解更多",
@@ -113,7 +113,7 @@ export const zh: Translations = {
     items: [
       {
         quote:
-          "我在 Rediscover Beauty 诊所做了面部护理，体验非常棒。工作人员对护肤产品非常专业，态度友好且专业。护理中的按摩部分时间充足，让我感到非常放松。强烈推荐大家至少来体验一次他们的服务。",
+          "我在爱妍舍做了面部护理，体验非常棒。工作人员对护肤产品非常专业，态度友好且专业。护理中的按摩部分时间充足，让我感到非常放松。强烈推荐大家至少来体验一次他们的服务。",
         author: "Sally Cheng",
         title: "长期客户",
       },
@@ -147,7 +147,7 @@ export const zh: Translations = {
   location: {
     heading: "开启您的美丽之旅",
     subheading: "个性化护理、先进科技，以及宁静舒适的诊疗环境。",
-    cardTitle: "Rediscover Beauty 诊所",
+    cardTitle: "爱妍舍",
     addressLabel: "地址",
     address: ["9425 Leslie St Unit14, 2F,", "Richmond Hill, ON L4B 3N7"],
     hoursLabel: "营业时间",
@@ -182,14 +182,14 @@ export const zh: Translations = {
     button: "",
   },
   footer: {
-    brandName: "Rediscover Beauty",
+    brandName: "爱妍舍",
     sections: {
       businessHours: "营业时间",
       menu: "导航菜单",
       contactUs: "联系我们",
     },
     menuLinks: ["首页", "关于我们", "服务项目", "设备技术", "按摩治疗", "常见问题", "优惠活动"],
-    copyright: "Rediscover Beauty © 2025",
+    copyright: "爱妍舍 © 2025",
     legalLinks: ["隐私政策", "条款与条件"],
   },
 };

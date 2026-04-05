@@ -43,28 +43,31 @@ export function InjectablesAboutSection({ lang }: { lang: Language }) {
                 )}
               </div>
 
-              <div className="flex flex-col gap-8">
-                <p className="m-0 font-body text-body leading-[1.6] text-brand-secondary">
-                  <span className="font-semibold text-brand-secondary">
+              <div className="flex flex-col gap-6">
+                <div>
+                  <h4 className="m-0 mb-1 font-heading text-[18px] font-semibold leading-[1.3] text-text-primary">
                     Effect:
-                  </span>
-                  <br />
-                  {treatment.effect}
-                </p>
-                <p className="m-0 font-body text-body leading-[1.6] text-brand-secondary">
-                  <span className="font-semibold text-brand-secondary">
+                  </h4>
+                  <p className="m-0 font-body text-[15px] leading-[1.6] text-brand-secondary">
+                    {treatment.effect}
+                  </p>
+                </div>
+                <div>
+                  <h4 className="m-0 mb-1 font-heading text-[18px] font-semibold leading-[1.3] text-text-primary">
                     Recommended For:
-                  </span>
-                  <br />
-                  {treatment.recommendedFor}
-                </p>
-                <p className="m-0 font-body text-body leading-[1.6] text-brand-secondary">
-                  <span className="font-semibold text-brand-secondary">
+                  </h4>
+                  <p className="m-0 font-body text-[15px] leading-[1.6] text-brand-secondary">
+                    {treatment.recommendedFor}
+                  </p>
+                </div>
+                <div>
+                  <h4 className="m-0 mb-1 font-heading text-[18px] font-semibold leading-[1.3] text-text-primary">
                     Expected Downtime:
-                  </span>
-                  <br />
-                  {treatment.expectedDowntime}
-                </p>
+                  </h4>
+                  <p className="m-0 font-body text-[15px] leading-[1.6] text-brand-secondary">
+                    {treatment.expectedDowntime}
+                  </p>
+                </div>
               </div>
             </div>
           ))}

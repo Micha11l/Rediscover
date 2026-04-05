@@ -67,14 +67,14 @@ const antiAgingContentEn: AntiAgingPageContent = {
   hero: {
     title: "Anti-Aging",
     description:
-      "Advanced technologies designed to lift, tighten, and support skin at a deeper structural level.",
+      "Refine. Lift. Restore.\n\nAging is a natural process, but how your skin ages can be guided.\nOur advanced technologies are designed to lift, tighten, and support the skin at a deeper structural level—helping you achieve smoother texture, firmer contours, and a naturally refreshed appearance.",
     image: {
       src: "/images/anti-aging/hero.png",
       alt: "Anti-aging facial treatment visualization showing skin lifting and tightening effects",
     },
     navItems: [
       { id: "sofwave", label: "Sofwave", href: "#sofwave" },
-      { id: "thermage", label: "Thermage FLX", href: "#thermage" },
+      { id: "thermage", label: "Thermage", href: "#thermage" },
       { id: "morpheus8", label: "Morpheus8", href: "#morpheus8" },
       { id: "forma", label: "Forma", href: "#forma" },
     ],
@@ -181,14 +181,14 @@ const antiAgingContentEn: AntiAgingPageContent = {
 
     {
       id: "thermage",
-      title: "Thermage FLX",
+      title: "ThermageFLX",
       about: {
         subtitle:
           "Radiofrequency technology for deep collagen remodeling and skin tightening.",
         paragraphs: [
           {
             segments: [
-              { text: "Thermage FLX uses " },
+              { text: "ThermageFLX uses " },
               { text: "patented radiofrequency (RF) technology", bold: true },
               {
                 text: " to heat the deeper layers of skin, stimulating collagen production and creating a tightening effect that continues to improve over time.",
@@ -196,19 +196,19 @@ const antiAgingContentEn: AntiAgingPageContent = {
             ],
           },
           {
-            text: "With its unique comfort pulse technology and optimized treatment algorithms, Thermage FLX delivers consistent results with improved patient comfort—ideal for treating the face, eyes, and body.",
+            text: "With its unique comfort pulse technology and optimized treatment algorithms, ThermageFLX delivers consistent results with improved patient comfort—ideal for treating the face, eyes, and body.",
           },
           {
-            text: "Thermage FLX uses Monopolar Radiofrequency (RF) energy to heat the deep, collagen-rich layers of your skin. 1) Immediate Tightening: The heat causes existing collagen fibers to contract instantly. 2) Long-Term Repair: The controlled thermal energy triggers your body's natural healing process, producing new collagen over the next 2–6 months. 3) The \"FLX\" Difference: \"F\" stands for Faster, \"L\" for Algorithm (AccuREP technology that adjusts energy in real-time), and \"X\" for Experience (enhanced vibration to improve comfort).",
+            text: "ThermageFLX uses Monopolar Radiofrequency (RF) energy to heat the deep, collagen-rich layers of your skin. 1) Immediate Tightening: The heat causes existing collagen fibers to contract instantly. 2) Long-Term Repair: The controlled thermal energy triggers your body's natural healing process, producing new collagen over the next 2–6 months. 3) The \"FLX\" Difference: \"F\" stands for Faster, \"L\" for Algorithm (AccuREP technology that adjusts energy in real-time), and \"X\" for Experience (enhanced vibration to improve comfort).",
           },
         ],
         leftImage: {
           src: "/images/anti-aging/thermage-device-left.png",
-          alt: "Thermage FLX device - front view",
+          alt: "ThermageFLX device - front view",
         },
         rightImage: {
           src: "/images/anti-aging/thermage-device-right.png",
-          alt: "Thermage FLX device - treatment handpiece",
+          alt: "ThermageFLX device - treatment handpiece",
         },
       },
       recommendedFor: [
@@ -233,11 +233,11 @@ const antiAgingContentEn: AntiAgingPageContent = {
         benefits: [
           {
             title: "Latest-Generation Technology",
-            text: "Thermage FLX represents the most advanced evolution of Thermage, offering improved comfort and precision.",
+            text: "ThermageFLX represents the most advanced evolution of Thermage, offering improved comfort and precision.",
           },
           {
             title: "Eye-Area Safe & Proven",
-            text: "Thermage® FLX is one of the only FDA-approved non-invasive treatments specifically cleared for use on both the upper and lower eyelid.",
+            text: "Thermage®FLX is one of the only FDA-approved non-invasive treatments specifically cleared for use on both the upper and lower eyelid.",
           },
           {
             title: "Non-Invasive Treatment",
@@ -266,12 +266,12 @@ const antiAgingContentEn: AntiAgingPageContent = {
         {
           id: "thermage-ba-1",
           src: "/images/anti-aging/thermage-before-after-1.jpg",
-          alt: "Thermage FLX treatment results - before and after comparison",
+          alt: "ThermageFLX treatment results - before and after comparison",
         },
         {
           id: "thermage-ba-2",
           src: "/images/anti-aging/thermage-before-after-2.jpg",
-          alt: "Thermage FLX treatment results - before and after comparison",
+          alt: "ThermageFLX treatment results - before and after comparison",
         },
       ],
     },
@@ -511,18 +511,18 @@ const antiAgingContentEn: AntiAgingPageContent = {
 
 const antiAgingContentZh: AntiAgingPageContent = {
   hero: {
-    title: "抗衰老",
+    title: "抗衰老项目",
     description:
-      "先进技术，深层提拉紧致，从结构层面为肌肤提供支撑。",
+      "由内而外，重塑年轻轮廓\n\n随着时间流逝，胶原蛋白流失、皮肤支撑结构减弱，松弛、细纹与肤质问题逐渐显现。我们通过先进医美技术，从不同层次入手，帮助肌肤恢复紧致、平滑与光泽。",
     image: {
       src: "/images/anti-aging/hero.png",
       alt: "抗衰老面部护理可视化，展示肌肤提拉紧致效果",
     },
     navItems: [
       { id: "sofwave", label: "Sofwave", href: "#sofwave" },
-      { id: "thermage", label: "Thermage FLX", href: "#thermage" },
-      { id: "morpheus8", label: "Morpheus8", href: "#morpheus8" },
-      { id: "forma", label: "Forma", href: "#forma" },
+      { id: "thermage", label: "热玛吉第五代", href: "#thermage" },
+      { id: "morpheus8", label: "魔力微针", href: "#morpheus8" },
+      { id: "forma", label: "热立塑", href: "#forma" },
     ],
   },
 
@@ -627,14 +627,14 @@ const antiAgingContentZh: AntiAgingPageContent = {
 
     {
       id: "thermage",
-      title: "Thermage FLX",
+      title: "热玛吉",
       about: {
         subtitle:
           "射频技术，深层胶原重塑与肌肤紧致。",
         paragraphs: [
           {
             segments: [
-              { text: "Thermage FLX 采用 " },
+              { text: "ThermageFLX 采用 " },
               { text: "专利射频（RF）技术", bold: true },
               {
                 text: " 加热肌肤深层，刺激胶原蛋白生成，形成紧致效果，并随时间持续改善。",
@@ -642,19 +642,19 @@ const antiAgingContentZh: AntiAgingPageContent = {
             ],
           },
           {
-            text: "凭借其独特的舒适脉冲技术和优化的疗程算法，Thermage FLX 提供一致的效果和更佳的客户舒适度——适用于面部、眼部和身体疗程。",
+            text: "凭借其独特的舒适脉冲技术和优化的疗程算法，ThermageFLX 提供一致的效果和更佳的客户舒适度——适用于面部、眼部和身体疗程。",
           },
           {
-            text: "Thermage FLX 使用单极射频（RF）能量加热肌肤深层富含胶原蛋白的组织层。1）即时紧致：热量使现有胶原纤维立即收缩。2）长期修复：受控的热能触发身体的自然愈合过程，在接下来的 2–6 个月内生成新的胶原蛋白。3）\"FLX\" 的含义：\"F\" 代表 Faster（更快速），\"L\" 代表 Algorithm（AccuREP 实时能量调节技术），\"X\" 代表 Experience（增强振动以提升舒适度）。",
+            text: "ThermageFLX 使用单极射频（RF）能量加热肌肤深层富含胶原蛋白的组织层。1）即时紧致：热量使现有胶原纤维立即收缩。2）长期修复：受控的热能触发身体的自然愈合过程，在接下来的 2–6 个月内生成新的胶原蛋白。3）\"FLX\" 的含义：\"F\" 代表 Faster（更快速），\"L\" 代表 Algorithm（AccuREP 实时能量调节技术），\"X\" 代表 Experience（增强振动以提升舒适度）。",
           },
         ],
         leftImage: {
           src: "/images/anti-aging/thermage-device-left.png",
-          alt: "Thermage FLX 设备 - 正面视图",
+          alt: "ThermageFLX 设备 - 正面视图",
         },
         rightImage: {
           src: "/images/anti-aging/thermage-device-right.png",
-          alt: "Thermage FLX 设备 - 疗程手柄",
+          alt: "ThermageFLX 设备 - 疗程手柄",
         },
       },
       recommendedFor: [
@@ -679,7 +679,7 @@ const antiAgingContentZh: AntiAgingPageContent = {
         benefits: [
           {
             title: "最新一代技术",
-            text: "Thermage FLX 代表 Thermage 的最先进演进，提供更佳的舒适度和精准度。",
+            text: "ThermageFLX 代表 Thermage 的最先进演进，提供更佳的舒适度和精准度。",
           },
           {
             title: "眼部安全且经过验证",
@@ -712,12 +712,12 @@ const antiAgingContentZh: AntiAgingPageContent = {
         {
           id: "thermage-ba-1",
           src: "/images/anti-aging/thermage-before-after-1.jpg",
-          alt: "Thermage FLX 疗程效果 - 前后对比",
+          alt: "ThermageFLX 疗程效果 - 前后对比",
         },
         {
           id: "thermage-ba-2",
           src: "/images/anti-aging/thermage-before-after-2.jpg",
-          alt: "Thermage FLX 疗程效果 - 前后对比",
+          alt: "ThermageFLX 疗程效果 - 前后对比",
         },
       ],
     },
@@ -818,7 +818,7 @@ const antiAgingContentZh: AntiAgingPageContent = {
 
     {
       id: "forma",
-      title: "Forma",
+      title: "热立塑",
       about: {
         subtitle:
           "非侵入性射频，温和肌肤紧致与塑形。",

@@ -51,7 +51,7 @@ export function RmtHeroSection({ lang }: { lang: Language }) {
                  {hero.titleLine2}
                </span>
              </h1>
-            <p className="m-0 max-w-[400px] font-body text-body leading-[1.6] text-brand-secondary lg:text-right">
+            <p className="m-0 max-w-[400px] whitespace-pre-line font-body text-body leading-[1.6] text-brand-secondary lg:text-right">
               {hero.subtitle}
             </p>
           </div>

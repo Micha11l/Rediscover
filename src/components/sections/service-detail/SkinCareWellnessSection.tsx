@@ -7,14 +7,14 @@ export function SkinCareWellnessSection({ lang }: { lang: Language }) {
   const { aboutWellness, wellnessTreatments } = pickContent(skinCareContent, lang);
   const bodyMassage = wellnessTreatments.find((t) => t.type === "duration");
   const lymphaticDrainage = wellnessTreatments.find((t) => t.type === "vip-reg");
-  const lymphaticVipPriceLines =
-    lymphaticDrainage?.type === "vip-reg"
-      ? lymphaticDrainage.vipPrice.split("\n").filter(Boolean)
-      : [];
-  const lymphaticRegPriceLines =
-    lymphaticDrainage?.type === "vip-reg"
-      ? lymphaticDrainage.regPrice.split("\n").filter(Boolean)
-      : [];
+  const vipPricing =
+    lymphaticDrainage?.type === "vip-reg" ? lymphaticDrainage.vipPricing : [];
+  const regPricing =
+    lymphaticDrainage?.type === "vip-reg" ? lymphaticDrainage.regPricing : [];
+  const vipLabel =
+    lymphaticDrainage?.type === "vip-reg" ? lymphaticDrainage.vipLabel : "VIP";
+  const regLabel =
+    lymphaticDrainage?.type === "vip-reg" ? lymphaticDrainage.regLabel : "Reg";
 
   return (
     <section data-testid="skin-care-wellness" className="w-full bg-surface-base">
@@ -58,10 +58,14 @@ export function SkinCareWellnessSection({ lang }: { lang: Language }) {
                   <h3 className="font-heading text-[32px] font-medium leading-[1.1] text-text-primary">
                     {bodyMassage.title}
                   </h3>
-                  <p className="font-body text-body leading-[1.6] text-brand-secondary">
-                    <span className="font-semibold text-text-primary">Effect:</span>{" "}
-                    {bodyMassage.effect}
-                  </p>
+                  <div>
+                    <h4 className="m-0 mb-1 font-heading text-[18px] font-semibold leading-[1.3] text-text-primary">
+                      Effect:
+                    </h4>
+                    <p className="m-0 font-body text-[15px] leading-[1.6] text-brand-secondary">
+                      {bodyMassage.effect}
+                    </p>
+                  </div>
                 </div>
                 <div className="mt-6 flex flex-col gap-2">
                   {bodyMassage.pricing.map((item, index) => (
@@ -88,41 +92,45 @@ export function SkinCareWellnessSection({ lang }: { lang: Language }) {
                 <h3 className="font-heading text-[32px] font-medium leading-[1.1] text-text-primary">
                   {lymphaticDrainage.title}
                 </h3>
-                <p className="font-body text-body leading-[1.6] text-brand-secondary">
-                  <span className="font-semibold text-text-primary">Effect:</span>{" "}
-                  {lymphaticDrainage.effect}
-                </p>
+                <div>
+                  <h4 className="m-0 mb-1 font-heading text-[18px] font-semibold leading-[1.3] text-text-primary">
+                    Effect:
+                  </h4>
+                  <p className="m-0 font-body text-[15px] leading-[1.6] text-brand-secondary">
+                    {lymphaticDrainage.effect}
+                  </p>
+                </div>
               </div>
               <div className="mt-6 flex flex-col gap-4">
-                <div className="flex items-start gap-3">
-                  <span className="min-w-[56px] pt-1 font-heading text-[20px] font-semibold leading-[1.2] text-brand-secondary">
-                    (VIP)
+                <div className="flex flex-col gap-1">
+                  <span className="font-heading text-[16px] font-semibold leading-[1.2] text-brand-secondary">
+                    ({vipLabel})
                   </span>
-                  <div className="flex flex-col gap-1">
-                    {lymphaticVipPriceLines.map((priceLine) => (
-                      <span
-                        key={priceLine}
-                        className="font-heading text-[32px] font-bold leading-[1.1] text-text-primary"
-                      >
-                        {priceLine}
+                  {vipPricing.map((item) => (
+                    <div key={item.duration} className="flex items-baseline gap-1">
+                      <span className="font-heading text-[32px] font-bold leading-[1.1] text-text-primary">
+                        {item.price}
                       </span>
-                    ))}
-                  </div>
+                      <span className="font-heading text-[20px] font-semibold leading-[1.2] text-brand-secondary">
+                        /{item.duration}
+                      </span>
+                    </div>
+                  ))}
                 </div>
-                <div className="flex items-start gap-3">
-                  <span className="min-w-[56px] pt-1 font-heading text-[20px] font-semibold leading-[1.2] text-brand-secondary">
-                    (Reg)
+                <div className="flex flex-col gap-1">
+                  <span className="font-heading text-[16px] font-semibold leading-[1.2] text-brand-secondary">
+                    ({regLabel})
                   </span>
-                  <div className="flex flex-col gap-1">
-                    {lymphaticRegPriceLines.map((priceLine) => (
-                      <span
-                        key={priceLine}
-                        className="font-heading text-[32px] font-bold leading-[1.1] text-text-primary"
-                      >
-                        {priceLine}
+                  {regPricing.map((item) => (
+                    <div key={item.duration} className="flex items-baseline gap-1">
+                      <span className="font-heading text-[32px] font-bold leading-[1.1] text-text-primary">
+                        {item.price}
                       </span>
-                    ))}
-                  </div>
+                      <span className="font-heading text-[20px] font-semibold leading-[1.2] text-brand-secondary">
+                        /{item.duration}
+                      </span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

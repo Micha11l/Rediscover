@@ -19,17 +19,17 @@ export function RmtHelpSection({ lang }: { lang: Language }) {
               </p>
             </div>
 
-            <div className="flex flex-1 flex-col font-heading text-[24px] leading-[1.5]">
-              <div className="h-[24px]" />
-              <ul className="mb-0 list-disc pl-[36px] text-brand-secondary">
+            <div className="flex flex-1 flex-col">
+              <ul className="mb-0 list-disc space-y-2 pl-6 font-body text-[16px] leading-[1.6] text-brand-secondary">
                 {helpSection.bullets.map((bullet) => (
-                  <li key={bullet.id} className="mb-0">
+                  <li key={bullet.id}>
                     {bullet.text}
                   </li>
                 ))}
               </ul>
-              <div className="h-[24px]" />
-              <p className="mb-0 text-text-primary">{helpSection.closingParagraph}</p>
+              <p className="mb-0 mt-6 font-body text-[16px] leading-[1.6] text-text-primary">
+                {helpSection.closingParagraph}
+              </p>
             </div>
           </div>
         </div>
@@ -53,10 +53,10 @@ export function RmtHelpSection({ lang }: { lang: Language }) {
               </p>
             </div>
 
-            <div className="flex flex-1 flex-col font-heading text-[24px] leading-[1.5] text-text-primary">
-              <ul className="mb-0 list-disc pl-[36px]">
+            <div className="flex flex-1 flex-col">
+              <ul className="mb-0 list-disc space-y-2 pl-6 font-body text-[16px] leading-[1.6] text-text-primary">
                 {insuranceSection.bullets.map((bullet, i) => (
-                  <li key={i} className="mb-0">
+                  <li key={i}>
                     {bullet}
                   </li>
                 ))}

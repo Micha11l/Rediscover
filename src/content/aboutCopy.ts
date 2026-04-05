@@ -106,33 +106,33 @@ const aboutCopyEn: AboutCopy = {
       "Thoughtfully designed care, combining medical aesthetics, therapeutic wellness, and a sense of quiet luxury.",
     gallery: [
       { src: "/images/about/hero-1.jpg", alt: "Clinic interior 1" },
-      { src: "/images/about/hero-2.svg", alt: "Clinic interior 2" },
+      { src: "/images/about/hero-2.jpg", alt: "Clinic interior 2" },
       { src: "/images/about/hero-3.svg", alt: "Clinic interior 3" },
     ],
   },
 
   welcome: {
     intro: {
-      heading: "At Rediscover Beauty Clinic",
+      heading: "Rediscover Your Best Self",
       paragraphs: [
         {
-          text: "We believe that beauty and wellness are most meaningful when approached with intention, professionalism, and respect for individual needs.",
+          text: "At Rediscover Beauty Clinic, we believe beauty and wellness reach their full potential when rooted in intention, professionalism, and respect for the individual.",
           highlights: ["intention, professionalism, and respect"],
         },
         {
-          text: "Our clinic was created as a calm and private environment where clients can slow down, feel supported, and receive care that prioritizes both results and experience. From advanced aesthetic treatments to Registered Massage Therapy, every service is delivered with thoughtful attention to detail, clinical integrity, and long-term wellbeing in mind.",
-          highlights: ["calm and private environment"],
+          text: "Our clinic is designed as a calm, private environment for you to slow down and feel supported. Whether you are here for advanced aesthetic treatments or Registered Massage Therapy, every service is delivered with thoughtful attention to detail and long-term health in mind.",
+          highlights: ["calm, private environment"],
         },
       ],
     },
     closing: {
       paragraphs: [
         {
-          text: "We value transparency, comfort, and personalized care. Our team takes the time to understand each client's goals, ensuring every treatment plan is tailored, appropriate, and professionally guided.",
-          highlights: ["transparency, comfort, and personalized care"],
+          text: "We value transparency and comfort. Our team takes the time to truly understand your goals, ensuring every treatment plan is:",
+          highlights: ["transparency and comfort"],
         },
         {
-          text: "Our approach balances clinical precision with a refined, calming experience — where results and comfort are equally prioritized.",
+          text: "Clinically Guided: Backed by expertise and integrity. Tailor-Made: Specifically designed for your needs. Experience-Focused: Prioritizing your comfort at every step.",
           highlights: [],
         },
       ],
@@ -143,7 +143,7 @@ const aboutCopyEn: AboutCopy = {
     titleAccent: "Our",
     titleMain: "Approach",
     body:
-      "Every treatment begins with a professional skin analysis and consultation to understand your skin condition and goals.",
+      "Professional Analysis. Personalized Care. Every treatment begins with a detailed skin consultation to better understand your skin and goals.",
     gallery: [
       { src: "/images/about/approach-1.svg", alt: "Treatment consultation environment 1" },
       { src: "/images/about/approach-2.svg", alt: "Treatment consultation environment 2" },
@@ -185,10 +185,10 @@ const aboutCopyEn: AboutCopy = {
     titleAccent: "Our Clinic",
     titleMain: "Environment",
     subtitle:
-      "A thoughtfully designed space focused on comfort, privacy, and calm.",
+      "A serene and thoughtfully designed space where comfort, privacy, and care come first.",
     gallery: [
       { src: "/images/about/clinic-1.svg", alt: "Clinic environment 1" },
-      { src: "/images/about/clinic-2.svg", alt: "Clinic environment 2" },
+      { src: "/images/about/hero-3.jpg", alt: "Clinic environment 2" },
       { src: "/images/about/clinic-3.svg", alt: "Clinic environment 3" },
     ],
   },
@@ -322,38 +322,38 @@ const aboutCopyEn: AboutCopy = {
 const aboutCopyZh: AboutCopy = {
   hero: {
     titleAccent: "关于",
-    titleMain: "Rediscover Beauty 诊所",
+    titleMain: "爱妍舍",
     subtitle:
       "精心设计的专业护理，融合医学美容、疗愈养生与低调奢华的品质体验。",
     gallery: [
       { src: "/images/about/hero-1.jpg", alt: "诊所内景 1" },
-      { src: "/images/about/hero-2.svg", alt: "诊所内景 2" },
+      { src: "/images/about/hero-2.jpg", alt: "诊所内景 2" },
       { src: "/images/about/hero-3.svg", alt: "诊所内景 3" },
     ],
   },
 
   welcome: {
     intro: {
-      heading: "在 Rediscover Beauty 诊所",
+      heading: "遇见爱妍舍",
       paragraphs: [
         {
-          text: "我们相信，真正有意义的美丽与健康，源于专注的态度、专业的知识和对每一位客户需求的尊重。",
-          highlights: ["专注的态度、专业的知识和对每一位客户需求的尊重"],
+          text: "以初心、专业与尊重，重塑身心之美。",
+          highlights: ["初心、专业与尊重"],
         },
         {
-          text: "我们的诊所致力于打造一个宁静且私密的环境，让客户在此放慢脚步、感受支持，并享受注重效果与体验的专业护理。从先进的医学美容疗程到注册按摩治疗，每一项服务都秉持细节至上、临床诚信与长期身心健康的理念。",
-          highlights: ["宁静且私密的环境"],
+          text: "我们致力于打造一个宁静私密的避风港。在这里，您可以放慢脚步，在专业的支持下重焕活力。从前沿美学疗程到专业注册按摩治疗（RMT），每一项服务都融合了严谨的临床诚信与对长远健康的极致追求。",
+          highlights: ["宁静私密的避风港"],
         },
       ],
     },
     closing: {
       paragraphs: [
         {
-          text: "我们重视透明、舒适与个性化的护理理念。我们的团队会深入了解每位客户的目标，确保每一份疗程计划都是量身定制、恰当合理且由专业人员精心指导的。",
-          highlights: ["透明、舒适与个性化的护理理念"],
+          text: "透明化：诚实沟通，让您全程安心。舒适感：在优雅的环境中享受蜕变。个性化：每一份方案，都为您量身定制。",
+          highlights: ["透明化", "舒适感", "个性化"],
         },
         {
-          text: "我们的护理方式在临床精准性与优雅舒适的体验之间取得平衡——效果与舒适同样重要。",
+          text: "在这里，临床的精准与感官的愉悦同等重要。",
           highlights: [],
         },
       ],
@@ -364,7 +364,7 @@ const aboutCopyZh: AboutCopy = {
     titleAccent: "我们的",
     titleMain: "护理方式",
     body:
-      "每一次疗程都始于专业的肌肤分析与咨询，以充分了解您的肌肤状态与护理目标。",
+      "每一次疗程都始于专业的肌肤分析与咨询，深入了解您的肌肤状态与护理目标，定制更适合您的护理方案。",
     gallery: [
       { src: "/images/about/approach-1.svg", alt: "疗程咨询环境 1" },
       { src: "/images/about/approach-2.svg", alt: "疗程咨询环境 2" },
@@ -406,16 +406,16 @@ const aboutCopyZh: AboutCopy = {
     titleAccent: "我们的诊所",
     titleMain: "环境",
     subtitle:
-      "精心设计的空间，专注于舒适、私密与宁静。",
+      "一个优雅而宁静的空间，为美丽与身心疗愈而打造。",
     gallery: [
       { src: "/images/about/clinic-1.svg", alt: "诊所环境 1" },
-      { src: "/images/about/clinic-2.svg", alt: "诊所环境 2" },
+      { src: "/images/about/hero-3.jpg", alt: "诊所环境 2" },
       { src: "/images/about/clinic-3.svg", alt: "诊所环境 3" },
     ],
   },
 
   skincare: {
-    title: "值得我们信赖的医学级护肤品",
+    title: "我们严选的医学级护肤产品",
     subtitle:
       "经过精心挑选，符合我们在临床表现、安全性和客户体验方面的标准。",
     image: {
@@ -518,7 +518,7 @@ const aboutCopyZh: AboutCopy = {
   ],
 
   cta: {
-    titleLine1: "Rediscover Beauty",
+    titleLine1: "爱妍舍",
     titleLine2: "由此开始",
     subtitle: "专业细致的美学护理，为您的肌肤与身体量身定制。",
     buttonText: "预约咨询",

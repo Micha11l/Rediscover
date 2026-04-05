@@ -220,17 +220,16 @@ export function ThermageAboutSection({ lang }: { lang: Language }) {
       dataTestId="thermage"
       title={[
         { text: lang === "zh" ? "热玛吉" : "Thermage", colorClassName: "text-brand-secondary" },
-        { text: " FLX", colorClassName: "text-brand-secondary" },
       ]}
       subtitle={copy.about.subtitle}
       paragraphs={copy.about.paragraphs}
       leftImage={{
         src: "/images/anti-aging/thermage-left.png",
-        alt: "Thermage FLX device - front view",
+        alt: "ThermageFLX device - front view",
       }}
       rightImage={{
         src: "/images/anti-aging/thermage-right.png",
-        alt: "Thermage FLX device - treatment handpiece",
+        alt: "ThermageFLX device - treatment handpiece",
       }}
       layoutTweaks={{
         rightTopPx: 5,
@@ -275,7 +274,7 @@ export function FormaAboutSection({ lang }: { lang: Language }) {
   return (
     <AntiAgingAboutSection
       id="forma"
-      title="Forma"
+      title={lang === "zh" ? "热立塑" : "Forma"}
       subtitle={copy.about.subtitle}
       paragraphs={copy.about.paragraphs}
       leftImage={{

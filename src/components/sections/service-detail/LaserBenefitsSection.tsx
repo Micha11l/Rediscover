@@ -23,11 +23,11 @@ export function LaserBenefitsSection({
                 <li key={item} className="flex gap-4">
                   <span
                     aria-hidden="true"
-                    className="shrink-0 font-heading text-[24px] leading-[2] text-text-primary"
+                    className="shrink-0 font-body text-[16px] leading-[1.6] text-text-primary"
                   >
                     •
                   </span>
-                  <span className="font-heading text-[24px] font-normal leading-[2] text-text-primary">
+                  <span className="font-body text-[16px] font-normal leading-[1.6] text-text-primary">
                     {item}
                   </span>
                 </li>
@@ -50,11 +50,11 @@ export function LaserBenefitsSection({
                 <li key={item} className="flex gap-4">
                   <span
                     aria-hidden="true"
-                    className="shrink-0 font-heading text-[24px] leading-[2] text-text-primary"
+                    className="shrink-0 font-body text-[16px] leading-[1.6] text-text-primary"
                   >
                     •
                   </span>
-                  <span className="font-heading text-[24px] font-normal leading-[2] text-text-primary">
+                  <span className="font-body text-[16px] font-normal leading-[1.6] text-text-primary">
                     {item}
                   </span>
                 </li>
