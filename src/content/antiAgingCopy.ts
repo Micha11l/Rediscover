@@ -508,9 +508,9 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
     ],
     faq: {
       title: "核心优势",
-      keyBenefitsTitle: "Thermage FLX",
+      keyBenefitsTitle: "热玛吉第五代",
       canHelpWithTitle: "适用问题",
-      canHelpWithAccent: "Thermage FLX",
+      canHelpWithAccent: "热玛吉第五代",
       benefits: [
         {
           title: "第五代智能射频技术",
@@ -518,7 +518,7 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
         },
         {
           title: "全球唯一眼周合规认证",
-          text: "凭借其精准的加热控制与表皮冷却保护，Thermage FLX 是目前全球唯一获监管机构批准、可安全用于眼睑等敏感区域的非侵入式紧肤技术，深受专业医师信赖。",
+          text: "凭借其精准的加热控制与表皮冷却保护，热玛吉第五代是目前全球唯一获监管机构批准、可安全用于眼睑等敏感区域的非侵入式紧肤技术，深受专业医师信赖。",
         },
         {
           title: "无创无痛，即做即走",
@@ -668,7 +668,7 @@ const antiAgingCopyZh: Record<TreatmentId, TreatmentCopy> = {
       ],
     },
     faq: {
-      title: "Forma",
+      title: "热立塑",
       keyBenefitsTitle: "主要优势",
       canHelpWithTitle: "可以改善的问题",
       benefits: [

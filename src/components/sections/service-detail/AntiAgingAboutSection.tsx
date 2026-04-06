@@ -219,7 +219,7 @@ export function ThermageAboutSection({ lang }: { lang: Language }) {
       id="thermage-flx"
       dataTestId="thermage"
       title={[
-        { text: lang === "zh" ? "热玛吉" : "Thermage", colorClassName: "text-brand-secondary" },
+        { text: lang === "zh" ? "热玛吉" : "ThermageFLX", colorClassName: "text-brand-secondary" },
       ]}
       subtitle={copy.about.subtitle}
       paragraphs={copy.about.paragraphs}
