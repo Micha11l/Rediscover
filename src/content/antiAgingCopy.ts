@@ -171,9 +171,9 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
     ],
     faq: {
       title: "Key Benefits",
-      keyBenefitsTitle: "Thermage FLX",
+      keyBenefitsTitle: "ThermageFLX",
       canHelpWithTitle: "Indications for",
-      canHelpWithAccent: "Thermage FLX",
+      canHelpWithAccent: "ThermageFLX",
       benefits: [
         {
           title: "5th-Generation Intelligent RF Technology",
@@ -181,7 +181,7 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
         },
         {
           title: "Globally Approved for Eye Area Treatment",
-          text: "With precise heat control and integrated epidermal cooling, Thermage FLX is currently the only non-invasive skin tightening technology approved for use on delicate areas such as the eyelids, trusted by medical professionals worldwide.",
+          text: "With precise heat control and integrated epidermal cooling, ThermageFLX is currently the only non-invasive skin tightening technology approved for use on delicate areas such as the eyelids, trusted by medical professionals worldwide.",
         },
         {
           title: "Non-Invasive, Comfortable, No Downtime",
@@ -189,7 +189,7 @@ const antiAgingCopyEn: Record<TreatmentId, TreatmentCopy> = {
         },
         {
           title: "Immediate Tightening with Long-Term Regeneration",
-          text: "By delivering controlled heat to the deep dermal layers, Thermage FLX triggers immediate collagen contraction while stimulating long-term collagen production, resulting in natural, long-lasting lifting and contouring.",
+          text: "By delivering controlled heat to the deep dermal layers, ThermageFLX triggers immediate collagen contraction while stimulating long-term collagen production, resulting in natural, long-lasting lifting and contouring.",
         },
         {
           title: "Zero Downtime, Minimal Disruption",
